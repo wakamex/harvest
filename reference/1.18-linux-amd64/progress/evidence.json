@@ -254922,132 +254922,57 @@
     },
     {
       "unit": "daisy/scene/CAnimatedMeshMD2.cpp",
-      "object_sha256": "7c59c052e6b704c3ce4b49014bc210cf13a143d2b4a459f2eb64ce5abc4ad979",
+      "object_sha256": "eb9ef8cc0a5bff30f606a17cc9a6b5ff9c62f4ab87951bb8c7a13ea8a1d85e63",
       "exact": false,
       "sections": [
         {
           "name": ".text",
-          "size": 3929,
+          "size": 8740,
           "placement": "symbol: _ZN5daisy5scene16CAnimatedMeshMD2C2Ev",
           "exact": false,
           "address": "0x5c91b0",
-          "first_difference": 2197,
-          "differing_bytes": 10,
+          "first_difference": 2501,
+          "differing_bytes": 3978,
           "misplaced_symbols": [
             {
-              "symbol": "_ZThn24_N5daisy5scene16CAnimatedMeshMD215setMaterialFlagEN2ox5video15E_MATERIAL_FLAGEb",
-              "known": "0x5c9a50",
-              "placed": "0x5c9920"
-            },
-            {
-              "symbol": "_ZN5daisy5scene16CAnimatedMeshMD215setMaterialFlagEN2ox5video15E_MATERIAL_FLAGEb",
-              "known": "0x5c9a60",
-              "placed": "0x5c9930"
-            },
-            {
-              "symbol": "_ZThn48_NK5daisy5scene16CAnimatedMeshMD214getBoundingBoxEv",
-              "known": "0x5c9a70",
-              "placed": "0x5c9940"
-            },
-            {
-              "symbol": "_ZThn24_NK5daisy5scene16CAnimatedMeshMD214getBoundingBoxEv",
-              "known": "0x5c9a80",
-              "placed": "0x5c9950"
-            },
-            {
-              "symbol": "_ZNK5daisy5scene16CAnimatedMeshMD214getBoundingBoxEv",
-              "known": "0x5c9a90",
-              "placed": "0x5c9960"
-            },
-            {
-              "symbol": "_ZThn48_N5daisy5scene16CAnimatedMeshMD214getBoundingBoxEv",
-              "known": "0x5c9aa0",
-              "placed": "0x5c9970"
-            },
-            {
-              "symbol": "_ZThn24_N5daisy5scene16CAnimatedMeshMD214getBoundingBoxEv",
-              "known": "0x5c9ab0",
-              "placed": "0x5c9980"
-            },
-            {
-              "symbol": "_ZN5daisy5scene16CAnimatedMeshMD214getBoundingBoxEv",
-              "known": "0x5c9ac0",
-              "placed": "0x5c9990"
-            },
-            {
-              "symbol": "_ZNK5daisy5scene16CAnimatedMeshMD211getMeshTypeEv",
-              "known": "0x5c9ad0",
-              "placed": "0x5c99a0"
-            },
-            {
-              "symbol": "_ZNK5daisy5scene16CAnimatedMeshMD212getFrameLoopEN2ox5scene19EMD2_ANIMATION_TYPEERiS5_S5_",
-              "known": "0x5c9ae0",
-              "placed": "0x5c99b0"
-            },
-            {
-              "symbol": "_ZNK5daisy5scene16CAnimatedMeshMD217getAnimationCountEv",
-              "known": "0x5c9b20",
-              "placed": "0x5c99f0"
-            },
-            {
-              "symbol": "_ZNK5daisy5scene16CAnimatedMeshMD216getAnimationNameEi",
-              "known": "0x5c9b40",
-              "placed": "0x5c9a10"
-            },
-            {
-              "symbol": "_ZNK5daisy5scene16CAnimatedMeshMD212getFrameLoopEPKcRiS4_S4_",
-              "known": "0x5c9ba0",
-              "placed": "0x5c9a70"
-            },
-            {
-              "symbol": "_ZN5daisy5scene16CAnimatedMeshMD216calculateNormalsEv",
-              "known": "0x5c9d50",
-              "placed": "0x5c9c20"
-            },
-            {
-              "symbol": "_ZN5daisy5scene16CAnimatedMeshMD220calculateBoundingBoxEv",
-              "known": "0x5c9920",
-              "placed": "0x5c9de0"
-            },
-            {
-              "symbol": "_ZN5daisy5scene16CAnimatedMeshMD28loadFileEPN2ox2io9IReadFileE",
-              "known": "0x5ca220",
-              "placed": "0x5c9df0"
-            },
-            {
-              "symbol": "_ZThn48_N5daisy5scene16CAnimatedMeshMD2D0Ev",
-              "known": "0x5c9f10",
-              "placed": "0x5c9e00"
-            },
-            {
-              "symbol": "_ZThn24_N5daisy5scene16CAnimatedMeshMD2D0Ev",
-              "known": "0x5c9f20",
-              "placed": "0x5c9e10"
-            },
-            {
-              "symbol": "_ZN5daisy5scene16CAnimatedMeshMD2D0Ev",
-              "known": "0x5c9f30",
-              "placed": "0x5c9e20"
+              "symbol": "_ZN5daisy5scene16CAnimatedMeshMD2D2Ev",
+              "known": "0x5ca020",
+              "placed": "0x5c9f10"
             },
             {
               "symbol": "_ZThn48_N5daisy5scene16CAnimatedMeshMD2D1Ev",
               "known": "0x5ca110",
-              "placed": "0x5c9f10"
+              "placed": "0x5ca000"
             },
             {
               "symbol": "_ZThn24_N5daisy5scene16CAnimatedMeshMD2D1Ev",
               "known": "0x5ca120",
-              "placed": "0x5c9f20"
+              "placed": "0x5ca010"
             },
             {
               "symbol": "_ZN5daisy5scene16CAnimatedMeshMD2D1Ev",
               "known": "0x5ca130",
-              "placed": "0x5c9f30"
+              "placed": "0x5ca020"
+            },
+            {
+              "symbol": "_ZThn48_N5daisy5scene16CAnimatedMeshMD2D0Ev",
+              "known": "0x5c9f10",
+              "placed": "0x5ca110"
+            },
+            {
+              "symbol": "_ZThn24_N5daisy5scene16CAnimatedMeshMD2D0Ev",
+              "known": "0x5c9f20",
+              "placed": "0x5ca120"
+            },
+            {
+              "symbol": "_ZN5daisy5scene16CAnimatedMeshMD2D0Ev",
+              "known": "0x5c9f30",
+              "placed": "0x5ca130"
             }
           ],
           "bad_references": [
             {
-              "offset": 2197,
+              "offset": 2501,
               "type": 10,
               "symbol": ".bss",
               "addend": 0,
@@ -255055,15 +254980,376 @@
               "matches": false
             },
             {
-              "offset": 2212,
+              "offset": 2516,
               "type": 10,
               "symbol": ".bss",
               "addend": 0,
               "reason": "no target address for symbol",
               "matches": false
+            },
+            {
+              "offset": 4617,
+              "type": 2,
+              "symbol": "_Znam",
+              "addend": -4,
+              "destination": "0x407128",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 4714,
+              "type": 2,
+              "symbol": "_Znam",
+              "addend": -4,
+              "destination": "0x407128",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 4799,
+              "type": 2,
+              "symbol": "_Znam",
+              "addend": -4,
+              "destination": "0x407128",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 4903,
+              "type": 2,
+              "symbol": "_Znam",
+              "addend": -4,
+              "destination": "0x407128",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 5268,
+              "type": 2,
+              "symbol": "_Znam",
+              "addend": -4,
+              "destination": "0x407128",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 5455,
+              "type": 2,
+              "symbol": "_Znam",
+              "addend": -4,
+              "destination": "0x407128",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 5604,
+              "type": 2,
+              "symbol": "_ZdaPv",
+              "addend": -4,
+              "destination": "0x407f58",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 5643,
+              "type": 10,
+              "symbol": ".rodata.str1.8",
+              "addend": 48,
+              "reason": "unmapped or truncated range: 0x8b486024+0x25",
+              "matches": false
+            },
+            {
+              "offset": 5648,
+              "type": 2,
+              "symbol": "_ZN5daisy2os7Printer3logEPKcS3_N2ox5event10ELOG_LEVELE",
+              "addend": -4,
+              "destination": "0x4c1ea0",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 5787,
+              "type": 11,
+              "symbol": ".rodata",
+              "addend": 0,
+              "reason": "no target address for symbol",
+              "matches": false
+            },
+            {
+              "offset": 5801,
+              "type": 11,
+              "symbol": ".rodata",
+              "addend": 4,
+              "reason": "no target address for symbol",
+              "matches": false
+            },
+            {
+              "offset": 5808,
+              "type": 11,
+              "symbol": ".rodata",
+              "addend": 8,
+              "reason": "no target address for symbol",
+              "matches": false
+            },
+            {
+              "offset": 6044,
+              "type": 2,
+              "symbol": "_ZNSt6vectorIN2ox4core9CVector3dIfEESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+              "addend": -4,
+              "destination": "0x57ead0",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 6068,
+              "type": 2,
+              "symbol": "_ZNSt6vectorIN2ox4core9CVector3dIfEESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+              "addend": -4,
+              "destination": "0x57ead0",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 6535,
+              "type": 2,
+              "symbol": "_ZdaPv",
+              "addend": -4,
+              "destination": "0x407f58",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 6819,
+              "type": 2,
+              "symbol": "_Znam",
+              "addend": -4,
+              "destination": "0x407128",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 6971,
+              "type": 2,
+              "symbol": "_Znwm",
+              "addend": -4,
+              "destination": "0x407bc8",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 7047,
+              "type": 2,
+              "symbol": "_ZdlPv",
+              "addend": -4,
+              "destination": "0x407b48",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 7121,
+              "type": 2,
+              "symbol": "_ZNSt6vectorIN5daisy5scene16CAnimatedMeshMD210SFrameDataESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+              "addend": -4,
+              "reason": "no target address for symbol",
+              "candidate": "0x16cd209",
+              "matches": false
+            },
+            {
+              "offset": 7147,
+              "type": 2,
+              "symbol": "_ZNSt6vectorIN2ox4core9CAabbox3dIfEESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+              "addend": -4,
+              "destination": "0x564eb0",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 7160,
+              "type": 2,
+              "symbol": ".LC2",
+              "addend": -4,
+              "reason": "merged constant would lie in code",
+              "matches": false
+            },
+            {
+              "offset": 7340,
+              "type": 2,
+              "symbol": ".LC9",
+              "addend": -4,
+              "reason": "unmapped or truncated range: 0x3a670e9+0x4",
+              "matches": false
+            },
+            {
+              "offset": 7712,
+              "type": 2,
+              "symbol": "_ZNSt6vectorItSaItEE7reserveEm",
+              "addend": -4,
+              "destination": "0x570760",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 8291,
+              "type": 2,
+              "symbol": "_ZdlPv",
+              "addend": -4,
+              "destination": "0x407b48",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 8306,
+              "type": 2,
+              "symbol": "_ZdaPv",
+              "addend": -4,
+              "destination": "0x407f58",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 8363,
+              "type": 2,
+              "symbol": "_ZdlPv",
+              "addend": -4,
+              "destination": "0x407b48",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 8381,
+              "type": 2,
+              "symbol": "_ZdaPv",
+              "addend": -4,
+              "destination": "0x407f58",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 8405,
+              "type": 2,
+              "symbol": "_ZdaPv",
+              "addend": -4,
+              "destination": "0x407f58",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 8429,
+              "type": 2,
+              "symbol": "_ZdaPv",
+              "addend": -4,
+              "destination": "0x407f58",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 8523,
+              "type": 2,
+              "symbol": "_ZNSt6vectorIN2ox5video9S3DVertexESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_",
+              "addend": -4,
+              "destination": "0x545720",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 8573,
+              "type": 10,
+              "symbol": ".rodata.str1.8",
+              "addend": 0,
+              "reason": "unmapped or truncated range: 0x5bffe3c8+0x29",
+              "matches": false
+            },
+            {
+              "offset": 8578,
+              "type": 2,
+              "symbol": "_ZN5daisy2os7Printer3logEPKcS3_N2ox5event10ELOG_LEVELE",
+              "addend": -4,
+              "destination": "0x4c1ea0",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 8601,
+              "type": 2,
+              "symbol": "_ZNSt6vectorItSaItEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPtS1_EERKt",
+              "addend": -4,
+              "destination": "0x4d4f10",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 8622,
+              "type": 2,
+              "symbol": "_ZNSt6vectorItSaItEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPtS1_EERKt",
+              "addend": -4,
+              "destination": "0x4d4f10",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 8643,
+              "type": 2,
+              "symbol": "_ZNSt6vectorItSaItEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPtS1_EERKt",
+              "addend": -4,
+              "destination": "0x4d4f10",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 8676,
+              "type": 2,
+              "symbol": "_ZNSt6vectorIN2ox5video9S3DVertexESaIS2_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS2_S4_EEmRKS2_",
+              "addend": -4,
+              "reason": "no target address for symbol",
+              "candidate": "-0x16dbc320",
+              "matches": false
+            },
+            {
+              "offset": 8711,
+              "type": 2,
+              "symbol": "_ZdaPv",
+              "addend": -4,
+              "destination": "0x407f58",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 8719,
+              "type": 2,
+              "symbol": "_Unwind_Resume",
+              "addend": -4,
+              "destination": "0x4084f8",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 8724,
+              "type": 2,
+              "symbol": "__stack_chk_fail",
+              "addend": -4,
+              "destination": "0x407d58",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 8731,
+              "type": 10,
+              "symbol": ".rodata.str1.1",
+              "addend": 0,
+              "reason": "unmapped or truncated range: 0xe3c8840+0x10",
+              "matches": false
+            },
+            {
+              "offset": 8736,
+              "type": 2,
+              "symbol": "_ZSt20__throw_length_errorPKc",
+              "addend": -4,
+              "destination": "0x407608",
+              "reason": "different destination",
+              "matches": false
             }
           ],
-          "references": 63,
+          "references": 109,
           "functions": [
             {
               "symbol": "_ZN5daisy5scene16CAnimatedMeshMD2C2Ev",
@@ -255290,6 +255576,14 @@
               "exact": true
             },
             {
+              "symbol": "_ZN5daisy5scene16CAnimatedMeshMD220calculateBoundingBoxEv",
+              "address": "0x5c9920",
+              "size": 290,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            },
+            {
               "symbol": "_ZThn24_N5daisy5scene16CAnimatedMeshMD215setMaterialFlagEN2ox5video15E_MATERIAL_FLAGEb",
               "address": "0x5c9a50",
               "size": 6,
@@ -255410,41 +255704,9 @@
               "exact": true
             },
             {
-              "symbol": "_ZN5daisy5scene16CAnimatedMeshMD220calculateBoundingBoxEv",
-              "address": "0x5c9920",
-              "size": 2,
-              "extent": null,
-              "global": true,
-              "exact": false
-            },
-            {
-              "symbol": "_ZN5daisy5scene16CAnimatedMeshMD28loadFileEPN2ox2io9IReadFileE",
-              "address": "0x5ca220",
-              "size": 2,
-              "extent": null,
-              "global": true,
-              "exact": false
-            },
-            {
-              "symbol": "_ZThn48_N5daisy5scene16CAnimatedMeshMD2D0Ev",
-              "address": "0x5c9f10",
-              "size": 6,
-              "extent": "thunk",
-              "global": true,
-              "exact": true
-            },
-            {
-              "symbol": "_ZThn24_N5daisy5scene16CAnimatedMeshMD2D0Ev",
-              "address": "0x5c9f20",
-              "size": 6,
-              "extent": "thunk",
-              "global": true,
-              "exact": true
-            },
-            {
-              "symbol": "_ZN5daisy5scene16CAnimatedMeshMD2D0Ev",
-              "address": "0x5c9f30",
-              "size": 240,
+              "symbol": "_ZN5daisy5scene16CAnimatedMeshMD2D2Ev",
+              "address": "0x5ca020",
+              "size": 233,
               "extent": "fde",
               "global": true,
               "exact": true
@@ -255474,12 +255736,36 @@
               "exact": true
             },
             {
-              "symbol": "_ZN5daisy5scene16CAnimatedMeshMD2D2Ev",
-              "address": "0x5ca020",
-              "size": 233,
+              "symbol": "_ZThn48_N5daisy5scene16CAnimatedMeshMD2D0Ev",
+              "address": "0x5c9f10",
+              "size": 6,
+              "extent": "thunk",
+              "global": true,
+              "exact": true
+            },
+            {
+              "symbol": "_ZThn24_N5daisy5scene16CAnimatedMeshMD2D0Ev",
+              "address": "0x5c9f20",
+              "size": 6,
+              "extent": "thunk",
+              "global": true,
+              "exact": true
+            },
+            {
+              "symbol": "_ZN5daisy5scene16CAnimatedMeshMD2D0Ev",
+              "address": "0x5c9f30",
+              "size": 240,
               "extent": "fde",
               "global": true,
               "exact": true
+            },
+            {
+              "symbol": "_ZN5daisy5scene16CAnimatedMeshMD28loadFileEPN2ox2io9IReadFileE",
+              "address": "0x5ca220",
+              "size": 4532,
+              "extent": null,
+              "global": true,
+              "exact": false
             }
           ],
           "data_ranges": [
@@ -255502,6 +255788,11 @@
               "address": "0x5ef0c8",
               "size": 4,
               "kind": "merged constant"
+            },
+            {
+              "address": "0x6200f8",
+              "size": 30,
+              "kind": "merged string"
             }
           ]
         },
@@ -255717,6 +256008,242 @@
               "exact": true
             }
           ]
+        },
+        {
+          "name": ".text._ZNSt6vectorIN2ox5video9S3DVertexESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_",
+          "size": 857,
+          "placement": "symbol: _ZNSt6vectorIN2ox5video9S3DVertexESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_",
+          "exact": false,
+          "address": "0x545720",
+          "first_difference": 23,
+          "differing_bytes": 536,
+          "bad_references": [
+            {
+              "offset": 355,
+              "type": 2,
+              "symbol": "_Znwm",
+              "addend": -4,
+              "destination": "0x407bc8",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 735,
+              "type": 2,
+              "symbol": "_ZdlPv",
+              "addend": -4,
+              "destination": "0x407b48",
+              "reason": "different destination",
+              "matches": false
+            }
+          ],
+          "references": 2,
+          "functions": [
+            {
+              "symbol": "_ZNSt6vectorIN2ox5video9S3DVertexESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_",
+              "address": "0x545720",
+              "size": 857,
+              "extent": null,
+              "global": true,
+              "exact": false
+            }
+          ]
+        },
+        {
+          "name": ".text._ZNSt6vectorIN2ox4core9CVector3dIfEESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+          "size": 635,
+          "placement": "symbol: _ZNSt6vectorIN2ox4core9CVector3dIfEESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+          "exact": true,
+          "address": "0x57ead0",
+          "references": 2,
+          "functions": [
+            {
+              "symbol": "_ZNSt6vectorIN2ox4core9CVector3dIfEESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+              "address": "0x57ead0",
+              "size": 635,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ]
+        },
+        {
+          "name": ".text._ZNSt6vectorIN2ox4core9CAabbox3dIfEESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+          "size": 749,
+          "placement": "symbol: _ZNSt6vectorIN2ox4core9CAabbox3dIfEESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+          "exact": true,
+          "address": "0x564eb0",
+          "references": 2,
+          "functions": [
+            {
+              "symbol": "_ZNSt6vectorIN2ox4core9CAabbox3dIfEESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+              "address": "0x564eb0",
+              "size": 749,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ]
+        },
+        {
+          "name": ".text._ZNSt6vectorIN2ox5video9S3DVertexESaIS2_EE7reserveEm",
+          "size": 279,
+          "placement": "symbol: _ZNSt6vectorIN2ox5video9S3DVertexESaIS2_EE7reserveEm",
+          "exact": false,
+          "address": "0x5701e0",
+          "first_difference": 32,
+          "differing_bytes": 207,
+          "bad_references": [
+            {
+              "offset": 123,
+              "type": 2,
+              "symbol": "_Znwm",
+              "addend": -4,
+              "destination": "0x407bc8",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 224,
+              "type": 2,
+              "symbol": "_ZdlPv",
+              "addend": -4,
+              "destination": "0x407b48",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 270,
+              "type": 10,
+              "symbol": ".rodata.str1.1",
+              "addend": 0,
+              "reason": "unmapped or truncated range: 0xffe97316+0x10",
+              "matches": false
+            },
+            {
+              "offset": 275,
+              "type": 2,
+              "symbol": "_ZSt20__throw_length_errorPKc",
+              "addend": -4,
+              "destination": "0x407608",
+              "reason": "different destination",
+              "matches": false
+            }
+          ],
+          "references": 4,
+          "functions": [
+            {
+              "symbol": "_ZNSt6vectorIN2ox5video9S3DVertexESaIS2_EE7reserveEm",
+              "address": "0x5701e0",
+              "size": 279,
+              "extent": null,
+              "global": true,
+              "exact": false
+            }
+          ]
+        },
+        {
+          "name": ".text._ZNSt6vectorItSaItEE7reserveEm",
+          "size": 208,
+          "placement": "symbol: _ZNSt6vectorItSaItEE7reserveEm",
+          "exact": false,
+          "address": "0x570760",
+          "first_difference": 47,
+          "differing_bytes": 140,
+          "bad_references": [
+            {
+              "offset": 131,
+              "type": 2,
+              "symbol": "_Znwm",
+              "addend": -4,
+              "destination": "0x407bc8",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 155,
+              "type": 2,
+              "symbol": "memmove",
+              "addend": -4,
+              "destination": "0x408398",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 168,
+              "type": 2,
+              "symbol": "_ZdlPv",
+              "addend": -4,
+              "destination": "0x407b48",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 194,
+              "type": 10,
+              "symbol": ".rodata.str1.1",
+              "addend": 0,
+              "reason": "unmapped or truncated range: 0x6c70e8ff+0x10",
+              "matches": false
+            },
+            {
+              "offset": 199,
+              "type": 2,
+              "symbol": "_ZSt20__throw_length_errorPKc",
+              "addend": -4,
+              "destination": "0x407608",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 204,
+              "type": 2,
+              "symbol": "_ZSt17__throw_bad_allocv",
+              "addend": -4,
+              "destination": "0x407498",
+              "reason": "different destination",
+              "matches": false
+            }
+          ],
+          "references": 6,
+          "functions": [
+            {
+              "symbol": "_ZNSt6vectorItSaItEE7reserveEm",
+              "address": "0x570760",
+              "size": 208,
+              "extent": null,
+              "global": true,
+              "exact": false
+            }
+          ]
+        },
+        {
+          "name": ".text._ZNSt6vectorItSaItEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPtS1_EERKt",
+          "size": 380,
+          "placement": "symbol: _ZNSt6vectorItSaItEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPtS1_EERKt",
+          "exact": true,
+          "address": "0x4d4f10",
+          "references": 5,
+          "functions": [
+            {
+              "symbol": "_ZNSt6vectorItSaItEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPtS1_EERKt",
+              "address": "0x4d4f10",
+              "size": 380,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ]
+        },
+        {
+          "name": ".gcc_except_table",
+          "size": 129,
+          "placement": "exception frames",
+          "exact": false,
+          "address": "0x666404",
+          "first_difference": 85,
+          "differing_bytes": 25,
+          "references": 0
         },
         {
           "name": ".rodata._ZTVN5daisy5scene16CAnimatedMeshMD2E",
@@ -255991,7 +256518,10 @@
       ],
       "unplaced_sections": [
         ".bss",
-        ".text._ZN2ox6TArrayIN5daisy5scene16CAnimatedMeshMD210SFrameDataEED1Ev"
+        ".text._ZN2ox6TArrayIN5daisy5scene16CAnimatedMeshMD210SFrameDataEED1Ev",
+        ".text._ZNSt6vectorIN5daisy5scene16CAnimatedMeshMD210SFrameDataESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+        ".text._ZNSt6vectorIN2ox5video9S3DVertexESaIS2_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS2_S4_EEmRKS2_",
+        ".rodata"
       ],
       "compilation": {
         "container_image_id": "108b5240b400ca2165345f10e2dbf66da04f55d0448c00509d9474f0adfffe17",
@@ -256012,7 +256542,7 @@
           "/out/daisy__scene__CAnimatedMeshMD2.o"
         ],
         "inputs": {
-          "src/daisy/scene/CAnimatedMeshMD2.cpp": "a1eda7f4f8627f2ea57fbd461fc228fcd0fd176f535e787fada7f7a6162d7ef8",
+          "src/daisy/scene/CAnimatedMeshMD2.cpp": "59bb5a712e7e49c58e5d47e696acc2c0bb364b2a4065e3698094a796ffa24e17",
           "src/ox/core/CAabbox3d.h": "3be9d1976a8a982ae40cd59e9d7913387a4b9b389b35f777c1e6ac405da5b28f",
           "src/ox/core/CVector3d.h": "65b36a6dbf77658e1517a5c7bc39a59d683a873b8404a6252f71ff8eca2fc393",
           "src/ox/core/CPlane3d.h": "99dbac882183ad9a3060d6f4b37ead835ca4c22e891c75e250f8d81441e121c9",
@@ -256046,9 +256576,9 @@
           "src/ox/video/../core/CRect.h": "dc28c4a09cf6dd0f55e240c33ee8cc391271bb36d37231b60b8db6201788e5df"
         },
         "system_headers": 114,
-        "object_sha256": "7c59c052e6b704c3ce4b49014bc210cf13a143d2b4a459f2eb64ce5abc4ad979"
+        "object_sha256": "eb9ef8cc0a5bff30f606a17cc9a6b5ff9c62f4ab87951bb8c7a13ea8a1d85e63"
       },
-      "fuzzy_target_sha256": "dd7775f37e25e4fd9203d991fa5018f6014a2825ea9bc6c517e4b8b7ffda890a",
+      "fuzzy_target_sha256": "d91c232bf4a1201cd38428d2fd93a89eacfa69e0b9e39cc73deb233976273b56",
       "fuzzy_functions": [
         {
           "address": "0x5c91b0",
@@ -256219,6 +256749,12 @@
           "percent": 100.0
         },
         {
+          "address": "0x5c9920",
+          "size": 290,
+          "symbol": "_ZN5daisy5scene16CAnimatedMeshMD220calculateBoundingBoxEv",
+          "percent": 100.0
+        },
+        {
           "address": "0x5c9a50",
           "size": 6,
           "symbol": "_ZThn24_N5daisy5scene16CAnimatedMeshMD215setMaterialFlagEN2ox5video15E_MATERIAL_FLAGEb",
@@ -256309,33 +256845,9 @@
           "percent": 100.0
         },
         {
-          "address": "0x5c9920",
-          "size": 290,
-          "symbol": "_ZN5daisy5scene16CAnimatedMeshMD220calculateBoundingBoxEv",
-          "percent": 0.5970149
-        },
-        {
-          "address": "0x5ca220",
-          "size": 4274,
-          "symbol": "_ZN5daisy5scene16CAnimatedMeshMD28loadFileEPN2ox2io9IReadFileE",
-          "percent": 0.045095827
-        },
-        {
-          "address": "0x5c9f10",
-          "size": 6,
-          "symbol": "_ZThn48_N5daisy5scene16CAnimatedMeshMD2D0Ev",
-          "percent": 100.0
-        },
-        {
-          "address": "0x5c9f20",
-          "size": 6,
-          "symbol": "_ZThn24_N5daisy5scene16CAnimatedMeshMD2D0Ev",
-          "percent": 100.0
-        },
-        {
-          "address": "0x5c9f30",
-          "size": 240,
-          "symbol": "_ZN5daisy5scene16CAnimatedMeshMD2D0Ev",
+          "address": "0x5ca020",
+          "size": 233,
+          "symbol": "_ZN5daisy5scene16CAnimatedMeshMD2D2Ev",
           "percent": 100.0
         },
         {
@@ -256357,10 +256869,28 @@
           "percent": 100.0
         },
         {
-          "address": "0x5ca020",
-          "size": 233,
-          "symbol": "_ZN5daisy5scene16CAnimatedMeshMD2D2Ev",
+          "address": "0x5c9f10",
+          "size": 6,
+          "symbol": "_ZThn48_N5daisy5scene16CAnimatedMeshMD2D0Ev",
           "percent": 100.0
+        },
+        {
+          "address": "0x5c9f20",
+          "size": 6,
+          "symbol": "_ZThn24_N5daisy5scene16CAnimatedMeshMD2D0Ev",
+          "percent": 100.0
+        },
+        {
+          "address": "0x5c9f30",
+          "size": 240,
+          "symbol": "_ZN5daisy5scene16CAnimatedMeshMD2D0Ev",
+          "percent": 100.0
+        },
+        {
+          "address": "0x5ca220",
+          "size": 4274,
+          "symbol": "_ZN5daisy5scene16CAnimatedMeshMD28loadFileEPN2ox2io9IReadFileE",
+          "percent": 71.05637
         },
         {
           "address": "0x466870",
@@ -256426,6 +256956,42 @@
           "address": "0x545aa0",
           "size": 12,
           "symbol": "_ZN2ox5scene13IAnimatedMeshD0Ev",
+          "percent": 100.0
+        },
+        {
+          "address": "0x545720",
+          "size": 879,
+          "symbol": "_ZNSt6vectorIN2ox5video9S3DVertexESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_",
+          "percent": 93.27092
+        },
+        {
+          "address": "0x57ead0",
+          "size": 635,
+          "symbol": "_ZNSt6vectorIN2ox4core9CVector3dIfEESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+          "percent": 100.0
+        },
+        {
+          "address": "0x564eb0",
+          "size": 749,
+          "symbol": "_ZNSt6vectorIN2ox4core9CAabbox3dIfEESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+          "percent": 100.0
+        },
+        {
+          "address": "0x5701e0",
+          "size": 274,
+          "symbol": "_ZNSt6vectorIN2ox5video9S3DVertexESaIS2_EE7reserveEm",
+          "percent": 0
+        },
+        {
+          "address": "0x570760",
+          "size": 200,
+          "symbol": "_ZNSt6vectorItSaItEE7reserveEm",
+          "percent": 0
+        },
+        {
+          "address": "0x4d4f10",
+          "size": 380,
+          "symbol": "_ZNSt6vectorItSaItEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPtS1_EERKt",
           "percent": 100.0
         }
       ]
@@ -292660,7 +293226,7 @@
     "config": {
       "functionRelocDiffs": "data_value"
     },
-    "report_sha256": "98333565e6478a738cd7521e9d279aeea78f82753bb274f24c5dc671bd07a01e"
+    "report_sha256": "1c7a0908e9e1e9c32fe4983516ef1e58633123aadffea2d7a1a3ca17083a9c9d"
   },
   "link": {
     "status": "unavailable",
