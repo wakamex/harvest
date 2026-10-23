@@ -101,8 +101,32 @@ void CSceneCollisionManager::getPickedNodeBB(ISceneNode* root,
 									   float& outbestdistance,
 									   ISceneNode*& outbestnode)
 {
-    // Not recovered: Irrlicht 0.7's body does not compile against daisy's interfaces.
-    __builtin_trap();
+	const ox::TList<ISceneNode*>& children = root->getChildren();
+
+	ox::TList<ISceneNode*>::const_iterator it = children.begin();
+
+	for (; it != children.end(); ++it)
+	{
+		ISceneNode* current = *it;
+
+		if (current->isVisible() &&
+			(bits==0 || (bits != 0 && (current->getID() & bits))))
+		{
+			if (current->getTransformedBoundingBox().intersectsWithLine(
+				linemiddle, linevect, halflength))
+			{
+				float dist = 	(float)current->getAbsolutePosition().getDistanceFrom(pos);
+				if (dist < outbestdistance)
+				{
+					outbestnode = current;
+					outbestdistance = dist;
+				}
+			}
+		}
+
+		getPickedNodeBB(current, linemiddle, linevect, pos,
+			halflength, bits, outbestdistance, outbestnode);
+	}
 }
 
 
@@ -237,7 +261,7 @@ void CSceneCollisionManager::testTriangleIntersection(SCollisionData* colData,
 		}
 
 		// if we havent found a collision already we will have to sweep
-		// the sphere against points and edges of the triangle. Note: ox::core::A
+		// the sphere against points and edges of the triangle. Note: A
 		// collision inside the triangle will always happen before a
 		// vertex or edge collision.
 

@@ -12,6 +12,8 @@
 #include "ox/scene/IMeshBuffer.h"
 #include "ox/scene/SViewFrustrum.h"
 #include "ox/event/ILogger.h"
+#include "ox/video/ColorPacking.h"
+#include "ox/video/S3DVertexInline.h"
 #include "ox/video/S3DVertex.h"
 #include <stdio.h>
 #include "daisy/os.h"

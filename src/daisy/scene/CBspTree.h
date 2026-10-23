@@ -75,7 +75,7 @@ using namespace ox::scene;
 			unsigned int material;      // number of material index
 
 			bool operator==(const BspPoly& other) const
-{
+			{
     // Not recovered: Irrlicht 0.7's body does not compile against daisy's interfaces.
     __builtin_trap();
 }
