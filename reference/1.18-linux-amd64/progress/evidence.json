@@ -19,7 +19,7 @@
     "tools/hv/objdiff.py": "13fa221740693a00a37134a133ddf96297d3efa7421e0d5af57a8b96b0abfcb5",
     "tools/hv/delink.py": "973dd463d7e8d0ec81ddf5977cad3154501fe559559442515e50857e8ef9b9cf",
     "config/1.18-linux-amd64/flags.json": "9ebb8c16c904108ddb5cbaa50345a733d400ee2bd3994c72e5545e676fb03ad8",
-    "config/1.18-linux-amd64/symbols.tsv": "32253efe942b9438d0de22f9d7655c905a77ad57a32cfcb7b7f9519382e09451",
+    "config/1.18-linux-amd64/symbols.tsv": "a1e1e50f132a57b9975da6aee75973e660614f20c8576d0004811fe4e9b805a9",
     "config/1.18-linux-amd64/extents.tsv": "55dd5b29374ba204f2ddf66df2c6fbe9cf434a68cd559196f1a3331c4911a20b",
     "config/1.18-linux-amd64/units.toml": "9d23aa413394390c65d7b83e5cc5bc4ae20933a388484b9a4efb9f128609d0cf"
   },
@@ -242561,36 +242561,14 @@
     {
       "unit": "daisy/scene/CDefaultMeshFormatLoader.cpp",
       "object_sha256": "a46ed8cf3a46bec797cda31a96bcb359d9a49f91663e6f457f71eb9af7791f59",
-      "exact": false,
+      "exact": true,
       "sections": [
         {
           "name": ".text",
           "size": 1130,
           "placement": "symbol: _ZN5daisy5scene24CDefaultMeshFormatLoaderC2EPN2ox2io11IFileSystemEPNS2_5video12IVideoDriverE",
-          "exact": false,
+          "exact": true,
           "address": "0x556780",
-          "first_difference": 1026,
-          "differing_bytes": 6,
-          "bad_references": [
-            {
-              "offset": 1026,
-              "type": 2,
-              "symbol": "_ZN5daisy5scene12CQ3LevelMeshC1EPN2ox2io11IFileSystemEPNS2_5video12IVideoDriverE",
-              "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "0x570ef0",
-              "matches": false
-            },
-            {
-              "offset": 1040,
-              "type": 2,
-              "symbol": "_ZN5daisy5scene12CQ3LevelMesh8loadFileEPN2ox2io9IReadFileE",
-              "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "0x573e90",
-              "matches": false
-            }
-          ],
           "references": 48,
           "functions": [
             {
@@ -242655,18 +242633,7 @@
               "size": 554,
               "extent": "fde",
               "global": true,
-              "exact": false,
-              "exact_but_unknown": true,
-              "candidates": [
-                [
-                  "_ZN5daisy5scene12CQ3LevelMeshC1EPN2ox2io11IFileSystemEPNS2_5video12IVideoDriverE",
-                  "0x570ef0"
-                ],
-                [
-                  "_ZN5daisy5scene12CQ3LevelMesh8loadFileEPN2ox2io9IReadFileE",
-                  "0x573e90"
-                ]
-              ]
+              "exact": true
             }
           ],
           "data_ranges": [
@@ -243020,7 +242987,7 @@
         "system_headers": 123,
         "object_sha256": "a46ed8cf3a46bec797cda31a96bcb359d9a49f91663e6f457f71eb9af7791f59"
       },
-      "fuzzy_target_sha256": "1e30395aa24c8c253e3d1bcf2f7f672eb4158623d413dae09914ecf9f66986a1",
+      "fuzzy_target_sha256": "fc1d5f4048533b94a2cb390d6d57500a1b4cff5fb17ac8bbad9fbce85b81cd9f",
       "fuzzy_functions": [
         {
           "address": "0x556780",
@@ -243068,7 +243035,7 @@
           "address": "0x5569c0",
           "size": 554,
           "symbol": "_ZN5daisy5scene24CDefaultMeshFormatLoader10createMeshEPN2ox2io9IReadFileE",
-          "percent": 99.939026
+          "percent": 100.0
         },
         {
           "address": "0x466870",
@@ -264356,65 +264323,30 @@
     },
     {
       "unit": "daisy/scene/CAnimatedMeshSceneNode.cpp",
-      "object_sha256": "b8df5948903a0b2d71f9407cee0e11c5bd5564f3b70e668d3917dd74a8f4d60d",
+      "object_sha256": "a4209419c26032cad97deeeaefa548022891cc67731bba0cb4cf0ae8efac361b",
       "exact": false,
       "sections": [
         {
           "name": ".text",
-          "size": 10141,
+          "size": 10461,
           "placement": "symbol: _ZN5daisy5scene22CAnimatedMeshSceneNode15setCurrentFrameEi",
           "exact": false,
           "address": "0x547400",
           "first_difference": 56,
-          "differing_bytes": 207,
+          "differing_bytes": 205,
           "misplaced_symbols": [
-            {
-              "symbol": "_ZN5daisy5scene22CAnimatedMeshSceneNode16getMS3DJointNodeEPKc",
-              "known": "0x547da0",
-              "placed": "0x547ab0"
-            },
-            {
-              "symbol": "_ZN5daisy5scene22CAnimatedMeshSceneNode24addShadowVolumeSceneNodeEibf",
-              "known": "0x547ab0",
-              "placed": "0x547ac0"
-            },
-            {
-              "symbol": "_ZN5daisy5scene22CAnimatedMeshSceneNode11OnPreRenderEv",
-              "known": "0x547b80",
-              "placed": "0x547b90"
-            },
-            {
-              "symbol": "_ZN5daisy5scene22CAnimatedMeshSceneNode11removeChildEPN2ox5scene10ISceneNodeE",
-              "known": "0x547c60",
-              "placed": "0x547c70"
-            },
             {
               "symbol": "_ZN5daisy5scene22CAnimatedMeshSceneNodeC2EPN2ox5scene13IAnimatedMeshEPNS3_10ISceneNodeEPNS3_13ISceneManagerEiRKNS2_4core9CVector3dIfEESE_SE_",
               "known": "0x548a20",
-              "placed": "0x547db0"
+              "placed": "0x547ef0"
             },
             {
               "symbol": "_ZN5daisy5scene22CAnimatedMeshSceneNodeC1EPN2ox5scene13IAnimatedMeshEPNS3_10ISceneNodeEPNS3_13ISceneManagerEiRKNS2_4core9CVector3dIfEESE_SE_",
               "known": "0x547ef0",
-              "placed": "0x5488e0"
-            },
-            {
-              "symbol": "_ZN5daisy5scene22CAnimatedMeshSceneNodeD2Ev",
-              "known": "0x549550",
-              "placed": "0x549410"
-            },
-            {
-              "symbol": "_ZN5daisy5scene22CAnimatedMeshSceneNodeD0Ev",
-              "known": "0x5497d0",
-              "placed": "0x549690"
-            },
-            {
-              "symbol": "_ZN5daisy5scene22CAnimatedMeshSceneNodeD1Ev",
-              "known": "0x549a60",
-              "placed": "0x549920"
+              "placed": "0x548a20"
             }
           ],
-          "references": 100,
+          "references": 103,
           "functions": [
             {
               "symbol": "_ZN5daisy5scene22CAnimatedMeshSceneNode15setCurrentFrameEi",
@@ -264505,14 +264437,6 @@
               "exact": true
             },
             {
-              "symbol": "_ZN5daisy5scene22CAnimatedMeshSceneNode16getMS3DJointNodeEPKc",
-              "address": "0x547da0",
-              "size": 2,
-              "extent": null,
-              "global": true,
-              "exact": false
-            },
-            {
               "symbol": "_ZN5daisy5scene22CAnimatedMeshSceneNode24addShadowVolumeSceneNodeEibf",
               "address": "0x547ab0",
               "size": 198,
@@ -264532,6 +264456,14 @@
               "symbol": "_ZN5daisy5scene22CAnimatedMeshSceneNode11removeChildEPN2ox5scene10ISceneNodeE",
               "address": "0x547c60",
               "size": 313,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            },
+            {
+              "symbol": "_ZN5daisy5scene22CAnimatedMeshSceneNode16getMS3DJointNodeEPKc",
+              "address": "0x547da0",
+              "size": 331,
               "extent": "fde",
               "global": true,
               "exact": true
@@ -264581,6 +264513,11 @@
             {
               "address": "0x6187e0",
               "size": 32,
+              "kind": "merged string"
+            },
+            {
+              "address": "0x618800",
+              "size": 50,
               "kind": "merged string"
             }
           ]
@@ -265213,24 +265150,6 @@
           ]
         },
         {
-          "name": ".text._ZN2ox5scene10ISceneNodeD0Ev",
-          "size": 373,
-          "placement": "symbol: _ZN2ox5scene10ISceneNodeD0Ev",
-          "exact": true,
-          "address": "0x4c8b00",
-          "references": 11,
-          "functions": [
-            {
-              "symbol": "_ZN2ox5scene10ISceneNodeD0Ev",
-              "address": "0x4c8b00",
-              "size": 373,
-              "extent": "fde",
-              "global": true,
-              "exact": true
-            }
-          ]
-        },
-        {
           "name": ".text._ZN2ox5scene10ISceneNodeD1Ev",
           "size": 361,
           "placement": "symbol: _ZN2ox5scene10ISceneNodeD1Ev",
@@ -265260,6 +265179,24 @@
               "symbol": "_ZN2ox5scene10ISceneNodeD2Ev",
               "address": "0x4c8e20",
               "size": 361,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ]
+        },
+        {
+          "name": ".text._ZN2ox5scene10ISceneNodeD0Ev",
+          "size": 373,
+          "placement": "symbol: _ZN2ox5scene10ISceneNodeD0Ev",
+          "exact": true,
+          "address": "0x4c8b00",
+          "references": 11,
+          "functions": [
+            {
+              "symbol": "_ZN2ox5scene10ISceneNodeD0Ev",
+              "address": "0x4c8b00",
+              "size": 373,
               "extent": "fde",
               "global": true,
               "exact": true
@@ -265299,6 +265236,31 @@
               "extent": "fde",
               "global": true,
               "exact": true
+            }
+          ]
+        },
+        {
+          "name": ".text._ZNSt6vectorIPN2ox5scene29IDummyTransformationSceneNodeESaIS3_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS3_S5_EEmRKS3_",
+          "size": 591,
+          "placement": "symbol: _ZNSt6vectorIPN2ox5scene29IDummyTransformationSceneNodeESaIS3_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS3_S5_EEmRKS3_",
+          "exact": true,
+          "address": "0x54a110",
+          "references": 9,
+          "functions": [
+            {
+              "symbol": "_ZNSt6vectorIPN2ox5scene29IDummyTransformationSceneNodeESaIS3_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS3_S5_EEmRKS3_",
+              "address": "0x54a110",
+              "size": 591,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ],
+          "data_ranges": [
+            {
+              "address": "0x60fc71",
+              "size": 23,
+              "kind": "merged string"
             }
           ]
         },
@@ -265541,7 +265503,7 @@
           "/out/daisy__scene__CAnimatedMeshSceneNode.o"
         ],
         "inputs": {
-          "src/daisy/scene/CAnimatedMeshSceneNode.cpp": "9cba909032232515a60d9ed99b7699194372241350ab99fd5f8e1cc11963a66a",
+          "src/daisy/scene/CAnimatedMeshSceneNode.cpp": "0bfbfcae35237fe21c2e22ad5553f0b0970da1748730dcd5773645bd3a2a7274",
           "src/ox/core/CAabbox3d.h": "3be9d1976a8a982ae40cd59e9d7913387a4b9b389b35f777c1e6ac405da5b28f",
           "src/ox/core/CVector3d.h": "65b36a6dbf77658e1517a5c7bc39a59d683a873b8404a6252f71ff8eca2fc393",
           "src/ox/core/CPlane3d.h": "99dbac882183ad9a3060d6f4b37ead835ca4c22e891c75e250f8d81441e121c9",
@@ -265601,9 +265563,9 @@
           "src/ox/scene/IAnimatedMeshX.h": "bf752ac65aea7bdcd99c67a6983526f9aaec6def20feec17813cb45520f1408e"
         },
         "system_headers": 117,
-        "object_sha256": "b8df5948903a0b2d71f9407cee0e11c5bd5564f3b70e668d3917dd74a8f4d60d"
+        "object_sha256": "a4209419c26032cad97deeeaefa548022891cc67731bba0cb4cf0ae8efac361b"
       },
-      "fuzzy_target_sha256": "ea39f287e5080645ddc74a67df94a8810311c61dcd07042f8a32ee4cfbe7a27d",
+      "fuzzy_target_sha256": "7041799f0dd9ccc09f645dbf01c414b3353f550607778b7f3f2cf79499a3d1d8",
       "fuzzy_functions": [
         {
           "address": "0x547400",
@@ -265672,12 +265634,6 @@
           "percent": 100.0
         },
         {
-          "address": "0x547da0",
-          "size": 331,
-          "symbol": "_ZN5daisy5scene22CAnimatedMeshSceneNode16getMS3DJointNodeEPKc",
-          "percent": 0.51282054
-        },
-        {
           "address": "0x547ab0",
           "size": 198,
           "symbol": "_ZN5daisy5scene22CAnimatedMeshSceneNode24addShadowVolumeSceneNodeEibf",
@@ -265693,6 +265649,12 @@
           "address": "0x547c60",
           "size": 313,
           "symbol": "_ZN5daisy5scene22CAnimatedMeshSceneNode11removeChildEPN2ox5scene10ISceneNodeE",
+          "percent": 100.0
+        },
+        {
+          "address": "0x547da0",
+          "size": 331,
+          "symbol": "_ZN5daisy5scene22CAnimatedMeshSceneNode16getMS3DJointNodeEPKc",
           "percent": 100.0
         },
         {
@@ -265912,12 +265874,6 @@
           "percent": 100.0
         },
         {
-          "address": "0x4c8b00",
-          "size": 373,
-          "symbol": "_ZN2ox5scene10ISceneNodeD0Ev",
-          "percent": 100.0
-        },
-        {
           "address": "0x4c8f90",
           "size": 361,
           "symbol": "_ZN2ox5scene10ISceneNodeD1Ev",
@@ -265930,6 +265886,12 @@
           "percent": 100.0
         },
         {
+          "address": "0x4c8b00",
+          "size": 373,
+          "symbol": "_ZN2ox5scene10ISceneNodeD0Ev",
+          "percent": 100.0
+        },
+        {
           "address": "0x4c92a0",
           "size": 98,
           "symbol": "_ZN2ox5scene10ISceneNode14removeAnimatorEPNS0_18ISceneNodeAnimatorE",
@@ -265939,6 +265901,12 @@
           "address": "0x4c9310",
           "size": 100,
           "symbol": "_ZN2ox5scene10ISceneNode11removeChildEPS1_",
+          "percent": 100.0
+        },
+        {
+          "address": "0x54a110",
+          "size": 591,
+          "symbol": "_ZNSt6vectorIPN2ox5scene29IDummyTransformationSceneNodeESaIS3_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS3_S5_EEmRKS3_",
           "percent": 100.0
         },
         {
@@ -269061,37 +269029,56 @@
     },
     {
       "unit": "daisy/scene/CQ3LevelMesh.cpp",
-      "object_sha256": "5a4dfad33d4e991229ebff32c927bca7ab1763d57d396e14e3f7853dbd77c1eb",
+      "object_sha256": "dc494ccc013bb5226e237dd0cf10b95f8880f577927fa5379a916d61513bb072",
       "exact": false,
       "sections": [
         {
           "name": ".text",
-          "size": 3808,
+          "size": 15248,
           "placement": "symbol: _ZN5daisy5scene12CQ3LevelMesh13getFrameCountEv",
           "exact": false,
           "address": "0x570b20",
-          "first_difference": 272,
-          "differing_bytes": 1661,
+          "first_difference": 1825,
+          "differing_bytes": 7173,
           "misplaced_symbols": [
+            {
+              "symbol": "_ZN5daisy5scene12CQ3LevelMesh13constructMeshEv",
+              "known": "0x573560",
+              "placed": "0x5735a0"
+            },
+            {
+              "symbol": "_ZN5daisy5scene12CQ3LevelMesh8loadFileEPN2ox2io9IReadFileE",
+              "known": "0x573e90",
+              "placed": "0x573ed0"
+            },
             {
               "symbol": "_ZN5daisy5scene12CQ3LevelMeshD0Ev",
               "known": "0x574060",
-              "placed": "0x5713f0"
+              "placed": "0x5740a0"
             },
             {
               "symbol": "_ZN5daisy5scene12CQ3LevelMeshD1Ev",
               "known": "0x574270",
-              "placed": "0x571600"
+              "placed": "0x5742b0"
             },
             {
               "symbol": "_ZN5daisy5scene12CQ3LevelMeshD2Ev",
               "known": "0x574470",
-              "placed": "0x571800"
+              "placed": "0x5744b0"
             }
           ],
           "bad_references": [
             {
-              "offset": 370,
+              "offset": 2245,
+              "type": 2,
+              "symbol": "_ZNSt6vectorIPN2ox5video8ITextureESaIS3_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS3_S5_EEmRKS3_",
+              "addend": -4,
+              "reason": "no target address for symbol",
+              "candidate": "0x451e5be9",
+              "matches": false
+            },
+            {
+              "offset": 2428,
               "type": 2,
               "symbol": "_Znam",
               "addend": -4,
@@ -269100,52 +269087,7 @@
               "matches": false
             },
             {
-              "offset": 519,
-              "type": 2,
-              "symbol": "_Znam",
-              "addend": -4,
-              "destination": "0x407128",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 663,
-              "type": 2,
-              "symbol": "_Znam",
-              "addend": -4,
-              "destination": "0x407128",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 803,
-              "type": 2,
-              "symbol": "_Znam",
-              "addend": -4,
-              "destination": "0x407128",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 947,
-              "type": 2,
-              "symbol": "_Znam",
-              "addend": -4,
-              "destination": "0x407128",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 1146,
-              "type": 2,
-              "symbol": "_Znam",
-              "addend": -4,
-              "destination": "0x407128",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 1211,
+              "offset": 2478,
               "type": 2,
               "symbol": "_ZdaPv",
               "addend": -4,
@@ -269154,15 +269096,132 @@
               "matches": false
             },
             {
-              "offset": 1268,
-              "type": 10,
-              "symbol": ".rodata.str1.8",
-              "addend": 0,
-              "reason": "unmapped or truncated range: 0x245c0344+0x2a",
+              "offset": 2670,
+              "type": 2,
+              "symbol": "_ZdlPv",
+              "addend": -4,
+              "destination": "0x407b48",
+              "reason": "different destination",
               "matches": false
             },
             {
-              "offset": 1273,
+              "offset": 2685,
+              "type": 2,
+              "symbol": "_ZdlPv",
+              "addend": -4,
+              "destination": "0x407b48",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 2700,
+              "type": 2,
+              "symbol": "_ZdaPv",
+              "addend": -4,
+              "destination": "0x407f58",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 2715,
+              "type": 2,
+              "symbol": "_ZdaPv",
+              "addend": -4,
+              "destination": "0x407f58",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 2728,
+              "type": 2,
+              "symbol": "_ZdaPv",
+              "addend": -4,
+              "destination": "0x407f58",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 2770,
+              "type": 2,
+              "symbol": "__stack_chk_fail",
+              "addend": -4,
+              "destination": "0x407d58",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 2788,
+              "type": 2,
+              "symbol": "_ZdaPv",
+              "addend": -4,
+              "destination": "0x407f58",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 2803,
+              "type": 2,
+              "symbol": "_ZdaPv",
+              "addend": -4,
+              "destination": "0x407f58",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 2816,
+              "type": 2,
+              "symbol": "_ZdaPv",
+              "addend": -4,
+              "destination": "0x407f58",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 2824,
+              "type": 2,
+              "symbol": "_Unwind_Resume",
+              "addend": -4,
+              "destination": "0x4084f8",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 2872,
+              "type": 2,
+              "symbol": "_ZdaPv",
+              "addend": -4,
+              "destination": "0x407f58",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 2889,
+              "type": 2,
+              "symbol": "_Znam",
+              "addend": -4,
+              "destination": "0x407128",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 2955,
+              "type": 2,
+              "symbol": "_ZdaPv",
+              "addend": -4,
+              "destination": "0x407f58",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 3016,
+              "type": 10,
+              "symbol": ".rodata.str1.8",
+              "addend": 0,
+              "reason": "unmapped or truncated range: 0x89481024+0x22",
+              "matches": false
+            },
+            {
+              "offset": 3021,
               "type": 2,
               "symbol": "_ZN5daisy2os7Printer3logEPKcS3_N2ox5event10ELOG_LEVELE",
               "addend": -4,
@@ -269171,7 +269230,7 @@
               "matches": false
             },
             {
-              "offset": 1319,
+              "offset": 3071,
               "type": 2,
               "symbol": "_Znam",
               "addend": -4,
@@ -269180,160 +269239,219 @@
               "matches": false
             },
             {
-              "offset": 1382,
+              "offset": 3175,
               "type": 2,
-              "symbol": "_ZN5daisy5scene12CQ3LevelMesh12loadTexturesEPNS1_8tBSPLumpEPN2ox2io9IReadFileE",
+              "symbol": "_ZNSt6vectorIPN2ox5video8ITextureESaIS3_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS3_S5_EEmRKS3_",
               "addend": -4,
-              "destination": "0x571210",
-              "reason": "different destination",
+              "reason": "no target address for symbol",
+              "candidate": "0x57178b",
               "matches": false
             },
             {
-              "offset": 1400,
+              "offset": 3304,
+              "type": 10,
+              "symbol": ".rodata.str1.1",
+              "addend": 33,
+              "reason": "unmapped or truncated range: 0x48000000+0xf",
+              "matches": false
+            },
+            {
+              "offset": 3327,
               "type": 2,
-              "symbol": "_ZN5daisy5scene12CQ3LevelMesh13loadLightmapsEPNS1_8tBSPLumpEPN2ox2io9IReadFileE",
+              "symbol": "__sprintf_chk",
               "addend": -4,
-              "destination": "0x571080",
+              "destination": "0x4076c8",
               "reason": "different destination",
               "matches": false
             },
             {
-              "offset": 1415,
+              "offset": 3406,
+              "type": 10,
+              "symbol": ".rodata.str1.8",
+              "addend": 40,
+              "reason": "unmapped or truncated range: 0x448b4800+0x20",
+              "matches": false
+            },
+            {
+              "offset": 3413,
               "type": 2,
-              "symbol": "_ZN5daisy5scene12CQ3LevelMesh9loadVertsEPNS1_8tBSPLumpEPN2ox2io9IReadFileE",
+              "symbol": "_ZN5daisy2os7Printer3logEPKcN2ox5event10ELOG_LEVELEz",
               "addend": -4,
-              "destination": "0x570ef0",
+              "destination": "0x4c2060",
               "reason": "different destination",
               "matches": false
             },
             {
-              "offset": 1433,
+              "offset": 3758,
+              "type": 10,
+              "symbol": ".rodata.str1.8",
+              "addend": 72,
+              "reason": "unmapped or truncated range: 0xe8c03100+0x37",
+              "matches": false
+            },
+            {
+              "offset": 3765,
               "type": 2,
-              "symbol": "_ZN5daisy5scene12CQ3LevelMesh9loadFacesEPNS1_8tBSPLumpEPN2ox2io9IReadFileE",
+              "symbol": "_ZN5daisy2os7Printer3logEPKcN2ox5event10ELOG_LEVELEz",
               "addend": -4,
-              "destination": "0x570e60",
+              "destination": "0x4c2060",
               "reason": "different destination",
               "matches": false
             },
             {
-              "offset": 1448,
+              "offset": 3803,
+              "type": 10,
+              "symbol": ".rodata.str1.8",
+              "addend": 128,
+              "reason": "unmapped or truncated range: 0x246c8b4c+0x36",
+              "matches": false
+            },
+            {
+              "offset": 3810,
               "type": 2,
-              "symbol": "_ZN5daisy5scene12CQ3LevelMesh13loadMeshVertsEPNS1_8tBSPLumpEPN2ox2io9IReadFileE",
+              "symbol": "_ZN5daisy2os7Printer3logEPKcN2ox5event10ELOG_LEVELEz",
               "addend": -4,
-              "destination": "0x570dd0",
+              "destination": "0x4c2060",
               "reason": "different destination",
               "matches": false
             },
             {
-              "offset": 1486,
-              "type": 11,
-              "symbol": "_ZTVN5daisy5scene12CQ3LevelMeshE",
-              "addend": 16,
-              "destination": "0x61afe0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 1628,
-              "type": 11,
-              "symbol": "_ZTVN2ox5scene5SMeshE",
-              "addend": 16,
-              "destination": "0x6185a0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 1769,
+              "offset": 4078,
               "type": 2,
-              "symbol": "_Znam",
+              "symbol": "memmove",
               "addend": -4,
-              "destination": "0x407128",
+              "destination": "0x408398",
               "reason": "different destination",
               "matches": false
             },
             {
-              "offset": 1833,
+              "offset": 4188,
               "type": 2,
-              "symbol": "_ZN2ox5scene5SMeshD1Ev",
+              "symbol": "_ZdlPv",
               "addend": -4,
-              "destination": "0x545c40",
+              "destination": "0x407b48",
               "reason": "different destination",
               "matches": false
             },
             {
-              "offset": 1840,
-              "type": 11,
-              "symbol": "_ZTVN2ox8IUnknownE",
-              "addend": 16,
-              "destination": "0x5f99c0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 1848,
+              "offset": 4211,
               "type": 2,
-              "symbol": "_Unwind_Resume",
+              "symbol": "_ZdlPv",
               "addend": -4,
-              "destination": "0x4084f8",
+              "destination": "0x407b48",
               "reason": "different destination",
               "matches": false
             },
             {
-              "offset": 1886,
-              "type": 11,
-              "symbol": "_ZTVN5daisy5scene12CQ3LevelMeshE",
-              "addend": 16,
-              "destination": "0x61afe0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 2028,
-              "type": 11,
-              "symbol": "_ZTVN2ox5scene5SMeshE",
-              "addend": 16,
-              "destination": "0x6185a0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 2169,
+              "offset": 9986,
               "type": 2,
-              "symbol": "_Znam",
+              "symbol": "_ZNSt6vectorItSaItEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPtS1_EERKt",
               "addend": -4,
-              "destination": "0x407128",
+              "destination": "0x4d4f10",
               "reason": "different destination",
               "matches": false
             },
             {
-              "offset": 2233,
+              "offset": 10055,
               "type": 2,
-              "symbol": "_ZN2ox5scene5SMeshD1Ev",
+              "symbol": "_ZNSt6vectorItSaItEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPtS1_EERKt",
               "addend": -4,
-              "destination": "0x545c40",
+              "destination": "0x4d4f10",
               "reason": "different destination",
               "matches": false
             },
             {
-              "offset": 2240,
-              "type": 11,
-              "symbol": "_ZTVN2ox8IUnknownE",
-              "addend": 16,
-              "destination": "0x5f99c0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 2248,
+              "offset": 10132,
               "type": 2,
-              "symbol": "_Unwind_Resume",
+              "symbol": "_ZNSt6vectorItSaItEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPtS1_EERKt",
               "addend": -4,
-              "destination": "0x4084f8",
+              "destination": "0x4d4f10",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 10209,
+              "type": 2,
+              "symbol": "_ZNSt6vectorItSaItEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPtS1_EERKt",
+              "addend": -4,
+              "destination": "0x4d4f10",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 10286,
+              "type": 2,
+              "symbol": "_ZNSt6vectorItSaItEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPtS1_EERKt",
+              "addend": -4,
+              "destination": "0x4d4f10",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 10363,
+              "type": 2,
+              "symbol": "_ZNSt6vectorItSaItEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPtS1_EERKt",
+              "addend": -4,
+              "destination": "0x4d4f10",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 10443,
+              "type": 2,
+              "symbol": "_ZNSt6vectorIN2ox5video17S3DVertex2TCoordsESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_",
+              "addend": -4,
+              "destination": "0x4d3270",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 10512,
+              "type": 2,
+              "symbol": "_ZNSt6vectorIN2ox5video17S3DVertex2TCoordsESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_",
+              "addend": -4,
+              "destination": "0x4d3270",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 10589,
+              "type": 2,
+              "symbol": "_ZNSt6vectorIN2ox5video17S3DVertex2TCoordsESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_",
+              "addend": -4,
+              "destination": "0x4d3270",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 10670,
+              "type": 2,
+              "symbol": "_ZNSt6vectorIN2ox5video17S3DVertex2TCoordsESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_",
+              "addend": -4,
+              "destination": "0x4d3270",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 10751,
+              "type": 2,
+              "symbol": "_ZNSt6vectorIN2ox5video17S3DVertex2TCoordsESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_",
+              "addend": -4,
+              "destination": "0x4d3270",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 10824,
+              "type": 2,
+              "symbol": "_ZNSt6vectorIN2ox5video17S3DVertex2TCoordsESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_",
+              "addend": -4,
+              "destination": "0x4d3270",
               "reason": "different destination",
               "matches": false
             }
           ],
-          "references": 100,
+          "references": 174,
           "functions": [
             {
               "symbol": "_ZN5daisy5scene12CQ3LevelMesh13getFrameCountEv",
@@ -269456,92 +269574,92 @@
               "exact": true
             },
             {
-              "symbol": "_ZN5daisy5scene12CQ3LevelMesh12loadTexturesEv",
+              "symbol": "_ZN5daisy5scene12CQ3LevelMesh13loadMeshVertsEPNS1_8tBSPLumpEPN2ox2io9IReadFileE",
               "address": "0x570c30",
-              "size": 2,
+              "size": 118,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            },
+            {
+              "symbol": "_ZN5daisy5scene12CQ3LevelMesh9loadFacesEPNS1_8tBSPLumpEPN2ox2io9IReadFileE",
+              "address": "0x570cb0",
+              "size": 139,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            },
+            {
+              "symbol": "_ZN5daisy5scene12CQ3LevelMesh9loadVertsEPNS1_8tBSPLumpEPN2ox2io9IReadFileE",
+              "address": "0x570d40",
+              "size": 139,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            },
+            {
+              "symbol": "_ZN5daisy5scene12CQ3LevelMesh13loadLightmapsEPNS1_8tBSPLumpEPN2ox2io9IReadFileE",
+              "address": "0x570dd0",
+              "size": 135,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            },
+            {
+              "symbol": "_ZN5daisy5scene12CQ3LevelMesh12loadTexturesEPNS1_8tBSPLumpEPN2ox2io9IReadFileE",
+              "address": "0x570e60",
+              "size": 135,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            },
+            {
+              "symbol": "_ZN5daisy5scene12CQ3LevelMeshC1EPN2ox2io11IFileSystemEPNS2_5video12IVideoDriverE",
+              "address": "0x570ef0",
+              "size": 396,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            },
+            {
+              "symbol": "_ZN5daisy5scene12CQ3LevelMeshC2EPN2ox2io11IFileSystemEPNS2_5video12IVideoDriverE",
+              "address": "0x571080",
+              "size": 396,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            },
+            {
+              "symbol": "_ZN5daisy5scene12CQ3LevelMesh12loadTexturesEv",
+              "address": "0x571210",
+              "size": 2441,
               "extent": null,
               "global": true,
               "exact": false
             },
             {
               "symbol": "_ZN5daisy5scene12CQ3LevelMesh19createCurvedSurfaceEPN2ox5scene19SMeshBufferLightMapEi",
-              "address": "0x570cb0",
-              "size": 2,
+              "address": "0x571b80",
+              "size": 6656,
               "extent": null,
               "global": true,
               "exact": false
             },
             {
               "symbol": "_ZN5daisy5scene12CQ3LevelMesh13constructMeshEv",
-              "address": "0x570d40",
-              "size": 2,
-              "extent": null,
+              "address": "0x573560",
+              "size": 2340,
+              "extent": "fde",
               "global": true,
-              "exact": false
-            },
-            {
-              "symbol": "_ZN5daisy5scene12CQ3LevelMesh13loadMeshVertsEPNS1_8tBSPLumpEPN2ox2io9IReadFileE",
-              "address": "0x570dd0",
-              "size": 118,
-              "extent": null,
-              "global": true,
-              "exact": false
-            },
-            {
-              "symbol": "_ZN5daisy5scene12CQ3LevelMesh9loadFacesEPNS1_8tBSPLumpEPN2ox2io9IReadFileE",
-              "address": "0x570e60",
-              "size": 139,
-              "extent": null,
-              "global": true,
-              "exact": false
-            },
-            {
-              "symbol": "_ZN5daisy5scene12CQ3LevelMesh9loadVertsEPNS1_8tBSPLumpEPN2ox2io9IReadFileE",
-              "address": "0x570ef0",
-              "size": 139,
-              "extent": null,
-              "global": true,
-              "exact": false
-            },
-            {
-              "symbol": "_ZN5daisy5scene12CQ3LevelMesh13loadLightmapsEPNS1_8tBSPLumpEPN2ox2io9IReadFileE",
-              "address": "0x571080",
-              "size": 135,
-              "extent": null,
-              "global": true,
-              "exact": false
-            },
-            {
-              "symbol": "_ZN5daisy5scene12CQ3LevelMesh12loadTexturesEPNS1_8tBSPLumpEPN2ox2io9IReadFileE",
-              "address": "0x571210",
-              "size": 135,
-              "extent": null,
-              "global": true,
-              "exact": false
+              "exact": true
             },
             {
               "symbol": "_ZN5daisy5scene12CQ3LevelMesh8loadFileEPN2ox2io9IReadFileE",
-              "address": "0x571b80",
-              "size": 430,
-              "extent": null,
-              "global": true,
-              "exact": false
-            },
-            {
-              "symbol": "_ZN5daisy5scene12CQ3LevelMeshC1EPN2ox2io11IFileSystemEPNS2_5video12IVideoDriverE",
-              "address": "0x573560",
-              "size": 396,
-              "extent": null,
-              "global": true,
-              "exact": false
-            },
-            {
-              "symbol": "_ZN5daisy5scene12CQ3LevelMeshC2EPN2ox2io11IFileSystemEPNS2_5video12IVideoDriverE",
               "address": "0x573e90",
-              "size": 396,
-              "extent": null,
+              "size": 459,
+              "extent": "fde",
               "global": true,
-              "exact": false
+              "exact": true
             },
             {
               "symbol": "_ZN5daisy5scene12CQ3LevelMeshD0Ev",
@@ -269566,6 +269684,83 @@
               "extent": "fde",
               "global": true,
               "exact": true
+            }
+          ],
+          "data_ranges": [
+            {
+              "address": "0x60fc64",
+              "size": 5,
+              "kind": "merged string"
+            },
+            {
+              "address": "0x60fc64",
+              "size": 5,
+              "kind": "merged string"
+            },
+            {
+              "address": "0x60fc64",
+              "size": 5,
+              "kind": "merged string"
+            },
+            {
+              "address": "0x60fc64",
+              "size": 5,
+              "kind": "merged string"
+            },
+            {
+              "address": "0x5f56d6",
+              "size": 5,
+              "kind": "merged string"
+            },
+            {
+              "address": "0x5f56d6",
+              "size": 5,
+              "kind": "merged string"
+            },
+            {
+              "address": "0x5f56d6",
+              "size": 5,
+              "kind": "merged string"
+            },
+            {
+              "address": "0x5f56d6",
+              "size": 5,
+              "kind": "merged string"
+            },
+            {
+              "address": "0x5ef0c8",
+              "size": 4,
+              "kind": "merged constant"
+            },
+            {
+              "address": "0x606048",
+              "size": 4,
+              "kind": "merged constant"
+            },
+            {
+              "address": "0x606048",
+              "size": 4,
+              "kind": "merged constant"
+            },
+            {
+              "address": "0x5ef0c8",
+              "size": 4,
+              "kind": "merged constant"
+            },
+            {
+              "address": "0x606048",
+              "size": 4,
+              "kind": "merged constant"
+            },
+            {
+              "address": "0x606048",
+              "size": 4,
+              "kind": "merged constant"
+            },
+            {
+              "address": "0x61afa0",
+              "size": 42,
+              "kind": "merged string"
             }
           ]
         },
@@ -269675,6 +269870,222 @@
           ]
         },
         {
+          "name": ".text._ZN2ox5scene11IMeshBufferD1Ev",
+          "size": 8,
+          "placement": "symbol: _ZN2ox5scene11IMeshBufferD1Ev",
+          "exact": true,
+          "address": "0x545520",
+          "references": 1,
+          "functions": [
+            {
+              "symbol": "_ZN2ox5scene11IMeshBufferD1Ev",
+              "address": "0x545520",
+              "size": 8,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ]
+        },
+        {
+          "name": ".text._ZNK2ox5scene19SMeshBufferLightMap11getMaterialEv",
+          "size": 5,
+          "placement": "symbol: _ZNK2ox5scene19SMeshBufferLightMap11getMaterialEv",
+          "exact": true,
+          "address": "0x55f200",
+          "references": 0,
+          "functions": [
+            {
+              "symbol": "_ZNK2ox5scene19SMeshBufferLightMap11getMaterialEv",
+              "address": "0x55f200",
+              "size": 5,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ]
+        },
+        {
+          "name": ".text._ZN2ox5scene19SMeshBufferLightMap11getMaterialEv",
+          "size": 5,
+          "placement": "symbol: _ZN2ox5scene19SMeshBufferLightMap11getMaterialEv",
+          "exact": true,
+          "address": "0x55f210",
+          "references": 0,
+          "functions": [
+            {
+              "symbol": "_ZN2ox5scene19SMeshBufferLightMap11getMaterialEv",
+              "address": "0x55f210",
+              "size": 5,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ]
+        },
+        {
+          "name": ".text._ZNK2ox5scene19SMeshBufferLightMap11getVerticesEv",
+          "size": 5,
+          "placement": "symbol: _ZNK2ox5scene19SMeshBufferLightMap11getVerticesEv",
+          "exact": true,
+          "address": "0x55f220",
+          "references": 0,
+          "functions": [
+            {
+              "symbol": "_ZNK2ox5scene19SMeshBufferLightMap11getVerticesEv",
+              "address": "0x55f220",
+              "size": 5,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ]
+        },
+        {
+          "name": ".text._ZN2ox5scene19SMeshBufferLightMap11getVerticesEv",
+          "size": 5,
+          "placement": "symbol: _ZN2ox5scene19SMeshBufferLightMap11getVerticesEv",
+          "exact": true,
+          "address": "0x55f230",
+          "references": 0,
+          "functions": [
+            {
+              "symbol": "_ZN2ox5scene19SMeshBufferLightMap11getVerticesEv",
+              "address": "0x55f230",
+              "size": 5,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ]
+        },
+        {
+          "name": ".text._ZNK2ox5scene19SMeshBufferLightMap14getVertexCountEv",
+          "size": 27,
+          "placement": "symbol: _ZNK2ox5scene19SMeshBufferLightMap14getVertexCountEv",
+          "exact": true,
+          "address": "0x55f240",
+          "references": 0,
+          "functions": [
+            {
+              "symbol": "_ZNK2ox5scene19SMeshBufferLightMap14getVertexCountEv",
+              "address": "0x55f240",
+              "size": 27,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ]
+        },
+        {
+          "name": ".text._ZNK2ox5scene19SMeshBufferLightMap10getIndicesEv",
+          "size": 5,
+          "placement": "symbol: _ZNK2ox5scene19SMeshBufferLightMap10getIndicesEv",
+          "exact": true,
+          "address": "0x55f260",
+          "references": 0,
+          "functions": [
+            {
+              "symbol": "_ZNK2ox5scene19SMeshBufferLightMap10getIndicesEv",
+              "address": "0x55f260",
+              "size": 5,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ]
+        },
+        {
+          "name": ".text._ZN2ox5scene19SMeshBufferLightMap10getIndicesEv",
+          "size": 5,
+          "placement": "symbol: _ZN2ox5scene19SMeshBufferLightMap10getIndicesEv",
+          "exact": true,
+          "address": "0x55f270",
+          "references": 0,
+          "functions": [
+            {
+              "symbol": "_ZN2ox5scene19SMeshBufferLightMap10getIndicesEv",
+              "address": "0x55f270",
+              "size": 5,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ]
+        },
+        {
+          "name": ".text._ZNK2ox5scene19SMeshBufferLightMap13getIndexCountEv",
+          "size": 12,
+          "placement": "symbol: _ZNK2ox5scene19SMeshBufferLightMap13getIndexCountEv",
+          "exact": true,
+          "address": "0x55f280",
+          "references": 0,
+          "functions": [
+            {
+              "symbol": "_ZNK2ox5scene19SMeshBufferLightMap13getIndexCountEv",
+              "address": "0x55f280",
+              "size": 12,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ]
+        },
+        {
+          "name": ".text._ZNK2ox5scene19SMeshBufferLightMap14getBoundingBoxEv",
+          "size": 8,
+          "placement": "symbol: _ZNK2ox5scene19SMeshBufferLightMap14getBoundingBoxEv",
+          "exact": true,
+          "address": "0x55f290",
+          "references": 0,
+          "functions": [
+            {
+              "symbol": "_ZNK2ox5scene19SMeshBufferLightMap14getBoundingBoxEv",
+              "address": "0x55f290",
+              "size": 8,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ]
+        },
+        {
+          "name": ".text._ZN2ox5scene19SMeshBufferLightMap14getBoundingBoxEv",
+          "size": 8,
+          "placement": "symbol: _ZN2ox5scene19SMeshBufferLightMap14getBoundingBoxEv",
+          "exact": true,
+          "address": "0x55f2a0",
+          "references": 0,
+          "functions": [
+            {
+              "symbol": "_ZN2ox5scene19SMeshBufferLightMap14getBoundingBoxEv",
+              "address": "0x55f2a0",
+              "size": 8,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ]
+        },
+        {
+          "name": ".text._ZNK2ox5scene19SMeshBufferLightMap13getVertexTypeEv",
+          "size": 6,
+          "placement": "symbol: _ZNK2ox5scene19SMeshBufferLightMap13getVertexTypeEv",
+          "exact": true,
+          "address": "0x55f2b0",
+          "references": 0,
+          "functions": [
+            {
+              "symbol": "_ZNK2ox5scene19SMeshBufferLightMap13getVertexTypeEv",
+              "address": "0x55f2b0",
+              "size": 6,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ]
+        },
+        {
           "name": ".text._ZN2ox5scene5SMesh18getMeshBufferCountEv",
           "size": 13,
           "placement": "symbol: _ZN2ox5scene5SMesh18getMeshBufferCountEv",
@@ -269765,16 +270176,34 @@
           ]
         },
         {
-          "name": ".text._ZN2ox5scene5IMeshD0Ev",
-          "size": 12,
-          "placement": "symbol: _ZN2ox5scene5IMeshD0Ev",
+          "name": ".text._ZNSt6vectorIN2ox5video17S3DVertex2TCoordsESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_",
+          "size": 1014,
+          "placement": "symbol: _ZNSt6vectorIN2ox5video17S3DVertex2TCoordsESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_",
           "exact": true,
-          "address": "0x545a90",
+          "address": "0x4d3270",
           "references": 2,
           "functions": [
             {
-              "symbol": "_ZN2ox5scene5IMeshD0Ev",
-              "address": "0x545a90",
+              "symbol": "_ZNSt6vectorIN2ox5video17S3DVertex2TCoordsESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_",
+              "address": "0x4d3270",
+              "size": 1014,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ]
+        },
+        {
+          "name": ".text._ZN2ox5scene11IMeshBufferD0Ev",
+          "size": 12,
+          "placement": "symbol: _ZN2ox5scene11IMeshBufferD0Ev",
+          "exact": true,
+          "address": "0x545710",
+          "references": 2,
+          "functions": [
+            {
+              "symbol": "_ZN2ox5scene11IMeshBufferD0Ev",
+              "address": "0x545710",
               "size": 12,
               "extent": "fde",
               "global": true,
@@ -269793,6 +270222,60 @@
             {
               "symbol": "_ZN2ox8IUnknownD0Ev",
               "address": "0x4668d0",
+              "size": 12,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ]
+        },
+        {
+          "name": ".text._ZN2ox5scene19SMeshBufferLightMapD0Ev",
+          "size": 55,
+          "placement": "symbol: _ZN2ox5scene19SMeshBufferLightMapD0Ev",
+          "exact": true,
+          "address": "0x55f2d0",
+          "references": 5,
+          "functions": [
+            {
+              "symbol": "_ZN2ox5scene19SMeshBufferLightMapD0Ev",
+              "address": "0x55f2d0",
+              "size": 55,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ]
+        },
+        {
+          "name": ".text._ZN2ox5scene19SMeshBufferLightMapD1Ev",
+          "size": 48,
+          "placement": "symbol: _ZN2ox5scene19SMeshBufferLightMapD1Ev",
+          "exact": true,
+          "address": "0x55f310",
+          "references": 4,
+          "functions": [
+            {
+              "symbol": "_ZN2ox5scene19SMeshBufferLightMapD1Ev",
+              "address": "0x55f310",
+              "size": 48,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ]
+        },
+        {
+          "name": ".text._ZN2ox5scene5IMeshD0Ev",
+          "size": 12,
+          "placement": "symbol: _ZN2ox5scene5IMeshD0Ev",
+          "exact": true,
+          "address": "0x545a90",
+          "references": 2,
+          "functions": [
+            {
+              "symbol": "_ZN2ox5scene5IMeshD0Ev",
+              "address": "0x545a90",
               "size": 12,
               "extent": "fde",
               "global": true,
@@ -269837,6 +270320,34 @@
           ]
         },
         {
+          "name": ".text._ZN2ox5scene5SMeshD1Ev",
+          "size": 161,
+          "placement": "symbol: _ZN2ox5scene5SMeshD1Ev",
+          "exact": true,
+          "address": "0x545c40",
+          "references": 6,
+          "functions": [
+            {
+              "symbol": "_ZN2ox5scene5SMeshD1Ev",
+              "address": "0x545c40",
+              "size": 161,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ]
+        },
+        {
+          "name": ".gcc_except_table",
+          "size": 166,
+          "placement": "exception frames",
+          "exact": false,
+          "address": "0x663c7c",
+          "first_difference": 68,
+          "differing_bytes": 12,
+          "references": 0
+        },
+        {
           "name": ".text._ZN2ox5scene5SMeshD0Ev",
           "size": 168,
           "placement": "symbol: _ZN2ox5scene5SMeshD0Ev",
@@ -269855,17 +270366,35 @@
           ]
         },
         {
-          "name": ".text._ZN2ox5scene5SMeshD1Ev",
-          "size": 161,
-          "placement": "symbol: _ZN2ox5scene5SMeshD1Ev",
+          "name": ".text._ZNSt6vectorItSaItEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPtS1_EERKt",
+          "size": 380,
+          "placement": "symbol: _ZNSt6vectorItSaItEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPtS1_EERKt",
           "exact": true,
-          "address": "0x545c40",
-          "references": 6,
+          "address": "0x4d4f10",
+          "references": 5,
           "functions": [
             {
-              "symbol": "_ZN2ox5scene5SMeshD1Ev",
-              "address": "0x545c40",
-              "size": 161,
+              "symbol": "_ZNSt6vectorItSaItEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPtS1_EERKt",
+              "address": "0x4d4f10",
+              "size": 380,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ]
+        },
+        {
+          "name": ".text._ZNSt6vectorIPN2ox5scene11IMeshBufferESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+          "size": 401,
+          "placement": "symbol: _ZNSt6vectorIPN2ox5scene11IMeshBufferESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+          "exact": true,
+          "address": "0x546060",
+          "references": 5,
+          "functions": [
+            {
+              "symbol": "_ZNSt6vectorIPN2ox5scene11IMeshBufferESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+              "address": "0x546060",
+              "size": 401,
               "extent": "fde",
               "global": true,
               "exact": true
@@ -270008,6 +270537,111 @@
           ]
         },
         {
+          "name": ".rodata._ZTVN2ox5scene19SMeshBufferLightMapE",
+          "size": 120,
+          "placement": "symbol: _ZTVN2ox5scene19SMeshBufferLightMapE",
+          "exact": true,
+          "address": "0x61a480",
+          "references": 14,
+          "data_ranges": [
+            {
+              "address": "0x61a480",
+              "size": 120,
+              "kind": "section"
+            }
+          ]
+        },
+        {
+          "name": ".rodata._ZTIN2ox5scene19SMeshBufferLightMapE",
+          "size": 24,
+          "placement": "symbol: _ZTIN2ox5scene19SMeshBufferLightMapE",
+          "exact": true,
+          "address": "0x61a500",
+          "references": 3,
+          "data_ranges": [
+            {
+              "address": "0x61a500",
+              "size": 24,
+              "kind": "section"
+            }
+          ]
+        },
+        {
+          "name": ".rodata._ZTSN2ox5scene19SMeshBufferLightMapE",
+          "size": 33,
+          "placement": "symbol: _ZTSN2ox5scene19SMeshBufferLightMapE",
+          "exact": true,
+          "address": "0x61a520",
+          "references": 0,
+          "data_ranges": [
+            {
+              "address": "0x61a520",
+              "size": 33,
+              "kind": "section"
+            }
+          ]
+        },
+        {
+          "name": ".rodata._ZTIN2ox5scene11IMeshBufferE",
+          "size": 24,
+          "placement": "symbol: _ZTIN2ox5scene11IMeshBufferE",
+          "exact": true,
+          "address": "0x6184e0",
+          "references": 3,
+          "data_ranges": [
+            {
+              "address": "0x6184e0",
+              "size": 24,
+              "kind": "section"
+            }
+          ]
+        },
+        {
+          "name": ".rodata._ZTSN2ox5scene11IMeshBufferE",
+          "size": 25,
+          "placement": "symbol: _ZTSN2ox5scene11IMeshBufferE",
+          "exact": true,
+          "address": "0x618500",
+          "references": 0,
+          "data_ranges": [
+            {
+              "address": "0x618500",
+              "size": 25,
+              "kind": "section"
+            }
+          ]
+        },
+        {
+          "name": ".rodata._ZTVN2ox5scene11IMeshBufferE",
+          "size": 120,
+          "placement": "symbol: _ZTVN2ox5scene11IMeshBufferE",
+          "exact": true,
+          "address": "0x618520",
+          "references": 14,
+          "data_ranges": [
+            {
+              "address": "0x618520",
+              "size": 120,
+              "kind": "section"
+            }
+          ]
+        },
+        {
+          "name": ".rodata._ZTVN2ox8IUnknownE",
+          "size": 32,
+          "placement": "symbol: _ZTVN2ox8IUnknownE",
+          "exact": true,
+          "address": "0x5f99c0",
+          "references": 3,
+          "data_ranges": [
+            {
+              "address": "0x5f99c0",
+              "size": 32,
+              "kind": "section"
+            }
+          ]
+        },
+        {
           "name": ".rodata._ZTVN2ox5scene5SMeshE",
           "size": 72,
           "placement": "symbol: _ZTVN2ox5scene5SMeshE",
@@ -270098,21 +270732,6 @@
           ]
         },
         {
-          "name": ".rodata._ZTVN2ox8IUnknownE",
-          "size": 32,
-          "placement": "symbol: _ZTVN2ox8IUnknownE",
-          "exact": true,
-          "address": "0x5f99c0",
-          "references": 3,
-          "data_ranges": [
-            {
-              "address": "0x5f99c0",
-              "size": 32,
-              "kind": "section"
-            }
-          ]
-        },
-        {
           "name": ".rodata._ZTVN2ox5scene12IQ3LevelMeshE",
           "size": 64,
           "placement": "symbol: _ZTVN2ox5scene12IQ3LevelMeshE",
@@ -270144,7 +270763,7 @@
         }
       ],
       "unplaced_sections": [
-        ".gcc_except_table"
+        ".text._ZNSt6vectorIPN2ox5video8ITextureESaIS3_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS3_S5_EEmRKS3_"
       ],
       "compilation": {
         "container_image_id": "108b5240b400ca2165345f10e2dbf66da04f55d0448c00509d9474f0adfffe17",
@@ -270165,13 +270784,8 @@
           "/out/daisy__scene__CQ3LevelMesh.o"
         ],
         "inputs": {
-          "src/daisy/scene/CQ3LevelMesh.cpp": "8cb6e1b3915486d6395d1128c0eab975bc797720aeb3b05fe94aecc5e9cc059a",
-          "src/ox/core/CAabbox3d.h": "3be9d1976a8a982ae40cd59e9d7913387a4b9b389b35f777c1e6ac405da5b28f",
-          "src/ox/core/CVector3d.h": "65b36a6dbf77658e1517a5c7bc39a59d683a873b8404a6252f71ff8eca2fc393",
-          "src/ox/core/CPlane3d.h": "99dbac882183ad9a3060d6f4b37ead835ca4c22e891c75e250f8d81441e121c9",
-          "src/ox/core/irrMath.h": "bb9f0271cc6670a0c8d94d15229479ca5c969e778fdd28344f2292c2c5e791ac",
-          "src/ox/core/CLine3d.h": "0164055989d7897b79be781b568582ec5161a8024bcaf3a9eabc3c6720e91831",
-          "src/ox/core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
+          "src/daisy/scene/CQ3LevelMesh.cpp": "9944fd33ec6d75b71db52bfb07d1a1e186c9a3548d817c61f5f8fe38fe898fa6",
+          "src/ox/video/ColorPacking.h": "96f75b4784678a3a1bb67aedb79d1fcfa0a50508b101237fde463a314230441a",
           "src/ox/video/IVideoDriver.h": "e6915f5d6c4f5dc79e6d72c4325cc311c141e6c71734f5254af688cc94cd9e61",
           "src/ox/video/../IUnknown.h": "2876425521d21d0ab1b35bc5e2a72ae62acee754c6785899771e48912b9b0a9f",
           "src/ox/video/../core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
@@ -270180,6 +270794,12 @@
           "src/ox/video/../core/CVector2d.h": "3f38dd2413c649b909302cad6454b81d0e71d1690e18b08fd089beb9620d0fa3",
           "src/ox/video/../core/CVector3d.h": "65b36a6dbf77658e1517a5c7bc39a59d683a873b8404a6252f71ff8eca2fc393",
           "src/ox/video/SColor.h": "d83cd30fef33af0f36f4d7bf4398509445a964e93526043df08a9ca0556e01ff",
+          "src/ox/core/CAabbox3d.h": "3be9d1976a8a982ae40cd59e9d7913387a4b9b389b35f777c1e6ac405da5b28f",
+          "src/ox/core/CVector3d.h": "65b36a6dbf77658e1517a5c7bc39a59d683a873b8404a6252f71ff8eca2fc393",
+          "src/ox/core/CPlane3d.h": "99dbac882183ad9a3060d6f4b37ead835ca4c22e891c75e250f8d81441e121c9",
+          "src/ox/core/irrMath.h": "bb9f0271cc6670a0c8d94d15229479ca5c969e778fdd28344f2292c2c5e791ac",
+          "src/ox/core/CLine3d.h": "0164055989d7897b79be781b568582ec5161a8024bcaf3a9eabc3c6720e91831",
+          "src/ox/core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
           "src/ox/video/SMaterial.h": "a9a3a9a7c23fe227bbc441fc97ba36e7e33ff82d7256d0a3efe759d4183c8f3e",
           "src/ox/video/ITexture.h": "8eb533b8e005816600ee5abab9ad3a9d38159734535fa9884771866c38cddfe2",
           "src/ox/video/S3DVertex2TCoords.h": "f2383643ca59dffcf454ae83756ce2bc03383739250fb4761fb1ffccff110297",
@@ -270218,9 +270838,9 @@
           "src/daisy/video/Null/CColorConverter.h": "6101d0603c7c8e61bb3dcb4c7585f64b94250e2fe2bed8fed06c6b1d7b8c136c"
         },
         "system_headers": 121,
-        "object_sha256": "5a4dfad33d4e991229ebff32c927bca7ab1763d57d396e14e3f7853dbd77c1eb"
+        "object_sha256": "dc494ccc013bb5226e237dd0cf10b95f8880f577927fa5379a916d61513bb072"
       },
-      "fuzzy_target_sha256": "aa9861395861f295ba84e2ee7f0451dd5de6900514965d1e6e65649d7b3003e4",
+      "fuzzy_target_sha256": "cb237f6758c0ecc6abe9cccd6d85ab5d118616ee0cd724dc94a2dbc560846135",
       "fuzzy_functions": [
         {
           "address": "0x570b20",
@@ -270315,68 +270935,68 @@
         {
           "address": "0x570c30",
           "size": 118,
-          "symbol": "_ZN5daisy5scene12CQ3LevelMesh12loadTexturesEv",
-          "percent": 1.3793104
+          "symbol": "_ZN5daisy5scene12CQ3LevelMesh13loadMeshVertsEPNS1_8tBSPLumpEPN2ox2io9IReadFileE",
+          "percent": 100.0
         },
         {
           "address": "0x570cb0",
           "size": 139,
-          "symbol": "_ZN5daisy5scene12CQ3LevelMesh19createCurvedSurfaceEPN2ox5scene19SMeshBufferLightMapEi",
-          "percent": 1.2121212
+          "symbol": "_ZN5daisy5scene12CQ3LevelMesh9loadFacesEPNS1_8tBSPLumpEPN2ox2io9IReadFileE",
+          "percent": 100.0
         },
         {
           "address": "0x570d40",
           "size": 139,
-          "symbol": "_ZN5daisy5scene12CQ3LevelMesh13constructMeshEv",
-          "percent": 1.2121212
+          "symbol": "_ZN5daisy5scene12CQ3LevelMesh9loadVertsEPNS1_8tBSPLumpEPN2ox2io9IReadFileE",
+          "percent": 100.0
         },
         {
           "address": "0x570dd0",
           "size": 135,
-          "symbol": "_ZN5daisy5scene12CQ3LevelMesh13loadMeshVertsEPNS1_8tBSPLumpEPN2ox2io9IReadFileE",
-          "percent": 88.71875
+          "symbol": "_ZN5daisy5scene12CQ3LevelMesh13loadLightmapsEPNS1_8tBSPLumpEPN2ox2io9IReadFileE",
+          "percent": 100.0
         },
         {
           "address": "0x570e60",
           "size": 135,
-          "symbol": "_ZN5daisy5scene12CQ3LevelMesh9loadFacesEPNS1_8tBSPLumpEPN2ox2io9IReadFileE",
-          "percent": 96.53125
+          "symbol": "_ZN5daisy5scene12CQ3LevelMesh12loadTexturesEPNS1_8tBSPLumpEPN2ox2io9IReadFileE",
+          "percent": 100.0
         },
         {
           "address": "0x570ef0",
           "size": 396,
-          "symbol": "_ZN5daisy5scene12CQ3LevelMesh9loadVertsEPNS1_8tBSPLumpEPN2ox2io9IReadFileE",
-          "percent": 0
+          "symbol": "_ZN5daisy5scene12CQ3LevelMeshC1EPN2ox2io11IFileSystemEPNS2_5video12IVideoDriverE",
+          "percent": 100.0
         },
         {
           "address": "0x571080",
           "size": 396,
-          "symbol": "_ZN5daisy5scene12CQ3LevelMesh13loadLightmapsEPNS1_8tBSPLumpEPN2ox2io9IReadFileE",
-          "percent": 0
+          "symbol": "_ZN5daisy5scene12CQ3LevelMeshC2EPN2ox2io11IFileSystemEPNS2_5video12IVideoDriverE",
+          "percent": 100.0
         },
         {
           "address": "0x571210",
           "size": 2414,
-          "symbol": "_ZN5daisy5scene12CQ3LevelMesh12loadTexturesEPNS1_8tBSPLumpEPN2ox2io9IReadFileE",
-          "percent": 3.5671902
+          "symbol": "_ZN5daisy5scene12CQ3LevelMesh12loadTexturesEv",
+          "percent": 95.13787
         },
         {
           "address": "0x571b80",
           "size": 6620,
-          "symbol": "_ZN5daisy5scene12CQ3LevelMesh8loadFileEPN2ox2io9IReadFileE",
-          "percent": 0
+          "symbol": "_ZN5daisy5scene12CQ3LevelMesh19createCurvedSurfaceEPN2ox5scene19SMeshBufferLightMapEi",
+          "percent": 98.57613
         },
         {
           "address": "0x573560",
           "size": 2340,
-          "symbol": "_ZN5daisy5scene12CQ3LevelMeshC1EPN2ox2io11IFileSystemEPNS2_5video12IVideoDriverE",
-          "percent": 6.5548654
+          "symbol": "_ZN5daisy5scene12CQ3LevelMesh13constructMeshEv",
+          "percent": 100.0
         },
         {
           "address": "0x573e90",
           "size": 459,
-          "symbol": "_ZN5daisy5scene12CQ3LevelMeshC2EPN2ox2io11IFileSystemEPNS2_5video12IVideoDriverE",
-          "percent": 12.852459
+          "symbol": "_ZN5daisy5scene12CQ3LevelMesh8loadFileEPN2ox2io9IReadFileE",
+          "percent": 100.0
         },
         {
           "address": "0x574060",
@@ -270427,6 +271047,78 @@
           "percent": 100.0
         },
         {
+          "address": "0x545520",
+          "size": 8,
+          "symbol": "_ZN2ox5scene11IMeshBufferD1Ev",
+          "percent": 100.0
+        },
+        {
+          "address": "0x55f200",
+          "size": 5,
+          "symbol": "_ZNK2ox5scene19SMeshBufferLightMap11getMaterialEv",
+          "percent": 100.0
+        },
+        {
+          "address": "0x55f210",
+          "size": 5,
+          "symbol": "_ZN2ox5scene19SMeshBufferLightMap11getMaterialEv",
+          "percent": 100.0
+        },
+        {
+          "address": "0x55f220",
+          "size": 5,
+          "symbol": "_ZNK2ox5scene19SMeshBufferLightMap11getVerticesEv",
+          "percent": 100.0
+        },
+        {
+          "address": "0x55f230",
+          "size": 5,
+          "symbol": "_ZN2ox5scene19SMeshBufferLightMap11getVerticesEv",
+          "percent": 100.0
+        },
+        {
+          "address": "0x55f240",
+          "size": 27,
+          "symbol": "_ZNK2ox5scene19SMeshBufferLightMap14getVertexCountEv",
+          "percent": 100.0
+        },
+        {
+          "address": "0x55f260",
+          "size": 5,
+          "symbol": "_ZNK2ox5scene19SMeshBufferLightMap10getIndicesEv",
+          "percent": 100.0
+        },
+        {
+          "address": "0x55f270",
+          "size": 5,
+          "symbol": "_ZN2ox5scene19SMeshBufferLightMap10getIndicesEv",
+          "percent": 100.0
+        },
+        {
+          "address": "0x55f280",
+          "size": 12,
+          "symbol": "_ZNK2ox5scene19SMeshBufferLightMap13getIndexCountEv",
+          "percent": 100.0
+        },
+        {
+          "address": "0x55f290",
+          "size": 8,
+          "symbol": "_ZNK2ox5scene19SMeshBufferLightMap14getBoundingBoxEv",
+          "percent": 100.0
+        },
+        {
+          "address": "0x55f2a0",
+          "size": 8,
+          "symbol": "_ZN2ox5scene19SMeshBufferLightMap14getBoundingBoxEv",
+          "percent": 100.0
+        },
+        {
+          "address": "0x55f2b0",
+          "size": 6,
+          "symbol": "_ZNK2ox5scene19SMeshBufferLightMap13getVertexTypeEv",
+          "percent": 100.0
+        },
+        {
           "address": "0x5455a0",
           "size": 13,
           "symbol": "_ZN2ox5scene5SMesh18getMeshBufferCountEv",
@@ -270457,15 +271149,39 @@
           "percent": 100.0
         },
         {
-          "address": "0x545a90",
+          "address": "0x4d3270",
+          "size": 1014,
+          "symbol": "_ZNSt6vectorIN2ox5video17S3DVertex2TCoordsESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_",
+          "percent": 100.0
+        },
+        {
+          "address": "0x545710",
           "size": 12,
-          "symbol": "_ZN2ox5scene5IMeshD0Ev",
+          "symbol": "_ZN2ox5scene11IMeshBufferD0Ev",
           "percent": 100.0
         },
         {
           "address": "0x4668d0",
           "size": 12,
           "symbol": "_ZN2ox8IUnknownD0Ev",
+          "percent": 100.0
+        },
+        {
+          "address": "0x55f2d0",
+          "size": 55,
+          "symbol": "_ZN2ox5scene19SMeshBufferLightMapD0Ev",
+          "percent": 100.0
+        },
+        {
+          "address": "0x55f310",
+          "size": 48,
+          "symbol": "_ZN2ox5scene19SMeshBufferLightMapD1Ev",
+          "percent": 100.0
+        },
+        {
+          "address": "0x545a90",
+          "size": 12,
+          "symbol": "_ZN2ox5scene5IMeshD0Ev",
           "percent": 100.0
         },
         {
@@ -270481,15 +271197,27 @@
           "percent": 100.0
         },
         {
+          "address": "0x545c40",
+          "size": 161,
+          "symbol": "_ZN2ox5scene5SMeshD1Ev",
+          "percent": 100.0
+        },
+        {
           "address": "0x545b90",
           "size": 168,
           "symbol": "_ZN2ox5scene5SMeshD0Ev",
           "percent": 100.0
         },
         {
-          "address": "0x545c40",
-          "size": 161,
-          "symbol": "_ZN2ox5scene5SMeshD1Ev",
+          "address": "0x4d4f10",
+          "size": 380,
+          "symbol": "_ZNSt6vectorItSaItEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPtS1_EERKt",
+          "percent": 100.0
+        },
+        {
+          "address": "0x546060",
+          "size": 401,
+          "symbol": "_ZNSt6vectorIPN2ox5scene11IMeshBufferESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
           "percent": 100.0
         }
       ]
@@ -274386,99 +275114,155 @@
     },
     {
       "unit": "daisy/scene/CSceneCollisionManager.cpp",
-      "object_sha256": "776d9bea5f978508692e7263cbc5973fcde944ecca9a20ece00cfdde177e2463",
+      "object_sha256": "c1af508cec419fa64233cc1852d66a6376c15660d8e770412abff35b48b9f049",
       "exact": false,
       "sections": [
         {
           "name": ".text",
-          "size": 13092,
+          "size": 18020,
           "placement": "symbol: _ZN5daisy5scene22CSceneCollisionManagerC2EPN2ox5scene13ISceneManagerEPNS2_5video12IVideoDriverE",
           "exact": false,
           "address": "0x574760",
-          "first_difference": 3088,
-          "differing_bytes": 365,
+          "first_difference": 3948,
+          "differing_bytes": 3193,
           "misplaced_symbols": [
             {
-              "symbol": "_ZN5daisy5scene22CSceneCollisionManager26getCollisionResultPositionEPN2ox5scene17ITriangleSelectorERKNS2_4core9CVector3dIfEESA_SA_RNS6_11CTriangle3dIfEERbfSA_",
-              "known": "0x578080",
-              "placed": "0x575500"
-            },
-            {
-              "symbol": "_ZN5daisy5scene22CSceneCollisionManager17getCollisionPointERKN2ox4core7CLine3dIfEEPNS2_5scene17ITriangleSelectorERNS3_9CVector3dIfEERNS3_11CTriangle3dIfEE",
-              "known": "0x5756c0",
-              "placed": "0x575590"
+              "symbol": "_ZN5daisy5scene22CSceneCollisionManagerD2Ev",
+              "known": "0x578180",
+              "placed": "0x575370"
             },
             {
               "symbol": "_ZN5daisy5scene22CSceneCollisionManager35getSceneNodeFromScreenCoordinatesBBEN2ox4core11CPosition2dIiEEi",
               "known": "0x575370",
-              "placed": "0x5755a0"
+              "placed": "0x5753e0"
             },
             {
-              "symbol": "_ZN5daisy5scene22CSceneCollisionManager24getSceneNodeFromCameraBBEPN2ox5scene16ICameraSceneNodeEi",
-              "known": "0x577310",
-              "placed": "0x575870"
-            },
-            {
-              "symbol": "_ZN5daisy5scene22CSceneCollisionManagerD0Ev",
-              "known": "0x575640",
-              "placed": "0x5759b0"
+              "symbol": "_ZN5daisy5scene22CSceneCollisionManager17getCollisionPointERKN2ox4core7CLine3dIfEEPNS2_5scene17ITriangleSelectorERNS3_9CVector3dIfEERNS3_11CTriangle3dIfEE",
+              "known": "0x5756c0",
+              "placed": "0x5756b0"
             },
             {
               "symbol": "_ZN5daisy5scene22CSceneCollisionManager21getSceneNodeFromRayBBEN2ox4core7CLine3dIfEEi",
               "known": "0x575e10",
-              "placed": "0x575a30"
+              "placed": "0x575ec0"
             },
             {
               "symbol": "_ZN5daisy5scene22CSceneCollisionManager24testTriangleIntersectionEPNS1_14SCollisionDataERKN2ox4core11CTriangle3dIfEE",
               "known": "0x575fc0",
-              "placed": "0x575be0"
+              "placed": "0x576070"
             },
             {
-              "symbol": "_ZN5daisy5scene22CSceneCollisionManagerD2Ev",
-              "known": "0x578180",
-              "placed": "0x576f30"
+              "symbol": "_ZN5daisy5scene22CSceneCollisionManager24getSceneNodeFromCameraBBEPN2ox5scene16ICameraSceneNodeEi",
+              "known": "0x577310",
+              "placed": "0x5773c0"
+            },
+            {
+              "symbol": "_ZN5daisy5scene22CSceneCollisionManager25collideEllipsoidWithWorldEPN2ox5scene17ITriangleSelectorERKNS2_4core9CVector3dIfEESA_SA_fSA_RNS6_11CTriangle3dIfEERb",
+              "known": "0x577b70",
+              "placed": "0x577cc0"
+            },
+            {
+              "symbol": "_ZN5daisy5scene22CSceneCollisionManager26getCollisionResultPositionEPN2ox5scene17ITriangleSelectorERKNS2_4core9CVector3dIfEESA_SA_RNS6_11CTriangle3dIfEERbfSA_",
+              "known": "0x578080",
+              "placed": "0x5781d0"
+            },
+            {
+              "symbol": "_ZN5daisy5scene22CSceneCollisionManagerD0Ev",
+              "known": "0x575640",
+              "placed": "0x578260"
             },
             {
               "symbol": "_ZN5daisy5scene22CSceneCollisionManagerD1Ev",
               "known": "0x578110",
-              "placed": "0x576fa0"
+              "placed": "0x5782e0"
             },
             {
               "symbol": "_ZN5daisy5scene22CSceneCollisionManager27getRayFromScreenCoordinatesEN2ox4core11CPosition2dIiEEPNS2_5scene16ICameraSceneNodeE",
               "known": "0x5781f0",
-              "placed": "0x577010"
+              "placed": "0x578350"
             }
           ],
           "bad_references": [
             {
-              "offset": 3447,
+              "offset": 4298,
               "type": 2,
-              "symbol": "_ZNK2ox4core9CVector3dIfEdvERKS2_",
+              "symbol": ".LC10",
               "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "-0x3e509872",
+              "reason": "unmapped or truncated range: 0x6c686782+0x4",
               "matches": false
             },
             {
-              "offset": 3468,
+              "offset": 4807,
               "type": 2,
-              "symbol": "_ZNK2ox4core9CVector3dIfEdvERKS2_",
+              "symbol": ".LC6",
               "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "-0x56939841",
+              "reason": "unmapped or truncated range: 0x454a7a5f+0x10",
               "matches": false
             },
             {
-              "offset": 3606,
+              "offset": 5947,
               "type": 2,
-              "symbol": "_ZN5daisy5scene22CSceneCollisionManager25collideEllipsoidWithWorldEPN2ox5scene17ITriangleSelectorERKNS2_4core9CVector3dIfEESA_SA_fSA_RNS6_11CTriangle3dIfEERb",
+              "symbol": "_ZNSt6vectorIN2ox4core11CTriangle3dIfEESaIS3_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS3_S5_EEmRKS3_",
               "addend": -4,
-              "destination": "0x575640",
+              "reason": "no target address for symbol",
+              "candidate": "0x424a72fd",
+              "matches": false
+            },
+            {
+              "offset": 12631,
+              "type": 2,
+              "symbol": "_ZN5daisy5scene22CSceneCollisionManager24testTriangleIntersectionEPNS1_14SCollisionDataERKN2ox4core11CTriangle3dIfEE",
+              "addend": -4,
+              "destination": "0x575fc0",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 13142,
+              "type": 2,
+              "symbol": "_ZN2ox4core9CVector3dIfE9normalizeEv",
+              "addend": -4,
+              "destination": "0x54fd90",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 13269,
+              "type": 2,
+              "symbol": "_ZN2ox4core9CVector3dIfE9normalizeEv",
+              "addend": -4,
+              "destination": "0x54fd90",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 13447,
+              "type": 2,
+              "symbol": "_ZNSt6vectorIN2ox4core11CTriangle3dIfEESaIS3_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS3_S5_EEmRKS3_",
+              "addend": -4,
+              "reason": "no target address for symbol",
+              "candidate": "0x1166c02e",
+              "matches": false
+            },
+            {
+              "offset": 13483,
+              "type": 2,
+              "symbol": ".LC1",
+              "addend": -4,
+              "reason": "unmapped or truncated range: 0x104a7b5f+0x4",
+              "matches": false
+            },
+            {
+              "offset": 13655,
+              "type": 2,
+              "symbol": "_ZN5daisy5scene22CSceneCollisionManager16collideWithWorldEiRNS1_14SCollisionDataEN2ox4core9CVector3dIfEES7_",
+              "addend": -4,
+              "destination": "0x577450",
               "reason": "different destination",
               "matches": false
             }
           ],
-          "references": 94,
+          "references": 104,
           "functions": [
             {
               "symbol": "_ZN5daisy5scene22CSceneCollisionManagerC2EPN2ox5scene13ISceneManagerEPNS2_5video12IVideoDriverE",
@@ -274521,36 +275305,12 @@
               "exact": true
             },
             {
-              "symbol": "_ZN5daisy5scene22CSceneCollisionManager16collideWithWorldEiRNS1_14SCollisionDataEN2ox4core9CVector3dIfEES7_",
-              "address": "0x575370",
-              "size": 2,
-              "extent": null,
-              "global": true,
-              "exact": false
-            },
-            {
-              "symbol": "_ZN5daisy5scene22CSceneCollisionManager25collideEllipsoidWithWorldEPN2ox5scene17ITriangleSelectorERKNS2_4core9CVector3dIfEESA_SA_fSA_RNS6_11CTriangle3dIfEERb",
-              "address": "0x575640",
-              "size": 370,
-              "extent": null,
-              "global": true,
-              "exact": false
-            },
-            {
-              "symbol": "_ZN5daisy5scene22CSceneCollisionManager26getCollisionResultPositionEPN2ox5scene17ITriangleSelectorERKNS2_4core9CVector3dIfEESA_SA_RNS6_11CTriangle3dIfEERbfSA_",
-              "address": "0x578080",
-              "size": 132,
+              "symbol": "_ZN5daisy5scene22CSceneCollisionManagerD2Ev",
+              "address": "0x578180",
+              "size": 109,
               "extent": "fde",
               "global": true,
-              "exact": false
-            },
-            {
-              "symbol": "_ZN5daisy5scene22CSceneCollisionManager17getCollisionPointERKN2ox4core7CLine3dIfEEPNS2_5scene17ITriangleSelectorERNS3_9CVector3dIfEERNS3_11CTriangle3dIfEE",
-              "address": "0x5756c0",
-              "size": 2,
-              "extent": null,
-              "global": true,
-              "exact": false
+              "exact": true
             },
             {
               "symbol": "_ZN5daisy5scene22CSceneCollisionManager35getSceneNodeFromScreenCoordinatesBBEN2ox4core11CPosition2dIiEEi",
@@ -274561,20 +275321,12 @@
               "exact": true
             },
             {
-              "symbol": "_ZN5daisy5scene22CSceneCollisionManager24getSceneNodeFromCameraBBEPN2ox5scene16ICameraSceneNodeEi",
-              "address": "0x577310",
-              "size": 312,
-              "extent": "fde",
+              "symbol": "_ZN5daisy5scene22CSceneCollisionManager17getCollisionPointERKN2ox4core7CLine3dIfEEPNS2_5scene17ITriangleSelectorERNS3_9CVector3dIfEERNS3_11CTriangle3dIfEE",
+              "address": "0x5756c0",
+              "size": 2052,
+              "extent": null,
               "global": true,
-              "exact": true
-            },
-            {
-              "symbol": "_ZN5daisy5scene22CSceneCollisionManagerD0Ev",
-              "address": "0x575640",
-              "size": 116,
-              "extent": "fde",
-              "global": true,
-              "exact": true
+              "exact": false
             },
             {
               "symbol": "_ZN5daisy5scene22CSceneCollisionManager21getSceneNodeFromRayBBEN2ox4core7CLine3dIfEEi",
@@ -274593,9 +275345,41 @@
               "exact": true
             },
             {
-              "symbol": "_ZN5daisy5scene22CSceneCollisionManagerD2Ev",
-              "address": "0x578180",
-              "size": 109,
+              "symbol": "_ZN5daisy5scene22CSceneCollisionManager24getSceneNodeFromCameraBBEPN2ox5scene16ICameraSceneNodeEi",
+              "address": "0x577310",
+              "size": 312,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            },
+            {
+              "symbol": "_ZN5daisy5scene22CSceneCollisionManager16collideWithWorldEiRNS1_14SCollisionDataEN2ox4core9CVector3dIfEES7_",
+              "address": "0x577450",
+              "size": 1984,
+              "extent": null,
+              "global": true,
+              "exact": false
+            },
+            {
+              "symbol": "_ZN5daisy5scene22CSceneCollisionManager25collideEllipsoidWithWorldEPN2ox5scene17ITriangleSelectorERKNS2_4core9CVector3dIfEESA_SA_fSA_RNS6_11CTriangle3dIfEERb",
+              "address": "0x577b70",
+              "size": 1292,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            },
+            {
+              "symbol": "_ZN5daisy5scene22CSceneCollisionManager26getCollisionResultPositionEPN2ox5scene17ITriangleSelectorERKNS2_4core9CVector3dIfEESA_SA_RNS6_11CTriangle3dIfEERbfSA_",
+              "address": "0x578080",
+              "size": 132,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            },
+            {
+              "symbol": "_ZN5daisy5scene22CSceneCollisionManagerD0Ev",
+              "address": "0x575640",
+              "size": 116,
               "extent": "fde",
               "global": true,
               "exact": true
@@ -274709,16 +275493,6 @@
               "kind": "merged constant"
             },
             {
-              "address": "0x5f03c4",
-              "size": 4,
-              "kind": "merged constant"
-            },
-            {
-              "address": "0x5ef0c8",
-              "size": 4,
-              "kind": "merged constant"
-            },
-            {
               "address": "0x5f0464",
               "size": 4,
               "kind": "merged constant"
@@ -274800,6 +275574,21 @@
             },
             {
               "address": "0x5ef0c8",
+              "size": 4,
+              "kind": "merged constant"
+            },
+            {
+              "address": "0x5ef0c8",
+              "size": 4,
+              "kind": "merged constant"
+            },
+            {
+              "address": "0x5ef0c8",
+              "size": 4,
+              "kind": "merged constant"
+            },
+            {
+              "address": "0x5f03c4",
               "size": 4,
               "kind": "merged constant"
             },
@@ -274937,36 +275726,6 @@
           ]
         },
         {
-          "name": ".text._ZN5daisy5scene22CSceneCollisionManager13getLowestRootEffffPf",
-          "size": 247,
-          "placement": "symbol: _ZN5daisy5scene22CSceneCollisionManager13getLowestRootEffffPf",
-          "exact": true,
-          "address": "0x578db0",
-          "references": 3,
-          "functions": [
-            {
-              "symbol": "_ZN5daisy5scene22CSceneCollisionManager13getLowestRootEffffPf",
-              "address": "0x578db0",
-              "size": 247,
-              "extent": "fde",
-              "global": true,
-              "exact": true
-            }
-          ],
-          "data_ranges": [
-            {
-              "address": "0x61b258",
-              "size": 4,
-              "kind": "merged constant"
-            },
-            {
-              "address": "0x5f04e0",
-              "size": 16,
-              "kind": "merged constant"
-            }
-          ]
-        },
-        {
           "name": ".text._ZN2ox5scene22ISceneCollisionManagerD0Ev",
           "size": 12,
           "placement": "symbol: _ZN2ox5scene22ISceneCollisionManagerD0Ev",
@@ -274999,6 +275758,36 @@
               "extent": "fde",
               "global": true,
               "exact": true
+            }
+          ]
+        },
+        {
+          "name": ".text._ZN5daisy5scene22CSceneCollisionManager13getLowestRootEffffPf",
+          "size": 247,
+          "placement": "symbol: _ZN5daisy5scene22CSceneCollisionManager13getLowestRootEffffPf",
+          "exact": true,
+          "address": "0x578db0",
+          "references": 3,
+          "functions": [
+            {
+              "symbol": "_ZN5daisy5scene22CSceneCollisionManager13getLowestRootEffffPf",
+              "address": "0x578db0",
+              "size": 247,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ],
+          "data_ranges": [
+            {
+              "address": "0x61b258",
+              "size": 4,
+              "kind": "merged constant"
+            },
+            {
+              "address": "0x5f04e0",
+              "size": 16,
+              "kind": "merged constant"
             }
           ]
         },
@@ -275053,6 +275842,36 @@
             {
               "address": "0x5f04e0",
               "size": 16,
+              "kind": "merged constant"
+            }
+          ]
+        },
+        {
+          "name": ".text._ZN2ox4core9CVector3dIfE9normalizeEv",
+          "size": 115,
+          "placement": "symbol: _ZN2ox4core9CVector3dIfE9normalizeEv",
+          "exact": true,
+          "address": "0x54fd90",
+          "references": 2,
+          "functions": [
+            {
+              "symbol": "_ZN2ox4core9CVector3dIfE9normalizeEv",
+              "address": "0x54fd90",
+              "size": 115,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ],
+          "data_ranges": [
+            {
+              "address": "0x5f03c4",
+              "size": 4,
+              "kind": "merged constant"
+            },
+            {
+              "address": "0x5ef0c8",
+              "size": 4,
               "kind": "merged constant"
             }
           ]
@@ -275194,7 +276013,7 @@
         }
       ],
       "unplaced_sections": [
-        ".text._ZNK2ox4core9CVector3dIfEdvERKS2_",
+        ".text._ZNSt6vectorIN2ox4core11CTriangle3dIfEESaIS3_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS3_S5_EEmRKS3_",
         ".gcc_except_table"
       ],
       "compilation": {
@@ -275216,7 +276035,7 @@
           "/out/daisy__scene__CSceneCollisionManager.o"
         ],
         "inputs": {
-          "src/daisy/scene/CSceneCollisionManager.cpp": "49853cee2ca912b4e2da540050f2eddbe8944d4b4b9999999e3467be32a5fde2",
+          "src/daisy/scene/CSceneCollisionManager.cpp": "259744083a456a7783499d96f4314791cb719683d53f9eb6c7f55898cb8d8f7d",
           "src/ox/core/CAabbox3d.h": "3be9d1976a8a982ae40cd59e9d7913387a4b9b389b35f777c1e6ac405da5b28f",
           "src/ox/core/CVector3d.h": "65b36a6dbf77658e1517a5c7bc39a59d683a873b8404a6252f71ff8eca2fc393",
           "src/ox/core/CPlane3d.h": "99dbac882183ad9a3060d6f4b37ead835ca4c22e891c75e250f8d81441e121c9",
@@ -275265,9 +276084,9 @@
           "src/ox/event/../IUnknown.h": "2876425521d21d0ab1b35bc5e2a72ae62acee754c6785899771e48912b9b0a9f"
         },
         "system_headers": 123,
-        "object_sha256": "776d9bea5f978508692e7263cbc5973fcde944ecca9a20ece00cfdde177e2463"
+        "object_sha256": "c1af508cec419fa64233cc1852d66a6376c15660d8e770412abff35b48b9f049"
       },
-      "fuzzy_target_sha256": "218b86839932e32329b0d73adedec064ebf9c2fbbd9013761e92265733455bb0",
+      "fuzzy_target_sha256": "d9b8193a7aa30c892b1a2bd0ae7a5974ea56640ae1b10950ec14f350bc70f7d5",
       "fuzzy_functions": [
         {
           "address": "0x574760",
@@ -275300,28 +276119,10 @@
           "percent": 100.0
         },
         {
-          "address": "0x575370",
-          "size": 712,
-          "symbol": "_ZN5daisy5scene22CSceneCollisionManager16collideWithWorldEiRNS1_14SCollisionDataEN2ox4core9CVector3dIfEES7_",
-          "percent": 0.32258064
-        },
-        {
-          "address": "0x575640",
-          "size": 116,
-          "symbol": "_ZN5daisy5scene22CSceneCollisionManager25collideEllipsoidWithWorldEPN2ox5scene17ITriangleSelectorERKNS2_4core9CVector3dIfEESA_SA_fSA_RNS6_11CTriangle3dIfEERb",
-          "percent": 0
-        },
-        {
-          "address": "0x578080",
-          "size": 132,
-          "symbol": "_ZN5daisy5scene22CSceneCollisionManager26getCollisionResultPositionEPN2ox5scene17ITriangleSelectorERKNS2_4core9CVector3dIfEESA_SA_RNS6_11CTriangle3dIfEERbfSA_",
-          "percent": 99.871796
-        },
-        {
-          "address": "0x5756c0",
-          "size": 1868,
-          "symbol": "_ZN5daisy5scene22CSceneCollisionManager17getCollisionPointERKN2ox4core7CLine3dIfEEPNS2_5scene17ITriangleSelectorERNS3_9CVector3dIfEERNS3_11CTriangle3dIfEE",
-          "percent": 0.11080332
+          "address": "0x578180",
+          "size": 109,
+          "symbol": "_ZN5daisy5scene22CSceneCollisionManagerD2Ev",
+          "percent": 100.0
         },
         {
           "address": "0x575370",
@@ -275330,16 +276131,10 @@
           "percent": 100.0
         },
         {
-          "address": "0x577310",
-          "size": 312,
-          "symbol": "_ZN5daisy5scene22CSceneCollisionManager24getSceneNodeFromCameraBBEPN2ox5scene16ICameraSceneNodeEi",
-          "percent": 100.0
-        },
-        {
-          "address": "0x575640",
-          "size": 116,
-          "symbol": "_ZN5daisy5scene22CSceneCollisionManagerD0Ev",
-          "percent": 100.0
+          "address": "0x5756c0",
+          "size": 1868,
+          "symbol": "_ZN5daisy5scene22CSceneCollisionManager17getCollisionPointERKN2ox4core7CLine3dIfEEPNS2_5scene17ITriangleSelectorERNS3_9CVector3dIfEERNS3_11CTriangle3dIfEE",
+          "percent": 67.73407
         },
         {
           "address": "0x575e10",
@@ -275354,9 +276149,33 @@
           "percent": 100.0
         },
         {
-          "address": "0x578180",
-          "size": 109,
-          "symbol": "_ZN5daisy5scene22CSceneCollisionManagerD2Ev",
+          "address": "0x577310",
+          "size": 312,
+          "symbol": "_ZN5daisy5scene22CSceneCollisionManager24getSceneNodeFromCameraBBEPN2ox5scene16ICameraSceneNodeEi",
+          "percent": 100.0
+        },
+        {
+          "address": "0x577450",
+          "size": 1824,
+          "symbol": "_ZN5daisy5scene22CSceneCollisionManager16collideWithWorldEiRNS1_14SCollisionDataEN2ox4core9CVector3dIfEES7_",
+          "percent": 77.93629
+        },
+        {
+          "address": "0x577b70",
+          "size": 1292,
+          "symbol": "_ZN5daisy5scene22CSceneCollisionManager25collideEllipsoidWithWorldEPN2ox5scene17ITriangleSelectorERKNS2_4core9CVector3dIfEESA_SA_fSA_RNS6_11CTriangle3dIfEERb",
+          "percent": 100.0
+        },
+        {
+          "address": "0x578080",
+          "size": 132,
+          "symbol": "_ZN5daisy5scene22CSceneCollisionManager26getCollisionResultPositionEPN2ox5scene17ITriangleSelectorERKNS2_4core9CVector3dIfEESA_SA_RNS6_11CTriangle3dIfEERbfSA_",
+          "percent": 100.0
+        },
+        {
+          "address": "0x575640",
+          "size": 116,
+          "symbol": "_ZN5daisy5scene22CSceneCollisionManagerD0Ev",
           "percent": 100.0
         },
         {
@@ -275384,12 +276203,6 @@
           "percent": 100.0
         },
         {
-          "address": "0x578db0",
-          "size": 247,
-          "symbol": "_ZN5daisy5scene22CSceneCollisionManager13getLowestRootEffffPf",
-          "percent": 100.0
-        },
-        {
           "address": "0x578da0",
           "size": 12,
           "symbol": "_ZN2ox5scene22ISceneCollisionManagerD0Ev",
@@ -275402,9 +276215,21 @@
           "percent": 100.0
         },
         {
+          "address": "0x578db0",
+          "size": 247,
+          "symbol": "_ZN5daisy5scene22CSceneCollisionManager13getLowestRootEffffPf",
+          "percent": 100.0
+        },
+        {
           "address": "0x5651a0",
           "size": 676,
           "symbol": "_ZNK2ox4core8CPlane3dIfE25getIntersectionWithPlanesERKS2_S4_RNS0_9CVector3dIfEE",
+          "percent": 100.0
+        },
+        {
+          "address": "0x54fd90",
+          "size": 115,
+          "symbol": "_ZN2ox4core9CVector3dIfE9normalizeEv",
           "percent": 100.0
         }
       ]
@@ -285888,36 +286713,14 @@
     {
       "unit": "daisy/video/Software/CSoftwareTexture.cpp",
       "object_sha256": "052dd321c0d62a7b7562ea998a2bb5323a8781c20ec1f2f2cf42b75e39c542c6",
-      "exact": false,
+      "exact": true,
       "sections": [
         {
           "name": ".text",
           "size": 1195,
           "placement": "symbol: _ZN5daisy5video16CSoftwareTexture4lockEv",
-          "exact": false,
+          "exact": true,
           "address": "0x4f35c0",
-          "first_difference": 444,
-          "differing_bytes": 8,
-          "bad_references": [
-            {
-              "offset": 444,
-              "type": 2,
-              "symbol": "_ZN5daisy5video6CImageC1EN2ox5video13ECOLOR_FORMATEPNS3_6IImageE",
-              "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "0x4deb30",
-              "matches": false
-            },
-            {
-              "offset": 764,
-              "type": 2,
-              "symbol": "_ZN5daisy5video6CImageC1EN2ox5video13ECOLOR_FORMATEPNS3_6IImageE",
-              "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "0x4deb30",
-              "matches": false
-            }
-          ],
           "references": 42,
           "functions": [
             {
@@ -286006,14 +286809,7 @@
               "size": 318,
               "extent": "fde",
               "global": true,
-              "exact": false,
-              "exact_but_unknown": true,
-              "candidates": [
-                [
-                  "_ZN5daisy5video6CImageC1EN2ox5video13ECOLOR_FORMATEPNS3_6IImageE",
-                  "0x4deb30"
-                ]
-              ]
+              "exact": true
             },
             {
               "symbol": "_ZN5daisy5video16CSoftwareTextureC2EPN2ox5video6IImageE",
@@ -286021,14 +286817,7 @@
               "size": 318,
               "extent": "fde",
               "global": true,
-              "exact": false,
-              "exact_but_unknown": true,
-              "candidates": [
-                [
-                  "_ZN5daisy5video6CImageC1EN2ox5video13ECOLOR_FORMATEPNS3_6IImageE",
-                  "0x4deb30"
-                ]
-              ]
+              "exact": true
             },
             {
               "symbol": "_ZN5daisy5video16CSoftwareTextureD2Ev",
@@ -286348,7 +287137,7 @@
         "system_headers": 114,
         "object_sha256": "052dd321c0d62a7b7562ea998a2bb5323a8781c20ec1f2f2cf42b75e39c542c6"
       },
-      "fuzzy_target_sha256": "a175b5fe78e34bede20756974652d74e0e153fcd66fd53eed02bb67872e6ecdb",
+      "fuzzy_target_sha256": "005ce3e3657d8a2b01f4e62a34481bfb9a91a9280e82e9d5b5ece977f0124232",
       "fuzzy_functions": [
         {
           "address": "0x4f35c0",
@@ -286414,13 +287203,13 @@
           "address": "0x4f36c0",
           "size": 318,
           "symbol": "_ZN5daisy5video16CSoftwareTextureC1EPN2ox5video6IImageE",
-          "percent": 99.941864
+          "percent": 100.0
         },
         {
           "address": "0x4f3800",
           "size": 318,
           "symbol": "_ZN5daisy5video16CSoftwareTextureC2EPN2ox5video6IImageE",
-          "percent": 99.941864
+          "percent": 100.0
         },
         {
           "address": "0x4f3940",
@@ -290279,6 +291068,11 @@
               "placed": "0x4dec10"
             },
             {
+              "symbol": "_ZN5daisy5video6CImageC1EN2ox5video13ECOLOR_FORMATEPNS3_6IImageE",
+              "known": "0x4deb30",
+              "placed": "0x4dec20"
+            },
+            {
               "symbol": "_ZN5daisy5video6CImageD0Ev",
               "known": "0x4de980",
               "placed": "0x4def40"
@@ -290374,29 +291168,11 @@
               "matches": false
             },
             {
-              "offset": 6291,
-              "type": 11,
-              "symbol": "_ZTVN5daisy5video6CImageE",
-              "addend": 16,
-              "destination": "0x60e6a0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 6354,
-              "type": 2,
-              "symbol": "_ZN5daisy5video6CImage8initDataEv",
-              "addend": -4,
-              "destination": "0x4ddea0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
               "offset": 6568,
               "type": 10,
               "symbol": ".rodata.str1.8",
               "addend": 0,
-              "reason": "unmapped or truncated range: 0x6624245c+0x29",
+              "reason": "unmapped or truncated range: 0x49e4ebff+0x29",
               "matches": false
             },
             {
@@ -290436,11 +291212,29 @@
               "matches": false
             },
             {
+              "offset": 6691,
+              "type": 11,
+              "symbol": "_ZTVN5daisy5video6CImageE",
+              "addend": 16,
+              "destination": "0x60e6a0",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 6754,
+              "type": 2,
+              "symbol": "_ZN5daisy5video6CImage8initDataEv",
+              "addend": -4,
+              "destination": "0x4ddea0",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
               "offset": 6968,
               "type": 10,
               "symbol": ".rodata.str1.8",
               "addend": 0,
-              "reason": "unmapped or truncated range: 0x49e4ebff+0x29",
+              "reason": "unmapped or truncated range: 0xf411fe2+0x29",
               "matches": false
             },
             {
@@ -290764,7 +291558,7 @@
             },
             {
               "symbol": "_ZN5daisy5video6CImageC1EN2ox5video13ECOLOR_FORMATEPNS3_6IImageE",
-              "address": "0x4de980",
+              "address": "0x4deb30",
               "size": 392,
               "extent": null,
               "global": true,
@@ -290772,7 +291566,7 @@
             },
             {
               "symbol": "_ZN5daisy5video6CImageC2EN2ox5video13ECOLOR_FORMATEPNS3_6IImageE",
-              "address": "0x4de9b0",
+              "address": "0x4decb0",
               "size": 392,
               "extent": null,
               "global": true,
@@ -291126,7 +291920,7 @@
         "system_headers": 111,
         "object_sha256": "87013ab772b71a46741371c93979822b73a5df71692e33ae837d82b795ede092"
       },
-      "fuzzy_target_sha256": "31dabb65937da24560a90c374c16a78642387525ff4bcc0822ff0120f65e6d29",
+      "fuzzy_target_sha256": "499567d97afb7044e700c3c5825ae8a477a9c2fea2d5c90c546c071048f23ccd",
       "fuzzy_functions": [
         {
           "address": "0x4dd3b0",
@@ -291339,16 +292133,16 @@
           "percent": 100.0
         },
         {
-          "address": "0x4de980",
-          "size": 41,
+          "address": "0x4deb30",
+          "size": 382,
           "symbol": "_ZN5daisy5video6CImageC1EN2ox5video13ECOLOR_FORMATEPNS3_6IImageE",
-          "percent": 0
+          "percent": 87.37037
         },
         {
-          "address": "0x4de9b0",
-          "size": 382,
+          "address": "0x4decb0",
+          "size": 620,
           "symbol": "_ZN5daisy5video6CImageC2EN2ox5video13ECOLOR_FORMATEPNS3_6IImageE",
-          "percent": 87.37037
+          "percent": 14.092784
         },
         {
           "address": "0x4de980",
@@ -293115,7 +293909,7 @@
     "config": {
       "functionRelocDiffs": "data_value"
     },
-    "report_sha256": "39d609f29d55f2024dcd8c3ee91e9d4d303018bd8c13a35d84ebd3ae77d1b044"
+    "report_sha256": "0cfabd151e19904d802c5657f344ded4e64245c1b3bdef720dae77e3e396f62a"
   },
   "link": {
     "status": "unavailable",
