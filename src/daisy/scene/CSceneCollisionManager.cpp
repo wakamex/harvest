@@ -19,7 +19,7 @@
 #include "daisy/os.h"
 #include <stdio.h>
 
-inline bool _concord_isOnSameSide(const ox::core::CVector3d<float>& p1, const ox::core::CVector3d<float>& p2,
+inline bool isOnSameSide(const ox::core::CVector3d<float>& p1, const ox::core::CVector3d<float>& p2,
 		const ox::core::CVector3d<float>& a, const ox::core::CVector3d<float>& b)
 {
 	ox::core::CVector3d<float> bminusa = b - a;
@@ -28,7 +28,7 @@ inline bool _concord_isOnSameSide(const ox::core::CVector3d<float>& p1, const ox
 	return (cp1.dotProduct(cp2) > 0.0f);
 }
 
-inline bool _concord_getIntersectionWithLine(const ox::core::CTriangle3d<float>& triangle,
+inline bool getIntersectionWithLine(const ox::core::CTriangle3d<float>& triangle,
 		const ox::core::CVector3d<float>& linePoint, const ox::core::CVector3d<float>& lineVect,
 		ox::core::CVector3d<float>& outIntersection)
 {
@@ -39,9 +39,9 @@ inline bool _concord_getIntersectionWithLine(const ox::core::CTriangle3d<float>&
 	float d = triangle.pointA.dotProduct(normal);
 	float t = -(normal.dotProduct(linePoint) - d) / t2;
 	outIntersection = linePoint + (lineVect * t);
-	return (_concord_isOnSameSide(outIntersection, triangle.pointA, triangle.pointB, triangle.pointC) &&
-		_concord_isOnSameSide(outIntersection, triangle.pointB, triangle.pointA, triangle.pointC) &&
-		_concord_isOnSameSide(outIntersection, triangle.pointC, triangle.pointA, triangle.pointB));
+	return (isOnSameSide(outIntersection, triangle.pointA, triangle.pointB, triangle.pointC) &&
+		isOnSameSide(outIntersection, triangle.pointB, triangle.pointA, triangle.pointC) &&
+		isOnSameSide(outIntersection, triangle.pointC, triangle.pointA, triangle.pointB));
 }
 
 namespace ox { namespace scene {} }
@@ -198,7 +198,7 @@ bool CSceneCollisionManager::getCollisionPoint(const ox::core::CLine3d<float>& r
 
 	for (int i=0; i<cnt; ++i)
 	{
-		if (_concord_getIntersectionWithLine(Triangles[i], ray.start, linevect, intersection))
+		if (getIntersectionWithLine(Triangles[i], ray.start, linevect, intersection))
 		{
 			tmp = (float)intersection.getDistanceFromSQ(ray.start);
 			tmp2 = (float)intersection.getDistanceFromSQ(ray.end);
