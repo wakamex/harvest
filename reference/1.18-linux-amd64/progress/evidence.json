@@ -19,7 +19,7 @@
     "tools/hv/objdiff.py": "13fa221740693a00a37134a133ddf96297d3efa7421e0d5af57a8b96b0abfcb5",
     "tools/hv/delink.py": "973dd463d7e8d0ec81ddf5977cad3154501fe559559442515e50857e8ef9b9cf",
     "config/1.18-linux-amd64/flags.json": "9ebb8c16c904108ddb5cbaa50345a733d400ee2bd3994c72e5545e676fb03ad8",
-    "config/1.18-linux-amd64/symbols.tsv": "13d72e693cec95d43159313175b3c393a03ca1b4408d36b7126ebf180ad08793",
+    "config/1.18-linux-amd64/symbols.tsv": "32253efe942b9438d0de22f9d7655c905a77ad57a32cfcb7b7f9519382e09451",
     "config/1.18-linux-amd64/extents.tsv": "55dd5b29374ba204f2ddf66df2c6fbe9cf434a68cd559196f1a3331c4911a20b",
     "config/1.18-linux-amd64/units.toml": "9d23aa413394390c65d7b83e5cc5bc4ae20933a388484b9a4efb9f128609d0cf"
   },
@@ -260235,8 +260235,8 @@
               "type": 2,
               "symbol": "_ZN2ox6TArrayIN5daisy5scene12CXFileReader14SXAnimationSetEED1Ev",
               "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "-0x3c4a9a65",
+              "destination": "0x599510",
+              "reason": "different destination",
               "matches": false
             },
             {
@@ -260271,8 +260271,8 @@
               "type": 2,
               "symbol": "_ZN2ox6TArrayIN5daisy5scene12CXFileReader14SXAnimationSetEED1Ev",
               "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "-0x3c4a98a5",
+              "destination": "0x599510",
+              "reason": "different destination",
               "matches": false
             },
             {
@@ -262726,6 +262726,24 @@
           ]
         },
         {
+          "name": ".text._ZN2ox6TArrayIN5daisy5scene12CXFileReader14SXAnimationSetEED1Ev",
+          "size": 168,
+          "placement": "symbol: _ZN2ox6TArrayIN5daisy5scene12CXFileReader14SXAnimationSetEED1Ev",
+          "exact": true,
+          "address": "0x599510",
+          "references": 5,
+          "functions": [
+            {
+              "symbol": "_ZN2ox6TArrayIN5daisy5scene12CXFileReader14SXAnimationSetEED1Ev",
+              "address": "0x599510",
+              "size": 168,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ]
+        },
+        {
           "name": ".text._ZNSt6vectorIiSaIiEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPiS1_EEmRKi",
           "size": 591,
           "placement": "symbol: _ZNSt6vectorIiSaIiEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPiS1_EEmRKi",
@@ -262845,7 +262863,6 @@
         ".text._ZNSt6vectorIN2ox4core9CVector2dIfEESaIS3_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS3_S5_EEmRKS3_",
         ".text._ZNSt6vectorIN2ox4core9CVector3dIfEESaIS3_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS3_S5_EEmRKS3_",
         ".gcc_except_table",
-        ".text._ZN2ox6TArrayIN5daisy5scene12CXFileReader14SXAnimationSetEED1Ev",
         ".text._ZNSt6vectorIN5daisy5scene12CXFileReader6SXMeshESaIS3_EED2Ev",
         ".text._ZN5daisy5scene12CXFileReader7SXFrameD1Ev",
         ".rodata"
@@ -262902,7 +262919,7 @@
         "system_headers": 129,
         "object_sha256": "254dac6ca4f08975ed313e04275974f9c63aded6fc58d60ff90238a8f8eff35d"
       },
-      "fuzzy_target_sha256": "505d439ee853ad2f50ab93d2c45c7ea940f713db3c0feadb1b0c981cb28c348f",
+      "fuzzy_target_sha256": "580430ff597347da104ecbc53bcc1a964e94d5225b2c32bfb06a415ca57a943c",
       "fuzzy_functions": [
         {
           "address": "0x58b620",
@@ -263070,13 +263087,13 @@
           "address": "0x5922b0",
           "size": 442,
           "symbol": "_ZN5daisy5scene12CXFileReaderC1EPN2ox2io9IReadFileE",
-          "percent": 83.809525
+          "percent": 83.86905
         },
         {
           "address": "0x592470",
           "size": 442,
           "symbol": "_ZN5daisy5scene12CXFileReaderC2EPN2ox2io9IReadFileE",
-          "percent": 83.809525
+          "percent": 83.86905
         },
         {
           "address": "0x592630",
@@ -263148,6 +263165,12 @@
           "address": "0x4668d0",
           "size": 12,
           "symbol": "_ZN2ox8IUnknownD0Ev",
+          "percent": 100.0
+        },
+        {
+          "address": "0x599510",
+          "size": 168,
+          "symbol": "_ZN2ox6TArrayIN5daisy5scene12CXFileReader14SXAnimationSetEED1Ev",
           "percent": 100.0
         },
         {
@@ -286455,7 +286478,7 @@
           "exact": false,
           "address": "0x4c21c0",
           "first_difference": 1045,
-          "differing_bytes": 3088,
+          "differing_bytes": 3048,
           "misplaced_symbols": [
             {
               "symbol": "_ZN5daisy5scene13CSceneManager17postEventFromUserEN2ox5event6SEventE",
@@ -286972,51 +286995,6 @@
               "matches": false
             },
             {
-              "offset": 10639,
-              "type": 2,
-              "symbol": "_ZN2ox6TArrayIPNS_5scene10ISceneNodeEED1Ev",
-              "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "0x4c7240",
-              "matches": false
-            },
-            {
-              "offset": 10702,
-              "type": 2,
-              "symbol": "_ZN2ox6TArrayIPNS_5scene10ISceneNodeEED1Ev",
-              "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "0x4c7240",
-              "matches": false
-            },
-            {
-              "offset": 10714,
-              "type": 2,
-              "symbol": "_ZN2ox6TArrayIPNS_5scene10ISceneNodeEED1Ev",
-              "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "0x4c7240",
-              "matches": false
-            },
-            {
-              "offset": 10726,
-              "type": 2,
-              "symbol": "_ZN2ox6TArrayIPNS_5scene10ISceneNodeEED1Ev",
-              "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "0x4c7240",
-              "matches": false
-            },
-            {
-              "offset": 10738,
-              "type": 2,
-              "symbol": "_ZN2ox6TArrayIN5daisy5scene13CSceneManager9MeshEntryEED1Ev",
-              "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "0x4c8770",
-              "matches": false
-            },
-            {
               "offset": 10941,
               "type": 11,
               "symbol": "_ZTVN2ox5scene13ISceneManagerE",
@@ -287219,8 +287197,8 @@
               "type": 2,
               "symbol": "_ZN2ox6TArrayIPNS_5scene10ISceneNodeEED1Ev",
               "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "-0x386b9f81",
+              "destination": "0x4c7240",
+              "reason": "different destination",
               "matches": false
             },
             {
@@ -287255,8 +287233,8 @@
               "type": 2,
               "symbol": "_ZN2ox6TArrayIPNS_5scene10ISceneNodeEED1Ev",
               "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "0x47d76b46",
+              "destination": "0x4c7240",
+              "reason": "different destination",
               "matches": false
             },
             {
@@ -287264,8 +287242,8 @@
               "type": 2,
               "symbol": "_ZN2ox6TArrayIPNS_5scene10ISceneNodeEED1Ev",
               "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "0x4852cce6",
+              "destination": "0x4c7240",
+              "reason": "different destination",
               "matches": false
             },
             {
@@ -287273,8 +287251,8 @@
               "type": 2,
               "symbol": "_ZN2ox6TArrayIPNS_5scene10ISceneNodeEED1Ev",
               "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "0x4c5902",
+              "destination": "0x4c7240",
+              "reason": "different destination",
               "matches": false
             },
             {
@@ -287282,8 +287260,8 @@
               "type": 2,
               "symbol": "_ZN2ox6TArrayIN5daisy5scene13CSceneManager9MeshEntryEED1Ev",
               "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "-0x7ab1bf87",
+              "destination": "0x4c8770",
+              "reason": "different destination",
               "matches": false
             },
             {
@@ -287332,51 +287310,6 @@
               "matches": false
             },
             {
-              "offset": 13391,
-              "type": 2,
-              "symbol": "_ZN2ox6TArrayIPNS_5scene10ISceneNodeEED1Ev",
-              "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "0x4c7240",
-              "matches": false
-            },
-            {
-              "offset": 13454,
-              "type": 2,
-              "symbol": "_ZN2ox6TArrayIPNS_5scene10ISceneNodeEED1Ev",
-              "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "0x4c7240",
-              "matches": false
-            },
-            {
-              "offset": 13466,
-              "type": 2,
-              "symbol": "_ZN2ox6TArrayIPNS_5scene10ISceneNodeEED1Ev",
-              "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "0x4c7240",
-              "matches": false
-            },
-            {
-              "offset": 13478,
-              "type": 2,
-              "symbol": "_ZN2ox6TArrayIPNS_5scene10ISceneNodeEED1Ev",
-              "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "0x4c7240",
-              "matches": false
-            },
-            {
-              "offset": 13490,
-              "type": 2,
-              "symbol": "_ZN2ox6TArrayIN5daisy5scene13CSceneManager9MeshEntryEED1Ev",
-              "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "0x4c8770",
-              "matches": false
-            },
-            {
               "offset": 13612,
               "type": 11,
               "symbol": "_ZTVN5daisy5scene13CSceneManagerE",
@@ -287386,102 +287319,12 @@
               "matches": false
             },
             {
-              "offset": 14527,
-              "type": 2,
-              "symbol": "_ZN2ox6TArrayIPNS_5scene10ISceneNodeEED1Ev",
-              "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "0x4c7240",
-              "matches": false
-            },
-            {
-              "offset": 14590,
-              "type": 2,
-              "symbol": "_ZN2ox6TArrayIPNS_5scene10ISceneNodeEED1Ev",
-              "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "0x4c7240",
-              "matches": false
-            },
-            {
-              "offset": 14602,
-              "type": 2,
-              "symbol": "_ZN2ox6TArrayIPNS_5scene10ISceneNodeEED1Ev",
-              "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "0x4c7240",
-              "matches": false
-            },
-            {
-              "offset": 14614,
-              "type": 2,
-              "symbol": "_ZN2ox6TArrayIPNS_5scene10ISceneNodeEED1Ev",
-              "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "0x4c7240",
-              "matches": false
-            },
-            {
-              "offset": 14626,
-              "type": 2,
-              "symbol": "_ZN2ox6TArrayIN5daisy5scene13CSceneManager9MeshEntryEED1Ev",
-              "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "0x4c8770",
-              "matches": false
-            },
-            {
               "offset": 14764,
               "type": 11,
               "symbol": "_ZTVN5daisy5scene13CSceneManagerE",
               "addend": 464,
               "destination": "0x60ca00",
               "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 15686,
-              "type": 2,
-              "symbol": "_ZN2ox6TArrayIPNS_5scene10ISceneNodeEED1Ev",
-              "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "0x4c7240",
-              "matches": false
-            },
-            {
-              "offset": 15749,
-              "type": 2,
-              "symbol": "_ZN2ox6TArrayIPNS_5scene10ISceneNodeEED1Ev",
-              "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "0x4c7240",
-              "matches": false
-            },
-            {
-              "offset": 15761,
-              "type": 2,
-              "symbol": "_ZN2ox6TArrayIPNS_5scene10ISceneNodeEED1Ev",
-              "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "0x4c7240",
-              "matches": false
-            },
-            {
-              "offset": 15773,
-              "type": 2,
-              "symbol": "_ZN2ox6TArrayIPNS_5scene10ISceneNodeEED1Ev",
-              "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "0x4c7240",
-              "matches": false
-            },
-            {
-              "offset": 15785,
-              "type": 2,
-              "symbol": "_ZN2ox6TArrayIN5daisy5scene13CSceneManager9MeshEntryEED1Ev",
-              "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "0x4c8770",
               "matches": false
             }
           ],
@@ -288404,6 +288247,24 @@
           ]
         },
         {
+          "name": ".text._ZN2ox6TArrayIPNS_5scene10ISceneNodeEED1Ev",
+          "size": 18,
+          "placement": "symbol: _ZN2ox6TArrayIPNS_5scene10ISceneNodeEED1Ev",
+          "exact": true,
+          "address": "0x4c7240",
+          "references": 1,
+          "functions": [
+            {
+              "symbol": "_ZN2ox6TArrayIPNS_5scene10ISceneNodeEED1Ev",
+              "address": "0x4c7240",
+              "size": 18,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ]
+        },
+        {
           "name": ".text._ZN2ox8IUnknownD0Ev",
           "size": 12,
           "placement": "symbol: _ZN2ox8IUnknownD0Ev",
@@ -288552,6 +288413,24 @@
               "symbol": "_ZN2ox5scene10ISceneNode7setNameEPKw",
               "address": "0x4c7a80",
               "size": 216,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ]
+        },
+        {
+          "name": ".text._ZN2ox6TArrayIN5daisy5scene13CSceneManager9MeshEntryEED1Ev",
+          "size": 69,
+          "placement": "symbol: _ZN2ox6TArrayIN5daisy5scene13CSceneManager9MeshEntryEED1Ev",
+          "exact": true,
+          "address": "0x4c8770",
+          "references": 2,
+          "functions": [
+            {
+              "symbol": "_ZN2ox6TArrayIN5daisy5scene13CSceneManager9MeshEntryEED1Ev",
+              "address": "0x4c8770",
+              "size": 69,
               "extent": "fde",
               "global": true,
               "exact": true
@@ -289441,8 +289320,6 @@
       ],
       "unplaced_sections": [
         ".bss",
-        ".text._ZN2ox6TArrayIPNS_5scene10ISceneNodeEED1Ev",
-        ".text._ZN2ox6TArrayIN5daisy5scene13CSceneManager9MeshEntryEED1Ev",
         ".gcc_except_table",
         ".text._ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS5_SaIS5_EEEElS5_EvT_T0_SC_T1_",
         ".text._ZSt25__unguarded_linear_insertIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS5_SaIS5_EEEES5_EvT_T0_",
@@ -289605,7 +289482,7 @@
         "system_headers": 145,
         "object_sha256": "2d565d374d6f89d624a74eed5ab6fe2c800feac72f9818725cadcc178356c036"
       },
-      "fuzzy_target_sha256": "69a2a166cb6bdc479cfec6a136629c3b2c1e7484968099c6048b5a86e780aadf",
+      "fuzzy_target_sha256": "f29d6c9f4fae429545e7b3fa3758b205ab65da6f5da5fe90ef3fe8b5e1fc74b2",
       "fuzzy_functions": [
         {
           "address": "0x4c21c0",
@@ -289971,7 +289848,7 @@
           "address": "0x4c4c90",
           "size": 1525,
           "symbol": "_ZN5daisy5scene13CSceneManagerC1EPN2ox5video12IVideoDriverEPNS2_2io11IFileSystemEPNS2_3gui14ICursorControlE",
-          "percent": 99.907745
+          "percent": 100.0
         },
         {
           "address": "0x4c5290",
@@ -289989,13 +289866,13 @@
           "address": "0x4c5c00",
           "size": 1127,
           "symbol": "_ZN5daisy5scene13CSceneManagerD1Ev",
-          "percent": 99.918304
+          "percent": 100.0
         },
         {
           "address": "0x4c5300",
           "size": 1127,
           "symbol": "_ZN5daisy5scene13CSceneManagerD2Ev",
-          "percent": 99.918304
+          "percent": 100.0
         },
         {
           "address": "0x4c5770",
@@ -290007,7 +289884,7 @@
           "address": "0x4c5780",
           "size": 1135,
           "symbol": "_ZN5daisy5scene13CSceneManagerD0Ev",
-          "percent": 99.91883
+          "percent": 100.0
         },
         {
           "address": "0x466870",
@@ -290136,6 +290013,12 @@
           "percent": 100.0
         },
         {
+          "address": "0x4c7240",
+          "size": 18,
+          "symbol": "_ZN2ox6TArrayIPNS_5scene10ISceneNodeEED1Ev",
+          "percent": 100.0
+        },
+        {
           "address": "0x4668d0",
           "size": 12,
           "symbol": "_ZN2ox8IUnknownD0Ev",
@@ -290169,6 +290052,12 @@
           "address": "0x4c7a80",
           "size": 216,
           "symbol": "_ZN2ox5scene10ISceneNode7setNameEPKw",
+          "percent": 100.0
+        },
+        {
+          "address": "0x4c8770",
+          "size": 69,
+          "symbol": "_ZN2ox6TArrayIN5daisy5scene13CSceneManager9MeshEntryEED1Ev",
           "percent": 100.0
         },
         {
@@ -293226,7 +293115,7 @@
     "config": {
       "functionRelocDiffs": "data_value"
     },
-    "report_sha256": "1c7a0908e9e1e9c32fe4983516ef1e58633123aadffea2d7a1a3ca17083a9c9d"
+    "report_sha256": "39d609f29d55f2024dcd8c3ee91e9d4d303018bd8c13a35d84ebd3ae77d1b044"
   },
   "link": {
     "status": "unavailable",
