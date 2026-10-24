@@ -189,8 +189,10 @@ bool CSceneManager::wasMeshLoaded(const char* filename)
 //! returns an already loaded mesh
 IAnimatedMesh* CSceneManager::findMesh(const char* lowerMadeFilename)
 {
-    // Not recovered: Irrlicht 0.7's body does not compile against daisy's interfaces.
-    __builtin_trap();
+	MeshEntry e;
+	e.Name = lowerMadeFilename;
+	int id = ox::algo::binarySearchPos(Meshes.begin(), Meshes.end(), e);
+	return (id != -1) ? Meshes[id].Mesh : 0;
 }
 
 
@@ -1004,8 +1006,24 @@ void CSceneManager::clearDeletionList()
 //! Returns the first scene node with the specified id.
 ISceneNode* CSceneManager::getSceneNodeFromId(int id, ISceneNode* start)
 {
-    // Not recovered: Irrlicht 0.7's body does not compile against daisy's interfaces.
-    __builtin_trap();
+	if (start == 0)
+		start = getRootSceneNode();
+
+	if (start->getID() == id)
+		return start;
+
+	ISceneNode* node = 0;
+
+	const ox::TList<ISceneNode*>& list = start->getChildren();
+	ox::TList<ISceneNode*>::const_iterator it = list.begin();
+	for (; it!=list.end(); ++it)
+	{
+		node = getSceneNodeFromId(id, *it);
+		if (node)
+			return node;
+	}
+
+	return 0;
 }
 
 
