@@ -36711,17 +36711,17 @@
     },
     {
       "unit": "HarvestFull/harvest/entity/CMissileTurretEntity.cpp",
-      "object_sha256": "ec94b4d3605b0d953d824e1d64e63e59dd97304c815d77cd0d3d348a151e887c",
+      "object_sha256": "7b92c521a8ecdca0e693e232dd576878de528f655c0d5f722811e30f54c40767",
       "exact": false,
       "sections": [
         {
           "name": ".text",
-          "size": 17492,
+          "size": 17508,
           "placement": "explicit",
           "exact": false,
           "address": "0x435ec0",
           "first_difference": 1199,
-          "differing_bytes": 3392,
+          "differing_bytes": 3235,
           "misplaced_symbols": [
             {
               "symbol": "_ZN7harvest6entity20CMissileTurretEntity23getCurrentDisplaySpriteEv",
@@ -36856,82 +36856,82 @@
             {
               "symbol": "_ZN7harvest6entity20CMissileTurretEntity17findPriorityAlienEv",
               "known": "0x437080",
-              "placed": "0x437090"
+              "placed": "0x4370a0"
             },
             {
               "symbol": "_ZN7harvest6entity19CTempestBlastEntity11createBeamsERKN2ox4core9CVector3dIfEES7_i",
               "known": "0x4370f0",
-              "placed": "0x437100"
+              "placed": "0x437110"
             },
             {
               "symbol": "_ZN7harvest6entity19CTempestBlastEntity11updateLogicEf",
               "known": "0x437490",
-              "placed": "0x4374a0"
+              "placed": "0x4374b0"
             },
             {
               "symbol": "_ZN7harvest6entity19CTempestBlastEntityD0Ev",
               "known": "0x437650",
-              "placed": "0x437660"
+              "placed": "0x437670"
             },
             {
               "symbol": "_ZN7harvest6entity19CTempestBlastEntityD1Ev",
               "known": "0x4376d0",
-              "placed": "0x4376e0"
+              "placed": "0x4376f0"
             },
             {
               "symbol": "_ZN7harvest6entity20CMissileTurretEntity13getInfoStringEv",
               "known": "0x4377d0",
-              "placed": "0x437760"
+              "placed": "0x437770"
             },
             {
               "symbol": "_ZN7harvest6entity19CTempestBlastEntityC1ERKN2ox4core9CVector3dIfEES7_ii",
               "known": "0x437be0",
-              "placed": "0x437b70"
+              "placed": "0x437b80"
             },
             {
               "symbol": "_ZN7harvest6entity14CMissileEntity11updateLogicEf",
               "known": "0x437d50",
-              "placed": "0x437ce0"
+              "placed": "0x437cf0"
             },
             {
               "symbol": "_ZN7harvest6entity19CTempestBlastEntityC2ERKN2ox4core9CVector3dIfEES7_ii",
               "known": "0x4388d0",
-              "placed": "0x438870"
+              "placed": "0x438880"
             },
             {
               "symbol": "_ZN7harvest6entity20CMissileTurretEntityC2Eiff",
               "known": "0x4390c0",
-              "placed": "0x4389e0"
+              "placed": "0x4389f0"
             },
             {
               "symbol": "_ZN7harvest6entity20CMissileTurretEntityC1Eiff",
               "known": "0x438a40",
-              "placed": "0x439060"
+              "placed": "0x439070"
             },
             {
               "symbol": "_ZN7harvest6entity14CMissileEntity21initializeMissileTypeEv",
               "known": "0x439740",
-              "placed": "0x4396e0"
+              "placed": "0x4396f0"
             },
             {
               "symbol": "_ZN7harvest6entity14CMissileEntity14readEntityDataEPN2ox2io9IReadFileEi",
               "known": "0x4399b0",
-              "placed": "0x439950"
+              "placed": "0x439960"
             },
             {
               "symbol": "_ZN7harvest6entity14CMissileEntityC1EffRKN2ox4core11CPosition2dIfEEiii",
               "known": "0x439a80",
-              "placed": "0x439a20"
+              "placed": "0x439a30"
             },
             {
               "symbol": "_ZN7harvest6entity20CMissileTurretEntity11updateLogicEf",
               "known": "0x439b60",
-              "placed": "0x439b00"
+              "placed": "0x439b10"
             },
             {
               "symbol": "_ZN7harvest6entity14CMissileEntityC2EffRKN2ox4core11CPosition2dIfEEiii",
               "known": "0x43a2a0",
-              "placed": "0x43a240"
+              "placed": "0x43a250"
             }
           ],
           "bad_references": [
@@ -36942,95 +36942,6 @@
               "addend": 4,
               "destination": "0x86b6e4",
               "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 3180,
-              "type": 2,
-              "symbol": "_ZN7harvest6entity14CEntityManager28calculateGridCoordinateClampEf",
-              "addend": -4,
-              "destination": "0x4304b0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 3200,
-              "type": 2,
-              "symbol": "_ZN7harvest6entity16gp_entityManagerE",
-              "addend": -4,
-              "destination": "0x86b670",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 3211,
-              "type": 2,
-              "symbol": "_ZN7harvest6entity14CEntityManager28calculateGridCoordinateClampEf",
-              "addend": -4,
-              "destination": "0x4304b0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 3228,
-              "type": 2,
-              "symbol": "_ZN7harvest6entity16gp_entityManagerE",
-              "addend": -4,
-              "destination": "0x86b670",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 3246,
-              "type": 2,
-              "symbol": "_ZN7harvest6entity14CEntityManager28calculateGridCoordinateClampEf",
-              "addend": -4,
-              "destination": "0x4304b0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 3270,
-              "type": 2,
-              "symbol": "_ZN7harvest6entity16gp_entityManagerE",
-              "addend": -4,
-              "destination": "0x86b670",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 3280,
-              "type": 2,
-              "symbol": "_ZN7harvest6entity14CEntityManager28calculateGridCoordinateClampEf",
-              "addend": -4,
-              "destination": "0x4304b0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 3294,
-              "type": 11,
-              "symbol": "_ZN7harvest8settings18g_attackPrioritiesE",
-              "addend": 65,
-              "destination": "0x86bae0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 3313,
-              "type": 11,
-              "symbol": "_ZN7harvest8settings18g_attackPrioritiesE",
-              "addend": 64,
-              "destination": "0x86bae0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 3322,
-              "type": 2,
-              "symbol": ".LC10",
-              "addend": -4,
-              "reason": "unmapped or truncated range: 0x11535e9e+0x4",
               "matches": false
             },
             {
@@ -37052,7 +36963,7 @@
               "matches": false
             },
             {
-              "offset": 7881,
+              "offset": 7897,
               "type": 2,
               "symbol": ".LC49",
               "addend": -4,
@@ -37060,7 +36971,7 @@
               "matches": false
             },
             {
-              "offset": 7889,
+              "offset": 7905,
               "type": 2,
               "symbol": ".LC50",
               "addend": -4,
@@ -37068,7 +36979,7 @@
               "matches": false
             },
             {
-              "offset": 7897,
+              "offset": 7913,
               "type": 2,
               "symbol": ".LC26",
               "addend": -4,
@@ -37076,7 +36987,7 @@
               "matches": false
             },
             {
-              "offset": 7905,
+              "offset": 7921,
               "type": 2,
               "symbol": ".LC51",
               "addend": -4,
@@ -37084,7 +36995,7 @@
               "matches": false
             },
             {
-              "offset": 8273,
+              "offset": 8289,
               "type": 2,
               "symbol": "_ZNK2ox6entity9COxEntity11getPositionEv",
               "addend": -4,
@@ -37093,7 +37004,7 @@
               "matches": false
             },
             {
-              "offset": 8323,
+              "offset": 8339,
               "type": 2,
               "symbol": "_ZN2ox4core5CMath18getSquaredDistanceERKNS0_11CPosition2dIfEES5_",
               "addend": -4,
@@ -37102,7 +37013,7 @@
               "matches": false
             },
             {
-              "offset": 8331,
+              "offset": 8347,
               "type": 2,
               "symbol": ".LC39",
               "addend": -4,
@@ -37110,7 +37021,7 @@
               "matches": false
             },
             {
-              "offset": 8680,
+              "offset": 8696,
               "type": 2,
               "symbol": ".LC5",
               "addend": -4,
@@ -37118,7 +37029,7 @@
               "matches": false
             },
             {
-              "offset": 8697,
+              "offset": 8713,
               "type": 2,
               "symbol": ".LC34",
               "addend": -4,
@@ -37126,7 +37037,7 @@
               "matches": false
             },
             {
-              "offset": 8725,
+              "offset": 8741,
               "type": 2,
               "symbol": ".LC4",
               "addend": -4,
@@ -37134,7 +37045,7 @@
               "matches": false
             },
             {
-              "offset": 8736,
+              "offset": 8752,
               "type": 2,
               "symbol": ".LC24",
               "addend": -4,
@@ -37142,7 +37053,7 @@
               "matches": false
             },
             {
-              "offset": 8761,
+              "offset": 8777,
               "type": 2,
               "symbol": ".LC4",
               "addend": -4,
@@ -37150,7 +37061,7 @@
               "matches": false
             },
             {
-              "offset": 8789,
+              "offset": 8805,
               "type": 2,
               "symbol": ".LC4",
               "addend": -4,
@@ -37158,7 +37069,7 @@
               "matches": false
             },
             {
-              "offset": 8843,
+              "offset": 8859,
               "type": 2,
               "symbol": ".LC23",
               "addend": -4,
@@ -37166,7 +37077,7 @@
               "matches": false
             },
             {
-              "offset": 8870,
+              "offset": 8886,
               "type": 2,
               "symbol": "_ZN7harvest6entity12CAlienEntity10dealDamageERfRKN2ox4core11CPosition2dIfEEfi",
               "addend": -4,
@@ -37175,7 +37086,7 @@
               "matches": false
             },
             {
-              "offset": 8888,
+              "offset": 8904,
               "type": 2,
               "symbol": "_ZN7harvest6entity16gp_entityManagerE",
               "addend": -4,
@@ -37184,7 +37095,7 @@
               "matches": false
             },
             {
-              "offset": 8929,
+              "offset": 8945,
               "type": 2,
               "symbol": "_ZN7harvest6entity16gp_entityManagerE",
               "addend": -4,
@@ -37193,7 +37104,7 @@
               "matches": false
             },
             {
-              "offset": 8946,
+              "offset": 8962,
               "type": 2,
               "symbol": "_Znwm",
               "addend": -4,
@@ -37202,7 +37113,7 @@
               "matches": false
             },
             {
-              "offset": 8956,
+              "offset": 8972,
               "type": 10,
               "symbol": ".rodata.str1.1",
               "addend": 26,
@@ -37210,7 +37121,7 @@
               "matches": false
             },
             {
-              "offset": 8979,
+              "offset": 8995,
               "type": 2,
               "symbol": "_ZN7harvest6entity15CParticleEntityC1EfffPN2ox4core9CVector3dIfEEPKc",
               "addend": -4,
@@ -37219,7 +37130,7 @@
               "matches": false
             },
             {
-              "offset": 8995,
+              "offset": 9011,
               "type": 2,
               "symbol": ".LC1",
               "addend": -4,
@@ -37227,7 +37138,7 @@
               "matches": false
             },
             {
-              "offset": 9015,
+              "offset": 9031,
               "type": 2,
               "symbol": ".LC37",
               "addend": -4,
@@ -37235,7 +37146,7 @@
               "matches": false
             },
             {
-              "offset": 9034,
+              "offset": 9050,
               "type": 2,
               "symbol": ".LC34",
               "addend": -4,
@@ -37243,7 +37154,7 @@
               "matches": false
             },
             {
-              "offset": 9042,
+              "offset": 9058,
               "type": 2,
               "symbol": ".LC38",
               "addend": -4,
@@ -37251,7 +37162,7 @@
               "matches": false
             },
             {
-              "offset": 9091,
+              "offset": 9107,
               "type": 2,
               "symbol": ".LC46",
               "addend": -4,
@@ -37259,7 +37170,7 @@
               "matches": false
             },
             {
-              "offset": 9099,
+              "offset": 9115,
               "type": 2,
               "symbol": ".LC19",
               "addend": -4,
@@ -37267,7 +37178,7 @@
               "matches": false
             },
             {
-              "offset": 9107,
+              "offset": 9123,
               "type": 2,
               "symbol": ".LC47",
               "addend": -4,
@@ -37275,7 +37186,7 @@
               "matches": false
             },
             {
-              "offset": 9115,
+              "offset": 9131,
               "type": 2,
               "symbol": ".LC48",
               "addend": -4,
@@ -37283,7 +37194,7 @@
               "matches": false
             },
             {
-              "offset": 9252,
+              "offset": 9268,
               "type": 2,
               "symbol": "_ZNK2ox6entity9COxEntity11getPositionEv",
               "addend": -4,
@@ -37292,7 +37203,7 @@
               "matches": false
             },
             {
-              "offset": 9302,
+              "offset": 9318,
               "type": 2,
               "symbol": "_ZN2ox4core5CMath18getSquaredDistanceERKNS0_11CPosition2dIfEES5_",
               "addend": -4,
@@ -37301,7 +37212,7 @@
               "matches": false
             },
             {
-              "offset": 9310,
+              "offset": 9326,
               "type": 2,
               "symbol": ".LC39",
               "addend": -4,
@@ -37309,7 +37220,7 @@
               "matches": false
             },
             {
-              "offset": 9493,
+              "offset": 9509,
               "type": 2,
               "symbol": "_ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPN7harvest6entity18SAlienDistancePairESt6vectorIS4_SaIS4_EEEENS3_20SAlienDistanceSorterEEvT_SB_T0_",
               "addend": -4,
@@ -37318,7 +37229,7 @@
               "matches": false
             },
             {
-              "offset": 9695,
+              "offset": 9711,
               "type": 2,
               "symbol": "sqrt",
               "addend": -4,
@@ -37327,7 +37238,7 @@
               "matches": false
             },
             {
-              "offset": 9713,
+              "offset": 9729,
               "type": 2,
               "symbol": ".LC40",
               "addend": -4,
@@ -37335,7 +37246,7 @@
               "matches": false
             },
             {
-              "offset": 9760,
+              "offset": 9776,
               "type": 2,
               "symbol": ".LC41",
               "addend": -4,
@@ -37343,7 +37254,7 @@
               "matches": false
             },
             {
-              "offset": 9768,
+              "offset": 9784,
               "type": 2,
               "symbol": ".LC42",
               "addend": -4,
@@ -37351,7 +37262,7 @@
               "matches": false
             },
             {
-              "offset": 9791,
+              "offset": 9807,
               "type": 2,
               "symbol": ".LC43",
               "addend": -4,
@@ -37359,7 +37270,7 @@
               "matches": false
             },
             {
-              "offset": 9813,
+              "offset": 9829,
               "type": 2,
               "symbol": "_ZN7harvest6entity12CAlienEntity10dealDamageERfRKN2ox4core11CPosition2dIfEEfi",
               "addend": -4,
@@ -37368,7 +37279,7 @@
               "matches": false
             },
             {
-              "offset": 9851,
+              "offset": 9867,
               "type": 2,
               "symbol": "_ZN7harvest6entity16gp_entityManagerE",
               "addend": -4,
@@ -37377,7 +37288,7 @@
               "matches": false
             },
             {
-              "offset": 9899,
+              "offset": 9915,
               "type": 2,
               "symbol": "_ZN7harvest6entity16gp_entityManagerE",
               "addend": -4,
@@ -37386,7 +37297,7 @@
               "matches": false
             },
             {
-              "offset": 9916,
+              "offset": 9932,
               "type": 2,
               "symbol": "_Znwm",
               "addend": -4,
@@ -37395,7 +37306,7 @@
               "matches": false
             },
             {
-              "offset": 9926,
+              "offset": 9942,
               "type": 10,
               "symbol": ".rodata.str1.1",
               "addend": 41,
@@ -37403,7 +37314,7 @@
               "matches": false
             },
             {
-              "offset": 9936,
+              "offset": 9952,
               "type": 2,
               "symbol": ".LC1",
               "addend": -4,
@@ -37411,7 +37322,7 @@
               "matches": false
             },
             {
-              "offset": 9952,
+              "offset": 9968,
               "type": 2,
               "symbol": "_ZN7harvest6entity15CParticleEntityC1EfffPN2ox4core9CVector3dIfEEPKc",
               "addend": -4,
@@ -37420,7 +37331,7 @@
               "matches": false
             },
             {
-              "offset": 9967,
+              "offset": 9983,
               "type": 2,
               "symbol": "_ZN7harvest6entity16gp_entityManagerE",
               "addend": -4,
@@ -37429,7 +37340,7 @@
               "matches": false
             },
             {
-              "offset": 9989,
+              "offset": 10005,
               "type": 2,
               "symbol": "_ZdlPv",
               "addend": -4,
@@ -37438,7 +37349,7 @@
               "matches": false
             },
             {
-              "offset": 10014,
+              "offset": 10030,
               "type": 2,
               "symbol": "_ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPN7harvest6entity18SAlienDistancePairESt6vectorIS4_SaIS4_EEEENS3_20SAlienDistanceSorterEEvT_SB_T0_",
               "addend": -4,
@@ -37447,7 +37358,7 @@
               "matches": false
             },
             {
-              "offset": 10052,
+              "offset": 10068,
               "type": 2,
               "symbol": "_ZN2ox4algo5CRand4randEv",
               "addend": -4,
@@ -37456,7 +37367,7 @@
               "matches": false
             },
             {
-              "offset": 10059,
+              "offset": 10075,
               "type": 2,
               "symbol": "_ZN7harvest6entity16gp_entityManagerE",
               "addend": -4,
@@ -37465,7 +37376,7 @@
               "matches": false
             },
             {
-              "offset": 10102,
+              "offset": 10118,
               "type": 2,
               "symbol": "_ZNK2ox6entity9COxEntity11getPositionEv",
               "addend": -4,
@@ -37474,7 +37385,7 @@
               "matches": false
             },
             {
-              "offset": 10113,
+              "offset": 10129,
               "type": 2,
               "symbol": "_ZNK2ox6entity9COxEntity5getIdEv",
               "addend": -4,
@@ -37483,7 +37394,7 @@
               "matches": false
             },
             {
-              "offset": 10126,
+              "offset": 10142,
               "type": 2,
               "symbol": "_Znwm",
               "addend": -4,
@@ -37492,7 +37403,7 @@
               "matches": false
             },
             {
-              "offset": 10152,
+              "offset": 10168,
               "type": 2,
               "symbol": "_ZN7harvest6entity19CTempestBlastEntityC1ERKN2ox4core9CVector3dIfEES7_ii",
               "addend": -4,
@@ -37501,7 +37412,7 @@
               "matches": false
             },
             {
-              "offset": 10167,
+              "offset": 10183,
               "type": 2,
               "symbol": "_ZN7harvest6entity16gp_entityManagerE",
               "addend": -4,
@@ -37510,7 +37421,7 @@
               "matches": false
             },
             {
-              "offset": 10191,
+              "offset": 10207,
               "type": 2,
               "symbol": "_ZN7harvest6entity16gp_entityManagerE",
               "addend": -4,
@@ -37519,7 +37430,7 @@
               "matches": false
             },
             {
-              "offset": 10208,
+              "offset": 10224,
               "type": 2,
               "symbol": "_Znwm",
               "addend": -4,
@@ -37528,7 +37439,7 @@
               "matches": false
             },
             {
-              "offset": 10218,
+              "offset": 10234,
               "type": 10,
               "symbol": ".rodata.str1.1",
               "addend": 57,
@@ -37536,7 +37447,7 @@
               "matches": false
             },
             {
-              "offset": 10241,
+              "offset": 10257,
               "type": 2,
               "symbol": "_ZN7harvest6entity15CParticleEntityC1EfffPN2ox4core9CVector3dIfEEPKc",
               "addend": -4,
@@ -37545,7 +37456,7 @@
               "matches": false
             },
             {
-              "offset": 10256,
+              "offset": 10272,
               "type": 2,
               "symbol": "_ZN7harvest6entity16gp_entityManagerE",
               "addend": -4,
@@ -37554,7 +37465,7 @@
               "matches": false
             },
             {
-              "offset": 10298,
+              "offset": 10314,
               "type": 2,
               "symbol": "_ZNSt6vectorIN7harvest6entity18SAlienDistancePairESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_",
               "addend": -4,
@@ -37563,7 +37474,7 @@
               "matches": false
             },
             {
-              "offset": 10316,
+              "offset": 10332,
               "type": 2,
               "symbol": "_ZN7harvest6entity16gp_entityManagerE",
               "addend": -4,
@@ -37572,7 +37483,7 @@
               "matches": false
             },
             {
-              "offset": 10331,
+              "offset": 10347,
               "type": 2,
               "symbol": "_Znwm",
               "addend": -4,
@@ -37581,7 +37492,7 @@
               "matches": false
             },
             {
-              "offset": 10345,
+              "offset": 10361,
               "type": 10,
               "symbol": ".rodata.str1.1",
               "addend": 16,
@@ -37589,7 +37500,7 @@
               "matches": false
             },
             {
-              "offset": 10366,
+              "offset": 10382,
               "type": 2,
               "symbol": "_ZN7harvest6entity15CParticleEntityC1EfffPN2ox4core9CVector3dIfEEPKc",
               "addend": -4,
@@ -37598,7 +37509,7 @@
               "matches": false
             },
             {
-              "offset": 10388,
+              "offset": 10404,
               "type": 2,
               "symbol": ".LC13",
               "addend": -4,
@@ -37606,7 +37517,7 @@
               "matches": false
             },
             {
-              "offset": 10404,
+              "offset": 10420,
               "type": 2,
               "symbol": "_ZN7harvest6entity20CMissileTurretEntity17findPriorityAlienERKN2ox4core9CVector3dIfEEiffPS5_",
               "addend": -4,
@@ -37615,7 +37526,7 @@
               "matches": false
             },
             {
-              "offset": 10433,
+              "offset": 10449,
               "type": 2,
               "symbol": "_ZNK2ox6entity9COxEntity5getIdEv",
               "addend": -4,
@@ -37624,7 +37535,7 @@
               "matches": false
             },
             {
-              "offset": 10440,
+              "offset": 10456,
               "type": 2,
               "symbol": "_ZN7harvest6entity16gp_entityManagerE",
               "addend": -4,
@@ -37633,7 +37544,7 @@
               "matches": false
             },
             {
-              "offset": 10448,
+              "offset": 10464,
               "type": 2,
               "symbol": "_ZNK2ox6entity16COxEntityManager16getUpdateCounterEv",
               "addend": -4,
@@ -37642,7 +37553,7 @@
               "matches": false
             },
             {
-              "offset": 10492,
+              "offset": 10508,
               "type": 2,
               "symbol": "_ZNSt6vectorIPN7harvest6entity12CAlienEntityESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
               "addend": -4,
@@ -37651,7 +37562,7 @@
               "matches": false
             },
             {
-              "offset": 10513,
+              "offset": 10529,
               "type": 2,
               "symbol": "_ZN7harvest6entity16gp_entityManagerE",
               "addend": -4,
@@ -37660,7 +37571,7 @@
               "matches": false
             },
             {
-              "offset": 10530,
+              "offset": 10546,
               "type": 2,
               "symbol": "_Znwm",
               "addend": -4,
@@ -37669,7 +37580,7 @@
               "matches": false
             },
             {
-              "offset": 10544,
+              "offset": 10560,
               "type": 10,
               "symbol": ".rodata.str1.1",
               "addend": 16,
@@ -37677,7 +37588,7 @@
               "matches": false
             },
             {
-              "offset": 10565,
+              "offset": 10581,
               "type": 2,
               "symbol": "_ZN7harvest6entity15CParticleEntityC1EfffPN2ox4core9CVector3dIfEEPKc",
               "addend": -4,
@@ -37686,7 +37597,7 @@
               "matches": false
             },
             {
-              "offset": 10581,
+              "offset": 10597,
               "type": 2,
               "symbol": "_ZdlPv",
               "addend": -4,
@@ -37695,7 +37606,7 @@
               "matches": false
             },
             {
-              "offset": 10589,
+              "offset": 10605,
               "type": 2,
               "symbol": "_Unwind_Resume",
               "addend": -4,
@@ -37704,7 +37615,7 @@
               "matches": false
             },
             {
-              "offset": 10619,
+              "offset": 10635,
               "type": 2,
               "symbol": "_ZdlPv",
               "addend": -4,
@@ -37713,7 +37624,7 @@
               "matches": false
             },
             {
-              "offset": 10633,
+              "offset": 10649,
               "type": 2,
               "symbol": "_ZdlPv",
               "addend": -4,
@@ -37722,7 +37633,7 @@
               "matches": false
             },
             {
-              "offset": 15513,
+              "offset": 15529,
               "type": 2,
               "symbol": ".LC3",
               "addend": -4,
@@ -37730,7 +37641,7 @@
               "matches": false
             },
             {
-              "offset": 15538,
+              "offset": 15554,
               "type": 2,
               "symbol": "_ZN7harvest6entity20CMissileTurretEntity17findPriorityAlienEv",
               "addend": -4,
@@ -37739,7 +37650,7 @@
               "matches": false
             },
             {
-              "offset": 15576,
+              "offset": 15592,
               "type": 2,
               "symbol": "_ZN2ox4algo5CRand4randEv",
               "addend": -4,
@@ -37748,7 +37659,7 @@
               "matches": false
             },
             {
-              "offset": 15991,
+              "offset": 16007,
               "type": 2,
               "symbol": ".LC72",
               "addend": -4,
@@ -37756,7 +37667,7 @@
               "matches": false
             },
             {
-              "offset": 16144,
+              "offset": 16160,
               "type": 2,
               "symbol": ".LC3",
               "addend": -4,
@@ -37764,7 +37675,7 @@
               "matches": false
             },
             {
-              "offset": 16187,
+              "offset": 16203,
               "type": 2,
               "symbol": "_ZN7harvest6entity16gp_entityManagerE",
               "addend": -4,
@@ -37773,7 +37684,7 @@
               "matches": false
             },
             {
-              "offset": 16204,
+              "offset": 16220,
               "type": 2,
               "symbol": "_Znwm",
               "addend": -4,
@@ -37782,7 +37693,7 @@
               "matches": false
             },
             {
-              "offset": 16212,
+              "offset": 16228,
               "type": 2,
               "symbol": ".LC1",
               "addend": -4,
@@ -37790,7 +37701,7 @@
               "matches": false
             },
             {
-              "offset": 16248,
+              "offset": 16264,
               "type": 2,
               "symbol": "_ZN7harvest6entity14CMissileEntityC1EffRKN2ox4core11CPosition2dIfEEiii",
               "addend": -4,
@@ -37799,7 +37710,7 @@
               "matches": false
             },
             {
-              "offset": 16255,
+              "offset": 16271,
               "type": 2,
               "symbol": "_ZN7harvest6entity16gp_entityManagerE",
               "addend": -4,
@@ -37808,7 +37719,7 @@
               "matches": false
             },
             {
-              "offset": 16273,
+              "offset": 16289,
               "type": 2,
               "symbol": "_ZN7harvest4game13gp_luaManagerE",
               "addend": -4,
@@ -37817,7 +37728,7 @@
               "matches": false
             },
             {
-              "offset": 16303,
+              "offset": 16319,
               "type": 2,
               "symbol": "_ZN7harvest4game11CLuaManager19hookMissileLaunchedEiPNS_6entity15CBuildingEntityEiff",
               "addend": -4,
@@ -37826,7 +37737,7 @@
               "matches": false
             },
             {
-              "offset": 16759,
+              "offset": 16775,
               "type": 2,
               "symbol": "_ZN7harvest6entity16gp_entityManagerE",
               "addend": -4,
@@ -37835,7 +37746,7 @@
               "matches": false
             },
             {
-              "offset": 16808,
+              "offset": 16824,
               "type": 2,
               "symbol": "_Znwm",
               "addend": -4,
@@ -37844,7 +37755,7 @@
               "matches": false
             },
             {
-              "offset": 16848,
+              "offset": 16864,
               "type": 2,
               "symbol": "_ZN7harvest6entity14CMissileEntityC1EffRKN2ox4core11CPosition2dIfEEiii",
               "addend": -4,
@@ -37853,7 +37764,7 @@
               "matches": false
             },
             {
-              "offset": 16863,
+              "offset": 16879,
               "type": 2,
               "symbol": "_ZN7harvest6entity16gp_entityManagerE",
               "addend": -4,
@@ -37862,7 +37773,7 @@
               "matches": false
             },
             {
-              "offset": 16873,
+              "offset": 16889,
               "type": 2,
               "symbol": "_ZN7harvest6entity16gp_entityManagerE",
               "addend": -4,
@@ -37871,7 +37782,7 @@
               "matches": false
             },
             {
-              "offset": 16890,
+              "offset": 16906,
               "type": 2,
               "symbol": "_Znwm",
               "addend": -4,
@@ -37880,7 +37791,7 @@
               "matches": false
             },
             {
-              "offset": 16898,
+              "offset": 16914,
               "type": 2,
               "symbol": ".LC1",
               "addend": -4,
@@ -37888,7 +37799,7 @@
               "matches": false
             },
             {
-              "offset": 16903,
+              "offset": 16919,
               "type": 10,
               "symbol": ".rodata.str1.1",
               "addend": 219,
@@ -37896,7 +37807,7 @@
               "matches": false
             },
             {
-              "offset": 16923,
+              "offset": 16939,
               "type": 2,
               "symbol": ".LC23",
               "addend": -4,
@@ -37904,7 +37815,7 @@
               "matches": false
             },
             {
-              "offset": 16934,
+              "offset": 16950,
               "type": 2,
               "symbol": "_ZN7harvest6entity15CParticleEntityC1EfffPN2ox4core9CVector3dIfEEPKc",
               "addend": -4,
@@ -37913,7 +37824,7 @@
               "matches": false
             },
             {
-              "offset": 16941,
+              "offset": 16957,
               "type": 2,
               "symbol": "_ZN7harvest6entity16gp_entityManagerE",
               "addend": -4,
@@ -37922,7 +37833,7 @@
               "matches": false
             },
             {
-              "offset": 16959,
+              "offset": 16975,
               "type": 2,
               "symbol": "_ZN7harvest4game13gp_luaManagerE",
               "addend": -4,
@@ -37931,7 +37842,7 @@
               "matches": false
             },
             {
-              "offset": 16992,
+              "offset": 17008,
               "type": 2,
               "symbol": "_ZN7harvest4game11CLuaManager19hookMissileLaunchedEiPNS_6entity15CBuildingEntityEiff",
               "addend": -4,
@@ -37940,7 +37851,7 @@
               "matches": false
             },
             {
-              "offset": 17008,
+              "offset": 17024,
               "type": 2,
               "symbol": ".LC17",
               "addend": -4,
@@ -38193,7 +38104,7 @@
             {
               "symbol": "_ZN7harvest6entity20CMissileTurretEntity17findPriorityAlienERKN2ox4core9CVector3dIfEEiffPS5_",
               "address": "0x436ab0",
-              "size": 1464,
+              "size": 1474,
               "extent": null,
               "global": true,
               "exact": false
@@ -38372,6 +38283,11 @@
               "address": "0x5f15e8",
               "size": 68,
               "kind": "merged string"
+            },
+            {
+              "address": "0x5f2414",
+              "size": 4,
+              "kind": "merged constant"
             },
             {
               "address": "0x5f0450",
@@ -39814,7 +39730,7 @@
           "/out/HarvestFull__harvest__entity__CMissileTurretEntity.o"
         ],
         "inputs": {
-          "src/HarvestFull/harvest/entity/CMissileTurretEntity.cpp": "5f521e321a45db3d510703f8da82e1a52ddde52805c373b57b4bea14f247f327",
+          "src/HarvestFull/harvest/entity/CMissileTurretEntity.cpp": "964e514e6bad23f1cb9e57a552997b4b42d3defa09399acacea46c770ab24273",
           "src/HarvestFull/harvest/game/CWorld.h": "dba52fb72246d3dbd79ca87306fd4ea5d936923674ac46daef14e2372c092eb7",
           "src/ox/TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/algo/CRand.h": "f39d4adf118622d1051b4a274c008fbd3f6dfa837b1b4b04cdfa30a6b8a5dd1e",
@@ -39868,9 +39784,9 @@
           "src/ox/video/ISpritePackage.h": "34ee49176bd1b91abeeddd5f98cf92d8d2cba7cce54f482b60e0a1adb681d9ea"
         },
         "system_headers": 147,
-        "object_sha256": "ec94b4d3605b0d953d824e1d64e63e59dd97304c815d77cd0d3d348a151e887c"
+        "object_sha256": "7b92c521a8ecdca0e693e232dd576878de528f655c0d5f722811e30f54c40767"
       },
-      "fuzzy_target_sha256": "b1e0dd772b4814e711f875e19543a6eed78aa1504841e270e00a797c8f2d1caa",
+      "fuzzy_target_sha256": "f91d9419e57b07f3ae33ff84b3ec7533c6b32bfe540c1e944dcbfc065e59efe8",
       "fuzzy_functions": [
         {
           "address": "0x435ec0",
@@ -40056,7 +39972,7 @@
           "address": "0x436ab0",
           "size": 1484,
           "symbol": "_ZN7harvest6entity20CMissileTurretEntity17findPriorityAlienERKN2ox4core9CVector3dIfEEiffPS5_",
-          "percent": 93.21515
+          "percent": 93.77576
         },
         {
           "address": "0x437080",
@@ -96871,7 +96787,7 @@
     },
     {
       "unit": "HarvestFull/harvest/gui/CHighscoreScreen.cpp",
-      "object_sha256": "6b903b8f6b6ecb87672ecd33f3532f9eaec7d6ae187580ca2e7d2fad3624d2a3",
+      "object_sha256": "2f760c9070e7e5bbd4e8e98c853c5d3523197112aea208d3095043eb0ef3abca",
       "exact": false,
       "sections": [
         {
@@ -96880,8 +96796,8 @@
           "placement": "symbol: _ZN7harvest3gui16CHighscoreScreen20createNewPopupWindowEv",
           "exact": false,
           "address": "0x469ef0",
-          "first_difference": 517,
-          "differing_bytes": 7696,
+          "first_difference": 18064,
+          "differing_bytes": 7611,
           "misplaced_symbols": [
             {
               "symbol": "_ZN7harvest3gui16CHighscoreScreen9isVisibleEv",
@@ -96985,24 +96901,6 @@
             }
           ],
           "bad_references": [
-            {
-              "offset": 634,
-              "type": 2,
-              "symbol": ".bss",
-              "addend": 12,
-              "destination": "0x86b9b0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 640,
-              "type": 2,
-              "symbol": ".bss",
-              "addend": 20,
-              "destination": "0x86b9b0",
-              "reason": "different destination",
-              "matches": false
-            },
             {
               "offset": 18713,
               "type": 2,
@@ -99226,10 +99124,10 @@
             {
               "symbol": "_ZN7harvest3gui16CHighscoreScreen18createStatusStringEPKw",
               "address": "0x46a0a0",
-              "size": 222,
-              "extent": null,
+              "size": 221,
+              "extent": "fde",
               "global": true,
-              "exact": false
+              "exact": true
             },
             {
               "symbol": "_GLOBAL__I__ZN7harvest3gui16CHighscoreScreenC2EPN2ox9IOxDeviceE",
@@ -100815,7 +100713,7 @@
           "/out/HarvestFull__harvest__gui__CHighscoreScreen.o"
         ],
         "inputs": {
-          "src/HarvestFull/harvest/gui/CHighscoreScreen.cpp": "66f97f88d18669685ebe5ceb2348913bba1b4b6c8de398dc22a29d11d8fff10a",
+          "src/HarvestFull/harvest/gui/CHighscoreScreen.cpp": "e2750fe693f3dd988027da4a8b15b1e85c2ef9fa7b785ab5377b2577deef96c9",
           "src/HarvestFull/harvest/game/CWorld.h": "dba52fb72246d3dbd79ca87306fd4ea5d936923674ac46daef14e2372c092eb7",
           "src/ox/TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/algo/CRand.h": "f39d4adf118622d1051b4a274c008fbd3f6dfa837b1b4b04cdfa30a6b8a5dd1e",
@@ -100887,7 +100785,7 @@
           "src/ox/video/../core/CVector2d.h": "3f38dd2413c649b909302cad6454b81d0e71d1690e18b08fd089beb9620d0fa3"
         },
         "system_headers": 135,
-        "object_sha256": "6b903b8f6b6ecb87672ecd33f3532f9eaec7d6ae187580ca2e7d2fad3624d2a3"
+        "object_sha256": "2f760c9070e7e5bbd4e8e98c853c5d3523197112aea208d3095043eb0ef3abca"
       },
       "fuzzy_target_sha256": "0b3776b3d58b5fbdd9548468ffe1022d14f9ee781e1a3a529acb3ea5b2cd931e",
       "fuzzy_functions": [
@@ -100913,7 +100811,7 @@
           "address": "0x46a0a0",
           "size": 221,
           "symbol": "_ZN7harvest3gui16CHighscoreScreen18createStatusStringEPKw",
-          "percent": 93.965515
+          "percent": 100.0
         },
         {
           "address": "0x46a180",
@@ -214366,7 +214264,7 @@
     },
     {
       "unit": "daisy/audio/COpenALDriver.cpp",
-      "object_sha256": "379afdfe491b7e284dd0b6eda312f37425095beea40120cbccced1ca9d9d636b",
+      "object_sha256": "edcd787d7b906ad02d2d34944ef00a22d9b4aa27250cd393be32367a51d0a929",
       "exact": false,
       "sections": [
         {
@@ -214375,8 +214273,8 @@
           "placement": "symbol: _ZN5daisy5audio13COpenALDriver12VorbisSource4seekEPvli",
           "exact": false,
           "address": "0x4f82c0",
-          "first_difference": 4375,
-          "differing_bytes": 147,
+          "first_difference": 4414,
+          "differing_bytes": 145,
           "misplaced_symbols": [
             {
               "symbol": "_ZN5daisy5audio13COpenALDriver24deviceUpdateTrackedSoundEPNS0_21CTrackedSoundInfoStubEffRKN2ox4core9CVector3dIfEES9_",
@@ -215534,7 +215432,7 @@
           "/out/daisy__audio__COpenALDriver.o"
         ],
         "inputs": {
-          "src/daisy/audio/COpenALDriver.cpp": "937be6a9344f97013422b75f3bd5f18fd832b9ed2a83cb567bf0f7a089e42b52",
+          "src/daisy/audio/COpenALDriver.cpp": "75abb5200559bb94c40e1b5d0965ed14d9d86a72050f9e410bd946c28dc86a1c",
           "src/daisy/audio/COpenALDriver.h": "112535f9e2f8592017707589e89dc877388f66e945b2dc448b71394da19f6c15",
           "src/daisy/audio/CAudioDriver.h": "63ca4f59ce2a9ed2ce77871682b9da2676b6bc95baf831cfc23755707197e6f3",
           "src/ox/audio/IAudioDriver.h": "6c38ef5430ce026aa9d79d6b29b5dfd998dd0b7627813fe9efa877f41155cb32",
@@ -215543,7 +215441,7 @@
           "src/ox/core/CString.h": "7cc2521534a1b7864708fdc416a25279f05507d6c045abeca04545f4a88b95ee"
         },
         "system_headers": 148,
-        "object_sha256": "379afdfe491b7e284dd0b6eda312f37425095beea40120cbccced1ca9d9d636b"
+        "object_sha256": "edcd787d7b906ad02d2d34944ef00a22d9b4aa27250cd393be32367a51d0a929"
       },
       "fuzzy_target_sha256": "14cb4bd0d080de1bf6009dfc98712916517b348b3244b39acc0305a40e57ac03",
       "fuzzy_functions": [
@@ -215719,7 +215617,7 @@
           "address": "0x4f9300",
           "size": 422,
           "symbol": "_ZN5daisy5audio13COpenALDriver18_loadOggFromMemoryEPvi",
-          "percent": 98.31633
+          "percent": 98.36735
         },
         {
           "address": "0x4f94b0",
@@ -293445,112 +293343,132 @@
     },
     {
       "unit": "daisy/video/Software/CVideoSoftware.cpp",
-      "object_sha256": "d17bc64aa15b5b31ba93901ef09901368f4819ba136a91fd972ca63cd340fd6c",
+      "object_sha256": "2318ed9d6a007677091dcf1a3505feefdf456fcba7d3f6d1f6b5f8df65f27a9b",
       "exact": false,
       "sections": [
         {
           "name": ".text",
           "size": 17586,
-          "placement": "symbol: _ZN5daisy5video14CVideoSoftware24switchToTriangleRendererENS0_17ETriangleRendererE",
+          "placement": "symbol: _ZN5daisy5video14CVideoSoftware12queryFeatureEN2ox5video22E_VIDEO_DRIVER_FEATUREE",
           "exact": false,
-          "address": "0x4f3a90",
+          "address": "0x4f3b90",
           "first_difference": 802,
-          "differing_bytes": 3422,
+          "differing_bytes": 1610,
           "misplaced_symbols": [
+            {
+              "symbol": "_ZN5daisy5video14CVideoSoftware24switchToTriangleRendererENS0_17ETriangleRendererE",
+              "known": "0x4f3a90",
+              "placed": "0x4f3cf0"
+            },
+            {
+              "symbol": "_ZN5daisy5video14CVideoSoftware27selectRightTriangleRendererEv",
+              "known": "0x4f3b20",
+              "placed": "0x4f3d80"
+            },
+            {
+              "symbol": "_ZN5daisy5video14CVideoSoftware13getDriverTypeEv",
+              "known": "0x4f3cf0",
+              "placed": "0x4f3df0"
+            },
+            {
+              "symbol": "_ZN5daisy5video14CVideoSoftware12getTransformEN2ox5video22E_TRANSFORMATION_STATEE",
+              "known": "0x4f3d00",
+              "placed": "0x4f3e00"
+            },
             {
               "symbol": "_ZN5daisy5video14CVideoSoftware15draw2DRectangleEN2ox5video6SColorERKNS2_4core5CRectIiEEPS8_",
               "known": "0x4f3da0",
-              "placed": "0x4f3d90"
+              "placed": "0x4f3e90"
             },
             {
               "symbol": "_ZN5daisy5video14CVideoSoftware11draw2DImageEPN2ox5video8ITextureERKNS2_4core11CPosition2dIiEERKNS6_5CRectIiEEPSD_NS3_6SColorEb",
               "known": "0x4f3e30",
-              "placed": "0x4f3e20"
+              "placed": "0x4f3f20"
             },
             {
               "symbol": "_ZN5daisy5video14CVideoSoftware10draw2DLineERKN2ox4core11CPosition2dIiEES7_NS2_5video6SColorE",
               "known": "0x4f40b0",
-              "placed": "0x4f3fc0"
+              "placed": "0x4f40c0"
             },
             {
               "symbol": "_ZN5daisy5video14CVideoSoftware11draw2DImageEPN2ox5video8ITextureERKNS2_4core11CPosition2dIiEE",
               "known": "0x4f3fd0",
-              "placed": "0x4f4010"
+              "placed": "0x4f4110"
             },
             {
               "symbol": "_ZN5daisy5video14CVideoSoftware10beginSceneEbbN2ox5video6SColorE",
               "known": "0x4f4100",
-              "placed": "0x4f40c0"
+              "placed": "0x4f41c0"
             },
             {
               "symbol": "_ZN5daisy5video14CVideoSoftware8endSceneEv",
               "known": "0x4f4080",
-              "placed": "0x4f4160"
+              "placed": "0x4f4260"
             },
             {
               "symbol": "_ZN5daisy5video14CVideoSoftwareD1Ev",
               "known": "0x4f4c10",
-              "placed": "0x4f4190"
+              "placed": "0x4f4290"
             },
             {
               "symbol": "_ZN5daisy5video14CVideoSoftware15setRenderTargetEPNS0_6CImageE",
               "known": "0x4f41b0",
-              "placed": "0x4f42c0"
+              "placed": "0x4f43c0"
             },
             {
               "symbol": "_ZN5daisy5video14CVideoSoftware15setRenderTargetEPN2ox5video8ITextureE",
               "known": "0x4f4290",
-              "placed": "0x4f43a0"
+              "placed": "0x4f44a0"
             },
             {
               "symbol": "_ZN5daisy5video14CVideoSoftware10setTextureEPN2ox5video8ITextureE",
               "known": "0x4f46e0",
-              "placed": "0x4f4430"
+              "placed": "0x4f4530"
             },
             {
               "symbol": "_ZN5daisy5video14CVideoSoftware11setMaterialERKN2ox5video9SMaterialE",
               "known": "0x4f4760",
-              "placed": "0x4f44b0"
+              "placed": "0x4f45b0"
             },
             {
               "symbol": "_ZN5daisy5video14CVideoSoftware22drawIndexedTriangleFanEPKN2ox5video17S3DVertex2TCoordsEiPKti",
               "known": "0x4f47b0",
-              "placed": "0x4f4500"
+              "placed": "0x4f4600"
             },
             {
               "symbol": "_ZN5daisy5video14CVideoSoftware22drawIndexedTriangleFanEPKN2ox5video9S3DVertexEiPKti",
               "known": "0x4f4940",
-              "placed": "0x4f4690"
-            },
-            {
-              "symbol": "_ZN5daisy5video14CVideoSoftwareD2Ev",
-              "known": "0x4f4d40",
-              "placed": "0x4f4820"
+              "placed": "0x4f4790"
             },
             {
               "symbol": "_ZN5daisy5video14CVideoSoftwareD0Ev",
               "known": "0x4f4ad0",
-              "placed": "0x4f4950"
+              "placed": "0x4f4920"
+            },
+            {
+              "symbol": "_ZN5daisy5video14CVideoSoftwareD2Ev",
+              "known": "0x4f4d40",
+              "placed": "0x4f4a60"
             },
             {
               "symbol": "_ZN5daisy5video20createSoftwareDriverERKN2ox4core12CDimension2dIiEEbPNS1_2io11IFileSystemEPNS0_15IImagePresenterE",
               "known": "0x4f5230",
-              "placed": "0x4f5210"
+              "placed": "0x4f5310"
             },
             {
               "symbol": "_ZN5daisy5video14CVideoSoftware12createPlanesERN2ox4core8CMatrix4E",
               "known": "0x4f52b0",
-              "placed": "0x4f5290"
+              "placed": "0x4f5390"
             },
             {
               "symbol": "_ZN5daisy5video14CVideoSoftware23drawIndexedTriangleListEPKN2ox5video17S3DVertex2TCoordsEiPKti",
               "known": "0x4f7250",
-              "placed": "0x4f6590"
+              "placed": "0x4f6690"
             },
             {
               "symbol": "_ZN5daisy5video14CVideoSoftware23drawIndexedTriangleListEPKN2ox5video9S3DVertexEiPKti",
               "known": "0x4f65b0",
-              "placed": "0x4f7270"
+              "placed": "0x4f7370"
             }
           ],
           "bad_references": [
@@ -293580,441 +293498,11 @@
               "matches": false
             },
             {
-              "offset": 4122,
-              "type": 2,
-              "symbol": "_ZN5daisy5video10CVideoNullC2EPN2ox2io11IFileSystemERKNS2_4core12CDimension2dIiEE",
-              "addend": -4,
-              "destination": "0x4e21d0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 4136,
-              "type": 11,
-              "symbol": "_ZTVN5daisy5video14CVideoSoftwareE",
-              "addend": 16,
-              "destination": "0x611120",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 4144,
-              "type": 11,
-              "symbol": "_ZTVN5daisy5video14CVideoSoftwareE",
-              "addend": 944,
-              "destination": "0x611120",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 4152,
-              "type": 11,
-              "symbol": "_ZTVN5daisy5video14CVideoSoftwareE",
-              "addend": 1032,
-              "destination": "0x611120",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 4732,
-              "type": 10,
-              "symbol": ".rodata.str1.1",
-              "addend": 23,
-              "reason": "unmapped or truncated range: 0x8d48fffe+0x1b",
-              "matches": false
-            },
-            {
-              "offset": 4739,
-              "type": 2,
-              "symbol": "_ZN5daisy2os7Printer3logEPKcN2ox5event10ELOG_LEVELEz",
-              "addend": -4,
-              "destination": "0x4c2060",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 4749,
-              "type": 2,
-              "symbol": "_Znwm",
-              "addend": -4,
-              "destination": "0x407bc8",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 4765,
-              "type": 2,
-              "symbol": "_ZN5daisy5video6CImageC1EN2ox5video13ECOLOR_FORMATERKNS2_4core12CDimension2dIiEE",
-              "addend": -4,
-              "destination": "0x4de240",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 4782,
-              "type": 2,
-              "symbol": "_ZN5daisy5video6CImage4fillEs",
-              "addend": -4,
-              "destination": "0x4dd5a0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 4810,
-              "type": 2,
-              "symbol": "_ZN5daisy5video13createZBufferERKN2ox4core12CDimension2dIiEE",
-              "addend": -4,
-              "destination": "0x4f81f0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 4825,
-              "type": 2,
-              "symbol": "_ZN5daisy5video26createTriangleRendererFlatEPNS0_8IZBufferE",
-              "addend": -4,
-              "destination": "0x5aaf20",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 4844,
-              "type": 2,
-              "symbol": "_ZN5daisy5video30createTriangleRendererFlatWireEPNS0_8IZBufferE",
-              "addend": -4,
-              "destination": "0x5ab670",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 4863,
-              "type": 2,
-              "symbol": "_ZN5daisy5video29createTriangleRendererGouraudEPNS0_8IZBufferE",
-              "addend": -4,
-              "destination": "0x5abdd0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 4882,
-              "type": 2,
-              "symbol": "_ZN5daisy5video33createTriangleRendererGouraudWireEPNS0_8IZBufferE",
-              "addend": -4,
-              "destination": "0x5acb40",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 4901,
-              "type": 2,
-              "symbol": "_ZN5daisy5video33createTriangleRendererTextureFlatEPNS0_8IZBufferE",
-              "addend": -4,
-              "destination": "0x5ad820",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 4920,
-              "type": 2,
-              "symbol": "_ZN5daisy5video37createTriangleRendererTextureFlatWireEPNS0_8IZBufferE",
-              "addend": -4,
-              "destination": "0x5ae310",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 4939,
-              "type": 2,
-              "symbol": "_ZN5daisy5video36createTriangleRendererTextureGouraudEPNS0_8IZBufferE",
-              "addend": -4,
-              "destination": "0x5b0050",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 4958,
-              "type": 2,
-              "symbol": "_ZN5daisy5video40createTriangleRendererTextureGouraudWireEPNS0_8IZBufferE",
-              "addend": -4,
-              "destination": "0x5b0350",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 4980,
-              "type": 2,
-              "symbol": "_ZN5daisy5video14CVideoSoftware15setRenderTargetEPNS0_6CImageE",
-              "addend": -4,
-              "destination": "0x4f41b0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 4988,
-              "type": 2,
-              "symbol": "_ZN5daisy5video14CVideoSoftware27selectRightTriangleRendererEv",
-              "addend": -4,
-              "destination": "0x4f3b20",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 5019,
-              "type": 2,
-              "symbol": "_ZdlPv",
-              "addend": -4,
-              "destination": "0x407b48",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 5027,
-              "type": 2,
-              "symbol": "_ZN5daisy5video10CVideoNullD2Ev",
-              "addend": -4,
-              "destination": "0x4e1f60",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 5035,
-              "type": 2,
-              "symbol": "_Unwind_Resume",
-              "addend": -4,
-              "destination": "0x4084f8",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 5046,
-              "type": 2,
-              "symbol": "_ZdlPv",
-              "addend": -4,
-              "destination": "0x407b48",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 5082,
-              "type": 2,
-              "symbol": "_ZN5daisy5video10CVideoNullC2EPN2ox2io11IFileSystemERKNS2_4core12CDimension2dIiEE",
-              "addend": -4,
-              "destination": "0x4e21d0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 5096,
-              "type": 11,
-              "symbol": "_ZTVN5daisy5video14CVideoSoftwareE",
-              "addend": 16,
-              "destination": "0x611120",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 5104,
-              "type": 11,
-              "symbol": "_ZTVN5daisy5video14CVideoSoftwareE",
-              "addend": 944,
-              "destination": "0x611120",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 5112,
-              "type": 11,
-              "symbol": "_ZTVN5daisy5video14CVideoSoftwareE",
-              "addend": 1032,
-              "destination": "0x611120",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 5692,
-              "type": 10,
-              "symbol": ".rodata.str1.1",
-              "addend": 23,
-              "reason": "unmapped or truncated range: 0x3f800000+0x1b",
-              "matches": false
-            },
-            {
-              "offset": 5699,
-              "type": 2,
-              "symbol": "_ZN5daisy2os7Printer3logEPKcN2ox5event10ELOG_LEVELEz",
-              "addend": -4,
-              "destination": "0x4c2060",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 5709,
-              "type": 2,
-              "symbol": "_Znwm",
-              "addend": -4,
-              "destination": "0x407bc8",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 5725,
-              "type": 2,
-              "symbol": "_ZN5daisy5video6CImageC1EN2ox5video13ECOLOR_FORMATERKNS2_4core12CDimension2dIiEE",
-              "addend": -4,
-              "destination": "0x4de240",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 5742,
-              "type": 2,
-              "symbol": "_ZN5daisy5video6CImage4fillEs",
-              "addend": -4,
-              "destination": "0x4dd5a0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 5770,
-              "type": 2,
-              "symbol": "_ZN5daisy5video13createZBufferERKN2ox4core12CDimension2dIiEE",
-              "addend": -4,
-              "destination": "0x4f81f0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 5785,
-              "type": 2,
-              "symbol": "_ZN5daisy5video26createTriangleRendererFlatEPNS0_8IZBufferE",
-              "addend": -4,
-              "destination": "0x5aaf20",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 5804,
-              "type": 2,
-              "symbol": "_ZN5daisy5video30createTriangleRendererFlatWireEPNS0_8IZBufferE",
-              "addend": -4,
-              "destination": "0x5ab670",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 5823,
-              "type": 2,
-              "symbol": "_ZN5daisy5video29createTriangleRendererGouraudEPNS0_8IZBufferE",
-              "addend": -4,
-              "destination": "0x5abdd0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 5842,
-              "type": 2,
-              "symbol": "_ZN5daisy5video33createTriangleRendererGouraudWireEPNS0_8IZBufferE",
-              "addend": -4,
-              "destination": "0x5acb40",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 5861,
-              "type": 2,
-              "symbol": "_ZN5daisy5video33createTriangleRendererTextureFlatEPNS0_8IZBufferE",
-              "addend": -4,
-              "destination": "0x5ad820",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 5880,
-              "type": 2,
-              "symbol": "_ZN5daisy5video37createTriangleRendererTextureFlatWireEPNS0_8IZBufferE",
-              "addend": -4,
-              "destination": "0x5ae310",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 5899,
-              "type": 2,
-              "symbol": "_ZN5daisy5video36createTriangleRendererTextureGouraudEPNS0_8IZBufferE",
-              "addend": -4,
-              "destination": "0x5b0050",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 5918,
-              "type": 2,
-              "symbol": "_ZN5daisy5video40createTriangleRendererTextureGouraudWireEPNS0_8IZBufferE",
-              "addend": -4,
-              "destination": "0x5b0350",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 5940,
-              "type": 2,
-              "symbol": "_ZN5daisy5video14CVideoSoftware15setRenderTargetEPNS0_6CImageE",
-              "addend": -4,
-              "destination": "0x4f41b0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 5948,
-              "type": 2,
-              "symbol": "_ZN5daisy5video14CVideoSoftware27selectRightTriangleRendererEv",
-              "addend": -4,
-              "destination": "0x4f3b20",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 5979,
-              "type": 2,
-              "symbol": "_ZdlPv",
-              "addend": -4,
-              "destination": "0x407b48",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 5987,
-              "type": 2,
-              "symbol": "_ZN5daisy5video10CVideoNullD2Ev",
-              "addend": -4,
-              "destination": "0x4e1f60",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 5995,
-              "type": 2,
-              "symbol": "_Unwind_Resume",
-              "addend": -4,
-              "destination": "0x4084f8",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 6006,
-              "type": 2,
-              "symbol": "_ZdlPv",
-              "addend": -4,
-              "destination": "0x407b48",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
               "offset": 6087,
               "type": 2,
               "symbol": "_ZN5daisy5video14CVideoSoftwareC1ERKN2ox4core12CDimension2dIiEEbPNS2_2io11IFileSystemEPNS0_15IImagePresenterE",
               "addend": -4,
-              "destination": "0x4f4d40",
+              "destination": "0x4f4320",
               "reason": "different destination",
               "matches": false
             },
@@ -294094,22 +293582,6 @@
           "references": 143,
           "functions": [
             {
-              "symbol": "_ZN5daisy5video14CVideoSoftware24switchToTriangleRendererENS0_17ETriangleRendererE",
-              "address": "0x4f3a90",
-              "size": 143,
-              "extent": "fde",
-              "global": true,
-              "exact": true
-            },
-            {
-              "symbol": "_ZN5daisy5video14CVideoSoftware27selectRightTriangleRendererEv",
-              "address": "0x4f3b20",
-              "size": 105,
-              "extent": "fde",
-              "global": true,
-              "exact": true
-            },
-            {
               "symbol": "_ZN5daisy5video14CVideoSoftware12queryFeatureEN2ox5video22E_VIDEO_DRIVER_FEATUREE",
               "address": "0x4f3b90",
               "size": 19,
@@ -294145,6 +293617,22 @@
               "symbol": "_ZN5daisy5video14CVideoSoftware7getNameEv",
               "address": "0x4f3ce0",
               "size": 6,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            },
+            {
+              "symbol": "_ZN5daisy5video14CVideoSoftware24switchToTriangleRendererENS0_17ETriangleRendererE",
+              "address": "0x4f3a90",
+              "size": 143,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            },
+            {
+              "symbol": "_ZN5daisy5video14CVideoSoftware27selectRightTriangleRendererEv",
+              "address": "0x4f3b20",
+              "size": 105,
               "extent": "fde",
               "global": true,
               "exact": true
@@ -294278,14 +293766,6 @@
               "exact": true
             },
             {
-              "symbol": "_ZN5daisy5video14CVideoSoftwareD2Ev",
-              "address": "0x4f4d40",
-              "size": 297,
-              "extent": "fde",
-              "global": true,
-              "exact": true
-            },
-            {
               "symbol": "_ZN5daisy5video14CVideoSoftwareD0Ev",
               "address": "0x4f4ad0",
               "size": 305,
@@ -294294,20 +293774,28 @@
               "exact": true
             },
             {
-              "symbol": "_ZN5daisy5video14CVideoSoftwareC2ERKN2ox4core12CDimension2dIiEEbPNS2_2io11IFileSystemEPNS0_15IImagePresenterE",
-              "address": "0x4f4c10",
-              "size": 956,
-              "extent": null,
+              "symbol": "_ZN5daisy5video14CVideoSoftwareD2Ev",
+              "address": "0x4f4d40",
+              "size": 297,
+              "extent": "fde",
               "global": true,
-              "exact": false
+              "exact": true
+            },
+            {
+              "symbol": "_ZN5daisy5video14CVideoSoftwareC2ERKN2ox4core12CDimension2dIiEEbPNS2_2io11IFileSystemEPNS0_15IImagePresenterE",
+              "address": "0x4f4e70",
+              "size": 956,
+              "extent": "fde",
+              "global": true,
+              "exact": true
             },
             {
               "symbol": "_ZN5daisy5video14CVideoSoftwareC1ERKN2ox4core12CDimension2dIiEEbPNS2_2io11IFileSystemEPNS0_15IImagePresenterE",
-              "address": "0x4f4d40",
+              "address": "0x4f4320",
               "size": 956,
-              "extent": null,
+              "extent": "fde",
               "global": true,
-              "exact": false
+              "exact": true
             },
             {
               "symbol": "_ZN5daisy5video20createSoftwareDriverERKN2ox4core12CDimension2dIiEEbPNS1_2io11IFileSystemEPNS0_15IImagePresenterE",
@@ -294356,6 +293844,16 @@
             {
               "address": "0x60fab0",
               "size": 62,
+              "kind": "merged string"
+            },
+            {
+              "address": "0x6110ec",
+              "size": 27,
+              "kind": "merged string"
+            },
+            {
+              "address": "0x6110ec",
+              "size": 27,
               "kind": "merged string"
             },
             {
@@ -294835,7 +294333,7 @@
           "/out/daisy__video__Software__CVideoSoftware.o"
         ],
         "inputs": {
-          "src/daisy/video/Software/CVideoSoftware.cpp": "863e7f5b8f9459a654d72dc4bfde6e53951f6816cf5cb54f17351d3ae4988949",
+          "src/daisy/video/Software/CVideoSoftware.cpp": "40f5197cbf580a6db38c2faa279e02f54193ecd0f8c47f25806d7bcda331d448",
           "src/ox/core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
           "src/ox/core/CMatrix4.h": "036c4a2e30a5ab2436472e6996964c7407e312d232d56323e7fdaa5fd68da32b",
           "src/ox/core/CVector3d.h": "65b36a6dbf77658e1517a5c7bc39a59d683a873b8404a6252f71ff8eca2fc393",
@@ -294887,22 +294385,10 @@
           "src/daisy/os.h": "1b7da1ec90e325f920746fba54bd835e5ffa8792543f06ae917209451ffa6711"
         },
         "system_headers": 121,
-        "object_sha256": "d17bc64aa15b5b31ba93901ef09901368f4819ba136a91fd972ca63cd340fd6c"
+        "object_sha256": "2318ed9d6a007677091dcf1a3505feefdf456fcba7d3f6d1f6b5f8df65f27a9b"
       },
-      "fuzzy_target_sha256": "ae61cac70a10e0070e711da77fdb5b03fa979861f398f1d9af65653c2d6b9115",
+      "fuzzy_target_sha256": "c25d9b4fa501850038173f2087a09623a1d4a4821fa06e3ad2bae93324766387",
       "fuzzy_functions": [
-        {
-          "address": "0x4f3a90",
-          "size": 143,
-          "symbol": "_ZN5daisy5video14CVideoSoftware24switchToTriangleRendererENS0_17ETriangleRendererE",
-          "percent": 100.0
-        },
-        {
-          "address": "0x4f3b20",
-          "size": 105,
-          "symbol": "_ZN5daisy5video14CVideoSoftware27selectRightTriangleRendererEv",
-          "percent": 100.0
-        },
         {
           "address": "0x4f3b90",
           "size": 19,
@@ -294931,6 +294417,18 @@
           "address": "0x4f3ce0",
           "size": 6,
           "symbol": "_ZN5daisy5video14CVideoSoftware7getNameEv",
+          "percent": 100.0
+        },
+        {
+          "address": "0x4f3a90",
+          "size": 143,
+          "symbol": "_ZN5daisy5video14CVideoSoftware24switchToTriangleRendererENS0_17ETriangleRendererE",
+          "percent": 100.0
+        },
+        {
+          "address": "0x4f3b20",
+          "size": 105,
+          "symbol": "_ZN5daisy5video14CVideoSoftware27selectRightTriangleRendererEv",
           "percent": 100.0
         },
         {
@@ -295030,34 +294528,34 @@
           "percent": 100.0
         },
         {
-          "address": "0x4f4d40",
-          "size": 297,
-          "symbol": "_ZN5daisy5video14CVideoSoftwareD2Ev",
-          "percent": 100.0
-        },
-        {
           "address": "0x4f4ad0",
           "size": 305,
           "symbol": "_ZN5daisy5video14CVideoSoftwareD0Ev",
           "percent": 100.0
         },
         {
-          "address": "0x4f4c10",
-          "size": 297,
-          "symbol": "_ZN5daisy5video14CVideoSoftwareC2ERKN2ox4core12CDimension2dIiEEbPNS2_2io11IFileSystemEPNS0_15IImagePresenterE",
-          "percent": 0
-        },
-        {
           "address": "0x4f4d40",
           "size": 297,
+          "symbol": "_ZN5daisy5video14CVideoSoftwareD2Ev",
+          "percent": 100.0
+        },
+        {
+          "address": "0x4f4e70",
+          "size": 956,
+          "symbol": "_ZN5daisy5video14CVideoSoftwareC2ERKN2ox4core12CDimension2dIiEEbPNS2_2io11IFileSystemEPNS0_15IImagePresenterE",
+          "percent": 100.0
+        },
+        {
+          "address": "0x4f4320",
+          "size": 956,
           "symbol": "_ZN5daisy5video14CVideoSoftwareC1ERKN2ox4core12CDimension2dIiEEbPNS2_2io11IFileSystemEPNS0_15IImagePresenterE",
-          "percent": 0
+          "percent": 100.0
         },
         {
           "address": "0x4f5230",
           "size": 126,
           "symbol": "_ZN5daisy5video20createSoftwareDriverERKN2ox4core12CDimension2dIiEEbPNS1_2io11IFileSystemEPNS0_15IImagePresenterE",
-          "percent": 99.84375
+          "percent": 100.0
         },
         {
           "address": "0x4f52b0",
@@ -295176,7 +294674,7 @@
     "config": {
       "functionRelocDiffs": "data_value"
     },
-    "report_sha256": "a0b33eeb7e225dddbd82962d640ccf74ae9924196a9df65b8bdc0fe24bdfda49"
+    "report_sha256": "1f9298f30e23f595d12280de99b2ddfd02920a1f5efc3a14cdb51ba695bc7ccf"
   },
   "link": {
     "status": "unavailable",
