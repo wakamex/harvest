@@ -19,7 +19,7 @@
     "tools/hv/objdiff.py": "13fa221740693a00a37134a133ddf96297d3efa7421e0d5af57a8b96b0abfcb5",
     "tools/hv/delink.py": "973dd463d7e8d0ec81ddf5977cad3154501fe559559442515e50857e8ef9b9cf",
     "config/1.18-linux-amd64/flags.json": "9ebb8c16c904108ddb5cbaa50345a733d400ee2bd3994c72e5545e676fb03ad8",
-    "config/1.18-linux-amd64/symbols.tsv": "a40e8e33441caba0865b4b2f099ec8eca943edb01a788497a6f33f39105a23a9",
+    "config/1.18-linux-amd64/symbols.tsv": "7fd02d8666e1627c4873ae27e9a85e045f73836bd897bcac944d53ffa247c456",
     "config/1.18-linux-amd64/extents.tsv": "55dd5b29374ba204f2ddf66df2c6fbe9cf434a68cd559196f1a3331c4911a20b",
     "config/1.18-linux-amd64/units.toml": "9d23aa413394390c65d7b83e5cc5bc4ae20933a388484b9a4efb9f128609d0cf"
   },
@@ -243954,7 +243954,7 @@
           "src/ox/event/ILogger.h": "8332b2ea3400f97511ddae97a7898f61b850775addf6c1e469b79ae4811bd77f",
           "src/ox/event/../IUnknown.h": "2876425521d21d0ab1b35bc5e2a72ae62acee754c6785899771e48912b9b0a9f",
           "src/daisy/scene/CBspTreeSceneNode.h": "03e6511edbcd3a3ff0aa549403023cd2cdc3213d2efae91f19b5deb819fcfe1e",
-          "src/daisy/scene/CBspTree.h": "24a63427ca73b83f29a08c10eba5d1995ae64107117879c23bfaf50b5caec7ed",
+          "src/daisy/scene/CBspTree.h": "5f58985dc80f51cdb14a59a161471d8e8864fa42de560383f60a558d8907405e",
           "src/ox/TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/video/S3DVertex.h": "96cd548320ee007c480619303c02cf1f3cba55d255767620f3cd88408186bf37",
           "src/ox/video/../core/CVector2d.h": "3f38dd2413c649b909302cad6454b81d0e71d1690e18b08fd089beb9620d0fa3",
@@ -264460,187 +264460,16 @@
     },
     {
       "unit": "daisy/video/Null/CImageLoaderTGA.cpp",
-      "object_sha256": "a93526364fb8e36ce16138cbcf5d0a9e62dd4cd2c9cd6e1c177b339edc980b75",
-      "exact": false,
+      "object_sha256": "344baee9ac7eda9b9a06fc98ea62a4118a8d19e2720b4f60efe0957fc50b8c20",
+      "exact": true,
       "sections": [
         {
           "name": ".text",
-          "size": 1404,
+          "size": 1596,
           "placement": "symbol: _ZN5daisy5video15CImageLoaderTGAC2Ev",
-          "exact": false,
+          "exact": true,
           "address": "0x59bdb0",
-          "first_difference": 641,
-          "differing_bytes": 694,
-          "misplaced_symbols": [
-            {
-              "symbol": "_ZN5daisy5video15CImageLoaderTGA24isALoadableFileExtensionEPKc",
-              "known": "0x59c3d0",
-              "placed": "0x59c310"
-            }
-          ],
-          "bad_references": [
-            {
-              "offset": 730,
-              "type": 2,
-              "symbol": "_ZN5daisy5video15CImageLoaderTGA19loadCompressedImageEPN2ox2io9IReadFileEPNS0_10STGAHeaderE",
-              "addend": -4,
-              "destination": "0x59bea0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 785,
-              "type": 2,
-              "symbol": "_ZdaPv",
-              "addend": -4,
-              "destination": "0x407f58",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 833,
-              "type": 10,
-              "symbol": ".rodata.str1.1",
-              "addend": 26,
-              "reason": "unmapped or truncated range: 0x458b4810+0x1e",
-              "matches": false
-            },
-            {
-              "offset": 838,
-              "type": 2,
-              "symbol": "_ZN5daisy2os7Printer3logEPKcS3_N2ox5event10ELOG_LEVELE",
-              "addend": -4,
-              "destination": "0x4c1ea0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 952,
-              "type": 2,
-              "symbol": "_Znwm",
-              "addend": -4,
-              "destination": "0x407bc8",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 973,
-              "type": 2,
-              "symbol": "_ZN5daisy5video6CImageC1EN2ox5video13ECOLOR_FORMATERKNS2_4core12CDimension2dIiEE",
-              "addend": -4,
-              "destination": "0x4de240",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 1015,
-              "type": 2,
-              "symbol": "_ZN5daisy5video15CColorConverter29convert32BitTo32BitFlipMirrorEPKiPiiii",
-              "addend": -4,
-              "destination": "0x5d8bb0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 1061,
-              "type": 10,
-              "symbol": ".rodata.str1.1",
-              "addend": 0,
-              "reason": "merged string would lie in code",
-              "matches": false
-            },
-            {
-              "offset": 1066,
-              "type": 2,
-              "symbol": "_ZN5daisy2os7Printer3logEPKcS3_N2ox5event10ELOG_LEVELE",
-              "addend": -4,
-              "destination": "0x4c1ea0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 1104,
-              "type": 2,
-              "symbol": "_Znwm",
-              "addend": -4,
-              "destination": "0x407bc8",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 1122,
-              "type": 2,
-              "symbol": "_ZN5daisy5video6CImageC1EN2ox5video13ECOLOR_FORMATERKNS2_4core12CDimension2dIiEE",
-              "addend": -4,
-              "destination": "0x4de240",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 1164,
-              "type": 2,
-              "symbol": "_ZN5daisy5video15CColorConverter29convert16BitTo16BitFlipMirrorEPKsPsiii",
-              "addend": -4,
-              "destination": "0x5d8600",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 1208,
-              "type": 2,
-              "symbol": "_Znwm",
-              "addend": -4,
-              "destination": "0x407bc8",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 1229,
-              "type": 2,
-              "symbol": "_ZN5daisy5video6CImageC1EN2ox5video13ECOLOR_FORMATERKNS2_4core12CDimension2dIiEE",
-              "addend": -4,
-              "destination": "0x4de240",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 1271,
-              "type": 2,
-              "symbol": "_ZN5daisy5video15CColorConverter41convert24BitTo24BitFlipMirrorColorShuffleEPKcPciii",
-              "addend": -4,
-              "destination": "0x5d8740",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 1319,
-              "type": 2,
-              "symbol": "_Znam",
-              "addend": -4,
-              "destination": "0x407128",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 1354,
-              "type": 2,
-              "symbol": "_ZdlPv",
-              "addend": -4,
-              "destination": "0x407b48",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 1362,
-              "type": 2,
-              "symbol": "_Unwind_Resume",
-              "addend": -4,
-              "destination": "0x4084f8",
-              "reason": "different destination",
-              "matches": false
-            }
-          ],
-          "references": 35,
+          "references": 38,
           "functions": [
             {
               "symbol": "_ZN5daisy5video15CImageLoaderTGAC2Ev",
@@ -264717,10 +264546,10 @@
             {
               "symbol": "_ZN5daisy5video15CImageLoaderTGA9loadImageEPN2ox2io9IReadFileE",
               "address": "0x59c010",
-              "size": 762,
-              "extent": null,
+              "size": 954,
+              "extent": "fde",
               "global": true,
-              "exact": false
+              "exact": true
             },
             {
               "symbol": "_ZN5daisy5video15CImageLoaderTGA24isALoadableFileExtensionEPKc",
@@ -264732,6 +264561,16 @@
             }
           ],
           "data_ranges": [
+            {
+              "address": "0x61ce32",
+              "size": 30,
+              "kind": "merged string"
+            },
+            {
+              "address": "0x61ce18",
+              "size": 26,
+              "kind": "merged string"
+            },
             {
               "address": "0x5f56d6",
               "size": 5,
@@ -264830,11 +264669,16 @@
           "name": ".gcc_except_table",
           "size": 42,
           "placement": "exception frames",
-          "exact": false,
+          "exact": true,
           "address": "0x664c31",
-          "first_difference": 5,
-          "differing_bytes": 20,
-          "references": 0
+          "references": 0,
+          "data_ranges": [
+            {
+              "address": "0x664c31",
+              "size": 42,
+              "kind": "section"
+            }
+          ]
         },
         {
           "name": ".rodata._ZTVN5daisy5video15CImageLoaderTGAE",
@@ -264992,7 +264836,13 @@
           "/out/daisy__video__Null__CImageLoaderTGA.o"
         ],
         "inputs": {
-          "src/daisy/video/Null/CImageLoaderTGA.cpp": "fc63615b67f9c884569b901aacbdd193c8262198e496f0a818b9060bfde77124",
+          "src/daisy/video/Null/CImageLoaderTGA.cpp": "808a602f68b858cab28cc06b92fe4167d22baa2d8d681997cb4cceeb2e12c0e5",
+          "src/ox/io/CHelpIO.h": "83785946785456bff5b9b8343e511a39834e3df69fb441901205394962693a70",
+          "src/ox/io/IReadFile.h": "511199e47dbdb6fb8548dd64bdf098308b2add439cce1d7a1db7251ec9247406",
+          "src/ox/io/../IUnknown.h": "2876425521d21d0ab1b35bc5e2a72ae62acee754c6785899771e48912b9b0a9f",
+          "src/ox/io/IWriteFile.h": "e217871c7372e3db36a084986831e95b25afd47a7ed53577295db27a1e3b1d9d",
+          "src/ox/io/../core/CString.h": "7cc2521534a1b7864708fdc416a25279f05507d6c045abeca04545f4a88b95ee",
+          "src/ox/io/IFileSystem.h": "3ecd0b103a841ec3d6b58825c9984162da937cd039500cb1e037f300d8117ead",
           "src/ox/core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
           "src/ox/video/IVideoDriver.h": "e6915f5d6c4f5dc79e6d72c4325cc311c141e6c71734f5254af688cc94cd9e61",
           "src/ox/video/../IUnknown.h": "2876425521d21d0ab1b35bc5e2a72ae62acee754c6785899771e48912b9b0a9f",
@@ -265005,8 +264855,6 @@
           "src/ox/video/ColorPacking.h": "96f75b4784678a3a1bb67aedb79d1fcfa0a50508b101237fde463a314230441a",
           "src/ox/video/IImage.h": "972f0a52212fdc3c93ef24f9ce07d0180f0c56ff4c7ce18f6d8e9091a501372e",
           "src/ox/video/IImageLoader.h": "6fb82782fb732dcee6a29c691bf06a6947a9635ab3ace3c72fa861cd83a3822b",
-          "src/ox/io/IReadFile.h": "511199e47dbdb6fb8548dd64bdf098308b2add439cce1d7a1db7251ec9247406",
-          "src/ox/io/../IUnknown.h": "2876425521d21d0ab1b35bc5e2a72ae62acee754c6785899771e48912b9b0a9f",
           "src/ox/event/ILogger.h": "8332b2ea3400f97511ddae97a7898f61b850775addf6c1e469b79ae4811bd77f",
           "src/ox/event/../IUnknown.h": "2876425521d21d0ab1b35bc5e2a72ae62acee754c6785899771e48912b9b0a9f",
           "src/daisy/video/Null/CImageLoaderTGA.h": "56d1f52811d649b5f2facde0380c09132cf8fe36c8c2957f0b50b4b4683773f2",
@@ -265016,10 +264864,10 @@
           "src/ox/core/CPosition2d.h": "2c21728e70f5b8b6051a9336bd34be433dd7d93c31b53510fb4eed4dbd359ba4",
           "src/ox/core/CRect.h": "dc28c4a09cf6dd0f55e240c33ee8cc391271bb36d37231b60b8db6201788e5df"
         },
-        "system_headers": 110,
-        "object_sha256": "a93526364fb8e36ce16138cbcf5d0a9e62dd4cd2c9cd6e1c177b339edc980b75"
+        "system_headers": 117,
+        "object_sha256": "344baee9ac7eda9b9a06fc98ea62a4118a8d19e2720b4f60efe0957fc50b8c20"
       },
-      "fuzzy_target_sha256": "5fb66c92a1bb39094c5a5dbbff1e3f50849b69294a8306e07fee27dccf885dc5",
+      "fuzzy_target_sha256": "5918a2e096239fc038ebed220387aed66000126ccc411e33df8e588f6a248d97",
       "fuzzy_functions": [
         {
           "address": "0x59bdb0",
@@ -265079,7 +264927,7 @@
           "address": "0x59c010",
           "size": 954,
           "symbol": "_ZN5daisy5video15CImageLoaderTGA9loadImageEPN2ox2io9IReadFileE",
-          "percent": 79.58943
+          "percent": 100.0
         },
         {
           "address": "0x59c3d0",
@@ -274640,132 +274488,47 @@
     },
     {
       "unit": "daisy/scene/CBspTree.cpp",
-      "object_sha256": "83fae075443e8f08a764d696452ba6cf6bffa34361479facd51072f928bec790",
+      "object_sha256": "78296ccec47985a5aab9ad6376fbee6f8fc9b919af280aa8bc40250ae257fa95",
       "exact": false,
       "sections": [
         {
           "name": ".text",
-          "size": 14946,
+          "size": 15650,
           "placement": "symbol: _ZN5daisy5scene8CBspTree17createBoundingBoxEPKNS1_7BspPolyEjRN2ox4core9CAabbox3dIfEE",
           "exact": false,
           "address": "0x5d01d0",
           "first_difference": 890,
-          "differing_bytes": 2930,
+          "differing_bytes": 2927,
           "misplaced_symbols": [
-            {
-              "symbol": "_ZN5daisy5scene8CBspTree8getStatsEv",
-              "known": "0x5d09e0",
-              "placed": "0x5d0710"
-            },
-            {
-              "symbol": "_ZN5daisy5scene8CBspTree17countPolyVertizesERKNS1_7BspNodeE",
-              "known": "0x5d09f0",
-              "placed": "0x5d0720"
-            },
-            {
-              "symbol": "_ZN5daisy5scene8CBspTree16countPolyIndizesERKNS1_7BspNodeE",
-              "known": "0x5d0a50",
-              "placed": "0x5d0780"
-            },
-            {
-              "symbol": "_ZNK5daisy5scene8CBspTree15getRenderBufferEj",
-              "known": "0x5d0ab0",
-              "placed": "0x5d07e0"
-            },
-            {
-              "symbol": "_ZN5daisy5scene8CBspTree13planeFromPolyERKNS1_7BspPolyE",
-              "known": "0x5d0b00",
-              "placed": "0x5d0830"
-            },
-            {
-              "symbol": "_ZN5daisy5scene8CBspTree11createStatsEPKN2ox5scene11IMeshBufferEj",
-              "known": "0x5d0c50",
-              "placed": "0x5d0980"
-            },
-            {
-              "symbol": "_ZN5daisy5scene8CBspTree18createRenderBufferEv",
-              "known": "0x5d0e40",
-              "placed": "0x5d0b70"
-            },
-            {
-              "symbol": "_ZN5daisy5scene8CBspTree11deleteStatsEv",
-              "known": "0x5d0ed0",
-              "placed": "0x5d0c00"
-            },
-            {
-              "symbol": "_ZN5daisy5scene8CBspTree10deleteTreeEPNS1_7BspNodeE",
-              "known": "0x5d0f20",
-              "placed": "0x5d0c60"
-            },
-            {
-              "symbol": "_ZN5daisy5scene8CBspTreeD2Ev",
-              "known": "0x5d1020",
-              "placed": "0x5d0d60"
-            },
-            {
-              "symbol": "_ZN5daisy5scene8CBspTreeD0Ev",
-              "known": "0x5d1120",
-              "placed": "0x5d0e60"
-            },
-            {
-              "symbol": "_ZN5daisy5scene8CBspTreeD1Ev",
-              "known": "0x5d1220",
-              "placed": "0x5d0f60"
-            },
-            {
-              "symbol": "_ZN5daisy5scene8CBspTree10renderLeafERNS1_7BspNodeE",
-              "known": "0x5d1320",
-              "placed": "0x5d1060"
-            },
-            {
-              "symbol": "_ZN5daisy5scene8CBspTree16renderBoxCullingERNS1_7BspNodeEPKN2ox5scene13SViewFrustrumERKNS4_4core9CVector3dIfEE",
-              "known": "0x5d1560",
-              "placed": "0x5d12a0"
-            },
-            {
-              "symbol": "_ZN5daisy5scene8CBspTree6renderERNS1_7BspNodeEPKN2ox5scene13SViewFrustrumERKNS4_4core9CVector3dIfEE",
-              "known": "0x5d1680",
-              "placed": "0x5d13c0"
-            },
-            {
-              "symbol": "_ZN5daisy5scene8CBspTree6renderEPKN2ox5scene13SViewFrustrumERKNS2_4core9CVector3dIfEEb",
-              "known": "0x5d1780",
-              "placed": "0x5d14c0"
-            },
-            {
-              "symbol": "_ZN5daisy5scene8CBspTree9splitPolyERKNS1_7BspPolyERKN2ox4core8CPlane3dIfEERS2_SB_",
-              "known": "0x5d1810",
-              "placed": "0x5d1550"
-            },
             {
               "symbol": "_ZN5daisy5scene8CBspTree10createRootEPKN2ox5scene11IMeshBufferEj",
               "known": "0x5d25e0",
-              "placed": "0x5d2300"
+              "placed": "0x5d25c0"
             },
             {
               "symbol": "_ZN5daisy5scene8CBspTree9sortPolysERKNS1_7BspNodeE",
               "known": "0x5d2bf0",
-              "placed": "0x5d2910"
+              "placed": "0x5d2bd0"
             },
             {
               "symbol": "_ZN5daisy5scene8CBspTree13createBspTreeERNS1_7BspNodeE",
               "known": "0x5d3a30",
-              "placed": "0x5d3750"
+              "placed": "0x5d3a10"
             },
             {
               "symbol": "_ZN5daisy5scene8CBspTreeC1EPKN2ox5scene11IMeshBufferEj",
               "known": "0x5d3cc0",
-              "placed": "0x5d39e0"
+              "placed": "0x5d3ca0"
             },
             {
               "symbol": "_ZN5daisy5scene8CBspTreeC2EPKN2ox5scene11IMeshBufferEj",
               "known": "0x5d3df0",
-              "placed": "0x5d3b10"
+              "placed": "0x5d3dd0"
             }
           ],
           "bad_references": [
             {
-              "offset": 5603,
+              "offset": 6307,
               "type": 2,
               "symbol": ".LC2",
               "addend": -4,
@@ -274773,7 +274536,7 @@
               "matches": false
             },
             {
-              "offset": 5855,
+              "offset": 6559,
               "type": 2,
               "symbol": ".LC1",
               "addend": -4,
@@ -274781,7 +274544,7 @@
               "matches": false
             },
             {
-              "offset": 6026,
+              "offset": 6730,
               "type": 2,
               "symbol": ".LC4",
               "addend": -4,
@@ -274789,7 +274552,7 @@
               "matches": false
             },
             {
-              "offset": 6373,
+              "offset": 7077,
               "type": 2,
               "symbol": ".LC3",
               "addend": -4,
@@ -274797,7 +274560,7 @@
               "matches": false
             },
             {
-              "offset": 7677,
+              "offset": 8381,
               "type": 2,
               "symbol": "_ZN5daisy5scene8CBspTree13planeFromPolyERKNS1_7BspPolyE",
               "addend": -4,
@@ -274806,7 +274569,7 @@
               "matches": false
             },
             {
-              "offset": 7969,
+              "offset": 8673,
               "type": 2,
               "symbol": "_ZN5daisy5scene8CBspTree13planeFromPolyERKNS1_7BspPolyE",
               "addend": -4,
@@ -274815,7 +274578,7 @@
               "matches": false
             },
             {
-              "offset": 8051,
+              "offset": 8755,
               "type": 2,
               "symbol": "_ZNSt6vectorIN2ox5video9S3DVertexESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_",
               "addend": -4,
@@ -274824,7 +274587,7 @@
               "matches": false
             },
             {
-              "offset": 8108,
+              "offset": 8812,
               "type": 2,
               "symbol": "_ZNSt6vectorItSaItEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPtS1_EERKt",
               "addend": -4,
@@ -274833,7 +274596,7 @@
               "matches": false
             },
             {
-              "offset": 8198,
+              "offset": 8902,
               "type": 2,
               "symbol": "_ZNSt6vectorItSaItEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPtS1_EERKt",
               "addend": -4,
@@ -274842,7 +274605,7 @@
               "matches": false
             },
             {
-              "offset": 8222,
+              "offset": 8926,
               "type": 2,
               "symbol": "_ZNSt6vectorItSaItEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPtS1_EERKt",
               "addend": -4,
@@ -274851,7 +274614,7 @@
               "matches": false
             },
             {
-              "offset": 8258,
+              "offset": 8962,
               "type": 2,
               "symbol": "_ZNSt6vectorItSaItEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPtS1_EERKt",
               "addend": -4,
@@ -274890,6 +274653,14 @@
               "symbol": "_ZN5daisy5scene8CBspTree12findSplitterEPNS1_7BspPolyEjRN2ox4core8CPlane3dIfEE",
               "address": "0x5d0520",
               "size": 483,
+              "extent": "fde",
+              "global": true,
+              "exact": false
+            },
+            {
+              "symbol": "_ZN5daisy5scene8CBspTree16polyExistsInNodeEPNS1_7BspPolyEPNS1_7BspNodeEj",
+              "address": "0x5d0710",
+              "size": 720,
               "extent": "fde",
               "global": true,
               "exact": false
@@ -274965,14 +274736,6 @@
               "extent": "fde",
               "global": true,
               "exact": true
-            },
-            {
-              "symbol": "_ZN5daisy5scene8CBspTree16polyExistsInNodeEPNS1_7BspPolyEPNS1_7BspNodeEj",
-              "address": "0x5d0f20",
-              "size": 9,
-              "extent": null,
-              "global": true,
-              "exact": false
             },
             {
               "symbol": "_ZN5daisy5scene8CBspTree10deleteTreeEPNS1_7BspNodeE",
@@ -275400,7 +275163,7 @@
           "src/ox/video/S3DVertexInline.h": "63253c134969d7ed36e950f505d25e4b7ea60e2f39a317feb80620b994ec393f",
           "src/ox/video/S3DVertex.h": "96cd548320ee007c480619303c02cf1f3cba55d255767620f3cd88408186bf37",
           "src/daisy/os.h": "1b7da1ec90e325f920746fba54bd835e5ffa8792543f06ae917209451ffa6711",
-          "src/daisy/scene/CBspTree.h": "24a63427ca73b83f29a08c10eba5d1995ae64107117879c23bfaf50b5caec7ed",
+          "src/daisy/scene/CBspTree.h": "5f58985dc80f51cdb14a59a161471d8e8864fa42de560383f60a558d8907405e",
           "src/ox/TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/scene/ICameraSceneNode.h": "29a648544692d676b3180a163651aee47e37ee8297e217e53fbbab855d5fcfc6",
           "src/ox/scene/ISceneNode.h": "35c30c908516eb7d51ae98fe387eda1fb55c10b79ae027fb4ad9926fc2541225",
@@ -275422,9 +275185,9 @@
           "src/ox/scene/../video/SLight.h": "407fbede66e046c3d266742a1ec8de33e2a2f9efb6706f154aec8a879a72bba6"
         },
         "system_headers": 123,
-        "object_sha256": "83fae075443e8f08a764d696452ba6cf6bffa34361479facd51072f928bec790"
+        "object_sha256": "78296ccec47985a5aab9ad6376fbee6f8fc9b919af280aa8bc40250ae257fa95"
       },
-      "fuzzy_target_sha256": "226160062c585bf6db91a083f9e9dc4d674845b300467fa9e087e5770966f600",
+      "fuzzy_target_sha256": "c760b28b1dce7cf1c2009e714e8b5b300920b9a496c0b17eec2ca33fa16e1deb",
       "fuzzy_functions": [
         {
           "address": "0x5d01d0",
@@ -275449,6 +275212,12 @@
           "size": 483,
           "symbol": "_ZN5daisy5scene8CBspTree12findSplitterEPNS1_7BspPolyEjRN2ox4core8CPlane3dIfEE",
           "percent": 98.41482
+        },
+        {
+          "address": "0x5d0710",
+          "size": 720,
+          "symbol": "_ZN5daisy5scene8CBspTree16polyExistsInNodeEPNS1_7BspPolyEPNS1_7BspNodeEj",
+          "percent": 97.75401
         },
         {
           "address": "0x5d09e0",
@@ -275503,12 +275272,6 @@
           "size": 66,
           "symbol": "_ZN5daisy5scene8CBspTree11deleteStatsEv",
           "percent": 100.0
-        },
-        {
-          "address": "0x5d0f20",
-          "size": 241,
-          "symbol": "_ZN5daisy5scene8CBspTree16polyExistsInNodeEPNS1_7BspPolyEPNS1_7BspNodeEj",
-          "percent": 2.8846154
         },
         {
           "address": "0x5d0f20",
@@ -280746,7 +280509,7 @@
           "exact": false,
           "address": "0x533360",
           "first_difference": 328,
-          "differing_bytes": 1951,
+          "differing_bytes": 1947,
           "misplaced_symbols": [
             {
               "symbol": "_ZN5daisy2io10CXMLReader21getAttributeValueSafeEPKw",
@@ -281179,24 +280942,6 @@
               "destination": "0x409c40",
               "reason": "different destination",
               "matches": false
-            },
-            {
-              "offset": 7872,
-              "type": 2,
-              "symbol": "_ZNSt6vectorIN5daisy2io10CXMLReader10SAttributeESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
-              "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "0x535670",
-              "matches": false
-            },
-            {
-              "offset": 8049,
-              "type": 2,
-              "symbol": "_ZN5daisy2io10CXMLReader10SAttributeD1Ev",
-              "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "0x5355e0",
-              "matches": false
             }
           ],
           "references": 179,
@@ -281524,6 +281269,24 @@
           ]
         },
         {
+          "name": ".text._ZN5daisy2io10CXMLReader10SAttributeD1Ev",
+          "size": 34,
+          "placement": "symbol: _ZN5daisy2io10CXMLReader10SAttributeD1Ev",
+          "exact": true,
+          "address": "0x5355e0",
+          "references": 2,
+          "functions": [
+            {
+              "symbol": "_ZN5daisy2io10CXMLReader10SAttributeD1Ev",
+              "address": "0x5355e0",
+              "size": 34,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ]
+        },
+        {
           "name": ".text._ZN2ox6TArrayIN5daisy2io10CXMLReader10SAttributeEED1Ev",
           "size": 85,
           "placement": "symbol: _ZN2ox6TArrayIN5daisy2io10CXMLReader10SAttributeEED1Ev",
@@ -281538,6 +281301,37 @@
               "extent": "fde",
               "global": true,
               "exact": true
+            }
+          ]
+        },
+        {
+          "name": ".text._ZNSt6vectorIN5daisy2io10CXMLReader10SAttributeESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+          "size": 2390,
+          "placement": "symbol: _ZNSt6vectorIN5daisy2io10CXMLReader10SAttributeESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+          "exact": false,
+          "address": "0x535670",
+          "first_difference": 86,
+          "differing_bytes": 270,
+          "bad_references": [
+            {
+              "offset": 1494,
+              "type": 2,
+              "symbol": "_Znam",
+              "addend": -4,
+              "destination": "0x407128",
+              "reason": "different destination",
+              "matches": false
+            }
+          ],
+          "references": 46,
+          "functions": [
+            {
+              "symbol": "_ZNSt6vectorIN5daisy2io10CXMLReader10SAttributeESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+              "address": "0x535670",
+              "size": 2390,
+              "extent": "fde",
+              "global": true,
+              "exact": false
             }
           ]
         },
@@ -281678,9 +281472,7 @@
         }
       ],
       "unplaced_sections": [
-        ".text._ZN5daisy2io10CXMLReader10SAttributeD1Ev",
         ".gcc_except_table",
-        ".text._ZNSt6vectorIN5daisy2io10CXMLReader10SAttributeESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
         ".rodata"
       ],
       "compilation": {
@@ -281715,7 +281507,7 @@
         "system_headers": 125,
         "object_sha256": "5f88458f11db7743262a4e67b71bbbb1e1119b6a21e04fd74ed865ee749ca939"
       },
-      "fuzzy_target_sha256": "31106c28868d3ebd2dd9cd3ed4a7f5897945befae4d13928dc4420b82abe9772",
+      "fuzzy_target_sha256": "bbd968b515449cb1326b22f1753be0bb0e5f6fd5732462bd7902d50fec27d8a9",
       "fuzzy_functions": [
         {
           "address": "0x533360",
@@ -281859,7 +281651,7 @@
           "address": "0x534da0",
           "size": 1801,
           "symbol": "_ZN5daisy2io10CXMLReader22parseOpeningXMLElementEv",
-          "percent": 99.8764
+          "percent": 99.89888
         },
         {
           "address": "0x5354b0",
@@ -281904,10 +281696,22 @@
           "percent": 100.0
         },
         {
+          "address": "0x5355e0",
+          "size": 34,
+          "symbol": "_ZN5daisy2io10CXMLReader10SAttributeD1Ev",
+          "percent": 100.0
+        },
+        {
           "address": "0x535610",
           "size": 85,
           "symbol": "_ZN2ox6TArrayIN5daisy2io10CXMLReader10SAttributeEED1Ev",
           "percent": 100.0
+        },
+        {
+          "address": "0x535670",
+          "size": 2390,
+          "symbol": "_ZNSt6vectorIN5daisy2io10CXMLReader10SAttributeESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+          "percent": 98.95417
         }
       ]
     },
@@ -293762,7 +293566,7 @@
     "config": {
       "functionRelocDiffs": "data_value"
     },
-    "report_sha256": "9d765d0468587ca5e123076f2790d97be84c4568ae8cfe064a060c8251de1279"
+    "report_sha256": "37d5da2c8c0f419b62eaa9698a3732a6e7f38a7c5828372e0f4d052d30ea6505"
   },
   "link": {
     "status": "unavailable",
