@@ -312,73 +312,8 @@ bool CXFileReader::parseDataObjectMesh(SXMesh &mesh)
 
 bool CXFileReader::parseDataObjectSkinWeights(SXSkinWeight& weights)
 {
-	#ifdef _XREADER_DEBUG
-    os::Printer::log("CXFileReader: Reading mesh skin weights", ox::event::ELL_INFORMATION);
-	#endif
-
-	if (!readHeadOfDataObject())
-	{
-		os::Printer::log("No opening brace in Skin Weights found in x file", ox::event::ELL_WARNING);
-		return false;
-	}
-
-	if (!getNextTokenAsString(weights.TransformNodeName))
-	{
-		os::Printer::log("Unknown syntax while reading transfrom node name string in x file", ox::event::ELL_WARNING);
-		return false;
-	}
-
-	// read vertex weights
-
-	findNextNoneWhiteSpaceNumber();
-	int nWeights = strtol(P, &P, 10);
-
-	weights.Weights.resize(nWeights);
-
-	// read vertex indices
-
-	int i;
-	for (i=0; i<nWeights; ++i)
-	{
-		findNextNoneWhiteSpaceNumber();
-		weights.Weights[i].VertexIndex = strtol(P, &P, 10);
-	}
-
-	// read vertex weights
-
-	for (i=0; i<nWeights; ++i)
-	{
-		findNextNoneWhiteSpaceNumber();
-		weights.Weights[i].Weight = readFloat();
-	}
-
-	// sort weights
-	ox::algo::sort(weights.Weights.begin(), weights.Weights.end());
-
-	// read matrix offset
-
-	for (i=0; i<4; ++i)
-		for (int j=0; j<4; ++j)
-		{
-			findNextNoneWhiteSpaceNumber();
-			weights.MatrixOffset(j,i) = readFloat();
-		}
-
-	if (!checkForTwoFollowingSemicolons())
-	{
-		os::Printer::log("No finishing semicolon in Skin Weights found in x file", ox::event::ELL_WARNING);
-		return false;
-	}
-
-	findNextNoneWhiteSpace();
-	if (P[0] != '}')
-	{
-		os::Printer::log("No closing brace in Skin Weights found in x file", ox::event::ELL_WARNING);
-		return false;
-	}
-	++P;
-
-    return true;
+    // Not recovered: Irrlicht 0.7's body does not compile against daisy's interfaces.
+    __builtin_trap();
 }
 
 
