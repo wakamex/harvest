@@ -306,6 +306,8 @@ using namespace ox::scene;
 		//! Removes all children of this scene node
 		virtual void removeAll();
 
+		virtual void removeAllMeshes();
+
 	private:
 
 		//! adds a mesh to the list

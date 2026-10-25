@@ -3,6 +3,7 @@
 // Recovered for Harvest's daisy namespace; not the original source.
 
 #include <iostream>
+#include "ox/core/CStringFunctions.h"
 #include "ox/core/CAabbox3d.h"
 #include "ox/core/CDimension2d.h"
 #include "ox/core/CString.h"
@@ -1058,10 +1059,16 @@ void CSceneManager::clear()
 ISceneManager* createSceneManager(ox::video::IVideoDriver* driver, ox::io::IFileSystem* fs,
 								  ox::gui::ICursorControl* cursorcontrol)
 {
-    // Not recovered: Irrlicht 0.7's body does not compile against daisy's interfaces.
-    __builtin_trap();
+	return new CSceneManager(driver, fs, cursorcontrol);
 }
 
+
+void CSceneManager::removeAllMeshes()
+{
+    for (unsigned int it = 0; it < Meshes.size(); ++it)
+        Meshes[it].Mesh->drop();
+    Meshes.clear();
+}
 
 } // end namespace scene
 } // end namespace daisy
