@@ -378,7 +378,7 @@ inline float CQ3LevelMesh::Blend( float s[3], float t[3], tBSPVertex *v[9], int 
 	for( int i=0; i<3; i++ )
 		for( int j=0; j<3; j++ )
 		{
-			ptr = (float*)((char*)v[i*3 + j] + offset);
+			ptr = (float*)v[i*3 + j];
 			res += s[i] * t[j] *  (*ptr);
 		}
 	return res;

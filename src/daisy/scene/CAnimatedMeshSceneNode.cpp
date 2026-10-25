@@ -146,8 +146,6 @@ void CAnimatedMeshSceneNode::OnPostRender(unsigned int timeMs)
 		for (; ait != Animators.end(); ++ait)
 			(*ait)->animateNode(this, timeMs);
 
-		// update absolute position
-		updateAbsolutePosition();
 
 		// update all dummy transformation nodes
 		if (!JointChildSceneNodes.empty() && Mesh && Mesh->getMeshType() == EAMT_MS3D)
