@@ -531,7 +531,7 @@ void CQ3LevelMesh::loadTextures()
 	// load textures
 
 	ox::TArray<ox::video::ITexture*> tex;
-	tex.resize(NumTextures+1);
+	tex.reserve(NumTextures+1);
 
 	tex[0] = 0;
 
@@ -545,7 +545,7 @@ void CQ3LevelMesh::loadTextures()
 		{
 			s = Textures[t-1].strName;
 			s.append(extensions[e]);
-			if (FileSystem->existFile(s.c_str(), true))
+			if (FileSystem->existFile(s.c_str(), false))
 			{
 				tex[t] = Driver->getTexture(s.c_str());
 				break;
@@ -559,7 +559,7 @@ void CQ3LevelMesh::loadTextures()
 	// load lightmaps.
 
 	ox::TArray<ox::video::ITexture*> lig;
-	lig.resize(NumLightMaps+1);
+	lig.reserve(NumLightMaps+1);
 
 	lig[0] = 0;
 

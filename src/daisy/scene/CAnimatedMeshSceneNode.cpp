@@ -3,6 +3,7 @@
 // Recovered for Harvest's daisy namespace; not the original source.
 
 #include <iostream>
+#include "CAnimatedMeshSceneNode.h"
 #include "ox/core/CAabbox3d.h"
 #include "ox/core/CMatrix4.h"
 #include "ox/core/CVector3d.h"
@@ -19,7 +20,6 @@
 #include "ox/event/ILogger.h"
 #include "ox/TArray.h"
 #include "ox/TList.h"
-#include "CAnimatedMeshSceneNode.h"
 #include "ox/video/IVideoDriver.h"
 #include "ox/scene/ISceneManager.h"
 #include "ox/video/S3DVertex.h"
@@ -308,8 +308,35 @@ IShadowVolumeSceneNode* CAnimatedMeshSceneNode::addShadowVolumeSceneNode(int id,
 //! the corrsesponding joint, if the mesh in this scene node is a ms3d mesh.
 ISceneNode* CAnimatedMeshSceneNode::getMS3DJointNode(const char* jointName)
 {
-    // Not recovered: Irrlicht 0.7's body does not compile against daisy's interfaces.
-    __builtin_trap();
+	if (!Mesh || Mesh->getMeshType() != EAMT_MS3D)
+		return 0;
+
+	IAnimatedMeshMS3D* amm = (IAnimatedMeshMS3D*)Mesh;
+	int jointCount = amm->getJointCount();
+	int number = amm->getJointNumber(jointName);
+
+	if (number == -1)
+	{
+		os::Printer::log("Joint with specified name not found in ms3d mesh.", jointName, ox::event::ELL_WARNING);
+		return 0;
+	}
+
+	if (JointChildSceneNodes.empty())
+	{
+		// allocate joints for the first time.
+		JointChildSceneNodes.resize(jointCount);
+		for (int i=0; i<jointCount; ++i)
+			JointChildSceneNodes[i] = 0;
+	}
+
+	if (JointChildSceneNodes[number] == 0)
+	{
+		JointChildSceneNodes[number] =
+			SceneManager->addDummyTransformationSceneNode(this, -1);
+		JointChildSceneNodes[number]->grab();
+	}
+
+	return JointChildSceneNodes[number];
 }
 
 
