@@ -172,7 +172,7 @@ void CSceneManager::addMesh(const char* filename, IAnimatedMesh* mesh)
 	MeshEntry e;
 	e.Mesh = mesh;
 	e.Name = filename;
-	e.Name.make_lower();
+	ox::core::CStringFunctions::ansiMakeLower(e.Name);
 
 	Meshes.push_back(e);
 }
@@ -182,7 +182,7 @@ void CSceneManager::addMesh(const char* filename, IAnimatedMesh* mesh)
 bool CSceneManager::wasMeshLoaded(const char* filename)
 {
 	ox::core::CString<char> name = filename;
-	name.make_lower();
+	ox::core::CStringFunctions::ansiMakeLower(name);
 	return findMesh(name.c_str()) != 0;
 }
 
@@ -203,7 +203,7 @@ IAnimatedMesh* CSceneManager::getMesh(const char* filename)
 	IAnimatedMesh* msh = 0;
 
 	ox::core::CString<char> name = filename;
-	name.make_lower();
+	ox::core::CStringFunctions::ansiMakeLower(name);
 
 	msh = findMesh(name.c_str());
 	if (msh)
