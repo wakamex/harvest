@@ -19,7 +19,7 @@
     "tools/hv/objdiff.py": "13fa221740693a00a37134a133ddf96297d3efa7421e0d5af57a8b96b0abfcb5",
     "tools/hv/delink.py": "973dd463d7e8d0ec81ddf5977cad3154501fe559559442515e50857e8ef9b9cf",
     "config/1.18-linux-amd64/flags.json": "9ebb8c16c904108ddb5cbaa50345a733d400ee2bd3994c72e5545e676fb03ad8",
-    "config/1.18-linux-amd64/symbols.tsv": "66da6149ed8af927f5165c8992173cac2dd23dd86519bb3cc4ce056663870daa",
+    "config/1.18-linux-amd64/symbols.tsv": "a40e8e33441caba0865b4b2f099ec8eca943edb01a788497a6f33f39105a23a9",
     "config/1.18-linux-amd64/extents.tsv": "55dd5b29374ba204f2ddf66df2c6fbe9cf434a68cd559196f1a3331c4911a20b",
     "config/1.18-linux-amd64/units.toml": "9d23aa413394390c65d7b83e5cc5bc4ae20933a388484b9a4efb9f128609d0cf"
   },
@@ -119407,7 +119407,7 @@
           "src/ox/scene/IBillboardSceneNode.h": "061a0356b828173218383768f15c51e917f72dcb6fac53aaeb43c0528ecbfe6a",
           "src/ox/scene/../core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
           "src/ox/scene/ICameraSceneNode.h": "29a648544692d676b3180a163651aee47e37ee8297e217e53fbbab855d5fcfc6",
-          "src/ox/scene/ISceneManager.h": "dd44c56f50cbc40c37ddc2c11f078b9611badb277054078f0087197ab94cdda6",
+          "src/ox/scene/ISceneManager.h": "74a853b031f12a80a26fcd96fe8ef841a1100cbdc1e324978d6dc6b1d2d4f0b6",
           "src/ox/scene/../TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/scene/../event/IEventReceiver.h": "c1e1ccab98fd4d61883bca01562128c424963baf34ae4d79fcf903029fcfa169",
           "src/ox/scene/../video/SLight.h": "407fbede66e046c3d266742a1ec8de33e2a2f9efb6706f154aec8a879a72bba6",
@@ -131329,7 +131329,7 @@
           "src/ox/IUnknown.h": "2876425521d21d0ab1b35bc5e2a72ae62acee754c6785899771e48912b9b0a9f",
           "src/ox/core/CTriangle3d.h": "effc858549b1a703e1367bf50c4664a7ae03ec33ef1450871fddc9c4623811a8",
           "src/ox/core/CMatrix4.h": "036c4a2e30a5ab2436472e6996964c7407e312d232d56323e7fdaa5fd68da32b",
-          "src/ox/scene/ISceneManager.h": "dd44c56f50cbc40c37ddc2c11f078b9611badb277054078f0087197ab94cdda6",
+          "src/ox/scene/ISceneManager.h": "74a853b031f12a80a26fcd96fe8ef841a1100cbdc1e324978d6dc6b1d2d4f0b6",
           "src/ox/scene/../TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/scene/../core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
           "src/ox/scene/../event/IEventReceiver.h": "c1e1ccab98fd4d61883bca01562128c424963baf34ae4d79fcf903029fcfa169",
@@ -138438,7 +138438,7 @@
           "src/ox/scene/IAnimatedMeshMD2.h": "f2a7b548c9eda454321ca961d666c390426f914596966acf6c8ade19259dbb1f",
           "src/ox/scene/IAnimatedMesh.h": "233810b9e6ca88ab9e1d4ddd93de2d56ec4382fa7045b86c06a548eaf42c8b94",
           "src/ox/scene/ICameraSceneNode.h": "29a648544692d676b3180a163651aee47e37ee8297e217e53fbbab855d5fcfc6",
-          "src/ox/scene/ISceneManager.h": "dd44c56f50cbc40c37ddc2c11f078b9611badb277054078f0087197ab94cdda6",
+          "src/ox/scene/ISceneManager.h": "74a853b031f12a80a26fcd96fe8ef841a1100cbdc1e324978d6dc6b1d2d4f0b6",
           "src/ox/scene/../TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/scene/../core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
           "src/ox/scene/../event/IEventReceiver.h": "c1e1ccab98fd4d61883bca01562128c424963baf34ae4d79fcf903029fcfa169",
@@ -218650,7 +218650,7 @@
           "src/ox/net/INetworkDevice.h": "2f29b75e1d69e6568a0c16c58feac3f348f9371c093a5fbf6904b9843111e0d4",
           "src/ox/net/../IUnknown.h": "2876425521d21d0ab1b35bc5e2a72ae62acee754c6785899771e48912b9b0a9f",
           "src/ox/net/../core/CString.h": "7cc2521534a1b7864708fdc416a25279f05507d6c045abeca04545f4a88b95ee",
-          "src/ox/scene/ISceneManager.h": "dd44c56f50cbc40c37ddc2c11f078b9611badb277054078f0087197ab94cdda6",
+          "src/ox/scene/ISceneManager.h": "74a853b031f12a80a26fcd96fe8ef841a1100cbdc1e324978d6dc6b1d2d4f0b6",
           "src/ox/scene/../IUnknown.h": "2876425521d21d0ab1b35bc5e2a72ae62acee754c6785899771e48912b9b0a9f",
           "src/ox/scene/../TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/scene/../core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
@@ -220925,7 +220925,7 @@
           "src/ox/io/../core/CString.h": "7cc2521534a1b7864708fdc416a25279f05507d6c045abeca04545f4a88b95ee",
           "src/ox/io/IReadFile.h": "511199e47dbdb6fb8548dd64bdf098308b2add439cce1d7a1db7251ec9247406",
           "src/ox/io/IWriteFile.h": "e217871c7372e3db36a084986831e95b25afd47a7ed53577295db27a1e3b1d9d",
-          "src/ox/scene/ISceneManager.h": "dd44c56f50cbc40c37ddc2c11f078b9611badb277054078f0087197ab94cdda6",
+          "src/ox/scene/ISceneManager.h": "74a853b031f12a80a26fcd96fe8ef841a1100cbdc1e324978d6dc6b1d2d4f0b6",
           "src/ox/scene/../IUnknown.h": "2876425521d21d0ab1b35bc5e2a72ae62acee754c6785899771e48912b9b0a9f",
           "src/ox/scene/../TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/scene/../core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
@@ -224923,7 +224923,7 @@
           "src/ox/IUnknown.h": "2876425521d21d0ab1b35bc5e2a72ae62acee754c6785899771e48912b9b0a9f",
           "src/ox/core/CTriangle3d.h": "effc858549b1a703e1367bf50c4664a7ae03ec33ef1450871fddc9c4623811a8",
           "src/ox/core/CMatrix4.h": "036c4a2e30a5ab2436472e6996964c7407e312d232d56323e7fdaa5fd68da32b",
-          "src/ox/scene/ISceneManager.h": "dd44c56f50cbc40c37ddc2c11f078b9611badb277054078f0087197ab94cdda6",
+          "src/ox/scene/ISceneManager.h": "74a853b031f12a80a26fcd96fe8ef841a1100cbdc1e324978d6dc6b1d2d4f0b6",
           "src/ox/scene/../TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/scene/../core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
           "src/ox/scene/../event/IEventReceiver.h": "c1e1ccab98fd4d61883bca01562128c424963baf34ae4d79fcf903029fcfa169",
@@ -228814,7 +228814,7 @@
           "src/ox/core/CTriangle3d.h": "effc858549b1a703e1367bf50c4664a7ae03ec33ef1450871fddc9c4623811a8",
           "src/ox/scene/../core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
           "src/daisy/scene/CBillboardSceneNode.h": "d5ff7dc938d45b825581c15ffdca4d0e384661ae730211559db71117259f93db",
-          "src/ox/scene/ISceneManager.h": "dd44c56f50cbc40c37ddc2c11f078b9611badb277054078f0087197ab94cdda6",
+          "src/ox/scene/ISceneManager.h": "74a853b031f12a80a26fcd96fe8ef841a1100cbdc1e324978d6dc6b1d2d4f0b6",
           "src/ox/scene/../TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/scene/../event/IEventReceiver.h": "c1e1ccab98fd4d61883bca01562128c424963baf34ae4d79fcf903029fcfa169",
           "src/ox/scene/../event/../Keycodes.h": "e8a44e174d975741c5dfcccb9b0f436b1d673830914d8764c51c50d3c93485cb",
@@ -230166,7 +230166,7 @@
           "src/ox/scene/IAnimatedMeshSceneNode.h": "13a6954501cf6ebc802fad4fd5cb0631a07cb6930dd2c59ec1c695c3993b1a55",
           "src/ox/scene/IAnimatedMeshMD2.h": "f2a7b548c9eda454321ca961d666c390426f914596966acf6c8ade19259dbb1f",
           "src/ox/scene/IAnimatedMesh.h": "233810b9e6ca88ab9e1d4ddd93de2d56ec4382fa7045b86c06a548eaf42c8b94",
-          "src/ox/scene/ISceneManager.h": "dd44c56f50cbc40c37ddc2c11f078b9611badb277054078f0087197ab94cdda6",
+          "src/ox/scene/ISceneManager.h": "74a853b031f12a80a26fcd96fe8ef841a1100cbdc1e324978d6dc6b1d2d4f0b6",
           "src/ox/scene/../TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/scene/../core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
           "src/ox/scene/../event/IEventReceiver.h": "c1e1ccab98fd4d61883bca01562128c424963baf34ae4d79fcf903029fcfa169",
@@ -231406,7 +231406,7 @@
           "src/ox/core/CTriangle3d.h": "effc858549b1a703e1367bf50c4664a7ae03ec33ef1450871fddc9c4623811a8",
           "src/ox/core/CMatrix4.h": "036c4a2e30a5ab2436472e6996964c7407e312d232d56323e7fdaa5fd68da32b",
           "src/daisy/scene/CEmptySceneNode.h": "05ef1ebec2fad1b89d74061a18ea0ee91c1dacdd70af03bdb03699ffa83261be",
-          "src/ox/scene/ISceneManager.h": "dd44c56f50cbc40c37ddc2c11f078b9611badb277054078f0087197ab94cdda6",
+          "src/ox/scene/ISceneManager.h": "74a853b031f12a80a26fcd96fe8ef841a1100cbdc1e324978d6dc6b1d2d4f0b6",
           "src/ox/scene/../TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/scene/../core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
           "src/ox/scene/../event/IEventReceiver.h": "c1e1ccab98fd4d61883bca01562128c424963baf34ae4d79fcf903029fcfa169",
@@ -232704,7 +232704,7 @@
           "src/ox/core/CMatrix4.h": "036c4a2e30a5ab2436472e6996964c7407e312d232d56323e7fdaa5fd68da32b",
           "src/ox/scene/../video/SLight.h": "407fbede66e046c3d266742a1ec8de33e2a2f9efb6706f154aec8a879a72bba6",
           "src/daisy/scene/CLightSceneNode.h": "c3225502a2951972467c50b8bd36921212b69a81ee8b5bd6ce6ad24ba694cab5",
-          "src/ox/scene/ISceneManager.h": "dd44c56f50cbc40c37ddc2c11f078b9611badb277054078f0087197ab94cdda6",
+          "src/ox/scene/ISceneManager.h": "74a853b031f12a80a26fcd96fe8ef841a1100cbdc1e324978d6dc6b1d2d4f0b6",
           "src/ox/scene/../TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/scene/../core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
           "src/ox/scene/../event/IEventReceiver.h": "c1e1ccab98fd4d61883bca01562128c424963baf34ae4d79fcf903029fcfa169",
@@ -235537,7 +235537,7 @@
           "src/ox/event/../IUnknown.h": "2876425521d21d0ab1b35bc5e2a72ae62acee754c6785899771e48912b9b0a9f",
           "src/daisy/scene/CSceneNodeAnimatorCollisionResponse.h": "9136079ae45c09bb0bc0ba4b3628b00db71130a4463c9278abb478dff99ad656",
           "src/ox/scene/ISceneNodeAnimatorCollisionResponse.h": "fa9d5f905f78be22d9c221b98d1223eb6363f7b43664d6f173022b84db9e0deb",
-          "src/ox/scene/ISceneManager.h": "dd44c56f50cbc40c37ddc2c11f078b9611badb277054078f0087197ab94cdda6",
+          "src/ox/scene/ISceneManager.h": "74a853b031f12a80a26fcd96fe8ef841a1100cbdc1e324978d6dc6b1d2d4f0b6",
           "src/ox/scene/../TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/scene/../core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
           "src/ox/scene/../event/IEventReceiver.h": "c1e1ccab98fd4d61883bca01562128c424963baf34ae4d79fcf903029fcfa169",
@@ -237663,7 +237663,7 @@
           "src/ox/IUnknown.h": "2876425521d21d0ab1b35bc5e2a72ae62acee754c6785899771e48912b9b0a9f",
           "src/ox/core/CTriangle3d.h": "effc858549b1a703e1367bf50c4664a7ae03ec33ef1450871fddc9c4623811a8",
           "src/daisy/scene/CSkyBoxSceneNode.h": "a0ecbbb2e164d3b4b78326767fb91d6c8bc16c21d64f02248bacb7a5d9844def",
-          "src/ox/scene/ISceneManager.h": "dd44c56f50cbc40c37ddc2c11f078b9611badb277054078f0087197ab94cdda6",
+          "src/ox/scene/ISceneManager.h": "74a853b031f12a80a26fcd96fe8ef841a1100cbdc1e324978d6dc6b1d2d4f0b6",
           "src/ox/scene/../TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/scene/../core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
           "src/ox/scene/../event/IEventReceiver.h": "c1e1ccab98fd4d61883bca01562128c424963baf34ae4d79fcf903029fcfa169",
@@ -239786,7 +239786,7 @@
           "src/daisy/scene/CWaterSurfaceSceneNode.h": "c695b50efdd166568225917cd8219ff70b730575ec8e34dee5737421322fbdd8",
           "src/daisy/scene/CMeshSceneNode.h": "1dd2ced72a1d3019526d2b07c9ebeca898daab85e61f73df7e76fc510c2aef03",
           "src/ox/video/SMaterial.h": "a9a3a9a7c23fe227bbc441fc97ba36e7e33ff82d7256d0a3efe759d4183c8f3e",
-          "src/ox/scene/ISceneManager.h": "dd44c56f50cbc40c37ddc2c11f078b9611badb277054078f0087197ab94cdda6",
+          "src/ox/scene/ISceneManager.h": "74a853b031f12a80a26fcd96fe8ef841a1100cbdc1e324978d6dc6b1d2d4f0b6",
           "src/ox/scene/../TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/scene/../core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
           "src/ox/scene/../event/IEventReceiver.h": "c1e1ccab98fd4d61883bca01562128c424963baf34ae4d79fcf903029fcfa169",
@@ -241619,7 +241619,7 @@
           "src/ox/video/../core/CVector2d.h": "3f38dd2413c649b909302cad6454b81d0e71d1690e18b08fd089beb9620d0fa3",
           "src/ox/video/../core/CVector3d.h": "65b36a6dbf77658e1517a5c7bc39a59d683a873b8404a6252f71ff8eca2fc393",
           "src/daisy/scene/CTestSceneNode.h": "38f1c86c493e786490b4733f798f6cabbf66d0eab8d134c45b33b924ebfd8bd7",
-          "src/ox/scene/ISceneManager.h": "dd44c56f50cbc40c37ddc2c11f078b9611badb277054078f0087197ab94cdda6",
+          "src/ox/scene/ISceneManager.h": "74a853b031f12a80a26fcd96fe8ef841a1100cbdc1e324978d6dc6b1d2d4f0b6",
           "src/ox/scene/../TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/scene/../core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
           "src/ox/scene/../event/IEventReceiver.h": "c1e1ccab98fd4d61883bca01562128c424963baf34ae4d79fcf903029fcfa169",
@@ -243942,7 +243942,7 @@
           "src/ox/IUnknown.h": "2876425521d21d0ab1b35bc5e2a72ae62acee754c6785899771e48912b9b0a9f",
           "src/ox/core/CTriangle3d.h": "effc858549b1a703e1367bf50c4664a7ae03ec33ef1450871fddc9c4623811a8",
           "src/ox/core/CMatrix4.h": "036c4a2e30a5ab2436472e6996964c7407e312d232d56323e7fdaa5fd68da32b",
-          "src/ox/scene/ISceneManager.h": "dd44c56f50cbc40c37ddc2c11f078b9611badb277054078f0087197ab94cdda6",
+          "src/ox/scene/ISceneManager.h": "74a853b031f12a80a26fcd96fe8ef841a1100cbdc1e324978d6dc6b1d2d4f0b6",
           "src/ox/scene/../TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/scene/../core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
           "src/ox/scene/../event/IEventReceiver.h": "c1e1ccab98fd4d61883bca01562128c424963baf34ae4d79fcf903029fcfa169",
@@ -245424,7 +245424,7 @@
           "src/ox/core/CTriangle3d.h": "effc858549b1a703e1367bf50c4664a7ae03ec33ef1450871fddc9c4623811a8",
           "src/ox/core/CMatrix4.h": "036c4a2e30a5ab2436472e6996964c7407e312d232d56323e7fdaa5fd68da32b",
           "src/ox/scene/ITextSceneNode.h": "dc4ff3cde63d50adab69a67b5379cc0a1a261be88f10b38621f0e6824da93ef6",
-          "src/ox/scene/ISceneManager.h": "dd44c56f50cbc40c37ddc2c11f078b9611badb277054078f0087197ab94cdda6",
+          "src/ox/scene/ISceneManager.h": "74a853b031f12a80a26fcd96fe8ef841a1100cbdc1e324978d6dc6b1d2d4f0b6",
           "src/ox/scene/../TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/scene/../core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
           "src/ox/scene/../event/IEventReceiver.h": "c1e1ccab98fd4d61883bca01562128c424963baf34ae4d79fcf903029fcfa169",
@@ -246732,7 +246732,7 @@
           "src/ox/core/CTriangle3d.h": "effc858549b1a703e1367bf50c4664a7ae03ec33ef1450871fddc9c4623811a8",
           "src/ox/core/CMatrix4.h": "036c4a2e30a5ab2436472e6996964c7407e312d232d56323e7fdaa5fd68da32b",
           "src/daisy/scene/CMeshSceneNode.h": "1dd2ced72a1d3019526d2b07c9ebeca898daab85e61f73df7e76fc510c2aef03",
-          "src/ox/scene/ISceneManager.h": "dd44c56f50cbc40c37ddc2c11f078b9611badb277054078f0087197ab94cdda6",
+          "src/ox/scene/ISceneManager.h": "74a853b031f12a80a26fcd96fe8ef841a1100cbdc1e324978d6dc6b1d2d4f0b6",
           "src/ox/scene/../TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/scene/../core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
           "src/ox/scene/../event/IEventReceiver.h": "c1e1ccab98fd4d61883bca01562128c424963baf34ae4d79fcf903029fcfa169",
@@ -250786,7 +250786,7 @@
           "src/ox/IUnknown.h": "2876425521d21d0ab1b35bc5e2a72ae62acee754c6785899771e48912b9b0a9f",
           "src/ox/core/CTriangle3d.h": "effc858549b1a703e1367bf50c4664a7ae03ec33ef1450871fddc9c4623811a8",
           "src/ox/scene/IShadowVolumeSceneNode.h": "1e0e48e4e39155f879234f1d792092c696b62885ef1086d387d4f1a07f11f4c2",
-          "src/ox/scene/ISceneManager.h": "dd44c56f50cbc40c37ddc2c11f078b9611badb277054078f0087197ab94cdda6",
+          "src/ox/scene/ISceneManager.h": "74a853b031f12a80a26fcd96fe8ef841a1100cbdc1e324978d6dc6b1d2d4f0b6",
           "src/ox/scene/../TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/scene/../core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
           "src/ox/scene/../event/IEventReceiver.h": "c1e1ccab98fd4d61883bca01562128c424963baf34ae4d79fcf903029fcfa169",
@@ -252379,7 +252379,7 @@
           "src/ox/scene/ITriangleSelector.h": "bd821ca20d80f39a421db603830da97719d6f35e80797602d2d35cf1e0925dd0",
           "src/ox/core/CTriangle3d.h": "effc858549b1a703e1367bf50c4664a7ae03ec33ef1450871fddc9c4623811a8",
           "src/ox/core/CMatrix4.h": "036c4a2e30a5ab2436472e6996964c7407e312d232d56323e7fdaa5fd68da32b",
-          "src/ox/scene/ISceneManager.h": "dd44c56f50cbc40c37ddc2c11f078b9611badb277054078f0087197ab94cdda6",
+          "src/ox/scene/ISceneManager.h": "74a853b031f12a80a26fcd96fe8ef841a1100cbdc1e324978d6dc6b1d2d4f0b6",
           "src/ox/scene/../TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/scene/../core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
           "src/ox/scene/../event/IEventReceiver.h": "c1e1ccab98fd4d61883bca01562128c424963baf34ae4d79fcf903029fcfa169",
@@ -254234,7 +254234,7 @@
           "src/ox/scene/ITriangleSelector.h": "bd821ca20d80f39a421db603830da97719d6f35e80797602d2d35cf1e0925dd0",
           "src/ox/IUnknown.h": "2876425521d21d0ab1b35bc5e2a72ae62acee754c6785899771e48912b9b0a9f",
           "src/ox/core/CTriangle3d.h": "effc858549b1a703e1367bf50c4664a7ae03ec33ef1450871fddc9c4623811a8",
-          "src/ox/scene/ISceneManager.h": "dd44c56f50cbc40c37ddc2c11f078b9611badb277054078f0087197ab94cdda6",
+          "src/ox/scene/ISceneManager.h": "74a853b031f12a80a26fcd96fe8ef841a1100cbdc1e324978d6dc6b1d2d4f0b6",
           "src/ox/scene/../TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/scene/../core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
           "src/ox/scene/../event/IEventReceiver.h": "c1e1ccab98fd4d61883bca01562128c424963baf34ae4d79fcf903029fcfa169",
@@ -258860,7 +258860,7 @@
           "src/ox/event/../IUnknown.h": "2876425521d21d0ab1b35bc5e2a72ae62acee754c6785899771e48912b9b0a9f",
           "src/ox/TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/daisy/scene/COctTreeSceneNode.h": "7b37560ebed2f81949d2bb719baaeed384ec3db98ce758bd972ec179c8bc7544",
-          "src/ox/scene/ISceneManager.h": "dd44c56f50cbc40c37ddc2c11f078b9611badb277054078f0087197ab94cdda6",
+          "src/ox/scene/ISceneManager.h": "74a853b031f12a80a26fcd96fe8ef841a1100cbdc1e324978d6dc6b1d2d4f0b6",
           "src/ox/scene/../TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/scene/../core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
           "src/ox/scene/../event/IEventReceiver.h": "c1e1ccab98fd4d61883bca01562128c424963baf34ae4d79fcf903029fcfa169",
@@ -259413,12 +259413,27 @@
           "exact": false,
           "address": "0x58b620",
           "first_difference": 2448,
-          "differing_bytes": 11630,
+          "differing_bytes": 10690,
           "misplaced_symbols": [
+            {
+              "symbol": "_ZN5daisy5scene12CXFileReader23parseDataObjectMaterialERNS1_10SXMaterialE",
+              "known": "0x58e410",
+              "placed": "0x58bfb0"
+            },
+            {
+              "symbol": "_ZN5daisy5scene12CXFileReader31parseDataObjectMeshMaterialListERNS1_18SXMeshMaterialListEiRN2ox6TArrayIiEE",
+              "known": "0x58ffb0",
+              "placed": "0x58bfc0"
+            },
             {
               "symbol": "_ZN5daisy5scene12CXFileReader29parseDataObjectSkinMeshHeaderERNS1_16SXSkinMeshHeaderE",
               "known": "0x58e8b0",
               "placed": "0x58bfd0"
+            },
+            {
+              "symbol": "_ZN5daisy5scene12CXFileReader26parseDataObjectSkinWeightsERNS1_12SXSkinWeightE",
+              "known": "0x58fb90",
+              "placed": "0x58bfe0"
             },
             {
               "symbol": "_ZN5daisy5scene12CXFileReader19parseDataObjectMeshERNS1_6SXMeshE",
@@ -259466,9 +259481,19 @@
               "placed": "0x58c970"
             },
             {
+              "symbol": "_ZN5daisy5scene12CXFileReader32parseDataObjectMeshTextureCoordsERN2ox6TArrayINS2_4core9CVector2dIfEEEE",
+              "known": "0x58ce40",
+              "placed": "0x58ca20"
+            },
+            {
               "symbol": "_ZN5daisy5scene12CXFileReader35parseDataObjectTransformationMatrixERN2ox4core8CMatrix4E",
               "known": "0x58d1c0",
               "placed": "0x58cda0"
+            },
+            {
+              "symbol": "_ZN5daisy5scene12CXFileReader26parseDataObjectMeshNormalsERN2ox6TArrayINS2_4core9CVector3dIfEEEERNS3_IiEEiSA_",
+              "known": "0x58ea30",
+              "placed": "0x58cfa0"
             },
             {
               "symbol": "_ZN5daisy5scene12CXFileReaderC1EPN2ox2io9IReadFileE",
@@ -259499,6 +259524,16 @@
               "symbol": "_ZN5daisy5scene12CXFileReaderD0Ev",
               "known": "0x58f590",
               "placed": "0x58e6d0"
+            },
+            {
+              "symbol": "_ZN5daisy5scene12CXFileReader27parseDataObjectAnimationKeyERNS1_14SXAnimationKeyE",
+              "known": "0x58d3c0",
+              "placed": "0x58ea40"
+            },
+            {
+              "symbol": "_ZN5daisy5scene12CXFileReader24parseDataObjectAnimationERNS1_11SXAnimationE",
+              "known": "0x58dbd0",
+              "placed": "0x58f750"
             },
             {
               "symbol": "_ZN5daisy5scene12CXFileReader27parseDataObjectAnimationSetERNS1_14SXAnimationSetE",
@@ -259532,50 +259567,6 @@
               "matches": false
             },
             {
-              "offset": 6568,
-              "type": 2,
-              "symbol": "_ZN5daisy5scene12CXFileReader20readHeadOfDataObjectEPN2ox4core7CStringIcEE",
-              "addend": -4,
-              "destination": "0x58ca90",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 6588,
-              "type": 2,
-              "symbol": "_ZN5daisy5scene12CXFileReader28findNextNoneWhiteSpaceNumberEv",
-              "addend": -4,
-              "destination": "0x58b630",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 6605,
-              "type": 2,
-              "symbol": "strtol",
-              "addend": -4,
-              "destination": "0x408168",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 6742,
-              "type": 2,
-              "symbol": "strtol",
-              "addend": -4,
-              "destination": "0x408168",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 6778,
-              "type": 2,
-              "symbol": ".LC7",
-              "addend": -4,
-              "reason": "unmapped or truncated range: -0xc5d495a+0x10",
-              "matches": false
-            },
-            {
               "offset": 6840,
               "type": 2,
               "symbol": "strtol",
@@ -259589,7 +259580,7 @@
               "type": 2,
               "symbol": ".LC7",
               "addend": -4,
-              "reason": "unmapped or truncated range: -0x412e6be0+0x10",
+              "reason": "unmapped or truncated range: 0x6723aa5+0x10",
               "matches": false
             },
             {
@@ -259606,7 +259597,7 @@
               "type": 2,
               "symbol": ".LC7",
               "addend": -4,
-              "reason": "unmapped or truncated range: 0x431fd583+0x10",
+              "reason": "unmapped or truncated range: 0x187d407c+0x10",
               "matches": false
             },
             {
@@ -259692,7 +259683,7 @@
               "type": 2,
               "symbol": ".LC6",
               "addend": -4,
-              "reason": "unmapped or truncated range: 0x399de3f1+0x8",
+              "reason": "unmapped or truncated range: 0x229184+0x8",
               "matches": false
             },
             {
@@ -259735,7 +259726,7 @@
               "type": 2,
               "symbol": ".LC6",
               "addend": -4,
-              "reason": "unmapped or truncated range: 0x3a2d25d+0x8",
+              "reason": "unmapped or truncated range: -0x16c78874+0x8",
               "matches": false
             },
             {
@@ -259815,7 +259806,7 @@
               "type": 10,
               "symbol": ".rodata.str1.8",
               "addend": 1104,
-              "reason": "unmapped or truncated range: 0xba282474+0x42",
+              "reason": "unmapped or truncated range: 0x50246c8b+0x42",
               "matches": false
             },
             {
@@ -259859,7 +259850,7 @@
               "type": 10,
               "symbol": ".rodata.str1.8",
               "addend": 920,
-              "reason": "unmapped or truncated range: 0xa012e8c9+0x31",
+              "reason": "unmapped or truncated range: 0x3db+0x31",
               "matches": false
             },
             {
@@ -259876,7 +259867,7 @@
               "type": 10,
               "symbol": ".rodata.str1.8",
               "addend": 976,
-              "reason": "unmapped or truncated range: 0x38fffff9+0x3d",
+              "reason": "unmapped or truncated range: 0x80+0x3d",
               "matches": false
             },
             {
@@ -259893,8 +259884,8 @@
               "type": 2,
               "symbol": "_ZNSt6vectorIN2ox4core9CVector3dIfEESaIS3_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS3_S5_EEmRKS3_",
               "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "0x1a4913f",
+              "destination": "0x593770",
+              "reason": "different destination",
               "matches": false
             },
             {
@@ -259902,7 +259893,7 @@
               "type": 10,
               "symbol": ".rodata.str1.8",
               "addend": 1040,
-              "reason": "unmapped or truncated range: 0xc3834801+0x39",
+              "reason": "unmapped or truncated range: 0x24548b48+0x39",
               "matches": false
             },
             {
@@ -259937,7 +259928,7 @@
               "type": 10,
               "symbol": ".rodata.str1.8",
               "addend": 1176,
-              "reason": "unmapped or truncated range: 0xfffff983+0x31",
+              "reason": "unmapped or truncated range: 0x13ebdb31+0x31",
               "matches": false
             },
             {
@@ -261010,155 +261001,6 @@
               "matches": false
             },
             {
-              "offset": 13367,
-              "type": 2,
-              "symbol": "_ZN5daisy5scene12CXFileReader20readHeadOfDataObjectEPN2ox4core7CStringIcEE",
-              "addend": -4,
-              "destination": "0x58ca90",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13383,
-              "type": 2,
-              "symbol": "_ZN5daisy5scene12CXFileReader28findNextNoneWhiteSpaceNumberEv",
-              "addend": -4,
-              "destination": "0x58b630",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13409,
-              "type": 2,
-              "symbol": "strtol",
-              "addend": -4,
-              "destination": "0x408168",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13429,
-              "type": 2,
-              "symbol": "_ZN5daisy5scene12CXFileReader28findNextNoneWhiteSpaceNumberEv",
-              "addend": -4,
-              "destination": "0x58b630",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13448,
-              "type": 2,
-              "symbol": "strtol",
-              "addend": -4,
-              "destination": "0x408168",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13467,
-              "type": 2,
-              "symbol": "_Znam",
-              "addend": -4,
-              "destination": "0x407128",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13499,
-              "type": 2,
-              "symbol": "_ZN5daisy5scene12CXFileReader12getNextTokenEv",
-              "addend": -4,
-              "destination": "0x58c360",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13509,
-              "type": 10,
-              "symbol": ".rodata.str1.1",
-              "addend": 104,
-              "reason": "unmapped or truncated range: 0xd231e431+0x2",
-              "matches": false
-            },
-            {
-              "offset": 13514,
-              "type": 2,
-              "symbol": "_ZN2ox4core7CStringIcEC1IcEEPKT_",
-              "addend": -4,
-              "destination": "0x416760",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13569,
-              "type": 2,
-              "symbol": "_ZdaPv",
-              "addend": -4,
-              "destination": "0x407f58",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13590,
-              "type": 10,
-              "symbol": ".rodata.str1.8",
-              "addend": 1776,
-              "reason": "unmapped or truncated range: 0x1f0f6600+0x2c",
-              "matches": false
-            },
-            {
-              "offset": 13595,
-              "type": 2,
-              "symbol": "_ZN5daisy2os7Printer3logEPKcS3_N2ox5event10ELOG_LEVELE",
-              "addend": -4,
-              "destination": "0x4c1ea0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13619,
-              "type": 2,
-              "symbol": "_ZdaPv",
-              "addend": -4,
-              "destination": "0x407f58",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13656,
-              "type": 10,
-              "symbol": ".rodata.str1.8",
-              "addend": 1336,
-              "reason": "unmapped or truncated range: 0xc6af0f49+0x32",
-              "matches": false
-            },
-            {
-              "offset": 13661,
-              "type": 2,
-              "symbol": "_ZN5daisy2os7Printer3logEPKcN2ox5event10ELOG_LEVELEz",
-              "addend": -4,
-              "destination": "0x4c2060",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13694,
-              "type": 10,
-              "symbol": ".rodata.str1.8",
-              "addend": 1280,
-              "reason": "unmapped or truncated range: 0xffffff3e+0x32",
-              "matches": false
-            },
-            {
-              "offset": 13699,
-              "type": 2,
-              "symbol": "_ZN5daisy2os7Printer3logEPKcN2ox5event10ELOG_LEVELEz",
-              "addend": -4,
-              "destination": "0x4c2060",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
               "offset": 13733,
               "type": 11,
               "symbol": ".rodata",
@@ -261167,38 +261009,11 @@
               "matches": false
             },
             {
-              "offset": 13751,
-              "type": 2,
-              "symbol": "_Znam",
-              "addend": -4,
-              "destination": "0x407128",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
               "offset": 13831,
               "type": 11,
               "symbol": ".rodata",
               "addend": 160,
               "reason": "no target address for symbol",
-              "matches": false
-            },
-            {
-              "offset": 13847,
-              "type": 2,
-              "symbol": "_Znam",
-              "addend": -4,
-              "destination": "0x407128",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13927,
-              "type": 2,
-              "symbol": "_Znam",
-              "addend": -4,
-              "destination": "0x407128",
-              "reason": "different destination",
               "matches": false
             },
             {
@@ -261215,7 +261030,7 @@
               "type": 2,
               "symbol": ".LC7",
               "addend": -4,
-              "reason": "merged constant would lie in code",
+              "reason": "unmapped or truncated range: 0x48635ff7+0x10",
               "matches": false
             },
             {
@@ -261232,7 +261047,7 @@
               "type": 2,
               "symbol": ".LC7",
               "addend": -4,
-              "reason": "unmapped or truncated range: 0x24ad85de+0x10",
+              "reason": "unmapped or truncated range: 0x70dde648+0x10",
               "matches": false
             },
             {
@@ -261249,7 +261064,7 @@
               "type": 2,
               "symbol": ".LC7",
               "addend": -4,
-              "reason": "unmapped or truncated range: -0x745f04d4+0x10",
+              "reason": "unmapped or truncated range: 0xa40e780+0x10",
               "matches": false
             },
             {
@@ -261293,7 +261108,7 @@
               "type": 2,
               "symbol": ".LC7",
               "addend": -4,
-              "reason": "unmapped or truncated range: -0x7c650e3f+0x10",
+              "reason": "unmapped or truncated range: 0x3a6c6f1+0x10",
               "matches": false
             },
             {
@@ -261301,7 +261116,7 @@
               "type": 2,
               "symbol": ".LC7",
               "addend": -4,
-              "reason": "merged constant would lie in code",
+              "reason": "unmapped or truncated range: -0xc6eac08+0x10",
               "matches": false
             },
             {
@@ -261318,7 +261133,7 @@
               "type": 2,
               "symbol": ".LC7",
               "addend": -4,
-              "reason": "unmapped or truncated range: 0xf60709a+0x10",
+              "reason": "unmapped or truncated range: 0x7be421c9+0x10",
               "matches": false
             },
             {
@@ -261326,7 +261141,7 @@
               "type": 2,
               "symbol": ".LC7",
               "addend": -4,
-              "reason": "unmapped or truncated range: 0x485902a9+0x10",
+              "reason": "unmapped or truncated range: -0x457f02bb+0x10",
               "matches": false
             },
             {
@@ -261343,7 +261158,7 @@
               "type": 2,
               "symbol": ".LC7",
               "addend": -4,
-              "reason": "unmapped or truncated range: 0x23bae4fd+0x10",
+              "reason": "unmapped or truncated range: 0x451fd92d+0x10",
               "matches": false
             },
             {
@@ -261351,7 +261166,7 @@
               "type": 2,
               "symbol": ".LC7",
               "addend": -4,
-              "reason": "unmapped or truncated range: -0x3b23ba3c+0x10",
+              "reason": "unmapped or truncated range: 0x4558d934+0x10",
               "matches": false
             },
             {
@@ -261386,8 +261201,8 @@
               "type": 2,
               "symbol": "_ZN5daisy4core14fast_atof_moveEPcRf",
               "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "-0x17a6a081",
+              "destination": "0x5930c0",
+              "reason": "different destination",
               "matches": false
             },
             {
@@ -261395,7 +261210,7 @@
               "type": 2,
               "symbol": ".LC7",
               "addend": -4,
-              "reason": "unmapped or truncated range: 0x41b63f28+0x10",
+              "reason": "unmapped or truncated range: 0x6e1e89+0x10",
               "matches": false
             },
             {
@@ -261448,7 +261263,7 @@
               "type": 2,
               "symbol": ".LC7",
               "addend": -4,
-              "reason": "unmapped or truncated range: 0x494cfeb7+0x10",
+              "reason": "unmapped or truncated range: 0x667cef10+0x10",
               "matches": false
             },
             {
@@ -261482,7 +261297,7 @@
               "type": 2,
               "symbol": ".LC6",
               "addend": -4,
-              "reason": "unmapped or truncated range: 0x54e1ffcb+0x8",
+              "reason": "unmapped or truncated range: 0x48691f88+0x8",
               "matches": false
             },
             {
@@ -261525,7 +261340,7 @@
               "type": 2,
               "symbol": ".LC6",
               "addend": -4,
-              "reason": "unmapped or truncated range: 0x389c83f0+0x8",
+              "reason": "unmapped or truncated range: 0x44e0eb4c+0x8",
               "matches": false
             },
             {
@@ -261568,7 +261383,7 @@
               "type": 2,
               "symbol": ".LC6",
               "addend": -4,
-              "reason": "unmapped or truncated range: -0x3e86da7e+0x8",
+              "reason": "unmapped or truncated range: -0x180538aa+0x8",
               "matches": false
             },
             {
@@ -261611,7 +261426,7 @@
               "type": 2,
               "symbol": ".LC6",
               "addend": -4,
-              "reason": "unmapped or truncated range: -0x3c23b5f7+0x8",
+              "reason": "unmapped or truncated range: 0x4858de02+0x8",
               "matches": false
             },
             {
@@ -261654,7 +261469,7 @@
               "type": 2,
               "symbol": ".LC6",
               "addend": -4,
-              "reason": "unmapped or truncated range: -0x431bb55d+0x8",
+              "reason": "unmapped or truncated range: 0x44e0ed0c+0x8",
               "matches": false
             },
             {
@@ -261697,7 +261512,7 @@
               "type": 2,
               "symbol": ".LC6",
               "addend": -4,
-              "reason": "merged constant would lie in code",
+              "reason": "unmapped or truncated range: 0x63dceea9+0x8",
               "matches": false
             },
             {
@@ -261740,7 +261555,7 @@
               "type": 2,
               "symbol": ".LC6",
               "addend": -4,
-              "reason": "unmapped or truncated range: 0x249d8cda+0x8",
+              "reason": "unmapped or truncated range: 0x5bcce7e6+0x8",
               "matches": false
             },
             {
@@ -261757,7 +261572,7 @@
               "type": 10,
               "symbol": ".rodata.str1.8",
               "addend": 1696,
-              "reason": "unmapped or truncated range: 0x89495424+0x49",
+              "reason": "unmapped or truncated range: 0x60247c8d+0x49",
               "matches": false
             },
             {
@@ -261774,7 +261589,7 @@
               "type": 10,
               "symbol": ".rodata.str1.8",
               "addend": 1440,
-              "reason": "unmapped or truncated range: 0x1da+0x4d",
+              "reason": "unmapped or truncated range: 0x8024bc8d+0x4d",
               "matches": false
             },
             {
@@ -261791,7 +261606,7 @@
               "type": 10,
               "symbol": ".rodata.str1.8",
               "addend": 1568,
-              "reason": "unmapped or truncated range: 0x244c8b45+0x49",
+              "reason": "unmapped or truncated range: 0xfd28411+0x49",
               "matches": false
             },
             {
@@ -261808,7 +261623,7 @@
               "type": 10,
               "symbol": ".rodata.str1.8",
               "addend": 1392,
-              "reason": "unmapped or truncated range: 0x801f0f2a+0x2e",
+              "reason": "unmapped or truncated range: 0x548bc031+0x2e",
               "matches": false
             },
             {
@@ -261825,7 +261640,7 @@
               "type": 10,
               "symbol": ".rodata.str1.8",
               "addend": 1520,
-              "reason": "unmapped or truncated range: 0xc0834801+0x2e",
+              "reason": "unmapped or truncated range: 0x18244488+0x2e",
               "matches": false
             },
             {
@@ -261842,7 +261657,7 @@
               "type": 10,
               "symbol": ".rodata.str1.8",
               "addend": 1648,
-              "reason": "unmapped or truncated range: 0x4948c083+0x2f",
+              "reason": "unmapped or truncated range: 0x4860247c+0x2f",
               "matches": false
             },
             {
@@ -261873,15 +261688,6 @@
               "matches": false
             },
             {
-              "offset": 16714,
-              "type": 2,
-              "symbol": "_ZN5daisy5scene12CXFileReader20readHeadOfDataObjectEPN2ox4core7CStringIcEE",
-              "addend": -4,
-              "destination": "0x58ca90",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
               "offset": 16799,
               "type": 2,
               "symbol": "_ZN5daisy5scene12CXFileReader12getNextTokenEv",
@@ -261895,7 +261701,7 @@
               "type": 10,
               "symbol": ".rodata.str1.1",
               "addend": 104,
-              "reason": "unmapped or truncated range: 0x8b481077+0x2",
+              "reason": "unmapped or truncated range: 0x9f840f01+0x2",
               "matches": false
             },
             {
@@ -261912,7 +261718,7 @@
               "type": 10,
               "symbol": ".rodata.str1.1",
               "addend": 104,
-              "reason": "unmapped or truncated range: 0xe5c149d2+0x2",
+              "reason": "unmapped or truncated range: 0xd024+0x2",
               "matches": false
             },
             {
@@ -261929,7 +261735,7 @@
               "type": 10,
               "symbol": ".rodata.str1.1",
               "addend": 123,
-              "reason": "unmapped or truncated range: 0xc8294818+0xd",
+              "reason": "unmapped or truncated range: 0x2b60f00+0xd",
               "matches": false
             },
             {
@@ -261946,7 +261752,7 @@
               "type": 10,
               "symbol": ".rodata.str1.1",
               "addend": 123,
-              "reason": "unmapped or truncated range: 0xc23948c6+0xd",
+              "reason": "unmapped or truncated range: 0x14eb60f+0xd",
               "matches": false
             },
             {
@@ -261963,7 +261769,7 @@
               "type": 2,
               "symbol": "_ZN5daisy5scene12CXFileReader27parseDataObjectAnimationKeyERNS1_14SXAnimationKeyE",
               "addend": -4,
-              "destination": "0x58f790",
+              "destination": "0x58d3c0",
               "reason": "different destination",
               "matches": false
             },
@@ -261981,7 +261787,7 @@
               "type": 10,
               "symbol": ".rodata.str1.1",
               "addend": 106,
-              "reason": "unmapped or truncated range: 0x458948d1+0x11",
+              "reason": "unmapped or truncated range: 0x840142b6+0x11",
               "matches": false
             },
             {
@@ -261998,7 +261804,7 @@
               "type": 10,
               "symbol": ".rodata.str1.1",
               "addend": 106,
-              "reason": "unmapped or truncated range: 0xf1e801c7+0x11",
+              "reason": "unmapped or truncated range: 0x841f0f+0x11",
               "matches": false
             },
             {
@@ -262015,7 +261821,7 @@
               "type": 10,
               "symbol": ".rodata.str1.1",
               "addend": 102,
-              "reason": "unmapped or truncated range: 0x10d8e+0x2",
+              "reason": "unmapped or truncated range: 0x18244488+0x2",
               "matches": false
             },
             {
@@ -262050,7 +261856,7 @@
               "type": 10,
               "symbol": ".rodata.str1.1",
               "addend": 102,
-              "reason": "unmapped or truncated range: 0x89482414+0x2",
+              "reason": "unmapped or truncated range: 0xe79ff3e8+0x2",
               "matches": false
             },
             {
@@ -262067,7 +261873,7 @@
               "type": 10,
               "symbol": ".rodata.str1.8",
               "addend": 1920,
-              "reason": "unmapped or truncated range: 0xc05a0f66+0x2b",
+              "reason": "unmapped or truncated range: 0x89480843+0x2b",
               "matches": false
             },
             {
@@ -262085,7 +261891,7 @@
               "symbol": "_ZNSt6vectorIN5daisy5scene12CXFileReader14SXAnimationKeyESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
               "addend": -4,
               "reason": "no target address for symbol",
-              "candidate": "-0x3b23b93f",
+              "candidate": "0xf9d7068",
               "matches": false
             },
             {
@@ -262138,7 +261944,7 @@
               "type": 10,
               "symbol": ".rodata.str1.1",
               "addend": 104,
-              "reason": "unmapped or truncated range: 0x38438948+0x2",
+              "reason": "unmapped or truncated range: 0x482c75c8+0x2",
               "matches": false
             },
             {
@@ -262182,7 +261988,7 @@
               "type": 10,
               "symbol": ".rodata.str1.8",
               "addend": 1872,
-              "reason": "unmapped or truncated range: 0x66fffffe+0x30",
+              "reason": "unmapped or truncated range: 0x3801c683+0x30",
               "matches": false
             },
             {
@@ -262199,7 +262005,7 @@
               "type": 10,
               "symbol": ".rodata.str1.8",
               "addend": 1824,
-              "reason": "unmapped or truncated range: 0xe80061c5+0x2e",
+              "reason": "unmapped or truncated range: 0x163c80d2+0x2e",
               "matches": false
             },
             {
@@ -262279,7 +262085,7 @@
               "type": 10,
               "symbol": ".rodata.str1.8",
               "addend": 1872,
-              "reason": "unmapped or truncated range: 0x4d8b4d3a+0x30",
+              "reason": "unmapped or truncated range: 0xc3894800+0x30",
               "matches": false
             },
             {
@@ -262464,7 +262270,7 @@
               "type": 2,
               "symbol": "_ZN5daisy5scene12CXFileReader24parseDataObjectAnimationERNS1_11SXAnimationE",
               "addend": -4,
-              "destination": "0x58f990",
+              "destination": "0x58dbd0",
               "reason": "different destination",
               "matches": false
             },
@@ -262719,7 +262525,7 @@
             },
             {
               "symbol": "_ZN5daisy5scene12CXFileReader23parseDataObjectMaterialERNS1_10SXMaterialE",
-              "address": "0x58bfb0",
+              "address": "0x58e410",
               "size": 2,
               "extent": null,
               "global": true,
@@ -262727,7 +262533,7 @@
             },
             {
               "symbol": "_ZN5daisy5scene12CXFileReader31parseDataObjectMeshMaterialListERNS1_18SXMeshMaterialListEiRN2ox6TArrayIiEE",
-              "address": "0x58c360",
+              "address": "0x58ffb0",
               "size": 2,
               "extent": null,
               "global": true,
@@ -262743,7 +262549,7 @@
             },
             {
               "symbol": "_ZN5daisy5scene12CXFileReader26parseDataObjectSkinWeightsERNS1_12SXSkinWeightE",
-              "address": "0x58ea30",
+              "address": "0x58fb90",
               "size": 2,
               "extent": null,
               "global": true,
@@ -262839,7 +262645,7 @@
             },
             {
               "symbol": "_ZN5daisy5scene12CXFileReader26parseDataObjectMeshNormalsERN2ox6TArrayINS2_4core9CVector3dIfEEEERNS3_IiEEiSA_",
-              "address": "0x58d3c0",
+              "address": "0x58ea30",
               "size": 2040,
               "extent": null,
               "global": true,
@@ -262903,7 +262709,7 @@
             },
             {
               "symbol": "_ZN5daisy5scene12CXFileReader27parseDataObjectAnimationKeyERNS1_14SXAnimationKeyE",
-              "address": "0x58f790",
+              "address": "0x58d3c0",
               "size": 3339,
               "extent": null,
               "global": true,
@@ -262911,7 +262717,7 @@
             },
             {
               "symbol": "_ZN5daisy5scene12CXFileReader24parseDataObjectAnimationERNS1_11SXAnimationE",
-              "address": "0x58f990",
+              "address": "0x58dbd0",
               "size": 2202,
               "extent": null,
               "global": true,
@@ -263053,6 +262859,11 @@
               "kind": "merged string"
             },
             {
+              "address": "0x5f04e0",
+              "size": 16,
+              "kind": "merged constant"
+            },
+            {
               "address": "0x61b9b6",
               "size": 2,
               "kind": "merged string"
@@ -263060,6 +262871,26 @@
             {
               "address": "0x61b9b8",
               "size": 2,
+              "kind": "merged string"
+            },
+            {
+              "address": "0x61b9b8",
+              "size": 2,
+              "kind": "merged string"
+            },
+            {
+              "address": "0x61c068",
+              "size": 44,
+              "kind": "merged string"
+            },
+            {
+              "address": "0x61beb0",
+              "size": 50,
+              "kind": "merged string"
+            },
+            {
+              "address": "0x61be78",
+              "size": 50,
               "kind": "merged string"
             },
             {
@@ -263164,6 +262995,31 @@
           ]
         },
         {
+          "name": ".text._ZNSt6vectorIN2ox4core9CVector3dIfEESaIS3_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS3_S5_EEmRKS3_",
+          "size": 1065,
+          "placement": "symbol: _ZNSt6vectorIN2ox4core9CVector3dIfEESaIS3_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS3_S5_EEmRKS3_",
+          "exact": true,
+          "address": "0x593770",
+          "references": 4,
+          "functions": [
+            {
+              "symbol": "_ZNSt6vectorIN2ox4core9CVector3dIfEESaIS3_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS3_S5_EEmRKS3_",
+              "address": "0x593770",
+              "size": 1065,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ],
+          "data_ranges": [
+            {
+              "address": "0x60fc71",
+              "size": 23,
+              "kind": "merged string"
+            }
+          ]
+        },
+        {
           "name": ".text._ZN2ox8IUnknownD0Ev",
           "size": 12,
           "placement": "symbol: _ZN2ox8IUnknownD0Ev",
@@ -263175,6 +263031,66 @@
               "symbol": "_ZN2ox8IUnknownD0Ev",
               "address": "0x4668d0",
               "size": 12,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ]
+        },
+        {
+          "name": ".text._ZN5daisy4core14fast_atof_moveEPcRf",
+          "size": 283,
+          "placement": "symbol: _ZN5daisy4core14fast_atof_moveEPcRf",
+          "exact": false,
+          "address": "0x5930c0",
+          "first_difference": 198,
+          "differing_bytes": 3,
+          "bad_references": [
+            {
+              "offset": 198,
+              "type": 11,
+              "symbol": ".rodata",
+              "addend": 224,
+              "reason": "no target address for symbol",
+              "matches": false
+            }
+          ],
+          "references": 7,
+          "functions": [
+            {
+              "symbol": "_ZN5daisy4core14fast_atof_moveEPcRf",
+              "address": "0x5930c0",
+              "size": 283,
+              "extent": "fde",
+              "global": true,
+              "exact": false
+            }
+          ],
+          "data_ranges": [
+            {
+              "address": "0x5f04e0",
+              "size": 16,
+              "kind": "merged constant"
+            },
+            {
+              "address": "0x5f0490",
+              "size": 8,
+              "kind": "merged constant"
+            }
+          ]
+        },
+        {
+          "name": ".text._ZN2ox6TArrayIN5daisy5scene12CXFileReader12SXSkinWeightEED1Ev",
+          "size": 85,
+          "placement": "symbol: _ZN2ox6TArrayIN5daisy5scene12CXFileReader12SXSkinWeightEED1Ev",
+          "exact": true,
+          "address": "0x594140",
+          "references": 3,
+          "functions": [
+            {
+              "symbol": "_ZN2ox6TArrayIN5daisy5scene12CXFileReader12SXSkinWeightEED1Ev",
+              "address": "0x594140",
+              "size": 85,
               "extent": "fde",
               "global": true,
               "exact": true
@@ -263211,6 +263127,24 @@
               "symbol": "_ZN5daisy5scene12CXFileReader11SXAnimationD1Ev",
               "address": "0x5940e0",
               "size": 34,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ]
+        },
+        {
+          "name": ".text._ZNSt6vectorIN5daisy5scene12CXFileReader14SXAnimationKeyESaIS3_EEaSERKS5_",
+          "size": 491,
+          "placement": "symbol: _ZNSt6vectorIN5daisy5scene12CXFileReader14SXAnimationKeyESaIS3_EEaSERKS5_",
+          "exact": true,
+          "address": "0x593ef0",
+          "references": 3,
+          "functions": [
+            {
+              "symbol": "_ZNSt6vectorIN5daisy5scene12CXFileReader14SXAnimationKeyESaIS3_EEaSERKS5_",
+              "address": "0x593ef0",
+              "size": 491,
               "extent": "fde",
               "global": true,
               "exact": true
@@ -263629,12 +263563,8 @@
         }
       ],
       "unplaced_sections": [
-        ".text._ZNSt6vectorIN2ox4core9CVector3dIfEESaIS3_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS3_S5_EEmRKS3_",
         ".text._ZNSt6vectorIN5daisy5scene12CXFileReader14SXAnimationKeyESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
-        ".text._ZN5daisy4core14fast_atof_moveEPcRf",
         ".gcc_except_table",
-        ".text._ZN2ox6TArrayIN5daisy5scene12CXFileReader12SXSkinWeightEED1Ev",
-        ".text._ZNSt6vectorIN5daisy5scene12CXFileReader14SXAnimationKeyESaIS3_EEaSERKS5_",
         ".text._ZN5daisy5scene12CXFileReader11SXAnimationC1ERKS2_",
         ".text._ZSt22__uninitialized_move_aIPN5daisy5scene12CXFileReader11SXAnimationES4_SaIS3_EET0_T_S7_S6_RT1_",
         ".text._ZNSt6vectorIN5daisy5scene12CXFileReader6SXMeshESaIS3_EED2Ev",
@@ -263694,7 +263624,7 @@
         "system_headers": 138,
         "object_sha256": "b44a123d6e1d61681aa19cd570915155bb5410c3f65e829286eb5c1820d10c85"
       },
-      "fuzzy_target_sha256": "aa5694e9fef496418240bb48cb4536c7f768980890f86eadc3a563f3de745a53",
+      "fuzzy_target_sha256": "a381b25d7cb0b201917306388d1d432c9218fb875fee74418880ddde336d25b0",
       "fuzzy_functions": [
         {
           "address": "0x58b620",
@@ -263769,16 +263699,16 @@
           "percent": 100.0
         },
         {
-          "address": "0x58bfb0",
-          "size": 939,
+          "address": "0x58e410",
+          "size": 1184,
           "symbol": "_ZN5daisy5scene12CXFileReader23parseDataObjectMaterialERNS1_10SXMaterialE",
-          "percent": 0.1724138
+          "percent": 0.124610595
         },
         {
-          "address": "0x58c360",
-          "size": 346,
+          "address": "0x58ffb0",
+          "size": 1762,
           "symbol": "_ZN5daisy5scene12CXFileReader31parseDataObjectMeshMaterialListERNS1_18SXMeshMaterialListEiRN2ox6TArrayIiEE",
-          "percent": 0.3809524
+          "percent": 0.09456265
         },
         {
           "address": "0x58e8b0",
@@ -263787,10 +263717,10 @@
           "percent": 0.36697248
         },
         {
-          "address": "0x58ea30",
-          "size": 1801,
+          "address": "0x58fb90",
+          "size": 1046,
           "symbol": "_ZN5daisy5scene12CXFileReader26parseDataObjectSkinWeightsERNS1_12SXSkinWeightE",
-          "percent": 0.10050251
+          "percent": 0.15209125
         },
         {
           "address": "0x5906a0",
@@ -263859,10 +263789,10 @@
           "percent": 100.0
         },
         {
-          "address": "0x58d3c0",
-          "size": 2051,
+          "address": "0x58ea30",
+          "size": 1801,
           "symbol": "_ZN5daisy5scene12CXFileReader26parseDataObjectMeshNormalsERN2ox6TArrayINS2_4core9CVector3dIfEEEERNS3_IiEEiSA_",
-          "percent": 4.270707
+          "percent": 80.31156
         },
         {
           "address": "0x5922b0",
@@ -263907,22 +263837,22 @@
           "percent": 28.507936
         },
         {
-          "address": "0x58f790",
-          "size": 502,
+          "address": "0x58d3c0",
+          "size": 2051,
           "symbol": "_ZN5daisy5scene12CXFileReader27parseDataObjectAnimationKeyERNS1_14SXAnimationKeyE",
-          "percent": 0
+          "percent": 29.244444
         },
         {
-          "address": "0x58f990",
-          "size": 502,
+          "address": "0x58dbd0",
+          "size": 2106,
           "symbol": "_ZN5daisy5scene12CXFileReader24parseDataObjectAnimationERNS1_11SXAnimationE",
-          "percent": 0
+          "percent": 55.10577
         },
         {
           "address": "0x58f140",
           "size": 1101,
           "symbol": "_ZN5daisy5scene12CXFileReader27parseDataObjectAnimationSetERNS1_14SXAnimationSetE",
-          "percent": 47.73835
+          "percent": 47.75627
         },
         {
           "address": "0x466870",
@@ -263949,9 +263879,27 @@
           "percent": 100.0
         },
         {
+          "address": "0x593770",
+          "size": 1065,
+          "symbol": "_ZNSt6vectorIN2ox4core9CVector3dIfEESaIS3_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS3_S5_EEmRKS3_",
+          "percent": 100.0
+        },
+        {
           "address": "0x4668d0",
           "size": 12,
           "symbol": "_ZN2ox8IUnknownD0Ev",
+          "percent": 100.0
+        },
+        {
+          "address": "0x5930c0",
+          "size": 283,
+          "symbol": "_ZN5daisy4core14fast_atof_moveEPcRf",
+          "percent": 100.0
+        },
+        {
+          "address": "0x594140",
+          "size": 85,
+          "symbol": "_ZN2ox6TArrayIN5daisy5scene12CXFileReader12SXSkinWeightEED1Ev",
           "percent": 100.0
         },
         {
@@ -263964,6 +263912,12 @@
           "address": "0x5940e0",
           "size": 34,
           "symbol": "_ZN5daisy5scene12CXFileReader11SXAnimationD1Ev",
+          "percent": 100.0
+        },
+        {
+          "address": "0x593ef0",
+          "size": 491,
+          "symbol": "_ZNSt6vectorIN5daisy5scene12CXFileReader14SXAnimationKeyESaIS3_EEaSERKS5_",
           "percent": 100.0
         },
         {
@@ -266367,7 +266321,7 @@
           "src/ox/scene/IAnimatedMesh.h": "233810b9e6ca88ab9e1d4ddd93de2d56ec4382fa7045b86c06a548eaf42c8b94",
           "src/ox/video/SMaterial.h": "a9a3a9a7c23fe227bbc441fc97ba36e7e33ff82d7256d0a3efe759d4183c8f3e",
           "src/ox/scene/IDummyTransformationSceneNode.h": "40029015bff51d6ba030f3425bd69db014ccfb7f7132c7e0c9d53f15ff75807f",
-          "src/ox/scene/ISceneManager.h": "dd44c56f50cbc40c37ddc2c11f078b9611badb277054078f0087197ab94cdda6",
+          "src/ox/scene/ISceneManager.h": "74a853b031f12a80a26fcd96fe8ef841a1100cbdc1e324978d6dc6b1d2d4f0b6",
           "src/ox/scene/../TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/scene/../core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
           "src/ox/scene/../event/IEventReceiver.h": "c1e1ccab98fd4d61883bca01562128c424963baf34ae4d79fcf903029fcfa169",
@@ -271560,7 +271514,7 @@
           "src/ox/scene/../video/S3DVertex.h": "96cd548320ee007c480619303c02cf1f3cba55d255767620f3cd88408186bf37",
           "src/ox/scene/SMesh.h": "ce449ea8b64c01b3403d573a9fc822c15f888fa304eb7fe849144e51140270d8",
           "src/ox/core/CString.h": "7cc2521534a1b7864708fdc416a25279f05507d6c045abeca04545f4a88b95ee",
-          "src/ox/scene/ISceneManager.h": "dd44c56f50cbc40c37ddc2c11f078b9611badb277054078f0087197ab94cdda6",
+          "src/ox/scene/ISceneManager.h": "74a853b031f12a80a26fcd96fe8ef841a1100cbdc1e324978d6dc6b1d2d4f0b6",
           "src/ox/scene/../TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/scene/../core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
           "src/ox/scene/../core/CVector3d.h": "65b36a6dbf77658e1517a5c7bc39a59d683a873b8404a6252f71ff8eca2fc393",
@@ -274204,7 +274158,7 @@
           "src/ox/core/CTriangle3d.h": "effc858549b1a703e1367bf50c4664a7ae03ec33ef1450871fddc9c4623811a8",
           "src/ox/core/CMatrix4.h": "036c4a2e30a5ab2436472e6996964c7407e312d232d56323e7fdaa5fd68da32b",
           "src/ox/scene/ITerrainSceneNode.h": "a20dca562e0b2a7639ec172b568fd15496e1119bcc3c29e56169a962e98ecf76",
-          "src/ox/scene/ISceneManager.h": "dd44c56f50cbc40c37ddc2c11f078b9611badb277054078f0087197ab94cdda6",
+          "src/ox/scene/ISceneManager.h": "74a853b031f12a80a26fcd96fe8ef841a1100cbdc1e324978d6dc6b1d2d4f0b6",
           "src/ox/scene/../TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/scene/../core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
           "src/ox/scene/../event/IEventReceiver.h": "c1e1ccab98fd4d61883bca01562128c424963baf34ae4d79fcf903029fcfa169",
@@ -275459,7 +275413,7 @@
           "src/ox/scene/ITriangleSelector.h": "bd821ca20d80f39a421db603830da97719d6f35e80797602d2d35cf1e0925dd0",
           "src/ox/IUnknown.h": "2876425521d21d0ab1b35bc5e2a72ae62acee754c6785899771e48912b9b0a9f",
           "src/ox/core/CTriangle3d.h": "effc858549b1a703e1367bf50c4664a7ae03ec33ef1450871fddc9c4623811a8",
-          "src/ox/scene/ISceneManager.h": "dd44c56f50cbc40c37ddc2c11f078b9611badb277054078f0087197ab94cdda6",
+          "src/ox/scene/ISceneManager.h": "74a853b031f12a80a26fcd96fe8ef841a1100cbdc1e324978d6dc6b1d2d4f0b6",
           "src/ox/scene/../TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/scene/../core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
           "src/ox/scene/../event/IEventReceiver.h": "c1e1ccab98fd4d61883bca01562128c424963baf34ae4d79fcf903029fcfa169",
@@ -277050,7 +277004,7 @@
           "src/ox/video/../core/CVector2d.h": "3f38dd2413c649b909302cad6454b81d0e71d1690e18b08fd089beb9620d0fa3",
           "src/ox/video/../core/CVector3d.h": "65b36a6dbf77658e1517a5c7bc39a59d683a873b8404a6252f71ff8eca2fc393",
           "src/ox/video/SColor.h": "d83cd30fef33af0f36f4d7bf4398509445a964e93526043df08a9ca0556e01ff",
-          "src/ox/scene/ISceneManager.h": "dd44c56f50cbc40c37ddc2c11f078b9611badb277054078f0087197ab94cdda6",
+          "src/ox/scene/ISceneManager.h": "74a853b031f12a80a26fcd96fe8ef841a1100cbdc1e324978d6dc6b1d2d4f0b6",
           "src/ox/scene/../IUnknown.h": "2876425521d21d0ab1b35bc5e2a72ae62acee754c6785899771e48912b9b0a9f",
           "src/ox/scene/../TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/scene/../core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
@@ -278980,7 +278934,7 @@
           "src/daisy/scene/CCameraMayaSceneNode.h": "22489311d8f22d1a71ef016b922e80d6d8e9c185f57eecc9b2d5fc0011e61213",
           "src/daisy/scene/CCameraSceneNode.h": "833034f2c28dc6772d5285b72fbfb70ba353e2a3d89b2e014f1d93a7fadc82da",
           "src/ox/scene/ICameraSceneNode.h": "29a648544692d676b3180a163651aee47e37ee8297e217e53fbbab855d5fcfc6",
-          "src/ox/scene/ISceneManager.h": "dd44c56f50cbc40c37ddc2c11f078b9611badb277054078f0087197ab94cdda6",
+          "src/ox/scene/ISceneManager.h": "74a853b031f12a80a26fcd96fe8ef841a1100cbdc1e324978d6dc6b1d2d4f0b6",
           "src/ox/scene/../TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/scene/../core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
           "src/ox/scene/../event/IEventReceiver.h": "c1e1ccab98fd4d61883bca01562128c424963baf34ae4d79fcf903029fcfa169",
@@ -280490,7 +280444,7 @@
           "src/ox/event/../core/CCriticalSection.h": "f39fa1edf4d20b60b52728a5c7afa063f4994db48bc8696f0ee691b3288a8b09",
           "src/ox/TList.h": "a45553e4f2cad236a713e1085790e780c975ea5d46c7ca25b046d9add5eea5c9",
           "src/daisy/scene/CCameraFPSSceneNode.h": "8bd4fe5a7f6909a44f393a98b42ed3cad1d9de73115e56b24529633ad9aae627",
-          "src/ox/scene/ISceneManager.h": "dd44c56f50cbc40c37ddc2c11f078b9611badb277054078f0087197ab94cdda6",
+          "src/ox/scene/ISceneManager.h": "74a853b031f12a80a26fcd96fe8ef841a1100cbdc1e324978d6dc6b1d2d4f0b6",
           "src/ox/scene/../TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/scene/../core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
           "src/ox/scene/../event/IEventReceiver.h": "c1e1ccab98fd4d61883bca01562128c424963baf34ae4d79fcf903029fcfa169",
@@ -288231,247 +288185,212 @@
     },
     {
       "unit": "daisy/scene/CSceneManager.cpp",
-      "object_sha256": "f1c02888c86b77b501fb00f6eaf117f8cfc19e5c05ad88fb7ea0fa4f659678a4",
+      "object_sha256": "fe402f947881fe298dfaa82c312aeadfb9031f76d22083d38fe7f057d085ff51",
       "exact": false,
       "sections": [
         {
           "name": ".text",
-          "size": 16967,
+          "size": 17399,
           "placement": "symbol: _ZN5daisy5scene13CSceneManager14getVideoDriverEv",
           "exact": false,
           "address": "0x4c21c0",
           "first_difference": 1237,
-          "differing_bytes": 3443,
+          "differing_bytes": 1702,
           "misplaced_symbols": [
-            {
-              "symbol": "_ZN5daisy5scene18createSceneManagerEPN2ox5video12IVideoDriverEPNS1_2io11IFileSystemEPNS1_3gui14ICursorControlE",
-              "known": "0x4c5290",
-              "placed": "0x4c26c0"
-            },
-            {
-              "symbol": "_ZN5daisy5scene13CSceneManager26createMetaTriangleSelectorEv",
-              "known": "0x4c26c0",
-              "placed": "0x4c26d0"
-            },
-            {
-              "symbol": "_ZN5daisy5scene13CSceneManager29createOctTreeTriangleSelectorEPN2ox5scene5IMeshEPNS3_10ISceneNodeEi",
-              "known": "0x4c2700",
-              "placed": "0x4c2710"
-            },
-            {
-              "symbol": "_ZN5daisy5scene13CSceneManager37createTriangleSelectorFromBoundingBoxEPN2ox5scene10ISceneNodeE",
-              "known": "0x4c2780",
-              "placed": "0x4c2790"
-            },
-            {
-              "symbol": "_ZN5daisy5scene13CSceneManager22createTriangleSelectorEPN2ox5scene5IMeshEPNS3_10ISceneNodeE",
-              "known": "0x4c27e0",
-              "placed": "0x4c27f0"
-            },
-            {
-              "symbol": "_ZN5daisy5scene13CSceneManager26createFollowSplineAnimatorEiRKN2ox6TArrayINS2_4core9CVector3dIfEEEEff",
-              "known": "0x4c2850",
-              "placed": "0x4c2860"
-            },
-            {
-              "symbol": "_ZN5daisy5scene13CSceneManager31createCollisionResponseAnimatorEPN2ox5scene17ITriangleSelectorEPNS3_10ISceneNodeERKNS2_4core9CVector3dIfEESC_fSC_f",
-              "known": "0x4c28d0",
-              "placed": "0x4c28e0"
-            },
-            {
-              "symbol": "_ZN5daisy5scene13CSceneManager20createDeleteAnimatorEj",
-              "known": "0x4c2990",
-              "placed": "0x4c29a0"
-            },
-            {
-              "symbol": "_ZN5daisy5scene13CSceneManager21createTextureAnimatorERKN2ox6TArrayIPNS2_5video8ITextureEEEib",
-              "known": "0x4c2a10",
-              "placed": "0x4c2a20"
-            },
-            {
-              "symbol": "_ZN5daisy5scene13CSceneManager25createFlyStraightAnimatorERKN2ox4core9CVector3dIfEES7_jb",
-              "known": "0x4c2aa0",
-              "placed": "0x4c2ab0"
-            },
-            {
-              "symbol": "_ZN5daisy5scene13CSceneManager23createFlyCircleAnimatorERKN2ox4core9CVector3dIfEEff",
-              "known": "0x4c2b40",
-              "placed": "0x4c2b50"
-            },
-            {
-              "symbol": "_ZN5daisy5scene13CSceneManager22createRotationAnimatorERKN2ox4core9CVector3dIfEE",
-              "known": "0x4c2bc0",
-              "placed": "0x4c2bd0"
-            },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager17clearDeletionListEv",
               "known": "0x4c2f70",
-              "placed": "0x4c2c30"
+              "placed": "0x4c2c20"
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager7drawAllEv",
               "known": "0x4c3000",
-              "placed": "0x4c2cc0"
+              "placed": "0x4c2cb0"
+            },
+            {
+              "symbol": "_ZN5daisy5scene13CSceneManager15removeAllMeshesEv",
+              "known": "0x4c32d0",
+              "placed": "0x4c2f80"
             },
             {
               "symbol": "_ZThn24_N5daisy5scene13CSceneManager9removeAllEv",
               "known": "0x4c3390",
-              "placed": "0x4c2f90"
+              "placed": "0x4c3040"
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager9removeAllEv",
               "known": "0x4c33a0",
-              "placed": "0x4c2fa0"
+              "placed": "0x4c3050"
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager31addDummyTransformationSceneNodeEPN2ox5scene10ISceneNodeEi",
               "known": "0x4c3bf0",
-              "placed": "0x4c3030"
+              "placed": "0x4c30e0"
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager17addEmptySceneNodeEPN2ox5scene10ISceneNodeEi",
               "known": "0x4c3c80",
-              "placed": "0x4c30c0"
+              "placed": "0x4c3170"
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager19addTerrainSceneNodeEPN2ox5scene10ISceneNodeEiPNS2_5video6IImageES8_PNS6_8ITextureERKNS2_4core12CDimension2dIfEEfRKNSC_IiEE",
               "known": "0x4c3430",
-              "placed": "0x4c3150"
+              "placed": "0x4c3200"
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager26addParticleSystemSceneNodeEbPN2ox5scene10ISceneNodeEiRKNS2_4core9CVector3dIfEESA_SA_",
               "known": "0x4c3580",
-              "placed": "0x4c32a0"
+              "placed": "0x4c3350"
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager18addSkyBoxSceneNodeEPN2ox5video8ITextureES5_S5_S5_S5_S5_PNS2_5scene10ISceneNodeEi",
               "known": "0x4c3650",
-              "placed": "0x4c3370"
+              "placed": "0x4c3420"
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager21addBillboardSceneNodeEPN2ox5scene10ISceneNodeERKNS2_4core12CDimension2dIfEERKNS6_9CVector3dIfEEi",
               "known": "0x4c3730",
-              "placed": "0x4c3450"
+              "placed": "0x4c3500"
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager17addLightSceneNodeEPN2ox5scene10ISceneNodeERKNS2_4core9CVector3dIfEENS2_5video7SColorfEfi",
               "known": "0x4c37e0",
-              "placed": "0x4c3500"
+              "placed": "0x4c35b0"
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager21addCameraSceneNodeFPSEPN2ox5scene10ISceneNodeEffiPNS_7SKeyMapEi",
               "known": "0x4c38b0",
-              "placed": "0x4c35d0"
+              "placed": "0x4c3680"
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager22addCameraSceneNodeMayaEPN2ox5scene10ISceneNodeEfffi",
               "known": "0x4c3990",
-              "placed": "0x4c36b0"
+              "placed": "0x4c3760"
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager18addCameraSceneNodeEPN2ox5scene10ISceneNodeERKNS2_4core9CVector3dIfEESA_i",
               "known": "0x4c3a60",
-              "placed": "0x4c3780"
+              "placed": "0x4c3830"
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager16addTestSceneNodeEfPN2ox5scene10ISceneNodeEiRKNS2_4core9CVector3dIfEESA_SA_",
               "known": "0x4c3b20",
-              "placed": "0x4c3840"
-            },
-            {
-              "symbol": "_ZN5daisy5scene13CSceneManager24addWaterSurfaceSceneNodeEPN2ox5scene5IMeshEfffPNS3_10ISceneNodeEiRKNS2_4core9CVector3dIfEESC_SC_",
-              "known": "0x4c4110",
-              "placed": "0x4c3910"
-            },
-            {
-              "symbol": "_ZN5daisy5scene13CSceneManager16addMeshSceneNodeEPN2ox5scene5IMeshEPNS3_10ISceneNodeEiRKNS2_4core9CVector3dIfEESC_SC_",
-              "known": "0x4c3d10",
-              "placed": "0x4c3a20"
-            },
-            {
-              "symbol": "_ZN5daisy5scene13CSceneManager16addTextSceneNodeEPN2ox3gui8IGUIFontEPKwNS2_5video6SColorEPNS2_5scene10ISceneNodeERKNS2_4core9CVector3dIfEEi",
-              "known": "0x4c3de0",
-              "placed": "0x4c3af0"
+              "placed": "0x4c38f0"
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager19addOctTreeSceneNodeEPN2ox5scene5IMeshEPNS3_10ISceneNodeEii",
               "known": "0x4c3ed0",
-              "placed": "0x4c3be0"
+              "placed": "0x4c39c0"
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager19addBspTreeSceneNodeEPN2ox5scene5IMeshEPNS3_10ISceneNodeEi",
               "known": "0x4c3f90",
-              "placed": "0x4c3ca0"
+              "placed": "0x4c3a80"
+            },
+            {
+              "symbol": "_ZN5daisy5scene13CSceneManager16addMeshSceneNodeEPN2ox5scene5IMeshEPNS3_10ISceneNodeEiRKNS2_4core9CVector3dIfEESC_SC_",
+              "known": "0x4c3d10",
+              "placed": "0x4c3b30"
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager24addAnimatedMeshSceneNodeEPN2ox5scene13IAnimatedMeshEPNS3_10ISceneNodeEiRKNS2_4core9CVector3dIfEESC_SC_",
               "known": "0x4c4040",
-              "placed": "0x4c3d50"
+              "placed": "0x4c3c00"
+            },
+            {
+              "symbol": "_ZN5daisy5scene13CSceneManager24addWaterSurfaceSceneNodeEPN2ox5scene5IMeshEfffPNS3_10ISceneNodeEiRKNS2_4core9CVector3dIfEESC_SC_",
+              "known": "0x4c4110",
+              "placed": "0x4c3cd0"
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager15setActiveCameraEPN2ox5scene16ICameraSceneNodeE",
               "known": "0x4c4280",
-              "placed": "0x4c3e20"
+              "placed": "0x4c3ed0"
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager21addExternalMeshLoaderEPN2ox5scene11IMeshLoaderE",
               "known": "0x4c4220",
-              "placed": "0x4c3e70"
+              "placed": "0x4c3f20"
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager18addToDeletionQueueEPN2ox5scene10ISceneNodeE",
               "known": "0x4c42d0",
-              "placed": "0x4c3ed0"
+              "placed": "0x4c3f80"
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager24registerNodeForRenderingEPN2ox5scene10ISceneNodeENS3_24E_SCENE_NODE_RENDER_TIMEE",
               "known": "0x4c4330",
-              "placed": "0x4c3f30"
+              "placed": "0x4c3fe0"
+            },
+            {
+              "symbol": "_ZN5daisy5scene13CSceneManager8findMeshEPKc",
+              "known": "0x4c2c20",
+              "placed": "0x4c4310"
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager13wasMeshLoadedEPKc",
               "known": "0x4c2e80",
-              "placed": "0x4c43e0"
+              "placed": "0x4c4520"
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager7addMeshEPKcPN2ox5scene13IAnimatedMeshE",
               "known": "0x4c6070",
-              "placed": "0x4c44d0"
+              "placed": "0x4c4610"
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager14addTerrainMeshEPKcPN2ox5video6IImageES7_RKNS4_4core12CDimension2dIfEEfRKNS9_IiEE",
               "known": "0x4c62f0",
-              "placed": "0x4c4700"
+              "placed": "0x4c4840"
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager16addHillPlaneMeshEPKcRKN2ox4core12CDimension2dIfEERKNS6_IiEEPNS4_5video9SMaterialEfS9_S9_",
               "known": "0x4c63d0",
-              "placed": "0x4c47e0"
+              "placed": "0x4c4920"
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager7getMeshEPKc",
               "known": "0x4c6490",
-              "placed": "0x4c48a0"
+              "placed": "0x4c49e0"
+            },
+            {
+              "symbol": "_ZN5daisy5scene13CSceneManagerC2EPN2ox5video12IVideoDriverEPNS2_2io11IFileSystemEPNS2_3gui14ICursorControlE",
+              "known": "0x4c4690",
+              "placed": "0x4c4be0"
+            },
+            {
+              "symbol": "_ZN5daisy5scene13CSceneManagerC1EPN2ox5video12IVideoDriverEPNS2_2io11IFileSystemEPNS2_3gui14ICursorControlE",
+              "known": "0x4c4c90",
+              "placed": "0x4c51e0"
+            },
+            {
+              "symbol": "_ZN5daisy5scene18createSceneManagerEPN2ox5video12IVideoDriverEPNS1_2io11IFileSystemEPNS1_3gui14ICursorControlE",
+              "known": "0x4c5290",
+              "placed": "0x4c57e0"
             },
             {
               "symbol": "_ZThn24_N5daisy5scene13CSceneManagerD0Ev",
               "known": "0x4c5770",
-              "placed": "0x4c56a0"
+              "placed": "0x4c5850"
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManagerD0Ev",
               "known": "0x4c5780",
-              "placed": "0x4c56b0"
+              "placed": "0x4c5860"
             },
             {
               "symbol": "_ZThn24_N5daisy5scene13CSceneManagerD1Ev",
               "known": "0x4c5bf0",
-              "placed": "0x4c5b20"
+              "placed": "0x4c5cd0"
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManagerD1Ev",
               "known": "0x4c5c00",
-              "placed": "0x4c5b30"
+              "placed": "0x4c5ce0"
+            },
+            {
+              "symbol": "_ZN5daisy5scene13CSceneManagerD2Ev",
+              "known": "0x4c5300",
+              "placed": "0x4c6150"
             }
           ],
           "bad_references": [
@@ -288492,7 +288411,7 @@
               "matches": false
             },
             {
-              "offset": 4175,
+              "offset": 4351,
               "type": 2,
               "symbol": "_ZN5daisy5scene17CTerrainSceneNodeC1EPN2ox5scene10ISceneNodeEPNS3_13ISceneManagerEiRKNS2_4core9CVector3dIfEESC_SC_",
               "addend": -4,
@@ -288501,7 +288420,7 @@
               "matches": false
             },
             {
-              "offset": 7888,
+              "offset": 8064,
               "type": 2,
               "symbol": "_ZN5daisy5scene13CSceneManager8isCulledEPN2ox5scene10ISceneNodeE",
               "addend": -4,
@@ -288510,7 +288429,7 @@
               "matches": false
             },
             {
-              "offset": 8101,
+              "offset": 8277,
               "type": 2,
               "symbol": "_ZN5daisy5scene13CSceneManager8isCulledEPN2ox5scene10ISceneNodeE",
               "addend": -4,
@@ -288519,7 +288438,16 @@
               "matches": false
             },
             {
-              "offset": 8128,
+              "offset": 8418,
+              "type": 2,
+              "symbol": "_ZNSt6vectorIN5daisy5scene13CSceneManager16DefaultNodeEntryESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+              "addend": -4,
+              "reason": "no target address for symbol",
+              "candidate": "0x38cfcf3e",
+              "matches": false
+            },
+            {
+              "offset": 8440,
               "type": 2,
               "symbol": "_ZNSt6vectorIN5daisy5scene13CSceneManager20TransparentNodeEntryESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
               "addend": -4,
@@ -288528,7 +288456,7 @@
               "matches": false
             },
             {
-              "offset": 8150,
+              "offset": 8462,
               "type": 2,
               "symbol": "_ZNSt6vectorIPN2ox5scene10ISceneNodeESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
               "addend": -4,
@@ -288537,7 +288465,7 @@
               "matches": false
             },
             {
-              "offset": 8172,
+              "offset": 8484,
               "type": 2,
               "symbol": "_ZNSt6vectorIPN2ox5scene10ISceneNodeESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
               "addend": -4,
@@ -288546,7 +288474,7 @@
               "matches": false
             },
             {
-              "offset": 8194,
+              "offset": 8506,
               "type": 2,
               "symbol": "_ZNSt6vectorIPN2ox5scene10ISceneNodeESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
               "addend": -4,
@@ -288555,7 +288483,7 @@
               "matches": false
             },
             {
-              "offset": 8237,
+              "offset": 8557,
               "type": 2,
               "symbol": "_Znam",
               "addend": -4,
@@ -288564,20 +288492,11 @@
               "matches": false
             },
             {
-              "offset": 8310,
+              "offset": 8630,
               "type": 2,
               "symbol": "_Znam",
               "addend": -4,
               "destination": "0x407128",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 8353,
-              "type": 2,
-              "symbol": "_ZdaPv",
-              "addend": -4,
-              "destination": "0x407f58",
               "reason": "different destination",
               "matches": false
             },
@@ -288591,7 +288510,7 @@
               "matches": false
             },
             {
-              "offset": 8718,
+              "offset": 8993,
               "type": 2,
               "symbol": "_ZdaPv",
               "addend": -4,
@@ -288600,7 +288519,16 @@
               "matches": false
             },
             {
-              "offset": 8726,
+              "offset": 9038,
+              "type": 2,
+              "symbol": "_ZdaPv",
+              "addend": -4,
+              "destination": "0x407f58",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 9046,
               "type": 2,
               "symbol": "_Unwind_Resume",
               "addend": -4,
@@ -288609,7 +288537,7 @@
               "matches": false
             },
             {
-              "offset": 8806,
+              "offset": 9349,
               "type": 2,
               "symbol": "_Znam",
               "addend": -4,
@@ -288618,16 +288546,25 @@
               "matches": false
             },
             {
-              "offset": 8892,
+              "offset": 9526,
               "type": 2,
-              "symbol": "_ZN5daisy5scene13CSceneManager8findMeshEPKc",
+              "symbol": "tolower",
               "addend": -4,
-              "destination": "0x4c4690",
+              "destination": "0x408218",
               "reason": "different destination",
               "matches": false
             },
             {
-              "offset": 8908,
+              "offset": 9610,
+              "type": 2,
+              "symbol": "_Znam",
+              "addend": -4,
+              "destination": "0x407128",
+              "reason": "different destination",
+              "matches": false
+            },
+            {
+              "offset": 9708,
               "type": 2,
               "symbol": "_ZdaPv",
               "addend": -4,
@@ -288636,61 +288573,7 @@
               "matches": false
             },
             {
-              "offset": 8940,
-              "type": 2,
-              "symbol": "_Znam",
-              "addend": -4,
-              "destination": "0x407128",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 8964,
-              "type": 2,
-              "symbol": "_ZdaPv",
-              "addend": -4,
-              "destination": "0x407f58",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 8972,
-              "type": 2,
-              "symbol": "_Unwind_Resume",
-              "addend": -4,
-              "destination": "0x4084f8",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 9029,
-              "type": 2,
-              "symbol": "_Znam",
-              "addend": -4,
-              "destination": "0x407128",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 9291,
-              "type": 2,
-              "symbol": "_Znam",
-              "addend": -4,
-              "destination": "0x407128",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 9388,
-              "type": 2,
-              "symbol": "_ZdaPv",
-              "addend": -4,
-              "destination": "0x407f58",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 9462,
+              "offset": 9782,
               "type": 2,
               "symbol": "_ZNSt6vectorIN5daisy5scene13CSceneManager9MeshEntryESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
               "addend": -4,
@@ -288699,7 +288582,7 @@
               "matches": false
             },
             {
-              "offset": 9478,
+              "offset": 9798,
               "type": 2,
               "symbol": "_Znam",
               "addend": -4,
@@ -288708,7 +288591,7 @@
               "matches": false
             },
             {
-              "offset": 9517,
+              "offset": 9837,
               "type": 2,
               "symbol": "_ZdaPv",
               "addend": -4,
@@ -288717,394 +288600,16 @@
               "matches": false
             },
             {
-              "offset": 9525,
+              "offset": 9845,
               "type": 2,
               "symbol": "_Unwind_Resume",
               "addend": -4,
               "destination": "0x4084f8",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 10030,
-              "type": 2,
-              "symbol": "_Znam",
-              "addend": -4,
-              "destination": "0x407128",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 10116,
-              "type": 2,
-              "symbol": "_ZN5daisy5scene13CSceneManager8findMeshEPKc",
-              "addend": -4,
-              "destination": "0x4c4690",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 10137,
-              "type": 2,
-              "symbol": "_ZdaPv",
-              "addend": -4,
-              "destination": "0x407f58",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 10172,
-              "type": 2,
-              "symbol": "_Znam",
-              "addend": -4,
-              "destination": "0x407128",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 10901,
-              "type": 11,
-              "symbol": "_ZTVN5daisy5scene13CSceneManagerE",
-              "addend": 464,
-              "destination": "0x60ca00",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 12045,
-              "type": 11,
-              "symbol": "_ZTVN2ox5scene13ISceneManagerE",
-              "addend": 16,
-              "destination": "0x60cee0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 12068,
-              "type": 11,
-              "symbol": "_ZTVN2ox5scene10ISceneNodeE",
-              "addend": 16,
-              "destination": "0x60cdc0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 12105,
-              "type": 2,
-              "symbol": "_Znam",
-              "addend": -4,
-              "destination": "0x407128",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 12429,
-              "type": 11,
-              "symbol": "_ZTVN5daisy5scene13CSceneManagerE",
-              "addend": 16,
-              "destination": "0x60ca00",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 12437,
-              "type": 11,
-              "symbol": "_ZTVN5daisy5scene13CSceneManagerE",
-              "addend": 464,
-              "destination": "0x60ca00",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 12838,
-              "type": 2,
-              "symbol": "_Znwm",
-              "addend": -4,
-              "destination": "0x407bc8",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 12859,
-              "type": 2,
-              "symbol": "_ZN5daisy5scene22CSceneCollisionManagerC1EPN2ox5scene13ISceneManagerEPNS2_5video12IVideoDriverE",
-              "addend": -4,
-              "destination": "0x5747b0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 12876,
-              "type": 2,
-              "symbol": "_Znwm",
-              "addend": -4,
-              "destination": "0x407bc8",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 12887,
-              "type": 2,
-              "symbol": "_ZN5daisy5scene16CMeshManipulatorC1Ev",
-              "addend": -4,
-              "destination": "0x55d550",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 12904,
-              "type": 2,
-              "symbol": "_Znwm",
-              "addend": -4,
-              "destination": "0x407bc8",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 12929,
-              "type": 2,
-              "symbol": "_ZN5daisy5scene24CDefaultMeshFormatLoaderC1EPN2ox2io11IFileSystemEPNS2_5video12IVideoDriverE",
-              "addend": -4,
-              "destination": "0x5567c0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 12999,
-              "type": 2,
-              "symbol": "_Znwm",
-              "addend": -4,
-              "destination": "0x407bc8",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13024,
-              "type": 2,
-              "symbol": "_ZN5daisy5scene18C3DSMeshFileLoaderC1EPN2ox2io11IFileSystemEPNS2_5video12IVideoDriverE",
-              "addend": -4,
-              "destination": "0x5423a0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13087,
-              "type": 2,
-              "symbol": "_Znwm",
-              "addend": -4,
-              "destination": "0x407bc8",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13112,
-              "type": 2,
-              "symbol": "_ZN5daisy5scene16CXMeshFileLoaderC1EPN2ox5scene16IMeshManipulatorEPNS2_5video12IVideoDriverE",
-              "addend": -4,
-              "destination": "0x4dc320",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13189,
-              "type": 2,
-              "symbol": "_ZNSt6vectorIPN2ox5scene11IMeshLoaderESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
-              "addend": -4,
-              "destination": "0x4c8c80",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13207,
-              "type": 2,
-              "symbol": "_ZNSt6vectorIPN2ox5scene11IMeshLoaderESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
-              "addend": -4,
-              "destination": "0x4c8c80",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13225,
-              "type": 2,
-              "symbol": "_ZNSt6vectorIPN2ox5scene11IMeshLoaderESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
-              "addend": -4,
-              "destination": "0x4c8c80",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13241,
-              "type": 11,
-              "symbol": "_ZTVN2ox8IUnknownE",
-              "addend": 16,
-              "destination": "0x5f99c0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13248,
-              "type": 11,
-              "symbol": "_ZTVN2ox8IUnknownE",
-              "addend": 16,
-              "destination": "0x5f99c0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13256,
-              "type": 2,
-              "symbol": "_Unwind_Resume",
-              "addend": -4,
-              "destination": "0x4084f8",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13267,
-              "type": 2,
-              "symbol": "_ZdlPv",
-              "addend": -4,
-              "destination": "0x407b48",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13279,
-              "type": 2,
-              "symbol": "_ZN2ox6TArrayIPNS_5scene10ISceneNodeEED1Ev",
-              "addend": -4,
-              "destination": "0x4c7240",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13296,
-              "type": 2,
-              "symbol": "_ZdlPv",
-              "addend": -4,
-              "destination": "0x407b48",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13313,
-              "type": 2,
-              "symbol": "_ZdlPv",
-              "addend": -4,
-              "destination": "0x407b48",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13330,
-              "type": 2,
-              "symbol": "_ZdlPv",
-              "addend": -4,
-              "destination": "0x407b48",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13342,
-              "type": 2,
-              "symbol": "_ZN2ox6TArrayIPNS_5scene10ISceneNodeEED1Ev",
-              "addend": -4,
-              "destination": "0x4c7240",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13354,
-              "type": 2,
-              "symbol": "_ZN2ox6TArrayIPNS_5scene10ISceneNodeEED1Ev",
-              "addend": -4,
-              "destination": "0x4c7240",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13366,
-              "type": 2,
-              "symbol": "_ZN2ox6TArrayIPNS_5scene10ISceneNodeEED1Ev",
-              "addend": -4,
-              "destination": "0x4c7240",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13378,
-              "type": 2,
-              "symbol": "_ZN2ox6TArrayIN5daisy5scene13CSceneManager9MeshEntryEED1Ev",
-              "addend": -4,
-              "destination": "0x4c8770",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13386,
-              "type": 2,
-              "symbol": "_ZN2ox5scene10ISceneNodeD2Ev",
-              "addend": -4,
-              "destination": "0x4c8e20",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13464,
-              "type": 2,
-              "symbol": "_ZdlPv",
-              "addend": -4,
-              "destination": "0x407b48",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13490,
-              "type": 2,
-              "symbol": "_ZdlPv",
-              "addend": -4,
-              "destination": "0x407b48",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13513,
-              "type": 2,
-              "symbol": "_ZdaPv",
-              "addend": -4,
-              "destination": "0x407f58",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 13580,
-              "type": 11,
-              "symbol": "_ZTVN5daisy5scene13CSceneManagerE",
-              "addend": 464,
-              "destination": "0x60ca00",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 14732,
-              "type": 11,
-              "symbol": "_ZTVN5daisy5scene13CSceneManagerE",
-              "addend": 464,
-              "destination": "0x60ca00",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 15868,
-              "type": 11,
-              "symbol": "_ZTVN5daisy5scene13CSceneManagerE",
-              "addend": 464,
-              "destination": "0x60ca00",
               "reason": "different destination",
               "matches": false
             }
           ],
-          "references": 350,
+          "references": 359,
           "functions": [
             {
               "symbol": "_ZN5daisy5scene13CSceneManager14getVideoDriverEv",
@@ -289243,14 +288748,6 @@
               "exact": false
             },
             {
-              "symbol": "_ZN5daisy5scene18createSceneManagerEPN2ox5video12IVideoDriverEPNS1_2io11IFileSystemEPNS1_3gui14ICursorControlE",
-              "address": "0x4c5290",
-              "size": 2,
-              "extent": null,
-              "global": true,
-              "exact": false
-            },
-            {
               "symbol": "_ZN5daisy5scene13CSceneManager26createMetaTriangleSelectorEv",
               "address": "0x4c26c0",
               "size": 61,
@@ -289350,6 +288847,14 @@
               "symbol": "_ZN5daisy5scene13CSceneManager7drawAllEv",
               "address": "0x4c3000",
               "size": 716,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            },
+            {
+              "symbol": "_ZN5daisy5scene13CSceneManager15removeAllMeshesEv",
+              "address": "0x4c32d0",
+              "size": 182,
               "extent": "fde",
               "global": true,
               "exact": true
@@ -289459,30 +288964,6 @@
               "exact": true
             },
             {
-              "symbol": "_ZN5daisy5scene13CSceneManager24addWaterSurfaceSceneNodeEPN2ox5scene5IMeshEfffPNS3_10ISceneNodeEiRKNS2_4core9CVector3dIfEESC_SC_",
-              "address": "0x4c4110",
-              "size": 259,
-              "extent": "fde",
-              "global": true,
-              "exact": true
-            },
-            {
-              "symbol": "_ZN5daisy5scene13CSceneManager16addMeshSceneNodeEPN2ox5scene5IMeshEPNS3_10ISceneNodeEiRKNS2_4core9CVector3dIfEESC_SC_",
-              "address": "0x4c3d10",
-              "size": 207,
-              "extent": "fde",
-              "global": true,
-              "exact": true
-            },
-            {
-              "symbol": "_ZN5daisy5scene13CSceneManager16addTextSceneNodeEPN2ox3gui8IGUIFontEPKwNS2_5video6SColorEPNS2_5scene10ISceneNodeERKNS2_4core9CVector3dIfEEi",
-              "address": "0x4c3de0",
-              "size": 227,
-              "extent": "fde",
-              "global": true,
-              "exact": true
-            },
-            {
               "symbol": "_ZN5daisy5scene13CSceneManager19addOctTreeSceneNodeEPN2ox5scene5IMeshEPNS3_10ISceneNodeEii",
               "address": "0x4c3ed0",
               "size": 184,
@@ -289499,9 +288980,33 @@
               "exact": true
             },
             {
+              "symbol": "_ZN5daisy5scene13CSceneManager16addMeshSceneNodeEPN2ox5scene5IMeshEPNS3_10ISceneNodeEiRKNS2_4core9CVector3dIfEESC_SC_",
+              "address": "0x4c3d10",
+              "size": 207,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            },
+            {
               "symbol": "_ZN5daisy5scene13CSceneManager24addAnimatedMeshSceneNodeEPN2ox5scene13IAnimatedMeshEPNS3_10ISceneNodeEiRKNS2_4core9CVector3dIfEESC_SC_",
               "address": "0x4c4040",
               "size": 207,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            },
+            {
+              "symbol": "_ZN5daisy5scene13CSceneManager24addWaterSurfaceSceneNodeEPN2ox5scene5IMeshEfffPNS3_10ISceneNodeEiRKNS2_4core9CVector3dIfEESC_SC_",
+              "address": "0x4c4110",
+              "size": 259,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            },
+            {
+              "symbol": "_ZN5daisy5scene13CSceneManager16addTextSceneNodeEPN2ox3gui8IGUIFontEPKwNS2_5video6SColorEPNS2_5scene10ISceneNodeERKNS2_4core9CVector3dIfEEi",
+              "address": "0x4c3de0",
+              "size": 227,
               "extent": "fde",
               "global": true,
               "exact": true
@@ -289533,14 +289038,14 @@
             {
               "symbol": "_ZN5daisy5scene13CSceneManager24registerNodeForRenderingEPN2ox5scene10ISceneNodeENS3_24E_SCENE_NODE_RENDER_TIMEE",
               "address": "0x4c4330",
-              "size": 667,
+              "size": 803,
               "extent": null,
               "global": true,
               "exact": false
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager8findMeshEPKc",
-              "address": "0x4c4690",
+              "address": "0x4c2c20",
               "size": 522,
               "extent": null,
               "global": true,
@@ -289549,10 +289054,10 @@
             {
               "symbol": "_ZN5daisy5scene13CSceneManager13wasMeshLoadedEPKc",
               "address": "0x4c2e80",
-              "size": 240,
-              "extent": null,
+              "size": 237,
+              "extent": "fde",
               "global": true,
-              "exact": false
+              "exact": true
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager7addMeshEPKcPN2ox5scene13IAnimatedMeshE",
@@ -289584,7 +289089,15 @@
               "size": 507,
               "extent": "fde",
               "global": true,
-              "exact": false
+              "exact": true
+            },
+            {
+              "symbol": "_ZN5daisy5scene13CSceneManagerC2EPN2ox5video12IVideoDriverEPNS2_2io11IFileSystemEPNS2_3gui14ICursorControlE",
+              "address": "0x4c4690",
+              "size": 1525,
+              "extent": "fde",
+              "global": true,
+              "exact": true
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManagerC1EPN2ox5video12IVideoDriverEPNS2_2io11IFileSystemEPNS2_3gui14ICursorControlE",
@@ -289592,15 +289105,15 @@
               "size": 1525,
               "extent": "fde",
               "global": true,
-              "exact": false
+              "exact": true
             },
             {
-              "symbol": "_ZN5daisy5scene13CSceneManagerC2EPN2ox5video12IVideoDriverEPNS2_2io11IFileSystemEPNS2_3gui14ICursorControlE",
+              "symbol": "_ZN5daisy5scene18createSceneManagerEPN2ox5video12IVideoDriverEPNS1_2io11IFileSystemEPNS1_3gui14ICursorControlE",
               "address": "0x4c5290",
-              "size": 1525,
-              "extent": null,
+              "size": 110,
+              "extent": "fde",
               "global": true,
-              "exact": false
+              "exact": true
             },
             {
               "symbol": "_ZThn24_N5daisy5scene13CSceneManagerD0Ev",
@@ -289616,7 +289129,7 @@
               "size": 1135,
               "extent": "fde",
               "global": true,
-              "exact": false
+              "exact": true
             },
             {
               "symbol": "_ZThn24_N5daisy5scene13CSceneManagerD1Ev",
@@ -289632,7 +289145,7 @@
               "size": 1127,
               "extent": "fde",
               "global": true,
-              "exact": false
+              "exact": true
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManagerD2Ev",
@@ -289640,7 +289153,7 @@
               "size": 1127,
               "extent": "fde",
               "global": true,
-              "exact": false
+              "exact": true
             }
           ],
           "data_ranges": [
@@ -290487,35 +290000,17 @@
           ]
         },
         {
-          "name": ".text._ZN2ox5scene10ISceneNodeD1Ev",
-          "size": 361,
-          "placement": "symbol: _ZN2ox5scene10ISceneNodeD1Ev",
+          "name": ".text._ZNSt6vectorIPN2ox5scene11IMeshLoaderESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+          "size": 401,
+          "placement": "symbol: _ZNSt6vectorIPN2ox5scene11IMeshLoaderESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
           "exact": true,
-          "address": "0x4c8f90",
-          "references": 10,
+          "address": "0x4c8c80",
+          "references": 5,
           "functions": [
             {
-              "symbol": "_ZN2ox5scene10ISceneNodeD1Ev",
-              "address": "0x4c8f90",
-              "size": 361,
-              "extent": "fde",
-              "global": true,
-              "exact": true
-            }
-          ]
-        },
-        {
-          "name": ".text._ZN2ox5scene10ISceneNodeD2Ev",
-          "size": 361,
-          "placement": "symbol: _ZN2ox5scene10ISceneNodeD2Ev",
-          "exact": true,
-          "address": "0x4c8e20",
-          "references": 10,
-          "functions": [
-            {
-              "symbol": "_ZN2ox5scene10ISceneNodeD2Ev",
-              "address": "0x4c8e20",
-              "size": 361,
+              "symbol": "_ZNSt6vectorIPN2ox5scene11IMeshLoaderESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+              "address": "0x4c8c80",
+              "size": 401,
               "extent": "fde",
               "global": true,
               "exact": true
@@ -290541,17 +290036,17 @@
           ]
         },
         {
-          "name": ".text._ZNSt6vectorIPN2ox5scene11IMeshLoaderESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
-          "size": 401,
-          "placement": "symbol: _ZNSt6vectorIPN2ox5scene11IMeshLoaderESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+          "name": ".text._ZN2ox5scene10ISceneNodeD2Ev",
+          "size": 361,
+          "placement": "symbol: _ZN2ox5scene10ISceneNodeD2Ev",
           "exact": true,
-          "address": "0x4c8c80",
-          "references": 5,
+          "address": "0x4c8e20",
+          "references": 10,
           "functions": [
             {
-              "symbol": "_ZNSt6vectorIPN2ox5scene11IMeshLoaderESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
-              "address": "0x4c8c80",
-              "size": 401,
+              "symbol": "_ZN2ox5scene10ISceneNodeD2Ev",
+              "address": "0x4c8e20",
+              "size": 361,
               "extent": "fde",
               "global": true,
               "exact": true
@@ -290570,6 +290065,24 @@
               "symbol": "_ZNSt6vectorIPN2ox5scene10ISceneNodeESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
               "address": "0x4c9100",
               "size": 401,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ]
+        },
+        {
+          "name": ".text._ZN2ox5scene10ISceneNodeD1Ev",
+          "size": 361,
+          "placement": "symbol: _ZN2ox5scene10ISceneNodeD1Ev",
+          "exact": true,
+          "address": "0x4c8f90",
+          "references": 10,
+          "functions": [
+            {
+              "symbol": "_ZN2ox5scene10ISceneNodeD1Ev",
+              "address": "0x4c8f90",
+              "size": 361,
               "extent": "fde",
               "global": true,
               "exact": true
@@ -290614,348 +290127,18 @@
         },
         {
           "name": ".rodata._ZTVN5daisy5scene13CSceneManagerE",
-          "size": 728,
+          "size": 720,
           "placement": "symbol: _ZTVN5daisy5scene13CSceneManagerE",
-          "exact": false,
+          "exact": true,
           "address": "0x60ca00",
-          "first_difference": 120,
-          "differing_bytes": 85,
-          "bad_references": [
+          "references": 88,
+          "data_ranges": [
             {
-              "offset": 120,
-              "type": 1,
-              "symbol": "__cxa_pure_virtual",
-              "addend": 0,
-              "destination": "0x408648",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 408,
-              "type": 1,
-              "symbol": "__cxa_pure_virtual",
-              "addend": 0,
-              "destination": "0x408648",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 440,
-              "type": 1,
-              "symbol": "_ZN5daisy5scene13CSceneManager21addCameraSceneNodeFPSEPN2ox5scene10ISceneNodeEffiPNS_7SKeyMapEi",
-              "addend": 0,
-              "destination": "0x4c38b0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 456,
-              "type": 1,
-              "symbol": "_ZTIN5daisy5scene13CSceneManagerE",
-              "addend": 0,
-              "destination": "0x60cd00",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 464,
-              "type": 1,
-              "symbol": "_ZThn24_N5daisy5scene13CSceneManagerD1Ev",
-              "addend": 0,
-              "destination": "0x4c5bf0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 472,
-              "type": 1,
-              "symbol": "_ZThn24_N5daisy5scene13CSceneManagerD0Ev",
-              "addend": 0,
-              "destination": "0x4c5770",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 480,
-              "type": 1,
-              "symbol": "_ZN2ox5scene10ISceneNode11OnPreRenderEv",
-              "addend": 0,
-              "destination": "0x4c66c0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 488,
-              "type": 1,
-              "symbol": "_ZN2ox5scene10ISceneNode12OnPostRenderEj",
-              "addend": 0,
-              "destination": "0x4c6720",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 496,
-              "type": 1,
-              "symbol": "_ZThn24_N5daisy5scene13CSceneManager6renderEv",
-              "addend": 0,
-              "destination": "0x4c22c0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 504,
-              "type": 1,
-              "symbol": "_ZNK2ox5scene10ISceneNode7getNameEv",
-              "addend": 0,
-              "destination": "0x4c67b0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 512,
-              "type": 1,
-              "symbol": "_ZN2ox5scene10ISceneNode7setNameEPKw",
-              "addend": 0,
-              "destination": "0x4c7a80",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 520,
-              "type": 1,
-              "symbol": "_ZThn24_NK5daisy5scene13CSceneManager14getBoundingBoxEv",
-              "addend": 0,
-              "destination": "0x4c22e0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 528,
-              "type": 1,
-              "symbol": "_ZNK2ox5scene10ISceneNode25getRelativeTransformationEv",
-              "addend": 0,
-              "destination": "0x4c7320",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 536,
-              "type": 1,
-              "symbol": "_ZN2ox5scene10ISceneNode9isVisibleEv",
-              "addend": 0,
-              "destination": "0x4c67c0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 544,
-              "type": 1,
-              "symbol": "_ZN2ox5scene10ISceneNode10setVisibleEb",
-              "addend": 0,
-              "destination": "0x4c67d0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 552,
-              "type": 1,
-              "symbol": "_ZN2ox5scene10ISceneNode5getIDEv",
-              "addend": 0,
-              "destination": "0x4c67e0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 560,
-              "type": 1,
-              "symbol": "_ZN2ox5scene10ISceneNode5setIDEi",
-              "addend": 0,
-              "destination": "0x4c67f0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 568,
-              "type": 1,
-              "symbol": "_ZN2ox5scene10ISceneNode8addChildEPS1_",
-              "addend": 0,
-              "destination": "0x4c72c0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 576,
-              "type": 1,
-              "symbol": "_ZN2ox5scene10ISceneNode11removeChildEPS1_",
-              "addend": 0,
-              "destination": "0x4c9310",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 584,
-              "type": 1,
-              "symbol": "_ZThn24_N5daisy5scene13CSceneManager9removeAllEv",
-              "addend": 0,
-              "destination": "0x4c3390",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 592,
-              "type": 1,
-              "symbol": "_ZN2ox5scene10ISceneNode6removeEv",
-              "addend": 0,
-              "destination": "0x4c6800",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 600,
-              "type": 1,
-              "symbol": "_ZN2ox5scene10ISceneNode11addAnimatorEPNS0_18ISceneNodeAnimatorE",
-              "addend": 0,
-              "destination": "0x4c7270",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 608,
-              "type": 1,
-              "symbol": "_ZN2ox5scene10ISceneNode14removeAnimatorEPNS0_18ISceneNodeAnimatorE",
-              "addend": 0,
-              "destination": "0x4c92a0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 616,
-              "type": 1,
-              "symbol": "_ZN2ox5scene10ISceneNode15removeAnimatorsEv",
-              "addend": 0,
-              "destination": "0x4c8930",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 624,
-              "type": 1,
-              "symbol": "_ZN2ox5scene10ISceneNode11getMaterialEi",
-              "addend": 0,
-              "destination": "0x4c6830",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 632,
-              "type": 1,
-              "symbol": "_ZN2ox5scene10ISceneNode16getMaterialCountEv",
-              "addend": 0,
-              "destination": "0x4c6840",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 640,
-              "type": 1,
-              "symbol": "_ZNK2ox5scene10ISceneNode8getScaleEv",
-              "addend": 0,
-              "destination": "0x4c6850",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 648,
-              "type": 1,
-              "symbol": "_ZN2ox5scene10ISceneNode8setScaleERKNS_4core9CVector3dIfEE",
-              "addend": 0,
-              "destination": "0x4c6870",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 656,
-              "type": 1,
-              "symbol": "_ZNK2ox5scene10ISceneNode11getRotationEv",
-              "addend": 0,
-              "destination": "0x4c6890",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 664,
-              "type": 1,
-              "symbol": "_ZN2ox5scene10ISceneNode11setRotationERKNS_4core9CVector3dIfEE",
-              "addend": 0,
-              "destination": "0x4c68b0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 672,
-              "type": 1,
-              "symbol": "_ZNK2ox5scene10ISceneNode11getPositionEv",
-              "addend": 0,
-              "destination": "0x4c68d0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 680,
-              "type": 1,
-              "symbol": "_ZN2ox5scene10ISceneNode11setPositionERKNS_4core9CVector3dIfEE",
-              "addend": 0,
-              "destination": "0x4c68f0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 688,
-              "type": 1,
-              "symbol": "_ZNK2ox5scene10ISceneNode19getAbsolutePositionEv",
-              "addend": 0,
-              "destination": "0x4c6910",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 696,
-              "type": 1,
-              "symbol": "_ZN2ox5scene10ISceneNode9setParentEPS1_",
-              "addend": 0,
-              "destination": "0x4c8a30",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 704,
-              "type": 1,
-              "symbol": "_ZNK2ox5scene10ISceneNode19getTriangleSelectorEv",
-              "addend": 0,
-              "destination": "0x4c69b0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 712,
-              "type": 1,
-              "symbol": "_ZN2ox5scene10ISceneNode19setTriangleSelectorEPNS0_17ITriangleSelectorE",
-              "addend": 0,
-              "destination": "0x4c8ab0",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 720,
-              "type": 1,
-              "symbol": "_ZN2ox5scene10ISceneNode22updateAbsolutePositionEv",
-              "addend": 0,
-              "destination": "0x4c69c0",
-              "reason": "different destination",
-              "matches": false
+              "address": "0x60ca00",
+              "size": 720,
+              "kind": "section"
             }
-          ],
-          "references": 89
+          ]
         },
         {
           "name": ".rodata._ZTSN5daisy5scene13CSceneManagerE",
@@ -291152,6 +290335,7 @@
         ".gcc_except_table",
         ".text._ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS5_SaIS5_EEEElS5_EvT_T0_SC_T1_",
         ".text._ZSt25__unguarded_linear_insertIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS5_SaIS5_EEEES5_EvT_T0_",
+        ".text._ZNSt6vectorIN5daisy5scene13CSceneManager16DefaultNodeEntryESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
         ".text._ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS5_SaIS5_EEEEEvT_SB_",
         ".text._ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS5_SaIS5_EEEElEvT_SB_T0_",
         ".text._ZNSt6vectorIN5daisy5scene13CSceneManager9MeshEntryESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_"
@@ -291175,14 +290359,16 @@
           "/out/daisy__scene__CSceneManager.o"
         ],
         "inputs": {
-          "src/daisy/scene/CSceneManager.cpp": "c0bc3d5be6150327d8c96029b44d385e0df2da77059b6b395acce8c1e6a149c5",
+          "src/daisy/scene/CSceneManager.cpp": "e2f80f43ca0b6819822af20f30766456cace57b3f6147641b9e378340d507a45",
+          "src/ox/core/CStringFunctions.h": "ba3c14a79a391026582c2fea88e76fc369132797d628e9f051be5a2501eba4b8",
+          "src/ox/core/CString.h": "7cc2521534a1b7864708fdc416a25279f05507d6c045abeca04545f4a88b95ee",
+          "src/ox/core/../TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/core/CAabbox3d.h": "3be9d1976a8a982ae40cd59e9d7913387a4b9b389b35f777c1e6ac405da5b28f",
           "src/ox/core/CVector3d.h": "65b36a6dbf77658e1517a5c7bc39a59d683a873b8404a6252f71ff8eca2fc393",
           "src/ox/core/CPlane3d.h": "99dbac882183ad9a3060d6f4b37ead835ca4c22e891c75e250f8d81441e121c9",
           "src/ox/core/irrMath.h": "bb9f0271cc6670a0c8d94d15229479ca5c969e778fdd28344f2292c2c5e791ac",
           "src/ox/core/CLine3d.h": "0164055989d7897b79be781b568582ec5161a8024bcaf3a9eabc3c6720e91831",
           "src/ox/core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
-          "src/ox/core/CString.h": "7cc2521534a1b7864708fdc416a25279f05507d6c045abeca04545f4a88b95ee",
           "src/ox/video/IImage.h": "972f0a52212fdc3c93ef24f9ce07d0180f0c56ff4c7ce18f6d8e9091a501372e",
           "src/ox/video/../IUnknown.h": "2876425521d21d0ab1b35bc5e2a72ae62acee754c6785899771e48912b9b0a9f",
           "src/ox/video/../core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
@@ -291194,7 +290380,7 @@
           "src/ox/video/SMaterial.h": "a9a3a9a7c23fe227bbc441fc97ba36e7e33ff82d7256d0a3efe759d4183c8f3e",
           "src/ox/video/ITexture.h": "8eb533b8e005816600ee5abab9ad3a9d38159734535fa9884771866c38cddfe2",
           "src/ox/video/SLight.h": "407fbede66e046c3d266742a1ec8de33e2a2f9efb6706f154aec8a879a72bba6",
-          "src/ox/scene/ISceneManager.h": "dd44c56f50cbc40c37ddc2c11f078b9611badb277054078f0087197ab94cdda6",
+          "src/ox/scene/ISceneManager.h": "74a853b031f12a80a26fcd96fe8ef841a1100cbdc1e324978d6dc6b1d2d4f0b6",
           "src/ox/scene/../IUnknown.h": "2876425521d21d0ab1b35bc5e2a72ae62acee754c6785899771e48912b9b0a9f",
           "src/ox/scene/../TArray.h": "43fc9098e7be91c1ed85447c6343d484e105d29252e01c82c4de4f50555ffdaa",
           "src/ox/scene/../core/CDimension2d.h": "a5678aabedf3d095fb1114a9386f16d8683117b09cc749db579b8fd678ad2a83",
@@ -291259,7 +290445,7 @@
           "src/ox/event/IEventReceiver.h": "c1e1ccab98fd4d61883bca01562128c424963baf34ae4d79fcf903029fcfa169",
           "src/ox/TList.h": "a45553e4f2cad236a713e1085790e780c975ea5d46c7ca25b046d9add5eea5c9",
           "src/ox/algo/CArrayFunctions.h": "73733ca73a2493447b9949ed7b7ed477c9f3a486052f909aa6e9cd1bf6cf59d5",
-          "src/daisy/scene/CSceneManager.h": "598d2f5beb80ea9626ca5b0b371b3a9bbb921d036cf793f5861b833d0f3d53fa",
+          "src/daisy/scene/CSceneManager.h": "eedce2fb77785f6fcc018a60425d070d811d07b8968219363cdddbf2ba2fce0f",
           "src/ox/io/IFileSystem.h": "3ecd0b103a841ec3d6b58825c9984162da937cd039500cb1e037f300d8117ead",
           "src/ox/io/../core/CString.h": "7cc2521534a1b7864708fdc416a25279f05507d6c045abeca04545f4a88b95ee",
           "src/ox/io/IWriteFile.h": "e217871c7372e3db36a084986831e95b25afd47a7ed53577295db27a1e3b1d9d",
@@ -291308,9 +290494,9 @@
           "src/daisy/scene/CSceneNodeAnimatorFollowSpline.h": "85ff479799421708bcd7adc10e7a97c6cf13e1104e4076e89c0051c63f43cd13"
         },
         "system_headers": 145,
-        "object_sha256": "f1c02888c86b77b501fb00f6eaf117f8cfc19e5c05ad88fb7ea0fa4f659678a4"
+        "object_sha256": "fe402f947881fe298dfaa82c312aeadfb9031f76d22083d38fe7f057d085ff51"
       },
-      "fuzzy_target_sha256": "2f00ed0d0703dc456516936d6a2eec051210d5676ad3517139145536bfd99ba7",
+      "fuzzy_target_sha256": "5464bfe681b40fc0b08b122cd54664f84918803283dea19c98a1dfc988069845",
       "fuzzy_functions": [
         {
           "address": "0x4c21c0",
@@ -291415,12 +290601,6 @@
           "percent": 98.75
         },
         {
-          "address": "0x4c5290",
-          "size": 110,
-          "symbol": "_ZN5daisy5scene18createSceneManagerEPN2ox5video12IVideoDriverEPNS1_2io11IFileSystemEPNS1_3gui14ICursorControlE",
-          "percent": 1.4285715
-        },
-        {
           "address": "0x4c26c0",
           "size": 61,
           "symbol": "_ZN5daisy5scene13CSceneManager26createMetaTriangleSelectorEv",
@@ -291496,6 +290676,12 @@
           "address": "0x4c3000",
           "size": 716,
           "symbol": "_ZN5daisy5scene13CSceneManager7drawAllEv",
+          "percent": 100.0
+        },
+        {
+          "address": "0x4c32d0",
+          "size": 182,
+          "symbol": "_ZN5daisy5scene13CSceneManager15removeAllMeshesEv",
           "percent": 100.0
         },
         {
@@ -291577,24 +290763,6 @@
           "percent": 100.0
         },
         {
-          "address": "0x4c4110",
-          "size": 259,
-          "symbol": "_ZN5daisy5scene13CSceneManager24addWaterSurfaceSceneNodeEPN2ox5scene5IMeshEfffPNS3_10ISceneNodeEiRKNS2_4core9CVector3dIfEESC_SC_",
-          "percent": 100.0
-        },
-        {
-          "address": "0x4c3d10",
-          "size": 207,
-          "symbol": "_ZN5daisy5scene13CSceneManager16addMeshSceneNodeEPN2ox5scene5IMeshEPNS3_10ISceneNodeEiRKNS2_4core9CVector3dIfEESC_SC_",
-          "percent": 100.0
-        },
-        {
-          "address": "0x4c3de0",
-          "size": 227,
-          "symbol": "_ZN5daisy5scene13CSceneManager16addTextSceneNodeEPN2ox3gui8IGUIFontEPKwNS2_5video6SColorEPNS2_5scene10ISceneNodeERKNS2_4core9CVector3dIfEEi",
-          "percent": 100.0
-        },
-        {
           "address": "0x4c3ed0",
           "size": 184,
           "symbol": "_ZN5daisy5scene13CSceneManager19addOctTreeSceneNodeEPN2ox5scene5IMeshEPNS3_10ISceneNodeEii",
@@ -291607,9 +290775,27 @@
           "percent": 100.0
         },
         {
+          "address": "0x4c3d10",
+          "size": 207,
+          "symbol": "_ZN5daisy5scene13CSceneManager16addMeshSceneNodeEPN2ox5scene5IMeshEPNS3_10ISceneNodeEiRKNS2_4core9CVector3dIfEESC_SC_",
+          "percent": 100.0
+        },
+        {
           "address": "0x4c4040",
           "size": 207,
           "symbol": "_ZN5daisy5scene13CSceneManager24addAnimatedMeshSceneNodeEPN2ox5scene13IAnimatedMeshEPNS3_10ISceneNodeEiRKNS2_4core9CVector3dIfEESC_SC_",
+          "percent": 100.0
+        },
+        {
+          "address": "0x4c4110",
+          "size": 259,
+          "symbol": "_ZN5daisy5scene13CSceneManager24addWaterSurfaceSceneNodeEPN2ox5scene5IMeshEfffPNS3_10ISceneNodeEiRKNS2_4core9CVector3dIfEESC_SC_",
+          "percent": 100.0
+        },
+        {
+          "address": "0x4c3de0",
+          "size": 227,
+          "symbol": "_ZN5daisy5scene13CSceneManager16addTextSceneNodeEPN2ox3gui8IGUIFontEPKwNS2_5video6SColorEPNS2_5scene10ISceneNodeERKNS2_4core9CVector3dIfEEi",
           "percent": 100.0
         },
         {
@@ -291634,25 +290820,25 @@
           "address": "0x4c4330",
           "size": 863,
           "symbol": "_ZN5daisy5scene13CSceneManager24registerNodeForRenderingEPN2ox5scene10ISceneNodeENS3_24E_SCENE_NODE_RENDER_TIMEE",
-          "percent": 33.0
+          "percent": 45.891624
         },
         {
-          "address": "0x4c4690",
-          "size": 1525,
+          "address": "0x4c2c20",
+          "size": 606,
           "symbol": "_ZN5daisy5scene13CSceneManager8findMeshEPKc",
-          "percent": 2.3247232
+          "percent": 73.566666
         },
         {
           "address": "0x4c2e80",
           "size": 237,
           "symbol": "_ZN5daisy5scene13CSceneManager13wasMeshLoadedEPKc",
-          "percent": 77.63513
+          "percent": 100.0
         },
         {
           "address": "0x4c6070",
           "size": 630,
           "symbol": "_ZN5daisy5scene13CSceneManager7addMeshEPKcPN2ox5scene13IAnimatedMeshE",
-          "percent": 72.40964
+          "percent": 78.289154
         },
         {
           "address": "0x4c62f0",
@@ -291670,7 +290856,13 @@
           "address": "0x4c6490",
           "size": 507,
           "symbol": "_ZN5daisy5scene13CSceneManager7getMeshEPKc",
-          "percent": 87.88194
+          "percent": 100.0
+        },
+        {
+          "address": "0x4c4690",
+          "size": 1525,
+          "symbol": "_ZN5daisy5scene13CSceneManagerC2EPN2ox5video12IVideoDriverEPNS2_2io11IFileSystemEPNS2_3gui14ICursorControlE",
+          "percent": 100.0
         },
         {
           "address": "0x4c4c90",
@@ -291681,8 +290873,8 @@
         {
           "address": "0x4c5290",
           "size": 110,
-          "symbol": "_ZN5daisy5scene13CSceneManagerC2EPN2ox5video12IVideoDriverEPNS2_2io11IFileSystemEPNS2_3gui14ICursorControlE",
-          "percent": 0
+          "symbol": "_ZN5daisy5scene18createSceneManagerEPN2ox5video12IVideoDriverEPNS1_2io11IFileSystemEPNS1_3gui14ICursorControlE",
+          "percent": 100.0
         },
         {
           "address": "0x4c5770",
@@ -291961,15 +291153,9 @@
           "percent": 100.0
         },
         {
-          "address": "0x4c8f90",
-          "size": 361,
-          "symbol": "_ZN2ox5scene10ISceneNodeD1Ev",
-          "percent": 100.0
-        },
-        {
-          "address": "0x4c8e20",
-          "size": 361,
-          "symbol": "_ZN2ox5scene10ISceneNodeD2Ev",
+          "address": "0x4c8c80",
+          "size": 401,
+          "symbol": "_ZNSt6vectorIPN2ox5scene11IMeshLoaderESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
           "percent": 100.0
         },
         {
@@ -291979,15 +291165,21 @@
           "percent": 100.0
         },
         {
-          "address": "0x4c8c80",
-          "size": 401,
-          "symbol": "_ZNSt6vectorIPN2ox5scene11IMeshLoaderESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+          "address": "0x4c8e20",
+          "size": 361,
+          "symbol": "_ZN2ox5scene10ISceneNodeD2Ev",
           "percent": 100.0
         },
         {
           "address": "0x4c9100",
           "size": 401,
           "symbol": "_ZNSt6vectorIPN2ox5scene10ISceneNodeESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+          "percent": 100.0
+        },
+        {
+          "address": "0x4c8f90",
+          "size": 361,
+          "symbol": "_ZN2ox5scene10ISceneNodeD1Ev",
           "percent": 100.0
         },
         {
@@ -293337,6 +292529,16 @@
               "placed": "0x4f4a60"
             },
             {
+              "symbol": "_ZN5daisy5video14CVideoSoftwareC2ERKN2ox4core12CDimension2dIiEEbPNS2_2io11IFileSystemEPNS0_15IImagePresenterE",
+              "known": "0x4f4e70",
+              "placed": "0x4f4b90"
+            },
+            {
+              "symbol": "_ZN5daisy5video14CVideoSoftwareC1ERKN2ox4core12CDimension2dIiEEbPNS2_2io11IFileSystemEPNS0_15IImagePresenterE",
+              "known": "0x4f4320",
+              "placed": "0x4f4f50"
+            },
+            {
               "symbol": "_ZN5daisy5video20createSoftwareDriverERKN2ox4core12CDimension2dIiEEbPNS1_2io11IFileSystemEPNS0_15IImagePresenterE",
               "known": "0x4f5230",
               "placed": "0x4f5310"
@@ -294560,7 +293762,7 @@
     "config": {
       "functionRelocDiffs": "data_value"
     },
-    "report_sha256": "0f56b6c2c98393a7f36ad6f389c7033de2047eee1ab72bac23ced8f6d448c86b"
+    "report_sha256": "9d765d0468587ca5e123076f2790d97be84c4568ae8cfe064a060c8251de1279"
   },
   "link": {
     "status": "unavailable",
