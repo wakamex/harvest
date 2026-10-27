@@ -3131,7 +3131,9 @@ address	size	symbol	evidence
 0x533e10	184	_ZN5daisy2io10CXMLReaderD0Ev	mac-vtable:_ZTVN5daisy2io10CXMLReaderE:3
 0x533ed0	177	_ZN5daisy2io10CXMLReaderD1Ev	mac-vtable:_ZTVN5daisy2io10CXMLReaderE:2
 0x533f90	177	_ZN5daisy2io10CXMLReaderD2Ev	match:daisy/io/CXMLReader.cpp
+0x534050	3051	_ZN5daisy2io10CXMLReader24replaceSpecialCharactersERN2ox4core7CStringIwEE	candidate-object:d0f897f696852f28ce4449cf04ee8f986c7c042378605e9c7d75d9d8a178beeb:exact-caller:daisy/io/CXMLReader.cpp:_ZN5daisy2io10CXMLReader7setTextEPwS2_+0x9e=>+0x9e
 0x534c40	350	_ZN5daisy2io10CXMLReader7setTextEPwS2_	match:daisy/io/CXMLReader.cpp
+0x534da0	1801	_ZN5daisy2io10CXMLReader22parseOpeningXMLElementEv	match:daisy/io/CXMLReader.cpp
 0x5354b0	200	_ZN5daisy2io10CXMLReader16parseCurrentNodeEv	match:daisy/io/CXMLReader.cpp
 0x535580	63	_ZN5daisy2io10CXMLReader4readEv	mac-vtable:_ZTVN5daisy2io10CXMLReaderE:4
 0x5355c0	8	_ZN2ox2io10IXMLReaderD1Ev	mac-vtable:_ZTVN2ox2io10IXMLReaderE:2

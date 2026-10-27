@@ -799,6 +799,7 @@
 
 ["daisy/io/CXMLReader.cpp"]
 ".bss" = 0x86c0e8
+".rodata" = 0x617aa0
 
 ["daisy/io/CXMLWriter.cpp"]
 ".bss" = 0x86c0ec
