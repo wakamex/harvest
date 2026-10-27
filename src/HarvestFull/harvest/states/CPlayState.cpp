@@ -413,19 +413,19 @@ int CPlayState::secondInit()
         ActionPanel->setID(GUI_ID_ACTION_PANEL);
         ActionPanel->setReportOnDraw(1);
 
-        InfoText = GUIEnvironment->addStaticText(L"", ox::core::CRect<int>(0, 0, 90, 20), false, false, ActionPanel, -1, 0);
+        InfoText = GUIEnvironment->addStaticText(L"", ox::core::CRect<int>(0, 0, 90, 20), false, false, ActionPanel, -1, L"");
         InfoText->setOverrideColor(WHITE_TEXT_COLOR);
         InfoText->setTextAlignment(ox::gui::EFHA_CENTER, ox::gui::EFVA_CENTER);
         InfoText->setOverrideFont(BoldFont);
-        SelectedNameText = GUIEnvironment->addStaticText(L"", ox::core::CRect<int>(0, 0, 90, 20), false, false, ActionPanel, -1, 0);
+        SelectedNameText = GUIEnvironment->addStaticText(L"", ox::core::CRect<int>(0, 0, 90, 20), false, false, ActionPanel, -1, L"");
         SelectedNameText->setOverrideColor(WHITE_TEXT_COLOR);
         SelectedNameText->setTextAlignment(ox::gui::EFHA_CENTER, ox::gui::EFVA_CENTER);
         SelectedNameText->setOverrideFont(BoldFont);
-        OperatorText = GUIEnvironment->addStaticText(L"", ox::core::CRect<int>(0, 0, 90, 20), false, false, ActionPanel, -1, 0);
+        OperatorText = GUIEnvironment->addStaticText(L"", ox::core::CRect<int>(0, 0, 90, 20), false, false, ActionPanel, -1, L"");
         OperatorText->setOverrideColor(ox::video::SColor(0xffb1c7ff));
         OperatorText->setTextAlignment(ox::gui::EFHA_CENTER, ox::gui::EFVA_CENTER);
         OperatorText->setOverrideFont(SmallFont);
-        MiniStatText = GUIEnvironment->addStaticText(L"", ox::core::CRect<int>(0, 0, 90, 20), false, false, ActionPanel, -1, 0);
+        MiniStatText = GUIEnvironment->addStaticText(L"", ox::core::CRect<int>(0, 0, 90, 20), false, false, ActionPanel, -1, L"");
         MiniStatText->setOverrideColor(ox::video::SColor(0xffb1c7ff));
         MiniStatText->setTextAlignment(ox::gui::EFHA_CENTER, ox::gui::EFVA_CENTER);
         MiniStatText->setOverrideFont(SmallFont);
