@@ -787,6 +787,7 @@
 ".bss" = 0x86c14c
 
 ["daisy/video/Null/CImageLoaderJPG.cpp"]
+".bss" = 0x86c168
 
 ["daisy/io/CTextReader.cpp"]
 ".bss" = 0x86c0e0

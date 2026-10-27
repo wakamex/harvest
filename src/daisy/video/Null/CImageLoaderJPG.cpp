@@ -1,9 +1,10 @@
 #include <iostream>
+#include "CImageLoaderJPG.h"
 #include "ox/core/CDimension2d.h"
+#include "ox/video/ColorPacking.h"
 #include "ox/video/IImage.h"
 #include "ox/video/IImageLoader.h"
 #include "ox/io/IReadFile.h"
-#include "CImageLoaderJPG.h"
 #include <string.h>
 #include "CColorConverter.h"
 #include "CImage.h"
@@ -45,7 +46,7 @@ void CImageLoaderJPG::init_source (j_decompress_ptr cinfo)
 
 
 
-unsigned char CImageLoaderJPG::fill_input_buffer (j_decompress_ptr cinfo)
+boolean CImageLoaderJPG::fill_input_buffer (j_decompress_ptr cinfo)
 {
 	// DO NOTHING
 	return 1;
