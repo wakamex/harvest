@@ -189,9 +189,9 @@ CDefenseTowerEntity::~CDefenseTowerEntity()
 int CDefenseTowerEntity::updateLogic(float frameDelta)
 {
     updateTowerLinks();
+    int alpha = 162;
     bool showLaser = false;
     bool noHitParticle = false;
-    int alpha = 162;
     if (Energy.getValue() > 0.0f)
     {
         if (ForwardTarget.Id > 0 && ForwardTarget.Entity)
@@ -333,13 +333,13 @@ int CDefenseTowerEntity::updateLogic(float frameDelta)
     else
         stopShootingAndClearTarget();
     Color = Energy.getValue() > 0.0f ? ox::video::SColor(0xffffffff) : ox::video::SColor(0xff80a280);
-    if (!Shooting)
+    if (Shooting)
     {
-        if (SpriteIndex >= 72)
-            SpriteIndex -= 72;
+        if (SpriteIndex < 72)
+            SpriteIndex += 72;
     }
-    else if (SpriteIndex < 72)
-        SpriteIndex += 72;
+    else if (SpriteIndex >= 72)
+        SpriteIndex -= 72;
     if (Shooting || showLaser)
     {
         DrawLaser = true;
@@ -355,7 +355,9 @@ int CDefenseTowerEntity::updateLogic(float frameDelta)
             Beam.End.Y = TargetPosition.Y;
         }
         int laserAlpha = int(sin(LaserPhase) * 60.0) + alpha;
-        Beam.Color = ox::video::SColor(ox::core::min_(laserAlpha, 255), 255, 255, 255);
+        if (laserAlpha >= 255)
+            laserAlpha = 255;
+        Beam.Color = ox::video::SColor(laserAlpha, 255, 255, 255);
         if (noHitParticle)
         {
             if (HitParticle)
