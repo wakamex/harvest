@@ -254,7 +254,18 @@ SColor CImage::getPixel(int x, int y)
 	switch(Format)
 	{
 	case ECF_A1R5G5B5:
-		return A1R5G5B5toA8R8G8B8(((short*)Data)[y*Size.Width + x]);
+		{
+			short color = ((short*)Data)[y*Size.Width + x];
+			if (color < 0)
+				return SColor(0xff000000 |
+					(color << 9 & 0xf80000) |
+					(color << 6 & 0xf800) |
+					(color << 3 & 0xff));
+			return SColor(
+				(color << 9 & 0xf80000) |
+				(color << 6 & 0xf800) |
+				(color << 3 & 0xff));
+		}
 	case ECF_R5G6B5:
 		return R5G6B5toA8R8G8B8(((short*)Data)[y*Size.Width + x]);
 	case ECF_A8R8G8B8:
