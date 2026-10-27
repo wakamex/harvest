@@ -185,13 +185,15 @@ inline void IGUILayout::sortRiver(bool resize, int spacingX, int spacingY, bool 
             continue;
 
         const char* flags = (*it)->LayoutFlags;
-        if (!flags && !sortHidden)
-        {
-            rows[row].push_back(*it);
-            continue;
-        }
         if (!flags)
-            flags = "";
+        {
+            if (!sortHidden)
+            {
+                rows[row].push_back(*it);
+                continue;
+            }
+            flags = "tab";
+        }
 
         core::CString<char> hints = flags;
         if (hints.findNext("br", 0) >= 0 && !rows[row].empty())
@@ -254,10 +256,12 @@ inline void IGUILayout::sortRiver(bool resize, int spacingX, int spacingY, bool 
             for (unsigned int j = 0; j < rows[i].size(); ++j)
             {
                 const char* flags = rows[i][j]->LayoutFlags;
-                if (!flags && !sortHidden)
-                    continue;
                 if (!flags)
-                    flags = "";
+                {
+                    if (!sortHidden)
+                        continue;
+                    flags = "tab";
+                }
 
                 core::CString<char> hints = flags;
                 if (hints.findNext("tab", 0) >= 0)
@@ -280,10 +284,12 @@ inline void IGUILayout::sortRiver(bool resize, int spacingX, int spacingY, bool 
             for (unsigned int j = 0; j < rows[i].size(); ++j)
             {
                 const char* flags = rows[i][j]->LayoutFlags;
-                if (!flags && !sortHidden)
-                    continue;
                 if (!flags)
-                    flags = "";
+                {
+                    if (!sortHidden)
+                        continue;
+                    flags = "tab";
+                }
 
                 core::CString<char> hints = flags;
                 if (hints.findNext("tab", 0) >= 0)
