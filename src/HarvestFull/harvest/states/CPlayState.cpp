@@ -1509,6 +1509,8 @@ int CPlayState::updateState(float time)
                 else
                     game::CHighscoreInfo::setNewHighscoreInfo(0);
             }
+            else
+                NextState = 3;
         }
     }
 
@@ -3290,7 +3292,7 @@ void CPlayState::renderMinimap()
             ox::core::CPosition2d<int> position(top.UpperLeftCorner.X + TimerWidth + 13, top.UpperLeftCorner.Y + 4);
             size.Width = (int)(size.Width * progress + 0.5f);
             ox::core::CRect<int> clip(position, size);
-            GuiSprites[GS_PROGRESS_BAR]->draw(position, &clip, THREAT_TEXT_COLOR);
+            GuiSprites[GS_PROGRESS_BAR]->draw(position, &clip, ox::video::SColor(0x64fe8280));
         }
     }
 
@@ -3419,53 +3421,91 @@ void CPlayState::renderMinimap()
     {
         ox::core::CPosition2d<int> position((int)((it->X - field.UpperLeftCorner.X) * scaleX) + area.UpperLeftCorner.X,
             (int)((it->Y - field.UpperLeftCorner.Y) * scaleY) + area.UpperLeftCorner.Y);
-        ox::core::CRect<int> box;
         if (it->Time <= 4.0f)
-            box = ox::core::CRect<int>(position.X - 3, position.Y - 3, position.X + 4, position.Y + 4);
+        {
+            ox::core::CRect<int> box(position.X - 3, position.Y - 3, position.X + 4, position.Y + 4);
+            // Clip the square to the minimap and skip the edges that were cut.
+            bool left = true;
+            if (box.UpperLeftCorner.X < area.UpperLeftCorner.X)
+            {
+                box.UpperLeftCorner.X = area.UpperLeftCorner.X;
+                left = false;
+            }
+            bool top = true;
+            if (box.UpperLeftCorner.Y < area.UpperLeftCorner.Y)
+            {
+                box.UpperLeftCorner.Y = area.UpperLeftCorner.Y;
+                top = false;
+            }
+            bool right = true;
+            if (box.LowerRightCorner.X >= area.LowerRightCorner.X)
+            {
+                box.LowerRightCorner.X = area.LowerRightCorner.X - 1;
+                right = false;
+            }
+            bool bottom = true;
+            if (box.LowerRightCorner.Y >= area.LowerRightCorner.Y)
+            {
+                box.LowerRightCorner.Y = area.LowerRightCorner.Y - 1;
+                bottom = false;
+            }
+            if (top)
+                Driver->draw2DLine(box.UpperLeftCorner,
+                    ox::core::CPosition2d<int>(box.LowerRightCorner.X, box.UpperLeftCorner.Y), MINIMAP_MARKER_COLOR);
+            if (left)
+                Driver->draw2DLine(box.UpperLeftCorner,
+                    ox::core::CPosition2d<int>(box.UpperLeftCorner.X, box.LowerRightCorner.Y), MINIMAP_MARKER_COLOR);
+            if (right)
+                Driver->draw2DLine(box.LowerRightCorner,
+                    ox::core::CPosition2d<int>(box.LowerRightCorner.X, box.UpperLeftCorner.Y), MINIMAP_MARKER_COLOR);
+            if (bottom)
+                Driver->draw2DLine(box.LowerRightCorner,
+                    ox::core::CPosition2d<int>(box.UpperLeftCorner.X, box.LowerRightCorner.Y), MINIMAP_MARKER_COLOR);
+        }
         else
         {
             int size = (int)((it->Time - 4.0f) * 100.0f) + 6;
+            ox::core::CRect<int> box;
             box.UpperLeftCorner = position - ox::core::CPosition2d<int>(size / 2, size / 2);
             box.LowerRightCorner = box.UpperLeftCorner + ox::core::CPosition2d<int>(size, size);
+            // Clip the square to the minimap and skip the edges that were cut.
+            bool left = true;
+            if (box.UpperLeftCorner.X < area.UpperLeftCorner.X)
+            {
+                box.UpperLeftCorner.X = area.UpperLeftCorner.X;
+                left = false;
+            }
+            bool top = true;
+            if (box.UpperLeftCorner.Y < area.UpperLeftCorner.Y)
+            {
+                box.UpperLeftCorner.Y = area.UpperLeftCorner.Y;
+                top = false;
+            }
+            bool right = true;
+            if (box.LowerRightCorner.X >= area.LowerRightCorner.X)
+            {
+                box.LowerRightCorner.X = area.LowerRightCorner.X - 1;
+                right = false;
+            }
+            bool bottom = true;
+            if (box.LowerRightCorner.Y >= area.LowerRightCorner.Y)
+            {
+                box.LowerRightCorner.Y = area.LowerRightCorner.Y - 1;
+                bottom = false;
+            }
+            if (top)
+                Driver->draw2DLine(box.UpperLeftCorner,
+                    ox::core::CPosition2d<int>(box.LowerRightCorner.X, box.UpperLeftCorner.Y), MINIMAP_MARKER_COLOR);
+            if (left)
+                Driver->draw2DLine(box.UpperLeftCorner,
+                    ox::core::CPosition2d<int>(box.UpperLeftCorner.X, box.LowerRightCorner.Y), MINIMAP_MARKER_COLOR);
+            if (right)
+                Driver->draw2DLine(box.LowerRightCorner,
+                    ox::core::CPosition2d<int>(box.LowerRightCorner.X, box.UpperLeftCorner.Y), MINIMAP_MARKER_COLOR);
+            if (bottom)
+                Driver->draw2DLine(box.LowerRightCorner,
+                    ox::core::CPosition2d<int>(box.UpperLeftCorner.X, box.LowerRightCorner.Y), MINIMAP_MARKER_COLOR);
         }
-
-        // Clip the square to the minimap and skip the edges that were cut.
-        bool left = true;
-        if (box.UpperLeftCorner.X < area.UpperLeftCorner.X)
-        {
-            box.UpperLeftCorner.X = area.UpperLeftCorner.X;
-            left = false;
-        }
-        bool top = true;
-        if (box.UpperLeftCorner.Y < area.UpperLeftCorner.Y)
-        {
-            box.UpperLeftCorner.Y = area.UpperLeftCorner.Y;
-            top = false;
-        }
-        bool right = true;
-        if (box.LowerRightCorner.X >= area.LowerRightCorner.X)
-        {
-            box.LowerRightCorner.X = area.LowerRightCorner.X - 1;
-            right = false;
-        }
-        bool bottom = true;
-        if (box.LowerRightCorner.Y >= area.LowerRightCorner.Y)
-        {
-            box.LowerRightCorner.Y = area.LowerRightCorner.Y - 1;
-            bottom = false;
-        }
-        if (top)
-            Driver->draw2DLine(box.UpperLeftCorner,
-                ox::core::CPosition2d<int>(box.LowerRightCorner.X, box.UpperLeftCorner.Y), MINIMAP_MARKER_COLOR);
-        if (left)
-            Driver->draw2DLine(box.UpperLeftCorner,
-                ox::core::CPosition2d<int>(box.UpperLeftCorner.X, box.LowerRightCorner.Y), MINIMAP_MARKER_COLOR);
-        if (right)
-            Driver->draw2DLine(box.LowerRightCorner,
-                ox::core::CPosition2d<int>(box.LowerRightCorner.X, box.UpperLeftCorner.Y), MINIMAP_MARKER_COLOR);
-        if (bottom)
-            Driver->draw2DLine(box.LowerRightCorner,
-                ox::core::CPosition2d<int>(box.UpperLeftCorner.X, box.LowerRightCorner.Y), MINIMAP_MARKER_COLOR);
     }
 
     // The part of the world on screen.
