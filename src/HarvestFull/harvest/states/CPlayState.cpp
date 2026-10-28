@@ -3530,7 +3530,8 @@ void CPlayState::renderWaveButton(ox::gui::IGUIElement* button, int numAliens, i
         return;
 
     ox::core::CRect<int> rect = button->getAbsolutePosition();
-    ox::core::CPosition2d<int> center((rect.UpperLeftCorner.X + 20 + rect.LowerRightCorner.X) / 2,
+    int textRight = rect.UpperLeftCorner.X + 20;
+    ox::core::CPosition2d<int> center((textRight + rect.LowerRightCorner.X) / 2,
         (rect.UpperLeftCorner.Y + rect.LowerRightCorner.Y) / 2);
     if (numAliens == 1)
     {
@@ -3540,19 +3541,20 @@ void CPlayState::renderWaveButton(ox::gui::IGUIElement* button, int numAliens, i
     else
     {
         int x = rect.UpperLeftCorner.X + 40;
+        int step = 20 / (numAliens - 1);
         for (int i = firstAlien; i < WAVE_COUNT; ++i)
         {
             if (aliens[i] && WaveIcons[i])
             {
                 WaveIcons[i]->draw(ox::core::CPosition2d<int>(x, center.Y), 0, ox::video::SColor(0xffffffff));
-                x += 20 / (numAliens - 1);
+                x += step;
             }
         }
     }
 
     if (text.size() > 0 && NumberFont)
     {
-        rect.LowerRightCorner.X = rect.UpperLeftCorner.X + 20;
+        rect.LowerRightCorner.X = textRight;
         NumberFont->draw(text.c_str(), rect, ox::video::SColor(0xffc86464), ox::gui::EFHA_CENTER,
             ox::gui::EFVA_CENTER, 0);
     }
@@ -4304,29 +4306,48 @@ void CPlayState::renderRangeCircleForEntity(ox::entity::COxEntity* entity, const
     {
     case 0:
     case 1:
-        renderRangeCircle(ox::core::CPosition2d<float>(entity->getPosition().X, entity->getPosition().Y), 150.0f,
+    {
+        const ox::core::CVector3d<float>& position = entity->getPosition();
+        renderRangeCircle(ox::core::CPosition2d<float>(position.X, position.Y), 150.0f,
             RANGE_CIRCLE_COLOR, viewPort);
         break;
+    }
     case 4:
-        renderRangeCircle(ox::core::CPosition2d<float>(entity->getPosition().X, entity->getPosition().Y), 100.0f,
+    {
+        const ox::core::CVector3d<float>& position = entity->getPosition();
+        renderRangeCircle(ox::core::CPosition2d<float>(position.X, position.Y), 100.0f,
             MINING_CIRCLE_COLOR, viewPort);
         break;
+    }
     case 7:
-        renderRangeCircle(ox::core::CPosition2d<float>(entity->getPosition().X, entity->getPosition().Y),
-            ((entity::CDefenseTowerEntity*)entity)->getTotalRange(), LASER_CIRCLE_COLOR, viewPort);
+    {
+        float range = ((entity::CDefenseTowerEntity*)entity)->getTotalRange();
+        const ox::core::CVector3d<float>& position = entity->getPosition();
+        renderRangeCircle(ox::core::CPosition2d<float>(position.X, position.Y),
+            range, LASER_CIRCLE_COLOR, viewPort);
         break;
+    }
     case 8:
-        renderRangeCircle(ox::core::CPosition2d<float>(entity->getPosition().X, entity->getPosition().Y), 500.0f,
+    {
+        const ox::core::CVector3d<float>& position = entity->getPosition();
+        renderRangeCircle(ox::core::CPosition2d<float>(position.X, position.Y), 500.0f,
             LASER_CIRCLE_COLOR, viewPort);
         break;
+    }
     case 14:
-        renderRangeCircle(ox::core::CPosition2d<float>(entity->getPosition().X, entity->getPosition().Y), 500.0f,
+    {
+        const ox::core::CVector3d<float>& position = entity->getPosition();
+        renderRangeCircle(ox::core::CPosition2d<float>(position.X, position.Y), 500.0f,
             LASER_CIRCLE_COLOR, viewPort);
         break;
+    }
     case 13:
-        renderRangeCircle(ox::core::CPosition2d<float>(entity->getPosition().X, entity->getPosition().Y), 1500.0f,
+    {
+        const ox::core::CVector3d<float>& position = entity->getPosition();
+        renderRangeCircle(ox::core::CPosition2d<float>(position.X, position.Y), 1500.0f,
             LASER_CIRCLE_COLOR, viewPort);
         break;
+    }
     }
 }
 
