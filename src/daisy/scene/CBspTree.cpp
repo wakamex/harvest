@@ -789,7 +789,7 @@ void CBspTree::splitPoly(const BspPoly& poly, const ox::core::CPlane3d<float>& p
 		backSplit.vertices.push_back(backList[i]);
 
 	int frontIndexCount = (frontSplit.vertices.size() - 2) * 3;
-	int backIndexCount = (backSplit.vertices.size() - 2) * 3;
+	int backIndexCount = (int)backSplit.vertices.size() * 3 - 6;
 
 	#ifdef _DEBUG
 	assert((frontIndexCount >= 3 || frontIndexCount == 0) &&
