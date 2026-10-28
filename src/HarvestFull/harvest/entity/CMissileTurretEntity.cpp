@@ -201,7 +201,8 @@ int CMissileTurretEntity::updateLogic(float frameDelta)
                     }
                     else if (Type == 13)
                     {
-                        const ox::core::CVector3d<float>& target = alien->getPosition();
+                        const ox::core::CVector3d<float> position2 = alien->getPosition();
+                        const ox::core::CVector3d<float>& target = position2;
                         TargetPosition.X = target.X;
                         TargetPosition.Y = target.Y;
                         TargetId = alien->getId();
@@ -217,7 +218,8 @@ int CMissileTurretEntity::updateLogic(float frameDelta)
                         ox::algo::CRand::rand();
                         ox::algo::CRand::rand();
                         ox::algo::CRand::rand();
-                        const ox::core::CVector3d<float>& target = alien->getPosition();
+                        const ox::core::CVector3d<float> position3 = alien->getPosition();
+                        const ox::core::CVector3d<float>& target = position3;
                         TargetPosition.X = target.X;
                         TargetPosition.Y = target.Y;
                         ox::core::CVector2d<float> direction(alien->getMovementTarget().X - TargetPosition.X,
