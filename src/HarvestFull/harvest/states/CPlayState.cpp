@@ -4362,9 +4362,10 @@ void CPlayState::renderRangeCircle(const ox::core::CPosition2d<float>& position,
     // Small circles are a scaled sprite, large ones a ring of beams.
     if (range < 250.0f && RangeCircle)
     {
-        RangeCircle->drawScaled(ox::core::CPosition2d<float>(position.X - ViewPosition.X + viewPort.UpperLeftCorner.X,
-                                    position.Y - ViewPosition.Y + viewPort.UpperLeftCorner.Y),
-            (range + range) / 255.0f, color);
+        ox::core::CPosition2d<float> screenPosition;
+        screenPosition.X = position.X - ViewPosition.X + viewPort.UpperLeftCorner.X;
+        screenPosition.Y = position.Y - ViewPosition.Y + viewPort.UpperLeftCorner.Y;
+        RangeCircle->drawScaled(screenPosition, (range + range) / 255.0f, color);
         return;
     }
 
@@ -4373,9 +4374,9 @@ void CPlayState::renderRangeCircle(const ox::core::CPosition2d<float>& position,
     Beam258.Start.Y = position.Y - range;
     for (int i = 1; i != 66; ++i)
     {
-        float angle = i * -2.0f * 0.0483321957f + 1.57079637f;
-        Beam258.End.X = position.X + cos((double)angle) * range;
-        Beam258.End.Y = position.Y - sin((double)angle) * range;
+        float angle = i * 2.0f * -0.0483321957f + 1.57079637f;
+        Beam258.End = ox::core::CPosition2d<float>(position.X + cos((double)angle) * range,
+            position.Y - sin((double)angle) * range);
         entity::gp_entityManager->renderEnergyBeam(&Beam258, ViewPosition, viewPort);
         Beam258.Start = Beam258.End;
     }
