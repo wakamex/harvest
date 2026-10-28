@@ -793,8 +793,9 @@ bool CGUITabButtonRow::OnEvent(const ox::event::SEvent& event)
                                 Parent->OnEvent(closed);
                             }
 
-                            delete Tabs[index];
-                            Tabs.erase(Tabs.begin() + index);
+                            std::vector<STabRowTabInfo*>::iterator tab = Tabs.begin() + index;
+                            delete *tab;
+                            Tabs.erase(tab);
                             HoverTab = -1;
                             if (index >= (int)Tabs.size())
                                 --index;
