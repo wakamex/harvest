@@ -17,7 +17,7 @@ public:
     void reportThreadStopped();
     bool Connect(const char* address, int port);
     bool isThreadStarted();
-    bool Bind(int port);
+    int Bind(int port);
     int Listen();
     bool Accept(SocketObject& client);
     int Recv(char* data, int size, int flags);

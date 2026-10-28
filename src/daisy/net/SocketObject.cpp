@@ -132,7 +132,7 @@ bool SocketObject::Connect(const char* address, int port)
         ox::core::CThread::sleep(1);
     return true;
 }
-bool SocketObject::Bind(int port)
+int SocketObject::Bind(int port)
 {
     Socket = socket(AF_INET, SOCK_STREAM, 0);
     if (Socket == -1)
