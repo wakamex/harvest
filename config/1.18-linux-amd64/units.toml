@@ -826,3 +826,9 @@
 ["daisy/video/Software/CVideoSoftware.cpp"]
 ".bss" = 0x86c074
 ".rodata" = 0x6115a8
+
+["daisy/net/CWinsockNetworkDevice.cpp"]
+".bss" = 0x86c0f8
+
+["daisy/net/SocketObject.cpp"]
+".bss" = 0x86c0fc
