@@ -689,7 +689,7 @@ void CBspTree::splitPoly(const BspPoly& poly, const ox::core::CPlane3d<float>& p
 		ox::core::EIntersectionRelation3D i3d = plane.classifyPointRelation(pointB);
 
 		if (i3d != ox::core::ISREL3D_PLANAR &&
-			(plane.getIntersectionWithLine(pointA, (pointB) - (pointA), intersection) && (float)(intersection).getDistanceFromSQ(pointA) < (float)((pointB) - (pointA)).getLengthSQ() && (float)(intersection).getDistanceFromSQ(pointB) < (float)((pointB) - (pointA)).getLengthSQ()))
+			(plane.getIntersectionWithLine(pointA, (pointB) - (pointA), intersection) && (float)((pointB) - (pointA)).getLengthSQ() > (float)(intersection).getDistanceFromSQ(pointA) && (float)(intersection).getDistanceFromSQ(pointB) < (float)((pointB) - (pointA)).getLengthSQ()))
 		{
 			// TODO: Kann beschleunigt werden, indem statt getIntersectionWithLimitedLine eine Funktion
 			// verwendet wird, die nicht überprüft, ob sich der schnittpunkt auch zwischen den punkten
