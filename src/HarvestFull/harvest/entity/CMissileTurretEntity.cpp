@@ -532,7 +532,7 @@ int CMissileEntity::updateLogic(float frameDelta)
             float dx = TargetPosition.X - Position.X;
             float dy = TargetPosition.Y - Position.Y;
             TargetPosition.Z = ox::core::min_(ox::core::max_(target.Z,
-                sqrtf(dx * dx + dy * dy) * 0.5f), 300.0f);
+                sqrtf(dy * dy + dx * dx) * 0.5f), 300.0f);
             ox::core::CVector3d<float> direction(dx, dy, TargetPosition.Z - Position.Z);
             if (ox::core::abs_(direction.X) < 15.0f && ox::core::abs_(direction.Y) < 15.0f &&
                 ox::core::abs_(direction.Z) < 15.0f)
