@@ -65,7 +65,7 @@ void CWinsockNetworkDevice::disconnect()
         if (client)
         {
             Clients[i] = 0;
-            client->Disconnect();
+            client->Socket.Disconnect();
             delete client;
         }
     }
@@ -82,7 +82,7 @@ void CWinsockNetworkDevice::disconnect()
 }
 const char* CWinsockNetworkDevice::getLocalIp()
 {
-    if (LocalIp.size() <= 1)
+    if (LocalIp.size() <= 0)
     {
         char hostname[80];
         if (gethostname(hostname, 80) != -1)
@@ -90,7 +90,8 @@ const char* CWinsockNetworkDevice::getLocalIp()
             hostent* host = gethostbyname(hostname);
             if (host)
             {
-                in_addr address = *(in_addr*)host->h_addr_list[0];
+                in_addr address;
+                memcpy(&address, host->h_addr_list[0], sizeof(address));
                 LocalIp = inet_ntoa(address);
             }
         }
@@ -198,7 +199,7 @@ int CWinsockNetworkDevice::sendMessage(int client, void* data, int size, int fla
     SClientData* found = findClient(client);
     if (found)
     {
-        if (found->Send((char*)data, length, 0) != length)
+        if (found->Socket.Send((char*)data, length, 0) != length)
             removeClient(client);
     }
     return -1;
@@ -206,7 +207,7 @@ int CWinsockNetworkDevice::sendMessage(int client, void* data, int size, int fla
 SClientData* CWinsockNetworkDevice::findClient(int id)
 {
     for (unsigned int i = 0; i < Clients.size(); ++i)
-        if (Clients[i]->Id == id)
+        if (Clients[i]->Socket.Id == id)
             return Clients[i];
     return 0;
 }
@@ -215,10 +216,10 @@ void CWinsockNetworkDevice::removeClient(int id)
     for (std::vector<SClientData*>::iterator it = Clients.begin(); it != Clients.end(); ++it)
     {
         SClientData* client = *it;
-        if (client->Id == id)
+        if (client->Socket.Id == id)
         {
             *it = 0;
-            client->Disconnect();
+            client->Socket.Disconnect();
             delete client;
             Clients.erase(it);
             return;
@@ -228,8 +229,8 @@ void CWinsockNetworkDevice::removeClient(int id)
 int CWinsockNetworkDevice::broadcastMessage(void* data, int size, int flags, int except)
 {
     for (unsigned int i = 0; i < Clients.size(); ++i)
-        if (Clients[i]->Id != except)
-            sendMessage(Clients[i]->Id, data, size, flags);
+        if (Clients[i]->Socket.Id != except)
+            sendMessage(Clients[i]->Socket.Id, data, size, flags);
     return 0;
 }
 void CWinsockNetworkDevice::decryptPacket(const void* data, int client)
@@ -269,7 +270,7 @@ SocketObject* CWinsockNetworkDevice::getNewClientSocket()
 {
     delete NewClient;
     NewClient = new SClientData(this, NextClientId++);
-    return NewClient;
+    return &NewClient->Socket;
 }
 int CWinsockNetworkDevice::notifyReceive(SocketObject* socket, unsigned char* data, int size)
 {
@@ -368,7 +369,7 @@ int CWinsockNetworkDevice::notifyReceive(SocketObject* socket, unsigned char* da
                     response.sendPacket(this, socket->Id, 0);
                     removeClient(socket->Id);
                 }
-                else if (client->Name.size() <= 1)
+                else if (client->Name.size() <= 0)
                 {
                     response.appendInt(4);
                     response.appendInt(0);
@@ -426,12 +427,14 @@ void CWinsockNetworkDevice::notifySocketClosed(int id)
     event.NetworkEvent.ClientId = id;
     event.NetworkEvent.Size = 0;
     event.NetworkEvent.Data = 0;
-    if (Server)
+    if (!Server)
+        event.NetworkEvent.Type = 8;
+    else
     {
         for (std::vector<SClientData*>::iterator it = Clients.begin(); it != Clients.end(); ++it)
         {
             SClientData* client = *it;
-            if (client && client->Id == id)
+            if (client && client->Socket.Id == id)
             {
                 event.NetworkEvent.Type = 7;
                 event.unrecovered[3] = client->UserData;
@@ -442,15 +445,13 @@ void CWinsockNetworkDevice::notifySocketClosed(int id)
             }
         }
     }
-    else
-        event.NetworkEvent.Type = 8;
     if (!Disconnecting)
         Receiver->OnEvent(event);
     SocketClosed = true;
 }
 void CWinsockNetworkDevice::notifyNewClient(int id)
 {
-    if (NewClient && NewClient->Id == id)
+    if (NewClient && NewClient->Socket.Id == id)
     {
         Clients.push_back(NewClient);
         NewClient = 0;

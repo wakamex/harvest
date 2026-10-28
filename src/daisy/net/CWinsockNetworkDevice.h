@@ -8,10 +8,11 @@
 #include <vector>
 namespace daisy {
 namespace net {
-struct SClientData : public SocketObject
+struct SClientData
 {
     SClientData(CWinsockNetworkDevice* device, int id)
-        : SocketObject(device, id), UserData(0), Key(0) {}
+        : Socket(device, id), UserData(0) {}
+    SocketObject Socket;
     ox::core::CString<wchar_t> Name;
     void* UserData;
     unsigned int Key;
