@@ -538,11 +538,14 @@ int CMissileEntity::updateLogic(float frameDelta)
             {
                 float damage = 50.0f;
                 CAlienEntity* alien = static_cast<CAlienEntity*>(Target.Entity);
-                if (alien->dealDamage(damage, ox::core::CPosition2d<float>(Position.X, Position.Y), 5.0f, 2) && OwnerId > 0)
+                if (alien->dealDamage(damage, ox::core::CPosition2d<float>(Position.X, Position.Y), 5.0f, 2))
                 {
-                    ox::entity::COxEntity* owner = gp_entityManager->locateEntity(OwnerId, 0);
-                    if (owner && owner->getEntityType() == 13)
-                        static_cast<CMissileTurretEntity*>(owner)->addKillCount(1);
+                    if (OwnerId > 0)
+                    {
+                        ox::entity::COxEntity* owner = gp_entityManager->locateEntity(OwnerId, 0);
+                        if (owner && owner->getEntityType() == 13)
+                            static_cast<CMissileTurretEntity*>(owner)->addKillCount(1);
+                    }
                 }
                 gp_entityManager->appendEntity(new CParticleEntity(Position.X, Position.Y, Position.Z,
                     0, "EagleExplosion"), 4);
