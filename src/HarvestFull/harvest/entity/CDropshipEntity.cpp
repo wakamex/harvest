@@ -310,8 +310,10 @@ int CDropshipEntity::updateLogic(float frameDelta)
     {
         SpriteIndex = 72;
         if (Position.Z < 15.0f)
+        {
             SpriteIndex = 73;
-        SoundPitch = ox::core::max_(SoundPitch + -.05f * frameDelta, .75f);
+            SoundPitch = ox::core::max_(SoundPitch + -.05f * frameDelta, .75f);
+        }
         TargetPosition = ox::core::CVector3d<float>(500, 700, 0);
         turnTowardsTarget(frameDelta);
         float distance = ox::core::CMath::getEstimateDistance(ox::core::CPosition2d<float>(Position.X, Position.Y),
