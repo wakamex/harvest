@@ -74,32 +74,31 @@ inline void IGUILayout::sortFlow(int spacingX, int spacingY, bool rightToLeft, b
                 continue;
 
             core::CRect<int> rect = (*it)->getRelativePosition();
-            int left = x - rect.getWidth();
-            if (spacingX > left && !first)
+            x -= rect.getWidth();
+            if (spacingX > x && !first)
             {
                 y += rowHeight + spacingY;
                 rowHeight = 0;
-                left = width - rect.getWidth();
+                x = width - rect.getWidth();
             }
 
-            core::CRect<int> placed(left, y, left + rect.getWidth(), rect.getHeight() + y);
+            core::CRect<int> placed(x, y, x + rect.getWidth(), rect.getHeight() + y);
+            x -= spacingX;
             (*it)->setRelativePosition(placed);
-            x = left - spacingX;
             first = false;
             if (rowHeight < placed.getHeight())
                 rowHeight = placed.getHeight();
-            if (width - x > maxWidth)
-                maxWidth = width - x;
+            maxWidth = width - x < maxWidth ? maxWidth : width - x;
         }
     }
 
-    int growY = y + rowHeight + spacingY - area.getHeight();
+    int growY = y + rowHeight + (spacingY + area.UpperLeftCorner.Y - area.LowerRightCorner.Y);
     if (growY > 0)
         RelativeRect.LowerRightCorner.Y += growY;
 
     if (resize)
     {
-        int growX = maxWidth - area.getWidth();
+        int growX = maxWidth + area.UpperLeftCorner.X - area.LowerRightCorner.X;
         if (growX > 0)
             RelativeRect.LowerRightCorner.X += growX;
     }
