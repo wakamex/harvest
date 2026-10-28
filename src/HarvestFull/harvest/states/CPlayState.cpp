@@ -4387,11 +4387,13 @@ void CPlayState::addParticleEntity(ox::video::IParticleState* state, const ox::c
     if (!state)
         return;
 
-    if (state->getParticleImportance() > 0 &&
-        !VisibleArea.isPointInside(ox::core::CPosition2d<float>(position.X, position.Y + position.Z)))
+    if (state->getParticleImportance() > 0)
     {
-        state->remove();
-        return;
+        if (!VisibleArea.isPointInside(ox::core::CPosition2d<float>(position.X, position.Y + position.Z)))
+        {
+            state->remove();
+            return;
+        }
     }
 
     if ((int)entity::gp_entityManager->getEntityList(4).size() >= 10000)
