@@ -3602,8 +3602,8 @@ void CPlayState::performRectangleSelection(ox::core::CPosition2d<float> corner1,
         if (type != 5 && (type == entityType || entityType < 0))
         {
             const ox::core::CVector3d<float>& position = (*it)->getPosition();
-            if (position.X >= rect.UpperLeftCorner.X && position.X <= rect.LowerRightCorner.X &&
-                position.Y >= rect.UpperLeftCorner.Y && position.Y <= rect.LowerRightCorner.Y)
+            if (!(rect.UpperLeftCorner.X > position.X || position.X > rect.LowerRightCorner.X ||
+                rect.UpperLeftCorner.Y > position.Y || position.Y > rect.LowerRightCorner.Y))
             {
                 bool selected = false;
                 if (add)
@@ -3617,8 +3617,10 @@ void CPlayState::performRectangleSelection(ox::core::CPosition2d<float> corner1,
                             break;
                         }
                     }
+                    if (!selected)
+                        addToSelection((entity::CEntity*)*it);
                 }
-                if (!selected)
+                else
                     addToSelection((entity::CEntity*)*it);
                 selectedNothing = false;
             }
@@ -3635,8 +3637,8 @@ void CPlayState::performRectangleSelection(ox::core::CPosition2d<float> corner1,
                 continue;
 
             const ox::core::CVector3d<float>& position = (*it)->getPosition();
-            if (position.X >= rect.UpperLeftCorner.X && position.X <= rect.LowerRightCorner.X &&
-                position.Y >= rect.UpperLeftCorner.Y && position.Y <= rect.LowerRightCorner.Y)
+            if (!(rect.UpperLeftCorner.X > position.X || position.X > rect.LowerRightCorner.X ||
+                rect.UpperLeftCorner.Y > position.Y || position.Y > rect.LowerRightCorner.Y))
             {
                 bool selected = false;
                 if (add)
@@ -4075,8 +4077,8 @@ void CPlayState::render()
                 float left = field.UpperLeftCorner.X + 512.0f;
                 float top = field.UpperLeftCorner.Y + 512.0f;
                 float right = field.LowerRightCorner.X - 512.0f;
-                float bottom = field.LowerRightCorner.Y - 512.0f;
                 Beam180.Start = ox::core::CPosition2d<float>(left, top);
+                float bottom = field.LowerRightCorner.Y - 512.0f;
                 Beam180.End = ox::core::CPosition2d<float>(right, top);
                 entity::gp_entityManager->renderEnergyBeam(&Beam180, ViewPosition, viewPort);
                 Beam180.Start = Beam180.End;
@@ -4099,12 +4101,15 @@ void CPlayState::render()
             else if (entityType == 7)
                 renderRangeCircle(PlacementPosition, 200.0f, LASER_CIRCLE_COLOR, viewPort);
         }
-        if (PlacementOk && BuildableItems.getPreviewSprite(BuildSelection))
+        if (PlacementOk)
         {
-            ox::core::CPosition2d<float> position(PlacementPosition.X - ViewPosition.X + viewPort.UpperLeftCorner.X,
-                PlacementPosition.Y - ViewPosition.Y + viewPort.UpperLeftCorner.Y);
-            BuildableItems.getPreviewSprite(BuildSelection)->drawScaled(position, 1.0f,
-                ox::video::SColor(0x80ffffff));
+            if (BuildableItems.getPreviewSprite(BuildSelection))
+            {
+                ox::core::CPosition2d<float> position(PlacementPosition.X - ViewPosition.X + viewPort.UpperLeftCorner.X,
+                    PlacementPosition.Y - ViewPosition.Y + viewPort.UpperLeftCorner.Y);
+                BuildableItems.getPreviewSprite(BuildSelection)->drawScaled(position, 1.0f,
+                    ox::video::SColor(0x80ffffff));
+            }
         }
     }
     else if (Action == 3)
