@@ -4366,7 +4366,7 @@ void CPlayState::addParticleEntity(ox::video::IParticleState* state, const ox::c
         return;
     }
 
-    if (entity::gp_entityManager->getEntityList(4).size() >= 10000)
+    if ((int)entity::gp_entityManager->getEntityList(4).size() >= 10000)
         state->remove();
     else
         entity::gp_entityManager->appendEntity(new entity::CParticleEntity(state, position), 4);
