@@ -292,7 +292,11 @@ int CWinsockNetworkDevice::notifyReceive(SocketObject* socket, unsigned char* da
     if ((unsigned int)size <= 3 || !data)
         return 0;
     short length = ((short*)data)[1];
-    if (size < length || (unsigned short)length <= 3 || length > 16384)
+    if (size < length)
+        return 0;
+    if ((unsigned short)length <= 3)
+        return 0;
+    if (length > 16384)
         return 0;
     if (!(((short*)data)[0] & 0x4000))
     {
@@ -335,11 +339,35 @@ int CWinsockNetworkDevice::notifyReceive(SocketObject* socket, unsigned char* da
                 event.unrecovered[3] = 0;
                 Receiver->OnEvent(event);
             }
-            else if (status == 2 || status == 3 || status == 4)
+            else if (status == 2)
             {
                 SEvent event;
                 event.EventType = EET_NETWORK_EVENT;
-                event.NetworkEvent.Type = status == 2 ? 4 : status == 3 ? 5 : 3;
+                event.NetworkEvent.Type = 4;
+                event.NetworkEvent.ClientId = 0;
+                event.NetworkEvent.Size = 0;
+                event.NetworkEvent.Data = 0;
+                event.unrecovered[3] = 0;
+                Receiver->OnEvent(event);
+                disconnect();
+            }
+            else if (status == 3)
+            {
+                SEvent event;
+                event.EventType = EET_NETWORK_EVENT;
+                event.NetworkEvent.Type = 5;
+                event.NetworkEvent.ClientId = 0;
+                event.NetworkEvent.Size = 0;
+                event.NetworkEvent.Data = 0;
+                event.unrecovered[3] = 0;
+                Receiver->OnEvent(event);
+                disconnect();
+            }
+            else if (status == 4)
+            {
+                SEvent event;
+                event.EventType = EET_NETWORK_EVENT;
+                event.NetworkEvent.Type = 3;
                 event.NetworkEvent.ClientId = 0;
                 event.NetworkEvent.Size = 0;
                 event.NetworkEvent.Data = 0;
