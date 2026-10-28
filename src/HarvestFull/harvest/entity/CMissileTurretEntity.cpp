@@ -192,8 +192,8 @@ int CMissileTurretEntity::updateLogic(float frameDelta)
                     {
                         const ox::core::CVector3d<float> position = alien->getPosition();
                         const ox::core::CVector3d<float>& target = position;
-                        BurstTime = 0;
                         TargetPosition.X = target.X;
+                        BurstTime = 0;
                         TargetPosition.Y = target.Y;
                         BurstCount = 4;
                         SpriteIndex = 1;
