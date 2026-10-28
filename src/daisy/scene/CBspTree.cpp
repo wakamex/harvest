@@ -726,7 +726,8 @@ void CBspTree::splitPoly(const BspPoly& poly, const ox::core::CPlane3d<float>& p
 
 				ox::video::SColor tmpcolor(0, red, green, blue);
 
-				ox::video::S3DVertex newVertex(intersection.X, intersection.Y, intersection.Z, poly.vertices[currentIdx].Normal.X, poly.vertices[currentIdx].Normal.Y, poly.vertices[currentIdx].Normal.Z, tmpcolor, tcoords.X, tcoords.Y);
+				const ox::video::S3DVertex currentVertex = poly.vertices[currentIdx];
+				ox::video::S3DVertex newVertex(intersection.X, intersection.Y, intersection.Z, poly.vertices[currentIdx].Normal.X, currentVertex.Normal.Y, poly.vertices[currentIdx].Normal.Z, tmpcolor, tcoords.X, tcoords.Y);
 
 				frontList[countFront] = newVertex;
 				countFront++;
