@@ -125,10 +125,9 @@ CAlienEntity* CMissileTurretEntity::findPriorityAlien(const ox::core::CVector3d<
                     }
                 }
             }
-        if (!candidates.empty())
-            best = static_cast<CAlienEntity*>(candidates[ox::algo::CRand::rand() % candidates.size()]);
-        else
-            best = 0;
+        if (candidates.empty())
+            return 0;
+        best = static_cast<CAlienEntity*>(candidates[ox::algo::CRand::rand() % candidates.size()]);
     }
     else
     {
