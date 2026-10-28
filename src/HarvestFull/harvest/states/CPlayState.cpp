@@ -1653,238 +1653,6 @@ void CPlayState::clearSelectedEntity()
         LuaManager->updateSelectedBuilding(0);
 }
 
-void CPlayState::newSelectedEntity()
-{
-    for (ox::TArray<ox::entity::SEntityReference*>::iterator it = MultiSelection.begin(); it != MultiSelection.end(); ++it)
-        delete *it;
-    MultiSelection.clear();
-
-    if (!SelectedEntity)
-    {
-        clearSelectedEntity();
-        return;
-    }
-
-    SelectedEntityType = SelectedEntity->getEntityType();
-    if (SelectedNameText)
-    {
-        ox::core::CString<wchar_t> name;
-        if (SelectedEntity->getEntityType() != 16)
-            name = settings::gp_systemConfig->getLocalizedText(
-                entity::ENTITY_KEY_NAMES[SelectedEntity->getEntityType()]).c_str();
-        else
-            name = ((entity::CCreativeEntity*)SelectedEntity)->getBuildingName();
-        if (BoldFont->getDimension(name.c_str()).Width > 100)
-            SelectedNameText->setOverrideFont(SmallFont);
-        else
-            SelectedNameText->setOverrideFont(BoldFont);
-        SelectedNameText->setText(name.c_str());
-        SelectedNameText->activateOffsetScrollingToEnsureVisibleText();
-    }
-
-    if (ActionPanel)
-    {
-        ActionPanel->setVisible(true);
-        int type = SelectedEntity->getEntityType();
-        GuiElements[GUI_ID_DESELECT]->setVisible(true);
-        bool linker = type == 1;
-        bool tower = type == 7;
-        GuiElements[GUI_ID_UNLINK]->setVisible(tower | linker);
-        GuiElements[GUI_ID_OVERCHARGE]->setVisible(linker);
-        bool turret = type == 8;
-        GuiElements[GUI_ID_EAGLE]->setVisible(turret);
-        GuiElements[GUI_ID_TEMPEST]->setVisible(turret);
-        GuiElements[GUI_ID_DEATHSTAR]->setVisible(
-            tower && ((entity::CDefenseTowerEntity*)SelectedEntity)->getNumBackTargets() == 0);
-        GuiElements[GUI_ID_UNLINK_DEATHSTAR]->setVisible(
-            tower && ((entity::CDefenseTowerEntity*)SelectedEntity)->getNumBackTargets() != 0);
-        GuiElements[GUI_ID_END_LASER]->setVisible(tower && ((entity::CDefenseTowerEntity*)SelectedEntity)->isLinked());
-        GuiElements[GUI_ID_SPEED_BUILD]->setVisible(
-            type == 3 && !((entity::CConstructionEntity*)SelectedEntity)->haveMoversBeenCalled());
-        GuiElements[GUI_ID_UNLINK_SPEED_BUILD]->setVisible(
-            type == 3 && ((entity::CConstructionEntity*)SelectedEntity)->haveMoversBeenCalled());
-        GuiElements[GUI_ID_SELL_HARVESTERS]->setVisible(
-            type == 4 && !((entity::CMineralGatherEntity*)SelectedEntity)->hasMoreMinerals());
-        GuiElements[GUI_ID_REPLACE_PRODUCER]->setVisible(
-            type == 0 && ((entity::CSparkProducerEntity*)SelectedEntity)->isExpired());
-        if (linker)
-            ((ox::gui::IGUIButton*)GuiElements[GUI_ID_UNLINK])->setAnimations(IngamePackage, "BtnActionUnlink", true);
-        else if (tower)
-            ((ox::gui::IGUIButton*)GuiElements[GUI_ID_UNLINK])->setAnimations(IngamePackage, "BtnActionUnlinkLaser",
-                true);
-
-        for (int i = GUI_ID_FIRST_LUA_ACTION; i < GUI_ID_WAVE_SEND; ++i)
-        {
-            if (GuiElements[i])
-            {
-                GuiElements[i]->remove();
-                GuiElements[i] = 0;
-            }
-        }
-
-        if (LuaManager && SelectedEntity->getEntityType() != 5)
-        {
-            // The script buttons follow the building's own buttons in a grid of three columns.
-            int slot = 4;
-            if (!tower)
-            {
-                slot = 3;
-                if (!turret && !linker)
-                {
-                    slot = 1;
-                    if (type == 0 || type == 4)
-                        slot = 2;
-                }
-            }
-
-            const char* buildingType = ((entity::CBuildingEntity*)SelectedEntity)->getBuildingType();
-            game::SLuaEntityActionButton* action = 0;
-            for (int id = GUI_ID_FIRST_LUA_ACTION; id < GUI_ID_WAVE_SEND; ++id, ++slot)
-            {
-                action = LuaManager->getNextEntityActionButton(buildingType, action);
-                if (!action)
-                    break;
-
-                action->Id = id - GUI_ID_FIRST_LUA_ACTION;
-                GuiElements[id] = GUIEnvironment->addButton(ox::core::CRect<int>(0, 0, 90, 20), ActionPanel, id, 0);
-                ((ox::gui::IGUIButton*)GuiElements[id])->setAnimations(IngamePackage, "BtnActionDeselect", true);
-                GuiElements[id]->moveTo(ox::core::CPosition2d<int>(slot % 3 * 34 + 6, slot / 3 * 35 + 86));
-                if (action->Upgrade)
-                {
-                    entity::SBuildingInfoItem* info =
-                        entity::gp_buildableItems->getBuildingInfoByEntityId(action->Command.c_str());
-                    if (info)
-                        GuiElements[id]->setHoverItem(getPopupForBuildButton(info->Name.c_str(),
-                            info->Description.c_str(), info->SparkCost.getValue(), info->MineralCost.getValue()));
-                }
-                else
-                    GuiElements[id]->setHoverItem(
-                        getPopupForGuiButton(ox::core::CString<wchar_t>(action->Command.c_str()).c_str()));
-            }
-        }
-    }
-
-    if (LuaManager)
-        LuaManager->updateSelectedBuilding(SelectedEntity);
-}
-
-void CPlayState::updateMultiSelectionReferences()
-{
-    for (ox::TArray<ox::entity::SEntityReference*>::iterator it = MultiSelection.begin(); it != MultiSelection.end();)
-    {
-        entity::gp_entityManager->updateReference(**it, 0, true);
-        if ((*it)->Entity)
-            ++it;
-        else
-        {
-            delete *it;
-            it = MultiSelection.erase(it);
-        }
-    }
-
-    if (MultiSelection.size() == 1)
-    {
-        SelectedEntity = (entity::CEntity*)MultiSelection[0]->Entity;
-        newSelectedEntity();
-    }
-}
-
-void CPlayState::checkWaveReward()
-{
-    int reward = ThreatLevel->getWaveReward();
-    if (reward <= 0 || GameOver)
-        return;
-
-    game::SInfoLineMessage message;
-    message.Name = settings::gp_systemConfig->getLocalizedText(L"ingame:waveRewardTitle");
-    message.Portrait = "PortraitCommunications";
-    message.Text = settings::gp_systemConfig->getLocalizedText(L"ingame:waveRewardMessage", reward);
-    addInfoLine(&message, false);
-
-    game::gp_mineralAmount->modifyValue(reward);
-    game::gp_negatedMineralAmount->modifyValue(-reward);
-    if (game::gp_statistics)
-        game::gp_statistics->addLog(GameTime, 0, reward);
-
-    sendCustomEvent(ECE_TUTORIAL_HINT, 31);
-    if (reward >= 16250)
-        sendCustomEvent(ECE_MAIN_ACHIEVEMENT, 19);
-    if (!BuildingAttacked)
-        sendCustomEvent(ECE_MAIN_ACHIEVEMENT, 23);
-    if (GameTime < 900.0f)
-        sendCustomEvent(ECE_MAIN_ACHIEVEMENT, 22);
-}
-
-void CPlayState::updatePlacementPosition()
-{
-    CursorMoved = false;
-    PlacementPosition = getWorldPos(GUIEnvironment->getMousePosition());
-    PlacementOk = false;
-    if (HasLastPlacement)
-    {
-        if (ox::core::CMath::getSquaredDistance(LastPlacement, PlacementPosition) > 22500.0f)
-        {
-            float angle = ox::core::CMath::getAngleIY(LastPlacement, PlacementPosition);
-            double cosAngle = cos((double)angle);
-            PlacementPosition.X = LastPlacement.X + cosAngle * 149.0;
-            PlacementPosition.Y = LastPlacement.Y + sin((double)angle) * 149.0;
-        }
-    }
-    if (game::gp_world->mayPlaceObjectHere(PlacementPosition, false))
-    {
-        if (entity::gp_entityManager->isBuildingPlacementOk(PlacementPosition,
-                BuildableItems.getEntityRadius(BuildSelection)))
-        {
-            PlacementOk = true;
-            m_2a0 = true;
-        }
-    }
-    if (!PlacementOk)
-        PlacementPosition = getWorldPos(GUIEnvironment->getMousePosition());
-}
-
-void CPlayState::buyBuildingAtPlacementPos()
-{
-    if (game::gp_mineralAmount->getValue() < BuildableItems.getEntityMineralCost(BuildSelection))
-    {
-        AudioDriver->playSound("BtnDenial.ogg", 1.0f, 0.0f, 1.0f);
-        DenialTime = 3.0f;
-    }
-    else if (PlacementOk)
-    {
-        int cost = BuildableItems.getEntityMineralCost(BuildSelection);
-        game::gp_mineralAmount->modifyValue(-cost);
-        game::gp_negatedMineralAmount->modifyValue(cost);
-        const char* entityId = BuildableItems.getEntityId(BuildSelection);
-        entity::CConstructionEntity* construction =
-            new entity::CConstructionEntity(PlacementPosition.X, PlacementPosition.Y, entityId);
-        entity::gp_entityManager->appendEntity(construction, 0);
-        PlacementOk = false;
-        m_2a0 = false;
-        HasLastPlacement = true;
-        LastPlacement = PlacementPosition;
-        AudioDriver->playSound("PlaceBuilding.ogg", 1.0f, 0.0f, 1.0f);
-        if (LuaManager)
-            LuaManager->hookBuildingPlaced(construction, entityId);
-    }
-}
-
-void CPlayState::updateRecycleBuilding()
-{
-    CursorMoved = false;
-    ox::core::CPosition2d<float> position = getWorldPos(GUIEnvironment->getMousePosition());
-    RecycleTarget = 0;
-    RecycleTarget = entity::gp_entityManager->findClickableEntity(position);
-    if (RecycleTarget)
-    {
-        // Minerals cannot be recycled.
-        if (RecycleTarget->getEntityType() == 5)
-            RecycleTarget = 0;
-        else if (RecycleTarget)
-            RecycleTargetId = RecycleTarget->getId();
-    }
-}
-
 bool CPlayState::OnEvent(const ox::event::SEvent& event)
 {
     // The open screens take the events first.
@@ -3026,6 +2794,238 @@ bool CPlayState::OnEvent(const ox::event::SEvent& event)
     default:
         return false;
     }
+}
+
+void CPlayState::updateMultiSelectionReferences()
+{
+    for (ox::TArray<ox::entity::SEntityReference*>::iterator it = MultiSelection.begin(); it != MultiSelection.end();)
+    {
+        entity::gp_entityManager->updateReference(**it, 0, true);
+        if ((*it)->Entity)
+            ++it;
+        else
+        {
+            delete *it;
+            it = MultiSelection.erase(it);
+        }
+    }
+
+    if (MultiSelection.size() == 1)
+    {
+        SelectedEntity = (entity::CEntity*)MultiSelection[0]->Entity;
+        newSelectedEntity();
+    }
+}
+
+void CPlayState::checkWaveReward()
+{
+    int reward = ThreatLevel->getWaveReward();
+    if (reward <= 0 || GameOver)
+        return;
+
+    game::SInfoLineMessage message;
+    message.Name = settings::gp_systemConfig->getLocalizedText(L"ingame:waveRewardTitle");
+    message.Portrait = "PortraitCommunications";
+    message.Text = settings::gp_systemConfig->getLocalizedText(L"ingame:waveRewardMessage", reward);
+    addInfoLine(&message, false);
+
+    game::gp_mineralAmount->modifyValue(reward);
+    game::gp_negatedMineralAmount->modifyValue(-reward);
+    if (game::gp_statistics)
+        game::gp_statistics->addLog(GameTime, 0, reward);
+
+    sendCustomEvent(ECE_TUTORIAL_HINT, 31);
+    if (reward >= 16250)
+        sendCustomEvent(ECE_MAIN_ACHIEVEMENT, 19);
+    if (!BuildingAttacked)
+        sendCustomEvent(ECE_MAIN_ACHIEVEMENT, 23);
+    if (GameTime < 900.0f)
+        sendCustomEvent(ECE_MAIN_ACHIEVEMENT, 22);
+}
+
+void CPlayState::updatePlacementPosition()
+{
+    CursorMoved = false;
+    PlacementPosition = getWorldPos(GUIEnvironment->getMousePosition());
+    PlacementOk = false;
+    if (HasLastPlacement)
+    {
+        if (ox::core::CMath::getSquaredDistance(LastPlacement, PlacementPosition) > 22500.0f)
+        {
+            float angle = ox::core::CMath::getAngleIY(LastPlacement, PlacementPosition);
+            double cosAngle = cos((double)angle);
+            PlacementPosition.X = LastPlacement.X + cosAngle * 149.0;
+            PlacementPosition.Y = LastPlacement.Y + sin((double)angle) * 149.0;
+        }
+    }
+    if (game::gp_world->mayPlaceObjectHere(PlacementPosition, false))
+    {
+        if (entity::gp_entityManager->isBuildingPlacementOk(PlacementPosition,
+                BuildableItems.getEntityRadius(BuildSelection)))
+        {
+            PlacementOk = true;
+            m_2a0 = true;
+        }
+    }
+    if (!PlacementOk)
+        PlacementPosition = getWorldPos(GUIEnvironment->getMousePosition());
+}
+
+void CPlayState::buyBuildingAtPlacementPos()
+{
+    if (game::gp_mineralAmount->getValue() < BuildableItems.getEntityMineralCost(BuildSelection))
+    {
+        AudioDriver->playSound("BtnDenial.ogg", 1.0f, 0.0f, 1.0f);
+        DenialTime = 3.0f;
+    }
+    else if (PlacementOk)
+    {
+        int cost = BuildableItems.getEntityMineralCost(BuildSelection);
+        game::gp_mineralAmount->modifyValue(-cost);
+        game::gp_negatedMineralAmount->modifyValue(cost);
+        const char* entityId = BuildableItems.getEntityId(BuildSelection);
+        entity::CConstructionEntity* construction =
+            new entity::CConstructionEntity(PlacementPosition.X, PlacementPosition.Y, entityId);
+        entity::gp_entityManager->appendEntity(construction, 0);
+        PlacementOk = false;
+        m_2a0 = false;
+        HasLastPlacement = true;
+        LastPlacement = PlacementPosition;
+        AudioDriver->playSound("PlaceBuilding.ogg", 1.0f, 0.0f, 1.0f);
+        if (LuaManager)
+            LuaManager->hookBuildingPlaced(construction, entityId);
+    }
+}
+
+void CPlayState::updateRecycleBuilding()
+{
+    CursorMoved = false;
+    ox::core::CPosition2d<float> position = getWorldPos(GUIEnvironment->getMousePosition());
+    RecycleTarget = 0;
+    RecycleTarget = entity::gp_entityManager->findClickableEntity(position);
+    if (RecycleTarget)
+    {
+        // Minerals cannot be recycled.
+        if (RecycleTarget->getEntityType() == 5)
+            RecycleTarget = 0;
+        else if (RecycleTarget)
+            RecycleTargetId = RecycleTarget->getId();
+    }
+}
+
+void CPlayState::newSelectedEntity()
+{
+    for (ox::TArray<ox::entity::SEntityReference*>::iterator it = MultiSelection.begin(); it != MultiSelection.end(); ++it)
+        delete *it;
+    MultiSelection.clear();
+
+    if (!SelectedEntity)
+    {
+        clearSelectedEntity();
+        return;
+    }
+
+    SelectedEntityType = SelectedEntity->getEntityType();
+    if (SelectedNameText)
+    {
+        ox::core::CString<wchar_t> name;
+        if (SelectedEntity->getEntityType() != 16)
+            name = settings::gp_systemConfig->getLocalizedText(
+                entity::ENTITY_KEY_NAMES[SelectedEntity->getEntityType()]).c_str();
+        else
+            name = ((entity::CCreativeEntity*)SelectedEntity)->getBuildingName();
+        if (BoldFont->getDimension(name.c_str()).Width > 100)
+            SelectedNameText->setOverrideFont(SmallFont);
+        else
+            SelectedNameText->setOverrideFont(BoldFont);
+        SelectedNameText->setText(name.c_str());
+        SelectedNameText->activateOffsetScrollingToEnsureVisibleText();
+    }
+
+    if (ActionPanel)
+    {
+        ActionPanel->setVisible(true);
+        int type = SelectedEntity->getEntityType();
+        GuiElements[GUI_ID_DESELECT]->setVisible(true);
+        bool linker = type == 1;
+        bool tower = type == 7;
+        GuiElements[GUI_ID_UNLINK]->setVisible(tower | linker);
+        GuiElements[GUI_ID_OVERCHARGE]->setVisible(linker);
+        bool turret = type == 8;
+        GuiElements[GUI_ID_EAGLE]->setVisible(turret);
+        GuiElements[GUI_ID_TEMPEST]->setVisible(turret);
+        GuiElements[GUI_ID_DEATHSTAR]->setVisible(
+            tower && ((entity::CDefenseTowerEntity*)SelectedEntity)->getNumBackTargets() == 0);
+        GuiElements[GUI_ID_UNLINK_DEATHSTAR]->setVisible(
+            tower && ((entity::CDefenseTowerEntity*)SelectedEntity)->getNumBackTargets() != 0);
+        GuiElements[GUI_ID_END_LASER]->setVisible(tower && ((entity::CDefenseTowerEntity*)SelectedEntity)->isLinked());
+        GuiElements[GUI_ID_SPEED_BUILD]->setVisible(
+            type == 3 && !((entity::CConstructionEntity*)SelectedEntity)->haveMoversBeenCalled());
+        GuiElements[GUI_ID_UNLINK_SPEED_BUILD]->setVisible(
+            type == 3 && ((entity::CConstructionEntity*)SelectedEntity)->haveMoversBeenCalled());
+        GuiElements[GUI_ID_SELL_HARVESTERS]->setVisible(
+            type == 4 && !((entity::CMineralGatherEntity*)SelectedEntity)->hasMoreMinerals());
+        GuiElements[GUI_ID_REPLACE_PRODUCER]->setVisible(
+            type == 0 && ((entity::CSparkProducerEntity*)SelectedEntity)->isExpired());
+        if (linker)
+            ((ox::gui::IGUIButton*)GuiElements[GUI_ID_UNLINK])->setAnimations(IngamePackage, "BtnActionUnlink", true);
+        else if (tower)
+            ((ox::gui::IGUIButton*)GuiElements[GUI_ID_UNLINK])->setAnimations(IngamePackage, "BtnActionUnlinkLaser",
+                true);
+
+        for (int i = GUI_ID_FIRST_LUA_ACTION; i < GUI_ID_WAVE_SEND; ++i)
+        {
+            if (GuiElements[i])
+            {
+                GuiElements[i]->remove();
+                GuiElements[i] = 0;
+            }
+        }
+
+        if (LuaManager && SelectedEntity->getEntityType() != 5)
+        {
+            // The script buttons follow the building's own buttons in a grid of three columns.
+            int slot = 4;
+            if (!tower)
+            {
+                slot = 3;
+                if (!turret && !linker)
+                {
+                    slot = 1;
+                    if (type == 0 || type == 4)
+                        slot = 2;
+                }
+            }
+
+            const char* buildingType = ((entity::CBuildingEntity*)SelectedEntity)->getBuildingType();
+            game::SLuaEntityActionButton* action = 0;
+            for (int id = GUI_ID_FIRST_LUA_ACTION; id < GUI_ID_WAVE_SEND; ++id, ++slot)
+            {
+                action = LuaManager->getNextEntityActionButton(buildingType, action);
+                if (!action)
+                    break;
+
+                action->Id = id - GUI_ID_FIRST_LUA_ACTION;
+                GuiElements[id] = GUIEnvironment->addButton(ox::core::CRect<int>(0, 0, 90, 20), ActionPanel, id, 0);
+                ((ox::gui::IGUIButton*)GuiElements[id])->setAnimations(IngamePackage, "BtnActionDeselect", true);
+                GuiElements[id]->moveTo(ox::core::CPosition2d<int>(slot % 3 * 34 + 6, slot / 3 * 35 + 86));
+                if (action->Upgrade)
+                {
+                    entity::SBuildingInfoItem* info =
+                        entity::gp_buildableItems->getBuildingInfoByEntityId(action->Command.c_str());
+                    if (info)
+                        GuiElements[id]->setHoverItem(getPopupForBuildButton(info->Name.c_str(),
+                            info->Description.c_str(), info->SparkCost.getValue(), info->MineralCost.getValue()));
+                }
+                else
+                    GuiElements[id]->setHoverItem(
+                        getPopupForGuiButton(ox::core::CString<wchar_t>(action->Command.c_str()).c_str()));
+            }
+        }
+    }
+
+    if (LuaManager)
+        LuaManager->updateSelectedBuilding(SelectedEntity);
 }
 
 void CPlayState::setBuildAction(int index)
