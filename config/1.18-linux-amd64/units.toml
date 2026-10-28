@@ -680,11 +680,13 @@
 ".bss" = 0x86c120
 
 ["daisy/scene/CEmptySceneNode.cpp"]
+".bss" = 0x86c124
 
 ["daisy/scene/CLightSceneNode.cpp"]
 ".bss" = 0x86c12c
 
 ["daisy/scene/CMeshManipulator.cpp"]
+".bss" = 0x86c130
 
 ["daisy/scene/CSceneNodeAnimatorCollisionResponse.cpp"]
 ".bss" = 0x86c024
@@ -747,6 +749,7 @@
 ".bss" = 0x86c118
 
 ["daisy/scene/CAnimatedMeshMD2.cpp"]
+".bss" = 0x86c1d8
 
 ["daisy/scene/COctTreeSceneNode.cpp"]
 ".bss" = 0x86c13c
@@ -815,8 +818,10 @@
 ".bss" = 0x86c070
 
 ["daisy/scene/CSceneManager.cpp"]
+".bss" = 0x86c020
 
 ["daisy/video/Null/CImage.cpp"]
+".bss" = 0x86c064
 
 ["daisy/video/Software/CVideoSoftware.cpp"]
 ".bss" = 0x86c074
