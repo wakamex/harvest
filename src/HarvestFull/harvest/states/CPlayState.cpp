@@ -1213,7 +1213,10 @@ int CPlayState::updateState(float time)
     if (GameSpeed > 4)
         frameDelta = ox::core::clamp(time * GAME_SPEED_MULTIPLIERS[GameSpeed], 0.0f, 0.5f);
     else
-        frameDelta = ox::core::clamp(time * GAME_SPEED_MULTIPLIERS[GameSpeed], 0.0f, 0.06f);
+    {
+        float clamped = ox::core::clamp(time * GAME_SPEED_MULTIPLIERS[GameSpeed], 0.0f, 0.06f);
+        frameDelta = clamped;
+    }
     switch (GameMode)
     {
     case game::EGM_WAVE:
