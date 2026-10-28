@@ -177,7 +177,7 @@ CAlienEntity* CMissileTurretEntity::findPriorityAlien(const ox::core::CVector3d<
 
 int CMissileTurretEntity::updateLogic(float frameDelta)
 {
-    if (Sparks >= getRequiredSparks())
+    if (getRequiredSparks() <= Sparks)
     {
         if (!Launching && SpriteIndex != 1)
         {
@@ -192,9 +192,9 @@ int CMissileTurretEntity::updateLogic(float frameDelta)
                     if (Type == 14)
                     {
                         const ox::core::CVector3d<float>& target = alien->getPosition();
+                        BurstTime = 0;
                         TargetPosition.X = target.X;
                         TargetPosition.Y = target.Y;
-                        BurstTime = 0;
                         BurstCount = 4;
                         SpriteIndex = 1;
                         Sprites[1]->reset();
