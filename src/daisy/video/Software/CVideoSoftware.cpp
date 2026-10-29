@@ -669,5 +669,14 @@ IVideoDriver* createSoftwareDriver(const ox::core::CDimension2d<int>& windowSize
 }
 
 
+void CVideoSoftware::useMaterialShaderFor2D(bool enabled)
+{
+}
+
+bool CVideoSoftware::isFullscreen()
+{
+    return false;
+}
+
 } // end namespace video
 } // end namespace daisy

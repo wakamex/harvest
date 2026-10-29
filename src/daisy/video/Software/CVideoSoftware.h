@@ -41,6 +41,7 @@ using namespace ox::video;
 
 		//! destructor
 		virtual ~CVideoSoftware();
+		virtual void useMaterialShaderFor2D(bool enabled);
 
 		//! presents the rendered scene on the screen, returns false if failed
 		virtual bool endScene();
@@ -100,6 +101,7 @@ using namespace ox::video;
 
 		//! Returns type of video driver
 		virtual int getDriverType();
+		virtual bool isFullscreen();
 
 		//! Returns the transformation set by setTransform
 		virtual ox::core::CMatrix4 getTransform(E_TRANSFORMATION_STATE state);
