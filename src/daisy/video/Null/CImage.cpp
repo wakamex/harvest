@@ -33,12 +33,10 @@ CImage::CImage(ECOLOR_FORMAT format, const ox::core::CDimension2d<int>& size)
 
 //! constructor
 CImage::CImage(ECOLOR_FORMAT format, const ox::core::CDimension2d<int>& size, void* data)
-: Format(format), Size(size), Data(0)
+: Format(format), Size(size)
 {
-	Data = (void*)0xbadf00d;
-
-	initData();
 	Data = data;
+	initData();
 }
 
 
