@@ -989,8 +989,8 @@ void CGUITabButtonRow::setAnimations(ox::video::ISpritePackage* package, const c
         }
     }
 
-    ClosePosition.X = Rects[ETBRA_TAB_NORMAL].getWidth() - 2 - Rects[ETBRA_CLOSE_NORMAL].getWidth();
     ClosePosition.Y = (Rects[ETBRA_TAB_NORMAL].getHeight() - Rects[ETBRA_CLOSE_NORMAL].getHeight()) / 2;
+    ClosePosition.X = Rects[ETBRA_TAB_NORMAL].getWidth() - 2 - Rects[ETBRA_CLOSE_NORMAL].getWidth();
 
     setRelativePosition(ox::core::CRect<int>(RelativeRect.UpperLeftCorner.X, RelativeRect.UpperLeftCorner.Y,
         RelativeRect.LowerRightCorner.X, RelativeRect.UpperLeftCorner.Y + Rects[ETBRA_TAB_NORMAL].getHeight()));
