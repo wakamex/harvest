@@ -210,7 +210,13 @@ bool CVideoSoftware::beginScene(bool backBuffer, bool zBuffer, SColor color)
 	CVideoNull::beginScene(backBuffer, zBuffer, color);
 
 	if (backBuffer)
-		BackBuffer->fill(ox::video::toA1R5G5B5(color.color));
+	{
+		int r = color.color >> 16;
+		int g = color.color >> 8;
+		int b = color.color;
+		bool alpha = (color.color & 0xff000000) != 0;
+		BackBuffer->fill((alpha << 15) | (((r >> 3) & 0x1f) << 10) | (((g >> 3) & 0x1f) << 5) | ((b >> 3) & 0x1f));
+	}
 
 	if (ZBuffer)
 		ZBuffer->clear();
