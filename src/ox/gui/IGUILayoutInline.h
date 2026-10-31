@@ -107,34 +107,6 @@ inline void IGUILayout::sortFlow(int spacingX, int spacingY, bool rightToLeft, b
     updateChildrenForContentArea();
 }
 
-inline void IGUILayout::sortVertically(int spacing, bool center)
-{
-    core::CRect<int> area = getContentArea();
-    int width = area.getWidth();
-    int x = 0;
-    int y = spacing;
-    for (std::list<IGUIElement*>::iterator it = Children.begin(); it != Children.end(); ++it)
-    {
-        if ((*it)->isFixed())
-            continue;
-
-        core::CRect<int> rect = (*it)->getRelativePosition();
-        if (center)
-            x = (width - rect.getWidth()) / 2;
-
-        core::CRect<int> placed(x, y, rect.getWidth() + x, rect.getHeight() + y);
-        (*it)->setRelativePosition(placed);
-        y += placed.getHeight() + spacing;
-    }
-
-    int grow = y + area.UpperLeftCorner.Y - area.LowerRightCorner.Y;
-    if (grow > 0)
-        RelativeRect.LowerRightCorner.Y += grow;
-
-    setRelativePosition(RelativeRect);
-    updateChildrenForContentArea();
-}
-
 inline void IGUILayout::sortHorizontally(int spacing)
 {
     core::CRect<int> area = getContentArea();
