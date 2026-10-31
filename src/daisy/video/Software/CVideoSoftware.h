@@ -56,7 +56,7 @@ using namespace ox::video;
 		virtual void setMaterial(const SMaterial& material);
 
 		//! sets a render target
-		virtual void setRenderTarget(ox::video::ITexture* texture);
+		virtual bool setRenderTarget(ox::video::ITexture* texture);
 
 		//! sets a viewport
 		virtual void setViewPort(const ox::core::CRect<int>& area);

@@ -226,12 +226,12 @@ bool CVideoSoftware::beginScene(bool backBuffer, bool zBuffer, SColor color)
 
 
 //! sets a render target
-void CVideoSoftware::setRenderTarget(ox::video::ITexture* texture)
+bool CVideoSoftware::setRenderTarget(ox::video::ITexture* texture)
 {
 	if (texture->getDriverType() != EDT_SOFTWARE)
 	{
 		os::Printer::log("Fatal Error: Tried to set a texture not owned by this driver.", ox::event::ELL_ERROR);
-		return;
+		return false;
 	}
 
 	if (RenderTargetTexture)
@@ -246,6 +246,8 @@ void CVideoSoftware::setRenderTarget(ox::video::ITexture* texture)
 	}
 	else
 		setRenderTarget((video::CImage*)0);
+
+	return true;
 }
 
 
