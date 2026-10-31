@@ -591,7 +591,11 @@ void CVideoSoftware::draw2DLine(const ox::core::CPosition2d<int>& start,
 								const ox::core::CPosition2d<int>& end,
 								SColor color)
 {
-	((CImage*)BackBuffer)->drawLine(start, end, ox::video::toA1R5G5B5(color.color));
+	int r = color.color >> 16;
+	int g = color.color >> 8;
+	int b = color.color;
+	bool alpha = (color.color & 0xff000000) != 0;
+	((CImage*)BackBuffer)->drawLine(start, end, (alpha << 15) | (((r >> 3) & 0x1f) << 10) | (((g >> 3) & 0x1f) << 5) | ((b >> 3) & 0x1f));
 }
 
 
