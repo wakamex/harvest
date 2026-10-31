@@ -604,7 +604,11 @@ void CVideoSoftware::draw2DImage(ox::video::ITexture* texture, const ox::core::C
 		}
 
 		if (useAlphaChannelOfTexture)
-			((CSoftwareTexture*)texture)->getImage()->copyToWithAlpha(BackBuffer, destPos, sourceRect, ox::video::toA1R5G5B5(color.color), clipRect);
+		{
+			unsigned int c = color.color;
+			unsigned int alpha = (c & 0xff000000) != 0;
+			((CSoftwareTexture*)texture)->getImage()->copyToWithAlpha(BackBuffer, destPos, sourceRect, (alpha << 15) | ((c >> 9) & 0x7c00) | ((c >> 6) & 0x3e0) | (((int)c >> 3) & 0x1f), clipRect);
+		}
 		else
 			((CSoftwareTexture*)texture)->getImage()->copyTo(BackBuffer, destPos, sourceRect, clipRect);
 	}
