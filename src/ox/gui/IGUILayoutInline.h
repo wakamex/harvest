@@ -165,18 +165,18 @@ inline void IGUILayout::sortRiver(bool resize, int spacingX, int spacingY, bool 
     if (Children.empty())
         return;
 
+    int horizontalAlign = 0;
+    int verticalAlign = 0;
     std::vector<TArray<IGUIElement*> > rows;
     std::vector<int> horizontal;
     std::vector<int> vertical;
-    int horizontalAlign = 0;
-    int verticalAlign = 0;
     rows.push_back(TArray<IGUIElement*>());
     // the first row's vertical alignment starts from horizontalAlign, as in both builds (both are 0)
     horizontal.push_back(horizontalAlign);
     vertical.push_back(horizontalAlign);
 
-    int row = 0;
     int tabs = 0;
+    int row = 0;
     int maxTabs = 0;
     for (std::list<IGUIElement*>::iterator it = Children.begin(); it != Children.end(); ++it)
     {
@@ -207,18 +207,36 @@ inline void IGUILayout::sortRiver(bool resize, int spacingX, int spacingY, bool 
         rows[row].push_back(*it);
 
         if (hints.findNext("top", 0) >= 0)
-            vertical[row] = verticalAlign = 0;
+        {
+            verticalAlign = 0;
+            vertical[row] = 0;
+        }
         else if (hints.findNext("middle", 0) >= 0)
-            vertical[row] = verticalAlign = 1;
+        {
+            verticalAlign = 1;
+            vertical[row] = 1;
+        }
         else if (hints.findNext("bottom", 0) >= 0)
-            vertical[row] = verticalAlign = 2;
+        {
+            verticalAlign = 2;
+            vertical[row] = 2;
+        }
 
         if (hints.findNext("left", 0) >= 0)
-            horizontal[row] = horizontalAlign = 0;
+        {
+            horizontalAlign = 0;
+            horizontal[row] = 0;
+        }
         else if (hints.findNext("center", 0) >= 0)
-            horizontal[row] = horizontalAlign = 1;
+        {
+            horizontalAlign = 1;
+            horizontal[row] = 1;
+        }
         else if (hints.findNext("right", 0) >= 0)
-            horizontal[row] = horizontalAlign = 2;
+        {
+            horizontalAlign = 2;
+            horizontal[row] = 2;
+        }
 
         if (hints.findNext("tab", 0) >= 0)
         {
@@ -237,9 +255,9 @@ inline void IGUILayout::sortRiver(bool resize, int spacingX, int spacingY, bool 
         for (unsigned int j = 0; j < rows[i].size(); ++j)
         {
             core::CDimension2d<int> size = rows[i][j]->getPreferredSize();
-            rows[i][j]->setRelativePosition(core::CRect<int>(x, y, size.Width + x, size.Height + y));
             if (rowHeight < size.Height)
                 rowHeight = size.Height;
+            rows[i][j]->setRelativePosition(core::CRect<int>(core::CPosition2d<int>(x, y), size));
             x += size.Width + spacingX;
         }
         y += rowHeight + spacingY;
@@ -265,7 +283,7 @@ inline void IGUILayout::sortRiver(bool resize, int spacingX, int spacingY, bool 
                 core::CString<char> hints = flags;
                 if (hints.findNext("tab", 0) >= 0)
                 {
-                    if (tab == index)
+                    if (index == tab)
                     {
                         int left = rows[i][j]->getRelativePosition().UpperLeftCorner.X;
                         if (left > tabX)
@@ -293,12 +311,12 @@ inline void IGUILayout::sortRiver(bool resize, int spacingX, int spacingY, bool 
                 core::CString<char> hints = flags;
                 if (hints.findNext("tab", 0) >= 0)
                 {
-                    if (tab == index)
+                    if (index == tab)
                     {
                         int offset = tabX - rows[i][j]->getRelativePosition().UpperLeftCorner.X;
                         if (offset > 0)
                         {
-                            for (; j < rows[i].size(); ++j)
+                            for (; rows[i].size() > j; ++j)
                             {
                                 core::CRect<int> rect = rows[i][j]->getRelativePosition();
                                 rect.UpperLeftCorner.X += offset;
@@ -314,10 +332,11 @@ inline void IGUILayout::sortRiver(bool resize, int spacingX, int spacingY, bool 
         }
     }
 
+    core::CRect<int> area;
     if (resize)
     {
-        int right = spacingX;
         int bottom = spacingY;
+        int right = spacingX;
         for (unsigned int i = 0; i < rows.size(); ++i)
         {
             for (unsigned int j = 0; j < rows[i].size(); ++j)
@@ -330,13 +349,14 @@ inline void IGUILayout::sortRiver(bool resize, int spacingX, int spacingY, bool 
             }
         }
 
-        core::CRect<int> area = getContentArea();
+        area = getContentArea();
+        int height = area.getHeight();
         RelativeRect.LowerRightCorner.X += right + spacingX - area.getWidth();
-        RelativeRect.LowerRightCorner.Y += bottom + spacingY - area.getHeight();
+        RelativeRect.LowerRightCorner.Y += bottom + (spacingY - height);
         setRelativePosition(RelativeRect);
     }
 
-    core::CRect<int> area = getContentArea();
+    area = getContentArea();
     int width = area.getWidth();
 
     // align the rows horizontally; the divisor is 2 for centered rows
@@ -350,7 +370,9 @@ inline void IGUILayout::sortRiver(bool resize, int spacingX, int spacingY, bool 
             if (right < rows[i][j]->getRelativePosition().LowerRightCorner.X)
                 right = rows[i][j]->getRelativePosition().LowerRightCorner.X;
 
-        int offset = (width - right - spacingX) / (horizontal[i] == 1 ? 2 : 1);
+        int offset = width - right - spacingX;
+        if (horizontal[i] == 1)
+            offset /= 2;
         for (unsigned int j = 0; j < rows[i].size(); ++j)
         {
             core::CRect<int> rect = rows[i][j]->getRelativePosition();
@@ -363,7 +385,8 @@ inline void IGUILayout::sortRiver(bool resize, int spacingX, int spacingY, bool 
     // align the elements of each row vertically
     for (unsigned int i = 0; i < rows.size(); ++i)
     {
-        if (vertical[i] == 0)
+        int align = vertical[i];
+        if (align == 0)
             continue;
 
         int rowHeight = 0;
@@ -374,7 +397,9 @@ inline void IGUILayout::sortRiver(bool resize, int spacingX, int spacingY, bool 
         for (unsigned int j = 0; j < rows[i].size(); ++j)
         {
             core::CRect<int> rect = rows[i][j]->getRelativePosition();
-            int offset = (rowHeight - rect.getHeight()) / (vertical[i] == 1 ? 2 : 1);
+            int offset = rowHeight - rect.getHeight();
+            if (align == 1)
+                offset /= 2;
             rect.UpperLeftCorner.Y += offset;
             rect.LowerRightCorner.Y += offset;
             rows[i][j]->setRelativePosition(rect);
