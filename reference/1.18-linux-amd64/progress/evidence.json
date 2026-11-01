@@ -19,7 +19,7 @@
     "tools/hv/objdiff.py": "13fa221740693a00a37134a133ddf96297d3efa7421e0d5af57a8b96b0abfcb5",
     "tools/hv/delink.py": "973dd463d7e8d0ec81ddf5977cad3154501fe559559442515e50857e8ef9b9cf",
     "config/1.18-linux-amd64/flags.json": "9ebb8c16c904108ddb5cbaa50345a733d400ee2bd3994c72e5545e676fb03ad8",
-    "config/1.18-linux-amd64/symbols.tsv": "7313be644247322f2babffa389ceae84ec6e9ef39778f22627ab0c34c2448571",
+    "config/1.18-linux-amd64/symbols.tsv": "ce842ce3cc2da814e0ecf2fed25f45381046e1c402df80c2b7cc89b23c7cc701",
     "config/1.18-linux-amd64/extents.tsv": "55dd5b29374ba204f2ddf66df2c6fbe9cf434a68cd559196f1a3331c4911a20b",
     "config/1.18-linux-amd64/units.toml": "ebd7385805d87f1567f8a31d0913e619b48a17d751fa2b3bb7be126326131fac"
   },
@@ -282624,7 +282624,7 @@
     },
     {
       "unit": "daisy/scene/CSceneManager.cpp",
-      "object_sha256": "c3ed81043400f64f99e145acf3fea0d9a88b30f8c9d90003ede8dcf699019890",
+      "object_sha256": "ce8058a9adfb806a981047ce40a29482991e056d3a57055abb9f1f46ff119138",
       "exact": false,
       "sections": [
         {
@@ -282634,7 +282634,7 @@
           "exact": false,
           "address": "0x4c21c0",
           "first_difference": 4351,
-          "differing_bytes": 1238,
+          "differing_bytes": 945,
           "misplaced_symbols": [
             {
               "symbol": "_ZN5daisy5scene13CSceneManager17clearDeletionListEv",
@@ -282717,19 +282717,19 @@
               "placed": "0x4c38f0"
             },
             {
+              "symbol": "_ZN5daisy5scene13CSceneManager16addMeshSceneNodeEPN2ox5scene5IMeshEPNS3_10ISceneNodeEiRKNS2_4core9CVector3dIfEESC_SC_",
+              "known": "0x4c3d10",
+              "placed": "0x4c39c0"
+            },
+            {
               "symbol": "_ZN5daisy5scene13CSceneManager19addOctTreeSceneNodeEPN2ox5scene5IMeshEPNS3_10ISceneNodeEii",
               "known": "0x4c3ed0",
-              "placed": "0x4c39c0"
+              "placed": "0x4c3a90"
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager19addBspTreeSceneNodeEPN2ox5scene5IMeshEPNS3_10ISceneNodeEi",
               "known": "0x4c3f90",
-              "placed": "0x4c3a80"
-            },
-            {
-              "symbol": "_ZN5daisy5scene13CSceneManager16addMeshSceneNodeEPN2ox5scene5IMeshEPNS3_10ISceneNodeEiRKNS2_4core9CVector3dIfEESC_SC_",
-              "known": "0x4c3d10",
-              "placed": "0x4c3b30"
+              "placed": "0x4c3b50"
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager24addAnimatedMeshSceneNodeEPN2ox5scene13IAnimatedMeshEPNS3_10ISceneNodeEiRKNS2_4core9CVector3dIfEESC_SC_",
@@ -282742,24 +282742,24 @@
               "placed": "0x4c3cd0"
             },
             {
-              "symbol": "_ZN5daisy5scene13CSceneManager15setActiveCameraEPN2ox5scene16ICameraSceneNodeE",
-              "known": "0x4c4280",
-              "placed": "0x4c3ed0"
-            },
-            {
               "symbol": "_ZN5daisy5scene13CSceneManager21addExternalMeshLoaderEPN2ox5scene11IMeshLoaderE",
               "known": "0x4c4220",
-              "placed": "0x4c3f20"
+              "placed": "0x4c3ed0"
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager18addToDeletionQueueEPN2ox5scene10ISceneNodeE",
               "known": "0x4c42d0",
-              "placed": "0x4c3f80"
+              "placed": "0x4c3f30"
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager24registerNodeForRenderingEPN2ox5scene10ISceneNodeENS3_24E_SCENE_NODE_RENDER_TIMEE",
               "known": "0x4c4330",
-              "placed": "0x4c3fe0"
+              "placed": "0x4c3f90"
+            },
+            {
+              "symbol": "_ZN5daisy5scene13CSceneManager15setActiveCameraEPN2ox5scene16ICameraSceneNodeE",
+              "known": "0x4c4280",
+              "placed": "0x4c42f0"
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager8findMeshEPKc",
@@ -282792,19 +282792,19 @@
               "placed": "0x4c4a10"
             },
             {
-              "symbol": "_ZN5daisy5scene13CSceneManagerC2EPN2ox5video12IVideoDriverEPNS2_2io11IFileSystemEPNS2_3gui14ICursorControlE",
-              "known": "0x4c4690",
-              "placed": "0x4c4c10"
-            },
-            {
               "symbol": "_ZN5daisy5scene13CSceneManagerC1EPN2ox5video12IVideoDriverEPNS2_2io11IFileSystemEPNS2_3gui14ICursorControlE",
               "known": "0x4c4c90",
-              "placed": "0x4c5210"
+              "placed": "0x4c4c10"
             },
             {
               "symbol": "_ZN5daisy5scene18createSceneManagerEPN2ox5video12IVideoDriverEPNS1_2io11IFileSystemEPNS1_3gui14ICursorControlE",
               "known": "0x4c5290",
-              "placed": "0x4c5810"
+              "placed": "0x4c5210"
+            },
+            {
+              "symbol": "_ZN5daisy5scene13CSceneManagerC2EPN2ox5video12IVideoDriverEPNS2_2io11IFileSystemEPNS2_3gui14ICursorControlE",
+              "known": "0x4c4690",
+              "placed": "0x4c5280"
             },
             {
               "symbol": "_ZThn24_N5daisy5scene13CSceneManagerD0Ev",
@@ -282840,51 +282840,6 @@
               "addend": -4,
               "destination": "0x4d0c90",
               "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 8441,
-              "type": 2,
-              "symbol": "_ZNSt6vectorIPN2ox5scene10ISceneNodeESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
-              "addend": -4,
-              "destination": "0x4c9100",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 8463,
-              "type": 2,
-              "symbol": "_ZNSt6vectorIPN2ox5scene10ISceneNodeESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
-              "addend": -4,
-              "destination": "0x4c9100",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 8485,
-              "type": 2,
-              "symbol": "_ZNSt6vectorIN5daisy5scene13CSceneManager20TransparentNodeEntryESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
-              "addend": -4,
-              "destination": "0x4c7f70",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 8507,
-              "type": 2,
-              "symbol": "_ZNSt6vectorIPN2ox5scene10ISceneNodeESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
-              "addend": -4,
-              "destination": "0x4c9100",
-              "reason": "different destination",
-              "matches": false
-            },
-            {
-              "offset": 8557,
-              "type": 2,
-              "symbol": "_ZNSt6vectorIN5daisy5scene13CSceneManager16DefaultNodeEntryESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
-              "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "-0x4426716f",
               "matches": false
             },
             {
@@ -283369,6 +283324,14 @@
               "exact": true
             },
             {
+              "symbol": "_ZN5daisy5scene13CSceneManager16addMeshSceneNodeEPN2ox5scene5IMeshEPNS3_10ISceneNodeEiRKNS2_4core9CVector3dIfEESC_SC_",
+              "address": "0x4c3d10",
+              "size": 207,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            },
+            {
               "symbol": "_ZN5daisy5scene13CSceneManager19addOctTreeSceneNodeEPN2ox5scene5IMeshEPNS3_10ISceneNodeEii",
               "address": "0x4c3ed0",
               "size": 184,
@@ -283380,14 +283343,6 @@
               "symbol": "_ZN5daisy5scene13CSceneManager19addBspTreeSceneNodeEPN2ox5scene5IMeshEPNS3_10ISceneNodeEi",
               "address": "0x4c3f90",
               "size": 173,
-              "extent": "fde",
-              "global": true,
-              "exact": true
-            },
-            {
-              "symbol": "_ZN5daisy5scene13CSceneManager16addMeshSceneNodeEPN2ox5scene5IMeshEPNS3_10ISceneNodeEiRKNS2_4core9CVector3dIfEESC_SC_",
-              "address": "0x4c3d10",
-              "size": 207,
               "extent": "fde",
               "global": true,
               "exact": true
@@ -283417,14 +283372,6 @@
               "exact": true
             },
             {
-              "symbol": "_ZN5daisy5scene13CSceneManager15setActiveCameraEPN2ox5scene16ICameraSceneNodeE",
-              "address": "0x4c4280",
-              "size": 71,
-              "extent": "fde",
-              "global": true,
-              "exact": true
-            },
-            {
               "symbol": "_ZN5daisy5scene13CSceneManager21addExternalMeshLoaderEPN2ox5scene11IMeshLoaderE",
               "address": "0x4c4220",
               "size": 94,
@@ -283443,10 +283390,18 @@
             {
               "symbol": "_ZN5daisy5scene13CSceneManager24registerNodeForRenderingEPN2ox5scene10ISceneNodeENS3_24E_SCENE_NODE_RENDER_TIMEE",
               "address": "0x4c4330",
-              "size": 854,
-              "extent": null,
+              "size": 863,
+              "extent": "fde",
               "global": true,
-              "exact": false
+              "exact": true
+            },
+            {
+              "symbol": "_ZN5daisy5scene13CSceneManager15setActiveCameraEPN2ox5scene16ICameraSceneNodeE",
+              "address": "0x4c4280",
+              "size": 71,
+              "extent": "fde",
+              "global": true,
+              "exact": true
             },
             {
               "symbol": "_ZN5daisy5scene13CSceneManager8findMeshEPKc",
@@ -283497,14 +283452,6 @@
               "exact": true
             },
             {
-              "symbol": "_ZN5daisy5scene13CSceneManagerC2EPN2ox5video12IVideoDriverEPNS2_2io11IFileSystemEPNS2_3gui14ICursorControlE",
-              "address": "0x4c4690",
-              "size": 1525,
-              "extent": "fde",
-              "global": true,
-              "exact": true
-            },
-            {
               "symbol": "_ZN5daisy5scene13CSceneManagerC1EPN2ox5video12IVideoDriverEPNS2_2io11IFileSystemEPNS2_3gui14ICursorControlE",
               "address": "0x4c4c90",
               "size": 1525,
@@ -283516,6 +283463,14 @@
               "symbol": "_ZN5daisy5scene18createSceneManagerEPN2ox5video12IVideoDriverEPNS1_2io11IFileSystemEPNS1_3gui14ICursorControlE",
               "address": "0x4c5290",
               "size": 110,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            },
+            {
+              "symbol": "_ZN5daisy5scene13CSceneManagerC2EPN2ox5video12IVideoDriverEPNS2_2io11IFileSystemEPNS2_3gui14ICursorControlE",
+              "address": "0x4c4690",
+              "size": 1525,
               "extent": "fde",
               "global": true,
               "exact": true
@@ -284164,6 +284119,24 @@
           ]
         },
         {
+          "name": ".text._ZNSt6vectorIN5daisy5scene13CSceneManager16DefaultNodeEntryESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+          "size": 505,
+          "placement": "symbol: _ZNSt6vectorIN5daisy5scene13CSceneManager16DefaultNodeEntryESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+          "exact": true,
+          "address": "0x4c7b80",
+          "references": 2,
+          "functions": [
+            {
+              "symbol": "_ZNSt6vectorIN5daisy5scene13CSceneManager16DefaultNodeEntryESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+              "address": "0x4c7b80",
+              "size": 505,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ]
+        },
+        {
           "name": ".text._ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager20TransparentNodeEntryESt6vectorIS5_SaIS5_EEEElS5_EvT_T0_SC_T1_",
           "size": 395,
           "placement": "symbol: _ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager20TransparentNodeEntryESt6vectorIS5_SaIS5_EEEElS5_EvT_T0_SC_T1_",
@@ -284254,60 +284227,104 @@
           ]
         },
         {
-          "name": ".text._ZN2ox4algo4sortIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS7_SaIS7_EEEEEEvT_SD_",
-          "size": 163,
-          "placement": "symbol: _ZN2ox4algo4sortIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS7_SaIS7_EEEEEEvT_SD_",
+          "name": ".text._ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS5_SaIS5_EEEElEvT_SB_T0_",
+          "size": 447,
+          "placement": "symbol: _ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS5_SaIS5_EEEElEvT_SB_T0_",
           "exact": false,
-          "address": "0x4c8400",
-          "first_difference": 2,
-          "differing_bytes": 130,
+          "address": "0x4c8240",
+          "first_difference": 309,
+          "differing_bytes": 8,
           "bad_references": [
             {
-              "offset": 53,
+              "offset": 309,
               "type": 2,
-              "symbol": "_ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS5_SaIS5_EEEElEvT_SB_T0_",
+              "symbol": "_ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS5_SaIS5_EEEElS5_EvT_T0_SC_T1_",
               "addend": -4,
               "reason": "no target address for symbol",
-              "candidate": "-0x1ad93c7",
+              "candidate": "0x4c70b0",
               "matches": false
             },
             {
-              "offset": 81,
+              "offset": 386,
               "type": 2,
-              "symbol": "_ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS5_SaIS5_EEEEEvT_SB_",
+              "symbol": "_ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS5_SaIS5_EEEElS5_EvT_T0_SC_T1_",
               "addend": -4,
               "reason": "no target address for symbol",
-              "candidate": "0x380f3d",
-              "matches": false
-            },
-            {
-              "offset": 118,
-              "type": 2,
-              "symbol": "_ZSt25__unguarded_linear_insertIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS5_SaIS5_EEEES5_EvT_T0_",
-              "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "-0x76675513",
-              "matches": false
-            },
-            {
-              "offset": 159,
-              "type": 2,
-              "symbol": "_ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS5_SaIS5_EEEEEvT_SB_",
-              "addend": -4,
-              "reason": "no target address for symbol",
-              "candidate": "0x485d4926",
+              "candidate": "0x4c70b0",
               "matches": false
             }
           ],
-          "references": 4,
+          "references": 3,
+          "functions": [
+            {
+              "symbol": "_ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS5_SaIS5_EEEElEvT_SB_T0_",
+              "address": "0x4c8240",
+              "size": 447,
+              "extent": "fde",
+              "global": true,
+              "exact": false,
+              "exact_but_unknown": true,
+              "candidates": [
+                [
+                  "_ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS5_SaIS5_EEEElS5_EvT_T0_SC_T1_",
+                  "0x4c70b0"
+                ],
+                [
+                  "_ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS5_SaIS5_EEEElS5_EvT_T0_SC_T1_",
+                  "0x4c70b0"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "name": ".text._ZN2ox4algo4sortIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS7_SaIS7_EEEEEEvT_SD_",
+          "size": 194,
+          "placement": "symbol: _ZN2ox4algo4sortIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS7_SaIS7_EEEEEEvT_SD_",
+          "exact": false,
+          "address": "0x4c8400",
+          "first_difference": 82,
+          "differing_bytes": 8,
+          "bad_references": [
+            {
+              "offset": 82,
+              "type": 2,
+              "symbol": "_ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS5_SaIS5_EEEEEvT_SB_",
+              "addend": -4,
+              "reason": "no target address for symbol",
+              "candidate": "0x4c6fe0",
+              "matches": false
+            },
+            {
+              "offset": 190,
+              "type": 2,
+              "symbol": "_ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS5_SaIS5_EEEEEvT_SB_",
+              "addend": -4,
+              "reason": "no target address for symbol",
+              "candidate": "0x4c6fe0",
+              "matches": false
+            }
+          ],
+          "references": 3,
           "functions": [
             {
               "symbol": "_ZN2ox4algo4sortIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS7_SaIS7_EEEEEEvT_SD_",
               "address": "0x4c8400",
-              "size": 163,
-              "extent": null,
+              "size": 194,
+              "extent": "fde",
               "global": true,
-              "exact": false
+              "exact": false,
+              "exact_but_unknown": true,
+              "candidates": [
+                [
+                  "_ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS5_SaIS5_EEEEEvT_SB_",
+                  "0x4c6fe0"
+                ],
+                [
+                  "_ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS5_SaIS5_EEEEEvT_SB_",
+                  "0x4c6fe0"
+                ]
+              ]
             }
           ]
         },
@@ -284420,6 +284437,24 @@
           ]
         },
         {
+          "name": ".text._ZN2ox5scene10ISceneNodeD1Ev",
+          "size": 361,
+          "placement": "symbol: _ZN2ox5scene10ISceneNodeD1Ev",
+          "exact": true,
+          "address": "0x4c8f90",
+          "references": 10,
+          "functions": [
+            {
+              "symbol": "_ZN2ox5scene10ISceneNodeD1Ev",
+              "address": "0x4c8f90",
+              "size": 361,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ]
+        },
+        {
           "name": ".text._ZNSt6vectorIPN2ox5scene11IMeshLoaderESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
           "size": 401,
           "placement": "symbol: _ZNSt6vectorIPN2ox5scene11IMeshLoaderESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
@@ -284430,6 +284465,24 @@
             {
               "symbol": "_ZNSt6vectorIPN2ox5scene11IMeshLoaderESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
               "address": "0x4c8c80",
+              "size": 401,
+              "extent": "fde",
+              "global": true,
+              "exact": true
+            }
+          ]
+        },
+        {
+          "name": ".text._ZNSt6vectorIPN2ox5scene10ISceneNodeESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+          "size": 401,
+          "placement": "symbol: _ZNSt6vectorIPN2ox5scene10ISceneNodeESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+          "exact": true,
+          "address": "0x4c9100",
+          "references": 5,
+          "functions": [
+            {
+              "symbol": "_ZNSt6vectorIPN2ox5scene10ISceneNodeESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+              "address": "0x4c9100",
               "size": 401,
               "extent": "fde",
               "global": true,
@@ -284466,42 +284519,6 @@
             {
               "symbol": "_ZN2ox5scene10ISceneNodeD2Ev",
               "address": "0x4c8e20",
-              "size": 361,
-              "extent": "fde",
-              "global": true,
-              "exact": true
-            }
-          ]
-        },
-        {
-          "name": ".text._ZNSt6vectorIPN2ox5scene10ISceneNodeESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
-          "size": 401,
-          "placement": "symbol: _ZNSt6vectorIPN2ox5scene10ISceneNodeESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
-          "exact": true,
-          "address": "0x4c9100",
-          "references": 5,
-          "functions": [
-            {
-              "symbol": "_ZNSt6vectorIPN2ox5scene10ISceneNodeESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
-              "address": "0x4c9100",
-              "size": 401,
-              "extent": "fde",
-              "global": true,
-              "exact": true
-            }
-          ]
-        },
-        {
-          "name": ".text._ZN2ox5scene10ISceneNodeD1Ev",
-          "size": 361,
-          "placement": "symbol: _ZN2ox5scene10ISceneNodeD1Ev",
-          "exact": true,
-          "address": "0x4c8f90",
-          "references": 10,
-          "functions": [
-            {
-              "symbol": "_ZN2ox5scene10ISceneNodeD1Ev",
-              "address": "0x4c8f90",
               "size": 361,
               "extent": "fde",
               "global": true,
@@ -284751,12 +284768,9 @@
         }
       ],
       "unplaced_sections": [
-        ".gcc_except_table",
-        ".text._ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS5_SaIS5_EEEElS5_EvT_T0_SC_T1_",
-        ".text._ZSt25__unguarded_linear_insertIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS5_SaIS5_EEEES5_EvT_T0_",
-        ".text._ZNSt6vectorIN5daisy5scene13CSceneManager16DefaultNodeEntryESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
         ".text._ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS5_SaIS5_EEEEEvT_SB_",
-        ".text._ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS5_SaIS5_EEEElEvT_SB_T0_",
+        ".text._ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS5_SaIS5_EEEElS5_EvT_T0_SC_T1_",
+        ".gcc_except_table",
         ".text._ZNSt6vectorIN5daisy5scene13CSceneManager9MeshEntryESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_"
       ],
       "compilation": {
@@ -284864,7 +284878,7 @@
           "src/ox/event/IEventReceiver.h": "c1e1ccab98fd4d61883bca01562128c424963baf34ae4d79fcf903029fcfa169",
           "src/ox/TList.h": "a45553e4f2cad236a713e1085790e780c975ea5d46c7ca25b046d9add5eea5c9",
           "src/ox/algo/CArrayFunctions.h": "73733ca73a2493447b9949ed7b7ed477c9f3a486052f909aa6e9cd1bf6cf59d5",
-          "src/daisy/scene/CSceneManager.h": "eedce2fb77785f6fcc018a60425d070d811d07b8968219363cdddbf2ba2fce0f",
+          "src/daisy/scene/CSceneManager.h": "35782e4e833b8a627ac2e93e9124b9eb916db4e2c30069c9fc962ec229ba000c",
           "src/ox/io/IFileSystem.h": "3ecd0b103a841ec3d6b58825c9984162da937cd039500cb1e037f300d8117ead",
           "src/ox/io/../core/CString.h": "7cc2521534a1b7864708fdc416a25279f05507d6c045abeca04545f4a88b95ee",
           "src/ox/io/IWriteFile.h": "e217871c7372e3db36a084986831e95b25afd47a7ed53577295db27a1e3b1d9d",
@@ -284913,9 +284927,9 @@
           "src/daisy/scene/CSceneNodeAnimatorFollowSpline.h": "85ff479799421708bcd7adc10e7a97c6cf13e1104e4076e89c0051c63f43cd13"
         },
         "system_headers": 145,
-        "object_sha256": "c3ed81043400f64f99e145acf3fea0d9a88b30f8c9d90003ede8dcf699019890"
+        "object_sha256": "ce8058a9adfb806a981047ce40a29482991e056d3a57055abb9f1f46ff119138"
       },
-      "fuzzy_target_sha256": "e8da9865f02ca2457313ded4fa2c50eb9189646685a8b54da61971723ac0df78",
+      "fuzzy_target_sha256": "65c8af6de15f2b75a2e325e2e90bc80a65d2ceb3c342167e9231ee32f948d854",
       "fuzzy_functions": [
         {
           "address": "0x4c21c0",
@@ -285182,6 +285196,12 @@
           "percent": 100.0
         },
         {
+          "address": "0x4c3d10",
+          "size": 207,
+          "symbol": "_ZN5daisy5scene13CSceneManager16addMeshSceneNodeEPN2ox5scene5IMeshEPNS3_10ISceneNodeEiRKNS2_4core9CVector3dIfEESC_SC_",
+          "percent": 100.0
+        },
+        {
           "address": "0x4c3ed0",
           "size": 184,
           "symbol": "_ZN5daisy5scene13CSceneManager19addOctTreeSceneNodeEPN2ox5scene5IMeshEPNS3_10ISceneNodeEii",
@@ -285191,12 +285211,6 @@
           "address": "0x4c3f90",
           "size": 173,
           "symbol": "_ZN5daisy5scene13CSceneManager19addBspTreeSceneNodeEPN2ox5scene5IMeshEPNS3_10ISceneNodeEi",
-          "percent": 100.0
-        },
-        {
-          "address": "0x4c3d10",
-          "size": 207,
-          "symbol": "_ZN5daisy5scene13CSceneManager16addMeshSceneNodeEPN2ox5scene5IMeshEPNS3_10ISceneNodeEiRKNS2_4core9CVector3dIfEESC_SC_",
           "percent": 100.0
         },
         {
@@ -285218,12 +285232,6 @@
           "percent": 100.0
         },
         {
-          "address": "0x4c4280",
-          "size": 71,
-          "symbol": "_ZN5daisy5scene13CSceneManager15setActiveCameraEPN2ox5scene16ICameraSceneNodeE",
-          "percent": 100.0
-        },
-        {
           "address": "0x4c4220",
           "size": 94,
           "symbol": "_ZN5daisy5scene13CSceneManager21addExternalMeshLoaderEPN2ox5scene11IMeshLoaderE",
@@ -285239,7 +285247,13 @@
           "address": "0x4c4330",
           "size": 863,
           "symbol": "_ZN5daisy5scene13CSceneManager24registerNodeForRenderingEPN2ox5scene10ISceneNodeENS3_24E_SCENE_NODE_RENDER_TIMEE",
-          "percent": 99.58128
+          "percent": 100.0
+        },
+        {
+          "address": "0x4c4280",
+          "size": 71,
+          "symbol": "_ZN5daisy5scene13CSceneManager15setActiveCameraEPN2ox5scene16ICameraSceneNodeE",
+          "percent": 100.0
         },
         {
           "address": "0x4c2c20",
@@ -285278,12 +285292,6 @@
           "percent": 100.0
         },
         {
-          "address": "0x4c4690",
-          "size": 1525,
-          "symbol": "_ZN5daisy5scene13CSceneManagerC2EPN2ox5video12IVideoDriverEPNS2_2io11IFileSystemEPNS2_3gui14ICursorControlE",
-          "percent": 100.0
-        },
-        {
           "address": "0x4c4c90",
           "size": 1525,
           "symbol": "_ZN5daisy5scene13CSceneManagerC1EPN2ox5video12IVideoDriverEPNS2_2io11IFileSystemEPNS2_3gui14ICursorControlE",
@@ -285293,6 +285301,12 @@
           "address": "0x4c5290",
           "size": 110,
           "symbol": "_ZN5daisy5scene18createSceneManagerEPN2ox5video12IVideoDriverEPNS1_2io11IFileSystemEPNS1_3gui14ICursorControlE",
+          "percent": 100.0
+        },
+        {
+          "address": "0x4c4690",
+          "size": 1525,
+          "symbol": "_ZN5daisy5scene13CSceneManagerC2EPN2ox5video12IVideoDriverEPNS2_2io11IFileSystemEPNS2_3gui14ICursorControlE",
           "percent": 100.0
         },
         {
@@ -285500,6 +285514,12 @@
           "percent": 100.0
         },
         {
+          "address": "0x4c7b80",
+          "size": 505,
+          "symbol": "_ZNSt6vectorIN5daisy5scene13CSceneManager16DefaultNodeEntryESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+          "percent": 100.0
+        },
+        {
           "address": "0x4c7d80",
           "size": 395,
           "symbol": "_ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager20TransparentNodeEntryESt6vectorIS5_SaIS5_EEEElS5_EvT_T0_SC_T1_",
@@ -285530,10 +285550,16 @@
           "percent": 100.0
         },
         {
+          "address": "0x4c8240",
+          "size": 447,
+          "symbol": "_ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS5_SaIS5_EEEElEvT_SB_T0_",
+          "percent": 99.921875
+        },
+        {
           "address": "0x4c8400",
           "size": 194,
           "symbol": "_ZN2ox4algo4sortIN9__gnu_cxx17__normal_iteratorIPN5daisy5scene13CSceneManager16DefaultNodeEntryESt6vectorIS7_SaIS7_EEEEEEvT_SD_",
-          "percent": 51.833332
+          "percent": 99.833336
         },
         {
           "address": "0x4c84d0",
@@ -285572,9 +285598,21 @@
           "percent": 100.0
         },
         {
+          "address": "0x4c8f90",
+          "size": 361,
+          "symbol": "_ZN2ox5scene10ISceneNodeD1Ev",
+          "percent": 100.0
+        },
+        {
           "address": "0x4c8c80",
           "size": 401,
           "symbol": "_ZNSt6vectorIPN2ox5scene11IMeshLoaderESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
+          "percent": 100.0
+        },
+        {
+          "address": "0x4c9100",
+          "size": 401,
+          "symbol": "_ZNSt6vectorIPN2ox5scene10ISceneNodeESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
           "percent": 100.0
         },
         {
@@ -285587,18 +285625,6 @@
           "address": "0x4c8e20",
           "size": 361,
           "symbol": "_ZN2ox5scene10ISceneNodeD2Ev",
-          "percent": 100.0
-        },
-        {
-          "address": "0x4c9100",
-          "size": 401,
-          "symbol": "_ZNSt6vectorIPN2ox5scene10ISceneNodeESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_",
-          "percent": 100.0
-        },
-        {
-          "address": "0x4c8f90",
-          "size": 361,
-          "symbol": "_ZN2ox5scene10ISceneNodeD1Ev",
           "percent": 100.0
         },
         {
@@ -289746,7 +289772,7 @@
     "config": {
       "functionRelocDiffs": "data_value"
     },
-    "report_sha256": "76796cce82d016889fc6995fd39a75485cec5f4bbef85ef71c11099bd9b389cd"
+    "report_sha256": "b4ec5884700906040e11f0684ee5cd822a85047cfb48a4c303fdca6a8006dca2"
   },
   "link": {
     "status": "unavailable",
