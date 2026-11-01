@@ -144,7 +144,7 @@
 ".bss" = 0x86b6f0
 
 ["HarvestFull/harvest/settings/CAlienPriorities.cpp"]
-".text" = 0x48a4a0
+".text" = 0x48a420
 # g_attackPriorities[5], std::ios_base::Init, WORLD_GRID_OFFSET, ENERGY_PROGRESS_COLOR
 ".bss" = 0x86bae0
 

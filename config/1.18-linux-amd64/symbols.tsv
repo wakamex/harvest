@@ -1196,6 +1196,9 @@ address	size	symbol	evidence
 0x489fd0	199	_ZN7harvest3gui12CStoryScreenC1EPN2ox9IOxDeviceE	native-calls:new-0xc0-in-0x4aebc0
 0x48a0a0	199	_ZN7harvest3gui12CStoryScreenC2EPN2ox9IOxDeviceE	manual:twin-of-C1
 0x48a170	674	_ZN7harvest3gui12CStoryScreen19displayDialogueTextEPNS0_17CDialogueItemInfoE	manual:Mac-copies-dialogue-into-slot-by-Alternate
+0x48a420	44	_ZN7harvest8settings16CAlienPrioritiesC2Ev	match:HarvestFull/harvest/settings/CAlienPriorities.cpp
+0x48a450	44	_ZN7harvest8settings16CAlienPrioritiesC1Ev	match:HarvestFull/harvest/settings/CAlienPriorities.cpp
+0x48a480	8	_ZN7harvest8settings16CAlienPrioritiesD2Ev	match:HarvestFull/harvest/settings/CAlienPriorities.cpp
 0x48a490	8	_ZN7harvest8settings16CAlienPrioritiesD1Ev	mac-vtable:_ZTVN7harvest8settings16CAlienPrioritiesE:2
 0x48a4a0	8	_ZN7harvest8settings16CAlienPriorities16setAlienPriorityEii	manual:Mac-unit-function-order-and-amd64-instructions
 0x48a4b0	5	_ZN7harvest8settings16CAlienPriorities21setIfRangeIsImportantEb	manual:Mac-unit-function-order-and-amd64-instructions
