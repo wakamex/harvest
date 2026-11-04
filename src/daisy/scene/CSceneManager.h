@@ -352,7 +352,7 @@ using namespace ox::scene;
 			}
 
 			ISceneNode* node;
-			ox::video::ITexture* textureValue;
+			void* textureValue;
 
 			bool operator < (const DefaultNodeEntry& other) const
 			{
